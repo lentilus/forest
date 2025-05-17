@@ -1,0 +1,9 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Question = Can spaced repetition help me rember my own proofs?
+
+Implementation
+- Entire zettel as flashcard
+- compile with typst to html? Or use kodama html output directly.
+- title as question, rest as back

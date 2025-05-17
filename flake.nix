@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     zeta = {
-      url = "github:lentilus/zeta";
+      url = "github:lentilus/zeta/filetypes";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     scribe = {
@@ -37,12 +37,13 @@
       build = pkgs.writeShellScriptBin "build" ''
         root=''${TYPST_ROOT:-"."}
         cd $TYPST_ROOT
-        kodama clean
+        kodama clean --root=$root --typ --typst
         kodama compile --root=$root --output=$TYPST_ROOT/../publish
       '';
       serve = pkgs.writeShellScriptBin "serve" ''
         ${pkgs.miniserve}/bin/miniserve $TYPST_ROOT/../publish --index index.html --pretty-urls
       '';
+      increment = pkgs.writeShellScriptBin "increment" (builtins.readFile ./new.sh); 
     in pkgs.mkShell {
       buildInputs = [
         pkgs.typst
@@ -51,16 +52,13 @@
         kodama
         build
         serve
+        increment
       ];
 
       shellHook = ''
         FLAKE_ROOT="$(git rev-parse --show-toplevel)"
-        if [ -d "$FLAKE_ROOT/git-hooks" ]; then
-          rm -f .git/hooks/* && cp git-hooks/* .git/hooks/
-        else
-          echo "Warning: Not running in expected repo root $FLAKE_ROOT"
-        fi
-        export TYPST_ROOT=$FLAKE_ROOT/forest
+        export TYPST_ROOT=$FLAKE_ROOT/trees
+        export TYPST_FEATURES="html"
 
         CACHE_DIR="$FLAKE_ROOT/.typst-cache"
         if [ ! -d "$CACHE_DIR" ]; then

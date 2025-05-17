@@ -1,0 +1,9 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Index = Set Theory
+
+#embed("0000")[Peano Axioms]
+#embed("0002")[]
+#embed("0003")[]
+

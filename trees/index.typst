@@ -1,0 +1,9 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Index = Root
+
+_A collection of thoughts and notes._
+
+#local("0001")[Set Theory]
+

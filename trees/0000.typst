@@ -1,0 +1,35 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Axioms = Peano Axioms
+
+ _Infinitely many axioms can be built by replacing $phi, psi, theta$ with any formulas._
+== Logical Axiom Schemes
++ $phi -> (psi -> phi)$
++ $[phi -> (psi -> theta)] -> [(phi -> psi) -> (phi -> theta)]$
++ $(not psi -> not phi) -> (phi -> not psi)$
++ $(AA x) ( phi -> psi ) -> ( phi -> (AA x ) psi )$
++ $(forall  x) phi (x) -> phi (t)$
+_$t$ is a term that can  be subsituted for $x$ in $phi(x)$ without any of its variables becoming unquantified._
+
+== Equality Axioms
++ $x = x$
++ $x = y -> y = x$
++ $x = y -> (y = z -> x = z)$
++ $x = y -> (x' = y')$
+
+== Non-Logical Axioms
++ $not (0 = x')$
++ $x' = y' -> x = y$
++ $x + 0 = x$
++ $x + y' = (x + y)'$
++ $x * 0 = 0$
++ $x * y' = x * y + x$
++ $phi (0) -> [ (AA x) (phi (x) -> phi (x')) -> ( AA x ) phi (x)]$
+ 
+== Induction Scheme
++ from $phi$ and $phi -> psi$, infer $psi$
++ from $phi$, infer $(AA x) phi$
++ from $phi$, infer $tilde(phi)$ 
+_$tilde(phi)$ can be any formula obtained by renaming variables in $phi$._
+
