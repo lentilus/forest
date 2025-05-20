@@ -1,0 +1,12 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Idee = lalala
+
+#local("0003")[Definition = Formal Theory]
+
+
+
+
+
+

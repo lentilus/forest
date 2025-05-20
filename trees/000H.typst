@@ -1,0 +1,10 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Definition = Relativized Quantification
+
+Let $phi$ be a formula in #local("000I")[ZFC]. We define
+$
+  AA x in M : phi .. &"as" .. (forall x) (x in M -> phi),\
+  "and" .. EE x in M : phi .. &"as" .. (EE x) (x in M and phi).\
+$

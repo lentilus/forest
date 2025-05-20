@@ -3,7 +3,10 @@
 
 = Index = Set Theory
 
-#embed("0000")[Peano Axioms]
-#embed("0002")[]
-#embed("0003")[]
+#embed("0000")[] // PA
 
+#embed("000I")[] // ZFC
+
+- #local("0002")[] // Formal Theory without context
+- #local("0003")[] // Definition formal theory
+- #local("000H")[] // Definition Relativized quantification

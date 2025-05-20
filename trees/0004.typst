@@ -7,3 +7,17 @@ Implementation
 - Entire zettel as flashcard
 - compile with typst to html? Or use kodama html output directly.
 - title as question, rest as back
+
+in my forest
+```typst
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+This is some theorem.
+
+// ANKI::BACK
+Proof. This proofs it.
+```
+Then we can just scan for these anki cues and turn all trees,
+that have one into flashcards.
+

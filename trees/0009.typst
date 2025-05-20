@@ -1,0 +1,14 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Idea = What an operating system should look like.
+
+
+#link("https://www.youtube.com/watch?v=k0uE_chSnV8")
+
+- light weight
+- no pipes, just shared mem
+- all programs sandboxed
+- no programm installation.
+- default: no access to fs from programs
+

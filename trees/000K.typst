@@ -1,0 +1,10 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= = Equality Axioms of Peano Arithmetic
+
++ $x = x$
++ $x = y -> y = x$
++ $x = y -> (y = z -> x = z)$
++ $x = y -> (x' = y')$
+

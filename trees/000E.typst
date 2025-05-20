@@ -1,0 +1,5 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Index = Funktionentheorie
+

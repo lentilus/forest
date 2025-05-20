@@ -1,0 +1,16 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Definition = Jacobi Symbol
+
+Sei $n >= 3$ ungerade, mit Primfaktorzerlegung $n = q_1 * ... * q_(s)$.
+
+Definiere das _Jacobi-Symbol_ zu $a in ZZ$
+$
+  jacobi(a,n) :=
+  cases(
+    legendre(a,q_1) dots.h.c legendre(a, q_s) & "falls" gcd(a,n) = 1 \
+    0 & "falls" gcd(a,n) > 1 \
+  )
+$
+

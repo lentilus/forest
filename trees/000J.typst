@@ -1,0 +1,12 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= = Logical Axiom Schemes of Peano Arithmetic
+
++ $phi -> (psi -> phi)$
++ $[phi -> (psi -> theta)] -> [(phi -> psi) -> (phi -> theta)]$
++ $(not psi -> not phi) -> (phi -> not psi)$
++ $(AA x) ( phi -> psi ) -> ( phi -> (AA x ) psi )$
++ $(forall  x) phi (x) -> phi (t)$
+_$t$ is a term that can  be subsituted for $x$ in $phi(x)$ without any of its variables becoming unquantified._
+

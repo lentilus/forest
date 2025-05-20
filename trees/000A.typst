@@ -1,0 +1,24 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Idea = A strict syntax makes understanding theorems easier.
+
+For example something like the following.
+
+#let bettertheorem(object, constr, def, statement) = [
+  #table(
+    stroke: none, columns: 2, [Sei], object, [mit], constr, [$==> $], [], [mit], def, [dass], statement,
+  )
+]
+
+#bettertheorem[
+  - $Mm subset Pp(Omega)$ ein Mengensystem
+  - $mu:Mm -> [0,oo]$ eine Mengenfunktion
+][
+  - $emptyset in Mm$
+  - $mu(emptyset) = 0$
+][
+  $mu^(\*)(A) := inf {sum_(i = 1)^(oo) mu(C_i) | C_1 , C_2 , ... in Mm .. "mit" A subset union.big_(i = 1)^(oo) C_i}$
+][
+  $mu^(\*)$ ist ein aeusseres Mass.
+]

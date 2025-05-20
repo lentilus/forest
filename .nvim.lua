@@ -37,6 +37,7 @@ vim.lsp.config['zeta'] = {
       (call item: (ident) @include (#eq? @include "link") (group (string) @target))
       (call item: (ident) @embed (#eq? @embed "embed") (group (string) @target) )
       (call item: (ident) @local (#eq? @local "local") (group (string) @target) )
+      (heading (text) @title)
     ]],
     select_regex = '^"(.*)"$',
     default_extension = ".typst",
@@ -45,4 +46,50 @@ vim.lsp.config['zeta'] = {
   on_attach = on_attach,
 }
 
+local function new_zettel()
+    name = vim.fn.system({'increment'})
+    vim.schedule(function() vim.cmd("e " .. name) end)
+end
+
+vim.keymap.set('n', '<leader>nn', new_zettel)
+
+function insert_workspace_symbol_link()
+  local ts_builtin    = require('telescope.builtin')
+  local actions       = require('telescope.actions')
+  local action_state  = require('telescope.actions.state')
+
+  ts_builtin.lsp_workspace_symbols({
+    prompt_title = "Workspace Symbols",
+    attach_mappings = function(prompt_bufnr, map)
+      -- override <CR>
+      actions.select_default:replace(function()
+        local entry = action_state.get_selected_entry()
+        actions.close(prompt_bufnr)
+
+        local name = entry.symbol_name
+        local path = entry.filename
+        local id = vim.fn.fnamemodify(path, ':.')
+        id = vim.fn.fnamemodify(id, ':r')
+
+        local link = string.format("#local(\"%s\")[%s]", id, name)
+
+        -- get cursor, then inject text
+        local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+        vim.api.nvim_buf_set_text(0, row-1, col, row-1, col, { link })
+      end)
+      return true
+    end,
+  })
+end
+
+vim.keymap.set(
+  'n',
+  '<leader>ln',
+  insert_workspace_symbol_link,
+  { noremap = true, silent = true, desc = 'Insert MD link to workspace symbol' }
+)
+
 vim.lsp.enable('zeta')
+vim.cmd[[cd ./trees]]
+vim.schedule(function() vim.cmd[[e index.typst]] end)
+

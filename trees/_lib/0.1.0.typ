@@ -1,3 +1,4 @@
+#import "@preview/ctheorems:1.1.3": *
 #import "@preview/scribe:0.2.0": *
 #import "kodama.typ"
 
@@ -42,9 +43,19 @@
   }
 }
 
+// Not working with html...
+// #let proof = thmproof("proof", "Proof")
+#let proof(it) = [ *#emph("Proof")*. #it #set align(right); $qed$ ]
+
+// Number Theory
+#let legendre(a,b) = $(#a/#b)$
+#let jacobi(a,b) = legendre(a,b)
+#let gcd(a,b) = ($(#a ";" #b)$)
+
 #let template(doc) = {
   show heading.where(level: 1): meta_heading
   show: scribe
+  // show: thmrules
 
   context if target() == "html" {
     show: kodama.template

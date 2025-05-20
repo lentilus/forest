@@ -1,0 +1,29 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Theorem = Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,p-1}
+
+Sei $p > 5$ prim und $Q$ die Menge quadratischer Reste in ${1, ..., p-1}$.
+$S := sum_(q in Q)$.
+
+Es gilt $p | S$. #proof[
+  Sei $p > 5$ prim. Setze $N := {1, ..., p-1} \\ Q(p)$.
+  Es gilt
+  $ x^2 equiv_(p)  y^2 <==> (x - y) (x + y) equiv_(p)  0 <==>  x equiv_(p)  y or x equiv_(p)  - y $.
+  Also hat jede Nichtnull-Quadratklasse genau zwei Repräsentanten, $q$ und $-q$,
+  daher $\#Q = \#N = (p - 1) \/ 2$.
+  Betrachte
+  $ 
+    sum_(x = 1)^(p - 1) x = frac(p (p - 1), 2) equiv_(p)  0 = sum_(q in Q) q + sum_(n in N) n .
+  $
+  
+  Wähle $a in N$ mit $a equiv.not - 1 med \( mod med p \)$.
+  Dann ist die Multiplikation mit $a$ eine Bijektion $Q arrow.r N$ (Multiplikativität Legendre),
+  also $sum_(n in N) n = sum_(q in Q) a thin q = a sum_(q in Q) q$.
+  
+  Also ist
+  $ 0 equiv_(p)  sum_(q in Q) q + sum_(n in N) n = (1 + a) sum_(q in Q) q . $
+  Da $a equiv.not - 1 med \( mod med p \)$ war,
+  ist $1 + a$ invertierbar,
+  und damit $sum_(q in Q) q equiv 0 med \( mod med p \)$.
+]

@@ -1,0 +1,20 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Theorem = Primzahlen p>9 haben einen Quadratischen-Rest-Zwilling in {1,...,10}
+
+Sei $p > 9$ prim.
+Es existiert ein $a in {1,...,9}$, 
+sodass $a, a+1$ quadratische Reste modulo $p$ sind.
+
+#let lg(a) = $(#a/p)$
+#proof[
+  $1,4,9$ sind immer quadratische Reste $mod p$. Angenommen
+  $
+    lg(2) = lg(5) = lg(10) = -1
+    overbrace(==>, "Lemma 6.3") lg(2) * lg(5) = (-1)^2 = 1 = lg(10). arrow.zigzag
+  $
+  Also sind, $1,4,9$ und einer von $2,5,10$ quadratische Reste.
+  Also gibt es mind. ein $a, a+1$, die das Kriterium erfuellen.
+]
+

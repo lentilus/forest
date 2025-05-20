@@ -1,0 +1,12 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= = Non-logical Axioms of Peano Arithmetic
+
++ $not (0 = x')$
++ $x' = y' -> x = y$
++ $x + 0 = x$
++ $x + y' = (x + y)'$
++ $x * 0 = 0$
++ $x * y' = x * y + x$
++ $phi (0) -> [ (AA x) (phi (x) -> phi (x')) -> ( AA x ) phi (x)] .. $  (induction scheme)

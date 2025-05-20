@@ -1,0 +1,12 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Notes = (GPG) Gnu Privacy Guard
+
+- Ultimate guru: https://github.com/drduh/YubiKey-Guide
+- See scripts in https://github.com/dhess/nixos-yubikey
+- `Keyboxd` has issues on Nixos. Why was it introduced?
+  - Is there any issue with `pubring.kbx`?
+- Can I store multiple identities on one yubikey?
+- How to integrate yubikey 2fa into browser on nixos
+

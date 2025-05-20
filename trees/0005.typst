@@ -1,0 +1,7 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Index = Zahlentheorie
+
+- #local("000C")[Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,9}]
+- #local("000D")[Primzahlen p>9 haben einen Quadratischen-Rest-Zwilling in {1,...,10}]

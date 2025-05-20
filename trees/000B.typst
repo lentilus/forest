@@ -1,0 +1,9 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Index = Ideas
+
+#embed("0002")[Idea = A formal theory is meaningless without context]
+
+#embed("000A")[Idea = A strict syntax makes understanding theorems easier]
+

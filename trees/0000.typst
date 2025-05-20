@@ -1,33 +1,17 @@
 #import "/_lib/0.1.0.typ": *
 #show: template
 
-= Axioms = Peano Axioms
+= = Peano Arithmetic
 
- _Infinitely many axioms can be built by replacing $phi, psi, theta$ with any formulas._
-== Logical Axiom Schemes
-+ $phi -> (psi -> phi)$
-+ $[phi -> (psi -> theta)] -> [(phi -> psi) -> (phi -> theta)]$
-+ $(not psi -> not phi) -> (phi -> not psi)$
-+ $(AA x) ( phi -> psi ) -> ( phi -> (AA x ) psi )$
-+ $(forall  x) phi (x) -> phi (t)$
-_$t$ is a term that can  be subsituted for $x$ in $phi(x)$ without any of its variables becoming unquantified._
+ _Infinitely many axioms can be built by replacing $phi, psi, theta$ with formulas in the language of PA._
 
-== Equality Axioms
-+ $x = x$
-+ $x = y -> y = x$
-+ $x = y -> (y = z -> x = z)$
-+ $x = y -> (x' = y')$
+#embed("000J")[Logical Axiom Schemes]
 
-== Non-Logical Axioms
-+ $not (0 = x')$
-+ $x' = y' -> x = y$
-+ $x + 0 = x$
-+ $x + y' = (x + y)'$
-+ $x * 0 = 0$
-+ $x * y' = x * y + x$
-+ $phi (0) -> [ (AA x) (phi (x) -> phi (x')) -> ( AA x ) phi (x)]$
+#embed("000K")[Equality Axioms]
+
+#embed("000L")[Non-logical Axioms]
  
-== Induction Scheme
+== Inference Scheme
 + from $phi$ and $phi -> psi$, infer $psi$
 + from $phi$, infer $(AA x) phi$
 + from $phi$, infer $tilde(phi)$ 

@@ -1,0 +1,13 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Axiomatic System = (ZFC) Zermelo Fraenkel Set Theory + Choice
+
+ZFC is a pure Set theory meaning that every object is a set.
+
+ZFC uses the same #local("000J")[logical axiom scheme] as #local("0000")[PA] -
+but it results in different axioms.
+And it uses the same inference schme as #local("0000")[PA].
+
+... This NOTE is not finished!
+
