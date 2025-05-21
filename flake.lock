@@ -84,11 +84,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747772082,
-        "narHash": "sha256-wsySHfLdWIEHRLabbZaBtOpdlPE2xS2UxuV9xReOdfA=",
+        "lastModified": 1747848363,
+        "narHash": "sha256-boRkxQt2S4v85pDbmwUtSWhKO5Hmy5ud/gz5b6/wshQ=",
         "owner": "lentilus",
         "repo": "zeta",
-        "rev": "5fbeacba0d5f9a2335fa350c6d70ec3c97cfabb5",
+        "rev": "24157143390c44489a41c60095fd066f2bfe664f",
         "type": "github"
       },
       "original": {
