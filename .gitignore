@@ -1,4 +1,4 @@
 .direnv
 .typst-cache
-forest/.cache
+trees/.cache
 *.pdf
