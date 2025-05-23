@@ -1,0 +1,12 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Theorem = Holomorphe Funktionen mit konstanter Norm auf einem Gebiet sind konstant.
+
+Sei $G$ ein #local("000U")[Gebiet], $f: G -> CC$ #local("000V")[holomorph] mit konstanter Norm. Dann ist $f$ konstant.
+
+#proof[
+  $"Bild"(f)$ ist ein (abgeschlossener) Kreis.
+  Wir verwenden den Satz ueber *Gebietstreue* _(Funktionentheorie 2010, Ingo Lieb S.71)_.
+  Angenommen $f$ nicht konstant, dann ist $"Bild"(f)$ ein (offenes) Gebiet. Aber $"Bild"(f)$ ist abgeschlossen. $arrow.zigzag$
+]

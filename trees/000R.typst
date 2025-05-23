@@ -1,0 +1,18 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Definition = Surreal Number 
+
+This Definition is incomplete!
+
+A surreal number $s$ is given by two sets $L$ and $R$ containing surreal Numbers themselves.
+We write
+$
+{ space L | R space }.
+$
+Note! Not every choice of $L$, $R$ yields a unique surreal number.
+
+The first surreal number $0$ is defined as ${ space | space }$.
+With $L$ and $R$empty.
+
+All other numbers are born through (transfinite) induction.

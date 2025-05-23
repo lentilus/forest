@@ -1,7 +1,7 @@
 #import "/_lib/0.1.0.typ": *
 #show: template
 
-= Axiomatic System = (ZFC) Zermelo Fraenkel Set Theory + Choice
+= = (ZFC) Zermelo Fraenkel Set Theory + Choice
 
 ZFC is a pure Set theory meaning that every object is a set.
 

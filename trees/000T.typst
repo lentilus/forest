@@ -1,0 +1,10 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Definition = Komplex Differenzierbar
+
+$f$ auf $U sub CC$ heisst komplex differenzierbar in $z_0 in CC$, falls eine stetige Funktion $Delta$ auf U existert, sodass
+$
+  AA z in U .. f(z) = f(z_0) + (z-z_0) * Delta(z).
+$
+

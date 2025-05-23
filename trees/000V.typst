@@ -1,0 +1,9 @@
+#import "/_lib/0.1.0.typ": *
+#show: template
+
+= Definition = Holomorph
+
+Sei $U sub CC$ offen. $f$ auf $U$ heisst holomorph auf $U$, falls $f$ #local("000T")[komplex differenzierbar] in allen $u in U$.
+
+$f$ heisst in $z_0 in CC$ holomorph wenn es eine offene Umgebung um $z_0$ gibt, auf der $f$ holomorph ist.
+
