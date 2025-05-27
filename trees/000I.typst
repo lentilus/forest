@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= = (ZFC) Zermelo Fraenkel Set Theory + Choice
+#title[ZFC: Zermelo-Fraenkel Set Theory + Choice]
 
 ZFC is a pure Set theory meaning that every object is a set.
 

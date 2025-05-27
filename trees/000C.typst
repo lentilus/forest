@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Theorem = Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,p-1}
+#taxon[Definition]
+#title[Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,p-1}]
 
 Sei $p > 5$ prim und $Q$ die Menge quadratischer Reste in ${1, ..., p-1}$.
 $S := sum_(q in Q)$.

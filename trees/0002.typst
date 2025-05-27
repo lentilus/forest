@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Idea = A formal theory is meaningless without context
+#taxon[Idea]
+#title[A formal theory is meaningless without context]
 
 Without contextualizing a formal theory with a model,
 it is purely syntactic and carries no semantics.

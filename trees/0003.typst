@@ -1,6 +1,5 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Formal Theory
-
-
+#taxon[Definition]
+#title[Formal Theory]

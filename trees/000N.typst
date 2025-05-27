@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Theorem = exp(-x^(-2)) is smooth on RR
+#taxon[Theorem]
+#title[$exp(-x^(-2))$ is smooth on $RR$]
 
 #proof[
 Auf $RR \\ { 0 }$, $f (x) = exp (- x^(- 2)) in C^oo$ (Verkneupfung glatter Funktionen).

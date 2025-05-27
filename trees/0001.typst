@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Index = Set Theory
+#taxon[Index]
+#title[Set Theory]
 
 #embed("0000")[] // PA
 

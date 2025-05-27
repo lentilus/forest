@@ -4,9 +4,9 @@
   --typst-text-color: black;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --typst-text-color: black;
+    --typst-text-color: white;
   }
 }
 
@@ -28,7 +28,7 @@
 
 /* For external SVG files. */
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   figure>img {
     filter: invert(1) hue-rotate(180deg);
   }

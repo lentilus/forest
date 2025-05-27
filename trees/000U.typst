@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Gebiet
+#taxon[Definition]
+#title[Gebiet]
 
 Eine offene zusammenhaengende Menge heisst Gebiet.
 

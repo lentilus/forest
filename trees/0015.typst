@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[multiplikative arithmetische Funktion]
+Eine #local("0014")[arithmetische Funktion] $f$ heisst multiplikativ, wenn
+$
+  f(u v) =  f(u) f(v) .. AA u, v in NN "mit" (u;v) = 1.
+$
+
+Hier ist $(*;*)$ der #local("0010")[ggT].
+
+Ist $AA u,v in NN : f(u v) =  f(y)  f(v) $, dann heisst $f$ vollstaendig multiplikativ.

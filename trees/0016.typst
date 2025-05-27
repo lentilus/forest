@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Dirichlet-Faltung arithmetischer Funktionen]
+
+Seien $f,g$ #local("0014")[arithmetische Funktionen]. Wir nennen
+$
+  f ** g (n) := sum_(d | n) f(d)  g(n/d)
+$
+die Dirichlet-Faltung von $f$ und $g$.

@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Jacobi Symbol
+#taxon[Definition]
+#title[Jacobi Symbol]
 
 Sei $n >= 3$ ungerade, mit Primfaktorzerlegung $n = q_1 * ... * q_(s)$.
 

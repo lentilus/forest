@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Index = Ideas
+#taxon[Index]
+#title[Ideas]
 
 #embed("0002")[Idea = A formal theory is meaningless without context]
 

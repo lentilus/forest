@@ -1,5 +1,5 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= TAXON = TITLE
-
+// #taxon[Taxon]
+// #title[Title]

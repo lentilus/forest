@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= = Logical Axiom Schemes of Peano Arithmetic
+#title[Logical Axiom Schemes of Peano Arithmetic]
 
 + $phi -> (psi -> phi)$
 + $[phi -> (psi -> theta)] -> [(phi -> psi) -> (phi -> theta)]$

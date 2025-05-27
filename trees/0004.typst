@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Question = Can spaced repetition help me rember my own proofs?
+#title[Can spaced repetition help me rember my own proofs?]
 
 Implementation
 - Entire zettel as flashcard

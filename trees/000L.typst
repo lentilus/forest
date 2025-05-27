@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= = Non-logical Axioms of Peano Arithmetic
+#title[Non-logical Axioms of Peano Arithmetic]
 
 + $not (0 = x')$
 + $x' = y' -> x = y$

@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Relativized Quantification
+#taxon[Definition]
+#title[Relativized Quantification]
 
 Let $phi$ be a formula in #local("000I")[ZFC]. We define
 $

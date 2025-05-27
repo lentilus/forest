@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= = Equality Axioms of Peano Arithmetic
+#title[Equality Axioms of Peano Arithmetic]
 
 + $x = x$
 + $x = y -> y = x$

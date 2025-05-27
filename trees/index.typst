@@ -1,10 +1,12 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Index = Root
+#taxon[Index]
+#title[Root]
 
 _A collection of thoughts and notes._
 
 - #local("0001")[Set Theory]
 - #local("0005")[Number Theory]
 - #local("000E")[Complex Analysis]
+

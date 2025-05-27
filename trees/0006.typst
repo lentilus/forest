@@ -1,7 +1,6 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Index = Quadratische Reste
+#taxon[Index]
+#title[Quadratische Reste]
 
-
-$vec(a, dots.c, b)$ $a slash b$

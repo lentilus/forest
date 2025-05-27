@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Idea = A strict syntax makes understanding theorems easier.
+#taxon[Idea]
+#title[A strict syntax makes understanding theorems easier.]
 
 For example something like the following.
 

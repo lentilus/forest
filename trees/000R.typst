@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Surreal Number 
+#taxon[Definition]
+#title[Surreal Number]
 
 This Definition is incomplete!
 
@@ -16,3 +17,5 @@ The first surreal number $0$ is defined as ${ space | space }$.
 With $L$ and $R$empty.
 
 All other numbers are born through (transfinite) induction.
+
+There is an axiomatic definition that guarantees equality of constuctions up to an isomorphism.

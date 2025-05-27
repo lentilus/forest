@@ -1,7 +1,7 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Notes = (GPG) Gnu Privacy Guard
+#title[GPG: Gnu Privacy Guard]
 
 - Ultimate guru: https://github.com/drduh/YubiKey-Guide
 - See scripts in https://github.com/dhess/nixos-yubikey

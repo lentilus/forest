@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Euklidischer Algorithmus]
+
+Der Euklische Algorithmus berechnet den groessten gemeinsamen Teiler zweier ganzer(?) Zahlen.
+
+Eine Implementierung in `Python`:
+```python
+def ggt(a,b):
+    r = a % b
+    if r == 0:
+        return b
+    return ggt(b,r)
+```

@@ -1,7 +1,8 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Definition = Holomorph
+#taxon[Definition]
+#title[Holomorph]
 
 Sei $U sub CC$ offen. $f$ auf $U$ heisst holomorph auf $U$, falls $f$ #local("000T")[komplex differenzierbar] in allen $u in U$.
 

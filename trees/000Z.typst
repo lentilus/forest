@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[$Q(x,y,z)=x^2+x y + y^2 + y z$ ist rational aequivalent zu $Q'(a,b,c) = 3a^2 + 4b^2 - 4c^2$.]
+
+$Q(x,y,z)=x^2+x y + y^2 + y z$ ist rational aequivalent zu $Q'(a,b,c) = 3a^2 + 4b^2 - 4c^2$.
+#proof[
+  Definiere
+  $
+    T(x,y,z) := (2x+y, 3/2 y + z, z).
+  $
+  T ist invertierbar, denn $det(T) = 2 * 3/2 * 1 = 3$.
+  Es gilt $
+    12 * (Q' @ T)(a,b,c) = 3(2x+y)^2 + 4( 3/2 y + z)^2 - 4(z)^2 = x^2 + x y + y^2 + y z = Q(x,y,z).
+  $
+  Also sind die Formen rational aequivalent.
+]

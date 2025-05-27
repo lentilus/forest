@@ -1,5 +1,9 @@
-#import "/_lib/0.1.0.typ": *
+#import "/_lib/0.1.1.typ": *
 #show: template
 
-= Index = Funktionentheorie
+#taxon[Index]
+#title[Complex Analysis]
+
+- #local("000U")[Gebiet]
+- #local("000V")[Holomorph]
 
