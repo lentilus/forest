@@ -37,7 +37,9 @@ vim.lsp.config['zeta'] = {
       (call item: (ident) @include (#eq? @include "link") (group (string) @target))
       (call item: (ident) @embed (#eq? @embed "embed") (group (string) @target) )
       (call item: (ident) @local (#eq? @local "local") (group (string) @target) )
-      (heading (text) @title)
+      (call item: (ident) @ident (#eq? @ident "title") (_) @flashcard)
+      (call item: (ident) @ident (#eq? @ident "title") (_) @title)
+      (heading (text) @title) ;; deprecated
     ]],
     select_regex = '^"(.*)"$',
     default_extension = ".typst",
