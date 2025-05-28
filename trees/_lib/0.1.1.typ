@@ -27,11 +27,11 @@
 #let local(slug, text) = context if target() == "html" {
   kodama.local(slug, text)
 } else {
-  [[#text](#slug)]
+  [[#text]]
 }
 
 #let title(it) = context if target() == "html" {
-  kodama.meta("title", _to-string(it)) // hotfix cause math is broken
+  kodama.meta("title", _to-string(it))
 } else {
   heading(it)
 }

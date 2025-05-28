@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Index]
-#title[Zahlentheorie - Number Theory]
+#title[Zahlentheorie - Number $y^2$ Theory $x^2$]
 
 - #local("000C")[Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,9}]
 - #local("000D")[] // "Primzahlen p>9 haben einen Quadratischen-Rest-Zwilling in {1,...,10}"

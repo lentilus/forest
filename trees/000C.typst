@@ -7,6 +7,8 @@
 Sei $p > 5$ prim und $Q$ die Menge quadratischer Reste in ${1, ..., p-1}$.
 $S := sum_(q in Q)$.
 
+// BACK
+
 Es gilt $p | S$. #proof[
   Sei $p > 5$ prim. Setze $N := {1, ..., p-1} \\ Q(p)$.
   Es gilt
