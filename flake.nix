@@ -33,6 +33,17 @@
 
         cargoHash = "sha256-Z9euToAmOwGo8YpnRDybtuzY3e6oM+gKhYCrY+mq0z8=";
       };
+
+      ankiexport = pkgs.stdenv.mkDerivation {
+        name = "genanki";
+        propagatedBuildInputs = [
+          (pkgs.python3.withPackages (pythonPackages: with pythonPackages; [
+            genanki
+          ]))
+        ];
+        dontUnpack = true;
+        installPhase = "install -Dm755 ${./genanki.py} $out/bin/ankiexport";
+      };
       
       build = pkgs.writeShellScriptBin "build" ''
         root=''${TYPST_ROOT:-.}
@@ -97,6 +108,7 @@
         publish
         increment
         watch
+        ankiexport
       ];
 
       shellHook = ''

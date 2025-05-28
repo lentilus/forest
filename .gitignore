@@ -2,3 +2,4 @@
 .typst-cache
 trees/.cache
 *.pdf
+*.apkg
