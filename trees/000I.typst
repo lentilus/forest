@@ -1,13 +1,18 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#title[ZFC: Zermelo-Fraenkel Set Theory + Choice]
+#title[ZFC: Zermelo-Fraenkel Set Theory with Choice]
 
-ZFC is a pure Set theory meaning that every object is a set.
+ZFC is a pure set theory meaning that every object is a set. It uses the same #local("000J")[logical axiom scheme] and inference scheme as #local("0000")[PA] -
+but the resulting axioms are different.
 
-ZFC uses the same #local("000J")[logical axiom scheme] as #local("0000")[PA] -
-but it results in different axioms.
-And it uses the same inference schme as #local("0000")[PA].
-
-... This NOTE is not finished!
-
+The *Zermelo-Fraenkel axioms* are (TODO: write them out).
++ Extensionality
++ Pairing
++ Union
++ Power set
++ Infinity
++ Foundation
++ Choice
++ Separation scheme
++ Replacement schme

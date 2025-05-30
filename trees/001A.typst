@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[First order logic vs second order logic]
+
+Second order logic is able to condense axiom schemes into single axioms by quantifying over things like predicates that are inaccessible to first order axioms.

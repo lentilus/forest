@@ -8,6 +8,12 @@
 
 #embed("000I")[] // ZFC
 
+#embed("001D")[] // [Consitent]
+
+#embed("001G")[] // [Independend]
+
+#embed("001K")[] // [We cannot prove consistency results about ZFC in PA]
+
 - #local("0002")[] // Formal Theory without context
 - #local("0003")[] // Definition formal theory
 - #local("000H")[] // Definition Relativized quantification

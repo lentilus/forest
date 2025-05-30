@@ -3,7 +3,9 @@
 
 #title[PA: Peano Arithmetic]
 
- _Infinitely many axioms can be built by replacing $phi, psi, theta$ with formulas in the language of PA._
+_Peano arithmetic_ is a #local("001H")[formal axiomatic system].
+ _Infinitely many #local("001E")[axioms] can be built by replacing $phi, psi, theta$ with formulas in the language of PA._
+In PA a theorem is a formula that is either an #local("001E")[axiom] or can be derived from finitely many axioms with finitely many rules of inference.
 
 #embed("000J")[Logical Axiom Schemes]
 

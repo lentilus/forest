@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[PA can reason about ZFC]
+
+A proof in #local("000I")[ZFC] ist just a finite string of symbols.
+By encoding strings as #local("001J")[natural numbers]
+statements about proofs can be translated to statements about natural numbers
+and thus reasoned about within #local("0000")[PA].

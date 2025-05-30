@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Independend]
+A #local("001F")[Statement] is independend of a family of #local("001E")[axioms] if it can neither be proven nor disproven based on these axioms.

@@ -17,3 +17,8 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("0001")[Set Theory]
 - #local("0005")[Number Theory]
 - #local("000E")[Complex Analysis]
+- #local("001C")[Machine Learning]
+
+#context if target() == "html" {
+  html.frame(image("_assets/thumbnail.svg", width: 410pt))
+}
