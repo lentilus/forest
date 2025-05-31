@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Dialogische Logik]
+
+Spielregeln entscheiden, ob (im Dialog) eine Aussage von dem Proponenten $P$ gegen den Opponenten $O$ gewonnen wird.
+Eine Aussage ist dann formal wahr, wenn es eine Strategie gibt sie im Dialog stehts zu gewinnen.
+
+TODO
