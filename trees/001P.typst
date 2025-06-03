@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Die Dirichlet-Faltung besitzt ein neutrales Element]
+
+Das das neutrale Element bezueglich der #local("0016")[Dirichlet-Faltung] ist
+$eta(n) := cases(
+    1 &.. n = 1,
+    0 &.. "sonst"
+  )$.
+
+#proof[
+  Sei $f$ eine #local("0014")[arithmetische Funktion]. Dann ist
+  $
+    f ** eta (n) = sum _(d|n) f(n) * eta(n/d) = f(n)
+  $
+]

@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Jede natuerliche Zahl hat eine gerade Anzahl quadratfreier Teiler.]
+
+Jede natuerliche Zahl hat eine gerade Anzahl #local("001X")[quadratfreier] #local("001V")[Teiler].
+
+#proof[
+  TODO: Primfaktorzerlegung, keine exponenten groesser 1, 2^n Moeglichkeiten.
+]

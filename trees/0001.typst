@@ -17,3 +17,5 @@
 - #local("0002")[] // Formal Theory without context
 - #local("0003")[] // Definition formal theory
 - #local("000H")[] // Definition Relativized quantification
+- #local("0017")[]
+- #local("001U")[]

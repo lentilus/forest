@@ -8,6 +8,6 @@ ZFC+ is obtained from #local("000I")[ZFC] by taking
 - symbols from ZFC, and a new symbol $Mm$
 - formulas of ZFC with one unquantified variable replaced by $Mm$
 - Equality axioms and logical axiom schemes of ZFC
-- non-logical axoim of ZFC
+- non-logical axioms of ZFC
 - $Mm$ is countable and transitive
 - $phi_(i)|_Mm$ with $phi_(i)$ any non-logical axiom of ZFC.

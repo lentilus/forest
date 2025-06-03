@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Faltungen multiplikativer Funktionen sind multiplikativ]
+
+#proof[
+  Seien $f,g$ #local("0015")[multiplikativ]. Seien $n, m in NN$ #local("001N")[teilerfremd] . Es gilt
+  $
+    f ** g (n m) = 
+    sum_(d|n m ) f(d) * g( (n m) / d) =_"Teilerfremd" 
+    sum _(d_n|n) sum_(d_m|m) f (d_(n) * d_(m)  ) g((n m ) / (d_n d_m )  ) =\
+    = sum _(d_(n)|n)  f(d_n ) g ((n) / (d_n ) ) * sum _(d_(m)|m)  f(d_m ) g ((m) / (d_m ) ) = f**g (n) * f ** g (m).
+  $
+]

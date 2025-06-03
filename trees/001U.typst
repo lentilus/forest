@@ -1,0 +1,26 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Forcing notions]
+
+TODO
+
+We want to show that zfc+ch and zfc+not-ch are consistent if zfc is consistent?
+
+Definitions
+- compatible
+- extension
+- forcing notion (non-empty set?)
+- dense
+- (generic) ideal
+  - downward stability
+  - directedness
+  - generic if dense
+
+  
+
+
+being an ordinal is an absolute property.
+being a cardinal is *not* an absolute property.
+

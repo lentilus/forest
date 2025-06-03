@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Moebius-Funktion]
+
+Die Moebius-Funktion $mu$ ist die #local("0014")[arithmetische Funktion] gegeben durch
+$
+  mu (n) := 
+  cases(
+    1 &.. n=1,
+    (-1)^(r) &.. n = p_(1) dots.h p_(r) "mit pw veschiedenen Primzahlen",
+    0 &.. "sonst".
+  )
+$

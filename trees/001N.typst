@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Teilerfremd]
+
+Zwei #local("001J")[natuerliche Zahlen] heissen teilerfremd, wenn ihr #local("0010")[groesster gemeinsamer Teiler] 1 ist.
