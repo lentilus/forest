@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[$RR^(2)\\QQ^(2)$ is Pathconnected]
+
+TODO

@@ -1,0 +1,20 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[$sum_(d|n) mu(d) f(d) = product _(p|n) (1 - f(p))$]
+
+$
+  sum_(d|n) mu(d) f(d) = product _(p|n) (1 - f(p))
+$
+#proof[
+Wir bemerken, dass nur #local("001X")[quadratfreie] Teiler $d'$ die Summe beeinflussen.
+$
+  sum_(d|n) mu(d) f(d) &= sum_(d'|n) mu(d') f(d')\
+  &= sum_(d'|n) underbrace(mu(d'), +- 1) * f(p_1) dots.c f(p_(r) ) .. .. "mit" p_(i) "Primfaktoren" \
+  &= 1 - f(p_2) - f(p_(1)) + f(p_1)f(p_2) + dots.c + dots.c \
+  &= (1-f(p_(1))) (1-f(p_(2))) dots.c (1-f(p_r)) \
+  &= product _(p|n) (1 - f(p))
+$
+]
+

@@ -1,0 +1,27 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#set math.equation(numbering: "(1)")
+#set text(lang: "de")
+
+#taxon[Theorem]
+#title[Arithmetische Funktionen, die $k$ $k$-te Faltungswurzeln haben]
+
+Sei $f$ eine #local("0014")[arithmetische Funktion] mit $f(1) != 0$.
+
+$f$ hat genau $k$ #local("0022")[$k$-te Faltungswurzeln].
+
+#proof[
+  Es gilt die Identitaet
+  $
+    g^(**k)(n) =  sum_(d|n) g^(**k-1)(d) g(n/d) = sum_(d_1|n) dots.c sum _(d_(k-1)|d_(k-2)) g(d_(k-1)) * g(d_(k-2)/d_(k-1)) dots.c d(n/d_1).
+  $ <eq>
+
+  Also ist $g^(**k)(1) = f(1)$ genau dann wenn $g(1)^(k) = f(1)$. Dieses #local("0027")[Polynom] vom Grad $k$ hat genau $k$ Loesungen in $CC$.
+  Angenommen fuer alle $n < N$ ist $g(n)$ bereits gegeben Dann ergeben sich die moeglichen $g(N)$ als Loesungen von _ @eq _ (mit $n=N$).
+  in der Summe taucht $g(N)$ dann in genau $k$ Summanden auf, naemlich an den Stellen, wo ein $d_(i) = 1$ und die restlichen $d_(j) = N$. Die Gleichung ist dann von der Form $
+  f(N) = k * g(1)^(k-1)g(N) + c(N-1),
+  $
+  wobei $c(N-1)$ ein konstanter Term ist, der nur von $N-1$ abhaengt. Das Polynom von Grad 1 in der Variable $g(N)$, hat dann genau eine Loesung.
+  Induktiv gibt es fuer $g^(**k) = f$ also genau $k$ Loesungen.
+]

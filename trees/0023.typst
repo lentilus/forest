@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Komplex Conjugiert]
+
+Das komplex konjugierte zu einer #local("0024")[komplexen Zahl] $z = x + y i$
+ist definiert als $macron(z) :=  x- i y$

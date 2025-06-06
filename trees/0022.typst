@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[k-te Faltungswurzel]
+
+eine #local("0014")[arithmetische Funktion] $g$ mit der Eigenschaft
+$
+  g^(**k) := underbrace(g ** dots.c ** g, "k-mal") = f
+$
+nennen wir k-te Faltungswurzel von $f$. Es gilt
+$
+    g^(**k)(n) =  sum_(d|n) g^(**k-1)(d) g(n/d) = sum_(d_1|n) dots.c sum _(d_(k-1)|d_(k-2)) g(d_(k-1)) * g(d_(k-2)/d_(k-1)) dots.c d(n/d_1).
+$

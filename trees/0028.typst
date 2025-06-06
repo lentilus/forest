@@ -1,0 +1,35 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#set math.equation(numbering: "(1)")
+#set text(lang: "de")
+
+#taxon[Theorem]
+#title[Multiplikative arithmetische Funktionen $f$ mit $f(1) != 0$ haben genau eine multiplikative k-te Faltungswurzel]
+
+Sei $f$ eine #local("0015")[multiplikative arithmetische Funktion].
+$f$ hat genau eine #local("0015")[multiplikative] #local("0022")[k-te Faltungswurzel].
+
+#proof[
+  Falls $f(1)=0$, dann ist $f=0$, also trivial.
+  Sonst ist $f(1)=1$.
+  Angenommen $g$ ist eine multiplikative #local("0022")[k-te Faltungswurzel],
+  dann ist $g(1)=1$,
+  also ist $g$ nach #local("0025")[Ueberlegungen aus dem ersten Teil] eindeutig.
+
+ Angenommen $g(1)=1$, aber $g$ ist nicht #local("0015")[multiplikativ] . Dann
+ $
+  EE n,m in NN "minimal" "s.d." (n;m)=1, .. g(n m) != g(n)g(m).
+ $
+
+ Betrachte nun
+ $
+  f(n m) - f(n) f(m) &= 0
+ $ <eq>
+ Wir koennen _ @eq _ in der Summen-Darstellung aus dem ersten Teil schreiben.
+ Fuer Zahlen kleiner als $n$ koennen wir Multiplikativitaet benutzen _und erhalten nach einer langen Rechnung, die ich dem Leser erspare_, dass
+ $
+  g(n)g(m) = g(n m)
+ $
+ Das ist ein Widerspruch zur Annahme, dass $g$ nicht #local("0015")[multiplikativ] ist.
+]
