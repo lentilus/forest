@@ -6,6 +6,6 @@
 
 Seien $f,g$ #local("0014")[arithmetische Funktionen]. Wir nennen
 $
-  f ** g (n) := sum_(d | n) f(d)  g(n/d)
+  f ** g (n) := sum_(d|n) f(d)  g(n/d)
 $
 die Dirichlet-Faltung von $f$ und $g$.

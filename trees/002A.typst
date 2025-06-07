@@ -1,0 +1,47 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Integer solutions for $a x^2 + b y^2 + c z^2 = 0$, where $|a b c|$ square free]
+
+Seien $a,b,c in ZZ$ und $|a b c|$ quadratfrei.
+#set math.equation(numbering: "(1)")
+$
+  a x^2 + b y^2 + c z^2 = 0
+$ <eq>
+#set math.equation(numbering: none)
+
++ Alle Loesungen mit $x y z = 0$ sind von der Form $a = +-1, b = -a$ und $c$ beliebig quadratfrei.
+  #proof[
+    Es muessen $a,b,c$ ungleich $0$ sein, sonst waere ihr Produkt nicht quadratfrei. Sei oBdA $z=0$. Dann koennen wir @eq schreiben als
+    $
+      a x^2 + b y^2 = 0.
+    $
+    Aus der Quadratfreiheit von $a,b$ folgt direkt, dass $(a;b) = 1$.
+    Aus
+    $
+      a x^2 = - b y^2
+    $
+    folgt $a | y^2$ und wegen $a$ quadratfrei $a | y$. Schreibe $y = a y_1 $. Analog $b | x$ und $x = b x_1$
+    Wir erhalten mit
+    $
+      a (b x_1)^(2) + b (a y_1)^(2) = 0 <==> a x_1^(2) + b y_2^(2) = 0
+    $
+    eine strikt kleinere Loesung. Ist $a$ oder $b$ betragsweise groesser 1, haetten wir eine unendlich absteigende Folge. Also ist $|a| = |b| = 1$
+    Aus $a = -b$ folgt dann
+    $
+      a = +-1, b = -a.
+    $
+    $c$ kann dann beliebig quadratfrei gewaehlt werden.
+  ]
++ Fuer alle moeglichen Parametrisieungen von @eq in a) gibt es eine Loesung mit $x',y',z'$ alle von $0$ verschieden.
+  #proof[
+    Sei OBdA $a = 1$, $c > 0$ dann ist $b = -1$. Setze $x'=1$. Dann erhalten wir
+    $
+      a x'^2 + b y'^2 + c z'^2 = 0 <==>_"einsetzen"
+      1 - y'^2 + c z'^2 = 0 <==> 
+      y'^2 - c z'^2 = 1.
+    $
+    Da $c$ quadratfrei (s.o.) ist, gibt es fuer die Pellsche Gleichung unendlich viele nicht-triviale Loesungen.
+
+  ]

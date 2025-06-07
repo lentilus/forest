@@ -1,11 +1,14 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Zahlentheorie Blatt 07]
+#taxon[Index]
+#title[Eigenschaften arithmetischer Funktionen]
 
-#embed("0025")[Aufgabe 2.1]
-
-#embed("0028")[Aufgabe 2.2]
-
-#embed("0029")[Aufgabe 3]
+#embed("0014")[]
+#embed("0015")[]
+#embed("0016")[]
+#embed("001O")[]
+#embed("001R")[]
+#embed("0025")[]
+#embed("0028")[]
+#embed("0029")[]

@@ -1,7 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Theorem]
 #title[Die Moebiusfunktion ist bzgl Dirichlet-Faltungen invers zur Eins]
 Die #local("001O")[Moebius-Funktion] ist bzgl #local("0016")[Dirichlet-Faltung]  invers zur Eins.
 
