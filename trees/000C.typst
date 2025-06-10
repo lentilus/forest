@@ -1,15 +1,13 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[Definition]
-#title[Primzahlen p>5 teilen die Summe quadratischer Reste in {1,...,p-1}]
+#taxon[Theorem]
+#title[Primzahlen $p>5$ teilen die Summe quadratischer Reste in ${1,...,p-1}$]
 
 Sei $p > 5$ prim und $Q$ die Menge quadratischer Reste in ${1, ..., p-1}$.
-$S := sum_(q in Q)$.
-
+$S := sum_(q in Q) q$. Es gilt $p | S$.
 // BACK
-
-Es gilt $p | S$. #proof[
+#proof[
   Sei $p > 5$ prim. Setze $N := {1, ..., p-1} \\ Q(p)$.
   Es gilt
   $ x^2 equiv_(p)  y^2 <==> (x - y) (x + y) equiv_(p)  0 <==>  x equiv_(p)  y or x equiv_(p)  - y $.

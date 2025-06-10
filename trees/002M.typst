@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[directed Graph]
+
+Ein gerichteter Graph $G$ besteht aus zwei endlichen Mengen $V(G)$, den Ecken und $E(G)$, den Kanten. Jede Kante hat eine Anfangsecke (_source_) $s(e)$ und eine Endecke (_target_) $t(e)$.
+Das heisst jede Kante is ein geordnetes Paar $(v,w)$, wobei $v != w$.

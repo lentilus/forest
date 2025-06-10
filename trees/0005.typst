@@ -4,9 +4,18 @@
 #taxon[Index]
 #title[Zahlentheorie - Number Theory]
 
-- #local("000C")[]
-- #local("000D")[]
-- #local("000W")[]
-- #local("000Z")[]
-- #local("0011")[]
-- #local("0026")[]
+#embed("002S")[]
+#embed("002T")[]
+#embed("002U")[]
+#embed("002V")[]
+#embed("002W")[]
+#embed("0006")[]
+#embed("002X")[]
+#embed("0013")[]
+#embed("0026")[]
+#embed("002Y")[]
+#embed("002Z")[]
+
+
+
+

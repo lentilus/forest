@@ -21,17 +21,17 @@
 #let embed(slug, text) = context if target() == "html" {
   kodama.embed(slug, text, numbering: true, open: true)
 } else {
-  [![#text](#slug)]
+  [![#text](#slug)\ ]
 }
 
 #let local(slug, text) = context if target() == "html" {
   kodama.local(slug, text)
 } else {
-  [[#text]]
+  underline(text)
 }
 
 #let title(it) = context if target() == "html" {
-  kodama.meta("title", _to-string(it))
+  kodama.meta("title", it)
 } else {
   heading(it)
 }
@@ -49,7 +49,7 @@
 // Number Theory
 #let legendre(a,b) = $(#a/#b)$
 #let jacobi(a,b) = legendre(a,b)
-#let gcd(a,b) = ($(#a ";" #b)$)
+#let gcd(..args) = ($"gcd"(#args.pos().join(","))$)
 
 #let template(doc) = {
   show: scribe

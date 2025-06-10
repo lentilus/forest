@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[benachbarte Ecken in einem Graphen]
+
+Zwei #local("002L")[Ecken] $v,w in V(G)$ sind benachbart (_adjacent_), gesschrieben $v ~ w$, wenn ${v,w} in E(G)$.
+
+_In einem #local("002M")[gerichteten Graphen] $v ~ w <==> (v,w) in E(G)$ oder $(w,v) in E(G)$._

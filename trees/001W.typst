@@ -6,6 +6,7 @@
 
 Jede natuerliche Zahl hat eine gerade Anzahl #local("001X")[quadratfreier] #local("001V")[Teiler].
 
+// BACK
 #proof[
   TODO: Primfaktorzerlegung, keine exponenten groesser 1, 2^n Moeglichkeiten.
 ]

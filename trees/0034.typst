@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Primzahl]
+
+Eine #local("001J")[natuerliche Zahl] $p$ heisst _Primzahl_ wenn sie genau zwei #local("001V")[Teiler] hat. Also
+$
+  d(p) = 2.
+$

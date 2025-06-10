@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Pellsche Gleichung]
+
+Eine Gleichung der Form
+
+$
+  x^2 -D y^2 = 1,
+$
+
+mit gegebenem $D$ nennen wir _Pellsche Gleichung_.

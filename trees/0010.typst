@@ -2,4 +2,13 @@
 #show: template
 
 #taxon[Definition]
-#title[ggT: groesster gemeinsamer Teiler.]
+#title[Groesster gemeinsamer Teiler.]
+
+Seien $a$,$b$ ganze Zahlen.
+Sind $a,b$ nicht beide $0$,
+dann ist die Menge der gemeinsamen #local("001V")[Teiler] $Dd(a,b) := Dd(a) nn Dd(b)$ endlich und nicht leer.
+Wir nennen
+$
+  gcd(a,b) := max Dd(a,b)
+$
+dann den _groessten gemeinsamen Teiler_ von $a$ und $b$.

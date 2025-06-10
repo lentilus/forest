@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Ideal of a Forcing Notion]
+
+An _ideal_ of a #local("002F")[forcing notion] $P$ is a subset $G sub P$ satisfiying
+
++ $q in G$ and $q sup p in P$ then $p in G$ (_downward stability_)
++ $p_1, p_2 in G$ then there exists $q in G$ with $p_1, p_2 sub q$ (_directedness_)

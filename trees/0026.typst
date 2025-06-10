@@ -2,13 +2,10 @@
 #show: template
 
 #taxon[Index]
-#title[Eigenschaften arithmetischer Funktionen]
+#title[Arithmetische Funktionen]
 
 #embed("0014")[]
 #embed("0015")[]
 #embed("0016")[]
 #embed("001O")[]
 #embed("001R")[]
-#embed("0025")[]
-#embed("0028")[]
-#embed("0029")[]

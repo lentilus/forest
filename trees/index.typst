@@ -18,6 +18,7 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("0005")[Number Theory]
 - #local("000E")[Complex Analysis]
 - #local("001C")[Machine Learning]
+- #local("002K")[Graph Theory]
 
 #context if target() == "html" {
   html.frame(image("_assets/thumbnail.svg", width: 410pt))

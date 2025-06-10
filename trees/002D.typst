@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Dense Subset]
+
+A subset $D sub P$ is _dense_ if every $p in P$ has an #local("002B")[extension] in $D$.
+
+It is _dense above_ $p$ if every #local("002B")[extension] of $p$  has an extension in $D$.

@@ -5,9 +5,10 @@
 #taxon[Theorem]
 #title[$x^2 -p y^2 = -1$ has integer solutions iff $p -=_(4)  1$]
 
-Sei $p > 2$ prim.
-$x^2 -p y^2 = -1$ hat ganzzahlige Loesungen genau dann wenn $p -=_(4)  1$
+Sei $p > 2$ #local("0034")[prim].
+Die #local("0030")[Pellsche Gleichung] $x^2 -p y^2 = -1$ hat ganzzahlige Loesungen genau dann wenn $p -=_(4)  1$
 
+// // BACK
 #proof[
   _($==>$)_
   Seien $x,y in ZZ$ eine Loesung von $x^2 -p y^2 = -1$.

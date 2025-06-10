@@ -5,6 +5,7 @@
 #title[$Q(x,y,z)=x^2+x y + y^2 + y z$ ist rational aequivalent zu $Q'(a,b,c) = 3a^2 + 4b^2 - 4c^2$.]
 
 $Q(x,y,z)=x^2+x y + y^2 + y z$ ist rational aequivalent zu $Q'(a,b,c) = 3a^2 + 4b^2 - 4c^2$.
+// BACK
 #proof[
   Definiere
   $

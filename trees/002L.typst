@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Graph]
+
+Ein Graph $G$ besteht aus zwei endlichen Mengen $V(G)$, den Ecken und $E(G)$, den Kanten. Jede Kante hat die Form
+$
+  e = { v,w } .. .. "mit" v,w in V(G), .. v != w.
+$

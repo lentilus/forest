@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Multigraph]
+
+Einen Graphen der auch Schlingen (_loops_) enthalten darf nennen wir Multipgraph. Also Kanten, die eine Ecke mit sich slebst verbinden und ausserdem Mehrfachkanten (_multiple edges_) d.h. mehrere Kanten zwischen denselben Ecken.
+Die Kanten werden als Abbildung
+$
+  V: E(G) -> vec(V(G), 2), e |-> V(e)
+$ aufgefasst, wobei $vec(V(G), 2)$ die Menge aller zwei-Elementigen Teilmengen von $V(G)$ ist.
+
+Analog laesst sich ein #local("002M")[gerichteter Graph] Multigraph definieren.

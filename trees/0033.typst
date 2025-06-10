@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Riemannsche Zetafunktion]
+
+Die Riemannsche Zetafunktion ist definiert als
+$
+  zeta(s) := sum_(n=1)^(oo) n^(-s).
+$
+Man kann $zeta$ auch als die #local("0032")[Dirichlet-Reihe] $zeta(s) = D(bb(1), s)$ schreiben.

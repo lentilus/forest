@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Unabhaengige Ecken / Kanten]
+
+Eine Teilmenge von $V(G)$ oder $E(G)$ heisst unabhaengig, wenn sie keine zwei #local("002P")[benachbarten Elemente] enthaelt.

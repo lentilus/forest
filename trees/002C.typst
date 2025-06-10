@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Compatible Elements]
+
+Two elements $p, q in P$ are compatible if they have a common #local("002B")[extension] in $P$

@@ -4,7 +4,7 @@
 #taxon[Theorem]
 #title[Integer solutions for $a x^2 + b y^2 + c z^2 = 0$, where $|a b c|$ square free]
 
-Seien $a,b,c in ZZ$ und $|a b c|$ quadratfrei.
+Seien $a,b,c in ZZ$ und $|a b c|$ #local("001X")[quadratfrei].
 #set math.equation(numbering: "(1)")
 $
   a x^2 + b y^2 + c z^2 = 0
@@ -17,7 +17,7 @@ $ <eq>
     $
       a x^2 + b y^2 = 0.
     $
-    Aus der Quadratfreiheit von $a,b$ folgt direkt, dass $(a;b) = 1$.
+    Aus der Quadratfreiheit von $a,b$ folgt direkt, dass $gcd(a,b) = 1$.
     Aus
     $
       a x^2 = - b y^2
@@ -42,6 +42,6 @@ $ <eq>
       1 - y'^2 + c z'^2 = 0 <==> 
       y'^2 - c z'^2 = 1.
     $
-    Da $c$ quadratfrei (s.o.) ist, gibt es fuer die Pellsche Gleichung unendlich viele nicht-triviale Loesungen.
+    Da $c$ quadratfrei (s.o.) ist, gibt es fuer die #local("0030")[Pellsche Gleichung]  unendlich viele nicht-triviale Loesungen.
 
   ]

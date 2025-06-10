@@ -13,7 +13,10 @@ $ <eq>
 
 
 #set math.equation(numbering: none)
-@eq ist nicht erfuellbar in $ZZ^2$ und $QQ^2$. #proof[
+@eq ist nicht erfuellbar in $ZZ^2$ und $QQ^2$.
+
+// BACK
+#proof[
   Angenommen @eq ist in $ZZ^2$ erfuellbar, dann ist
   $
     199x^2 -19y^2 -=_(19)  9x^2 -=_(19)  13 "erfuellbar".

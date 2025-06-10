@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[benachbarte Kanten in einem Graphen]
+
+Zwei Kanten eines #local("002L")[Graphen] sind benachbart, wenn sie eine Ecke gemeinsam haben. _Eine Kante ist nicht zu sich selbst benachbart_.
+

@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Generic Ideal of a Forcing Notion]
+
+An #local("002F")[ideal] of a #local("001U")[forcing notion] for $bold(M)$ is generic relative to $bold(M)$
+if it intersects every #local("002D")[dense subset] $D sub P$ that lies in $bold(M)$.
+

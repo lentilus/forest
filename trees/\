@@ -1,0 +1,26 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Set Theory]
+
+#embed("0000")[]
+#embed("000I")[]
+#embed("001D")[]
+#embed("001G")[]
+#embed("001K")[]
+#embed("002I")[]
+#embed("002J")[]
+#embed("000H")[]
+#embed("0017")[]
+#embed("001U")[]
+#embed("002C")[]
+#embed("002B")[]
+#embed("002H")[]
+
+
+
+- #local("0002")[] // Formal Theory without context
+- #local("0003")[] // Definition formal theory
+- #local("001U")[]
+

@@ -10,10 +10,11 @@
 Sei $f$ eine #local("0015")[multiplikative arithmetische Funktion].
 $f$ hat genau eine #local("0015")[multiplikative] #local("0022")[k-te Faltungswurzel].
 
+// BACK
 #proof[
   Falls $f(1)=0$, dann ist $f=0$, also trivial.
   Sonst ist $f(1)=1$.
-  Angenommen $g$ ist eine multiplikative #local("0022")[k-te Faltungswurzel],
+  Angenommen $g$ ist eine #local("0015")[multiplikative] #local("0022")[k-te Faltungswurzel],
   dann ist $g(1)=1$,
   also ist $g$ nach #local("0025")[Ueberlegungen aus dem ersten Teil] eindeutig.
 

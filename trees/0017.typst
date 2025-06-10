@@ -1,12 +1,13 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
+#taxon[Definition]
 #title[ZFC+]
-
 
 ZFC+ is obtained from #local("000I")[ZFC] by taking
 - symbols from ZFC, and a new symbol $Mm$
 - formulas of ZFC with one unquantified variable replaced by $Mm$
+and the following axioms
 - Equality axioms and logical axiom schemes of ZFC
 - non-logical axioms of ZFC
 - $Mm$ is countable and transitive

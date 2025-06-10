@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Extension of an Element]
+
+Let $P$ be a set. If $p,q in P$  and $p sub q$ then $q$ is an extension of $p$.

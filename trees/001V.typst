@@ -4,4 +4,10 @@
 #taxon[Definition]
 #title[Teiler]
 
-TODO
+Sei $n$ eine ganze Zahl. Eine #local("001J")[natuerliche Zahl] $d$ heisst Teiler von $n$, falls
+$
+  exists k in ZZ " " d k =  n.
+$
+Wir schreiben dann $d|n$ (_d teilt n_).
+Wir bezeichnen die Menge aller Teiler mit $Dd(n) := {d in NN : d|n}.$
+Wir schreiben $d(n)$ fuer die Anzahl der Teiler.

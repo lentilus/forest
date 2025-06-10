@@ -11,6 +11,7 @@ Sei $f$ eine #local("0014")[arithmetische Funktion] mit $f(1) != 0$.
 
 $f$ hat genau $k$ #local("0022")[$k$-te Faltungswurzeln].
 
+// BACK
 #proof[
   Es gilt die Identitaet
   $

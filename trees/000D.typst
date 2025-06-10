@@ -1,6 +1,8 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
+#let lg(a) = $(#a/p)$
+
 #taxon[Theorem]
 #title[Primzahlen $p>9$ haben einen Quadratischen-Rest-Zwilling in ${1,...,10}$]
 
@@ -8,7 +10,7 @@ Sei $p > 9$ prim.
 Es existiert ein $a in {1,...,9}$, 
 sodass $a, a+1$ quadratische Reste modulo $p$ sind.
 
-#let lg(a) = $(#a/p)$
+// BACK
 #proof[
   $1,4,9$ sind immer quadratische Reste $mod p$. Angenommen
   $

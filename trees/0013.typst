@@ -1,10 +1,10 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Index]
 #title[Pellsche Gleichung]
 
-Gleichungen der Form
-$
-  x^2 -D y^2 = 1.
-$
+#embed("0030")[]
+
+Mithilfe der Theorie zu Pellschen Gleichungen erhalten wir eine vollstaendige Uebersicht ueber die Loesungen der ganzzahligen Loesungen der binaeren Quadratischen Gleichung.
+#embed("0011")[]

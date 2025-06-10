@@ -10,6 +10,7 @@ $eta(n) := cases(
     0 &.. "sonst"
   )$.
 
+// BACK
 #proof[
   Sei $f$ eine #local("0014")[arithmetische Funktion]. Dann ist
   $

@@ -1,7 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Forcing notions]
+#taxon[Definition]
+#title[Forcing Notion]
 
-TODO
+A _forcing notion_ for a set $bold(M)$ is a any non-empty set $P in bold(M)$.

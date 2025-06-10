@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Teilbarkeit]
+
+#embed("001V")[]
+#embed("0034")[]
+#embed("0010")[]
+#embed("000Y")[]
+#embed("001N")[]
+

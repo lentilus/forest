@@ -1,7 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Theorem]
 #title[We cannot prove absolute consistency results about ZFC in PA]
 
 TODO

@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Graphentheorie]
+
+#embed("002L")[]
+#embed("002M")[]
+#embed("002N")[]
+#embed("002O")[]
+#embed("002P")[]
+#embed("002R")[]
+
