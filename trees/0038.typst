@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[]
+Seien $a, b$ #local("001J")[natuerliche Zahlen]. Es gibt #local("0035")[ganze Zahlen] $x,y$ sodass der #local("0010")[groesster gemeinsamer Teiler]  $gcd(a,b) = a x + b y$.
+
+#proof[
+ #local("000Y")[Euklidischer Algorithmus].
+]

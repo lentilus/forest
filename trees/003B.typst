@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Das Arithmetische Mittel Arithmetischer Funktionen]
+Sei $f$ #local("0014")[arithmetisch]. Die durch 
+$
+  F(N) = 1/N sum_(n <= N) f(n) 
+$
+gegebene Funktion heisst das _arithmetische Mittel_ von $f$. 

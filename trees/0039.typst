@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[Title]
+Seien $a,b,c in NN$ mit #local("0010")[$gcd(a,b)=1$ und $a|b c$]. Dann gilt #local("001V")[$a|c$].
+
+#proof[
+Aus #local("0038")[diesem Lemma] folgt, dass wir #local("0035")[ganze Zahlen]  $x,y$ mit $ 1 = a x + b y$ finden. Wir erhalten
+$
+  c = c a x + c b y.
+$
+Es gilt $a|a c x$ und $a|c b y$ also $a|c$.
+]

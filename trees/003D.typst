@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Landau $O$ Notation]
+
+Seien $F: M ->  CC, g: M ->  [0,oo)$ zwei beliebige Funktionen. Wenn eine Konstante $C$ existiert, sodass
+$
+  AA m in M : |f(m)| <=  C g(m),
+$ dann schreiben wir $f = O(g)$.
