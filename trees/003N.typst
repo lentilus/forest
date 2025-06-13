@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[Title]
+
+Zwei #local("003M")[ganzzahlig aequivalente] #local("003I")[binaere quadratische Formen] $<<a,b,c>>$ und $<<A,B,C>>$ haben die selbe #local("003H")[Diskriminante] und $gcd(a,b,c) = gcd(A,B,C)$.
+
+#proof[
+  TODO
+]

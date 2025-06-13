@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Modulgruppe]
+
+$
+  Gamma := {gamma in ZZ^(2 xx 2) | det (gamma) = 1 }.
+$

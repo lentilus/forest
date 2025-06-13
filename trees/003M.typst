@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Ganzzahlig aequivalente binaere Quadratische Formen]
+
+Zwei #local("003I")[binaere quadratische Formen] $f,g$ heissen _ganzzahlig aequivalent_, wenn es eine Koordinatentransformation $gamma$ in der #local("003J")[Modulgruppe] gibt, sodass
+$
+  f = g @ gamma.
+$

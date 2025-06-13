@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Reduzierte Binaere Quadratische Form]
+
+Eine #local("003I")[binaere quadratische Form] nennen wir _reduziert_, wenn gilt
+$
+  abs(b) <= abs(a) <= abs(c).
+$

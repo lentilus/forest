@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Notation]
+
+Wir notieren binaere quadratische Formen der Form
+$
+  f(x,y) = a x^(2)  + b x y + c y^(2) 
+$
+mit $<<a,b,c>>$.

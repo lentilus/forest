@@ -1,0 +1,36 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Binaere quadratische Formen]
+
+#embed("003G")[]
+#embed("003H")[Diskriminante]
+
+Ist die #local("003H")[Diskriminante] $D_(f) $ein Quadrat, koennen wir mit der Methodik aus XX bereits alle ganzen Loesungen von $f$ bestimmen. Sei also im folgenden $D$ kein Quadrat.
+
+#embed("003J")[]
+
+Die #local("003J")[Modulgruppe] $Gamma$ bildet unter Matrixmultiplikation eine #local("003K")[Gruppe].
+
+#embed("003M")[]
+
+Fassen wir $Gamma$ als Koordinatentransformation auf erhalten wir fuer
+$
+  f = <<a,b,c>> "und" gamma = mat(p, q; r,s) in Gamma,
+$
+dass
+
+$
+  f(p x + q y, r x + s y) = a ( p x + q y )^(2)  + b (p x + q y) (r x + s y) + c (r x + s y)^(2).
+$
+
+Also ist $f @ gamma = << A, B, C >>$ mit
+$
+  A = f(p,r), .. C = f(q,s), .. B = 2 a p q + 2 c r s +  b(p s + q r).
+$
+
+#embed("003L")[]
+#embed("003N")[]
+#embed("003O")[]
+#embed("003P")[]

@@ -5,3 +5,5 @@
 #title[Consistent]
 
 A  #local("001F")[statement] is consitent with a familily of #local("001E")[axioms] if it cannot be disproven based on these axioms.
+
+

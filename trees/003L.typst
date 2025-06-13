@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[primitive binaere quadratische Formen]
+
+#local("003I")[Binaere quadratische Formen] der #local("003G")[Form] $<<a,b,c>>$ heissen _primitiv_, wenn $gcd(a,b,c) = 1$

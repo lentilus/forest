@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Diskriminante einer quadratischen Form]
+
+Zu einer #local("003F")[binaere quadratische Formen] definieren wir die _Diskrimante_ als
+$
+  D_(f) := b^(2)  - 4 a c.
+$
