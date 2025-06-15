@@ -1,0 +1,25 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[Title]
+
+Sei $D$ eine #local("003H")[Diskriminante] und kein Quadrat,
+$Pp(D)$ nach #local("003V")[Definition]
+und $QQ[sqrt(D)]$ nach #local("003U")[Definition].
+
+Wir definieren
+$
+  Phi : Pp(D) ->  QQ ( sqrt(D)), .. (t,u) |-> 1/2 (t + u sqrt(D))
+$
+
+Das Bild von $Phi$ ist eine Gruppe unter der Multiplikation in #local("003U")[$QQ[sqrt(D)]$].
+
+#proof[
+  TODO
+
+  (Inversenbildung) Sei $(t,u) in Pp(D)$. Dann ist auch $(t,-u) in Pp(D)$. 
+
+  (Multiplikation)
+
+]

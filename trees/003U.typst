@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+// #title[$QQ[sqrt(D)]$ - $QQ$ adjungiert $sqrt(D)$]
+
+Fuer eine gegebene #local("003H")[Diskriminante] $D$ notieren wir
+$
+  QQ [sqrt(D)] := { x + y sqrt(D): x,y in QQ}
+$

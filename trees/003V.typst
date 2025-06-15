@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+
+Fuer eine gegebene #local("003H")[Diskriminante] $D$ notieren wir
+$
+  Pp(D) =  {(t,u) in ZZ^2 : t^2 - D u^2  = 4}
+$
+fuer die Loesungngsmenge der verallgemeinerten #local("0030")[Pellschen Gleichung].
