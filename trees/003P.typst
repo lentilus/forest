@@ -4,3 +4,5 @@
 #taxon[Definition]
 #title[Klassenzahl]
 
+Wir notieren die Anzahl der #local("003L")[primitiven] #local("003M")[Aequivalenzklassen] von 
+#local("003I")[Formen] mit #local("003H")[Diskriminante] $D$ mit $h(D)$. Wir nennen $h(D)$ die _Klassenzahl_ von $D$.

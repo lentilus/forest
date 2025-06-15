@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Automorphismen]
+
+Wir moechten im folgenden die Loesungen einer binaeren quadratischen Form $f$ in Beziehung zu den Loesungen einer Pellschen Gleichung setzen. 
+
+Dafuer untersuchen wir Koordinatentransformationen $gamma in Gamma$,
+die fuer eine gegebene #local("003I")[binaere quadratische Form] $f$
+$
+  f @ gamma = f
+$ erfuellen.
+
+#embed("003R")[]
+#embed("003S")[]
+
+

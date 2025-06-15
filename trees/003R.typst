@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Automorphismengruppe]
+
+Die Menge der Automorphismen einer #local("003I")[quadratischen Form] $f$ nennen wir
+$
+  "Aut"(f) =  {gamma in Gamma : f @ g = f}.
+$

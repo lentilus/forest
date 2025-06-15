@@ -4,22 +4,26 @@
 #taxon[Index]
 #title[Mittelwerte Arithmetischer Funktionen]
 
-Die Werteverteilungen #local("0014")[arithmetischer Funktionen] sind interessant, da sie Einblicke in Primfaktorzerlegung und Primzahlverteilung gewaeren.
-Interessante arithmetische Funktionen verhalten sich haeufig chaotisch.
+Die Werteverteilungen #local("0014")[arithmetischer Funktionen] sind interessant,
+da sie Einblicke in Primfaktorzerlegung und Primzahlverteilung gewaeren.
+
+Arithmetische Funktionen verhalten sich allerdings teils chaotisch.
 So nimmt z.B. die #local("001V")[Teileranzahl] fuer #local("0034")[Primzahlen] stehts $d(p) = 2$,
 und fuer andere Zahlen sehr grosse Werte
 $d(n) = d(p_1 p_2 dots.c p_t) = 2^(t)$ an.
 Die Funktion ist also nicht beschraenkt.
+
 Untersuchungen auf einen Grenzwert sind dann hoffnungslos.
+Wir definieren deshalb das _arithmetische Mittel_.
+#embed("003B")[Arithmetisches Mittel]
 
-#embed("003B")[]
+Sei beispielsweise $f(n) = (-1)^(n)$, dann konvergiert $F(N)$ gegen $0$, auch wenn $f$ keinen Grenzwert hat.
 
-Sei beispielsweise $f(n) = (-1)^(n)$, dann konvergiert $F(N)$ gegen $0$.
 Wir koennen also unter Umstaenden nach einem Grenzwert von $F$ fragen, auch wenn $f$ nicht konvergiert.
 Konvergiert $f$ bereits, dann sind die Grenzwerte die selben.
 
 #proof[
   TODO
 ]
-#embed("003C")[]
+#embed("003C")[$$]
 #embed("003D")[]

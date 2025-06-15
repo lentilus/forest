@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+
+Die #local("003R")[Automorphismengruppe] ist eine #local("003T")[Untergruppe] der #local("003J")[Modulgruppe].

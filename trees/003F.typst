@@ -13,7 +13,7 @@ Ist die #local("003H")[Diskriminante] $D_(f) $ein Quadrat, koennen wir mit der M
 
 Die #local("003J")[Modulgruppe] $Gamma$ bildet unter Matrixmultiplikation eine #local("003K")[Gruppe].
 
-#embed("003M")[]
+#embed("003M")[Ganzzahlig aequivalent]
 
 Fassen wir $Gamma$ als Koordinatentransformation auf erhalten wir fuer
 $
@@ -30,7 +30,8 @@ $
   A = f(p,r), .. C = f(q,s), .. B = 2 a p q + 2 c r s +  b(p s + q r).
 $
 
-#embed("003L")[]
+#embed("003L")[Primitiv]
 #embed("003N")[]
-#embed("003O")[]
+#embed("003O")[Reduziert]
 #embed("003P")[]
+
