@@ -3,7 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     zeta = {
-      url = "github:lentilus/zeta/filetypes";
+      url = "github:lentilus/zeta";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     scribe = {

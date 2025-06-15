@@ -34,12 +34,10 @@ vim.lsp.config['zeta'] = {
   root_markers = { 'index.typst' },
   init_options = {
     query = [[
-      (call item: (ident) @include (#eq? @include "link") (group (string) @target))
       (call item: (ident) @embed (#eq? @embed "embed") (group (string) @target) )
       (call item: (ident) @local (#eq? @local "local") (group (string) @target) )
-      (call item: (ident) @ident (#eq? @ident "title") (_) @flashcard)
       (call item: (ident) @ident (#eq? @ident "title") (_) @title)
-      (heading (text) @title) ;; deprecated
+      (call item: (ident) @ident (#eq? @ident "taxon") (_) @taxon)
     ]],
     select_regex = '^"(.*)"$',
     default_extension = ".typst",
@@ -73,7 +71,7 @@ function insert_workspace_symbol_link()
         local id = vim.fn.fnamemodify(path, ':.')
         id = vim.fn.fnamemodify(id, ':r')
 
-        local link = string.format("#local(\"%s\")[%s]", id, name)
+        local link = string.format("#local(\"%s\")", id)
 
         -- get cursor, then inject text
         local row, col = unpack(vim.api.nvim_win_get_cursor(0))
