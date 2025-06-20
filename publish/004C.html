@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>aequivalente Loesungen einer binaeren Quadratischen Gleichung</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Defintion"><details open><summary id="004C"><header><h1><span class="taxon">Defintion. </span>aequivalente Loesungen einer binaeren Quadratischen Gleichung <a class="slug" href="/004C.html">[004C]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>Fuer eine gegebene <span class="link local"><a href="/003I.html" title="Binaere quadratische Form [003I]">bineare quadratische Form</a></span> <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 6.38 7.513000000000001" width="6.38pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g59D02650B577F02310912203ECE8C5F" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g59D02650B577F02310912203ECE8C5F" overflow="visible">
+            <path d="M 6.072 6.963 C 6.072 7.447 5.599 7.755 5.082 7.755 C 4.4 7.755 3.927 7.315 3.674 6.446 C 3.619 6.248 3.498 5.687 3.322 4.763 L 2.6069999 4.763 C 2.365 4.763 2.244 4.752 2.244 4.521 C 2.244 4.4 2.354 4.345 2.585 4.345 L 3.245 4.345 L 2.442 0.088 C 2.321 -0.539 2.211 -1.001 2.112 -1.309 C 1.98 -1.716 1.793 -1.925 1.551 -1.925 C 1.386 -1.925 1.254 -1.881 1.133 -1.804 C 1.485 -1.749 1.661 -1.54 1.661 -1.188 C 1.661 -0.902 1.518 -0.759 1.221 -0.759 C 0.847 -0.759 0.583 -1.089 0.583 -1.4629999 C 0.583 -1.947 1.034 -2.2549999 1.551 -2.2549999 C 1.826 -2.2549999 2.079 -2.145 2.288 -1.914 C 2.6399999 -1.551 2.915 -1.034 3.113 -0.341 C 3.234 0.088 3.3439999 0.506 3.421 0.924 L 4.059 4.345 L 4.961 4.345 C 5.2139997 4.345 5.324 4.356 5.324 4.609 C 5.324 4.708 5.2139997 4.763 4.994 4.763 L 4.147 4.763 C 4.213 5.2139997 4.521 6.875 4.62 7.084 C 4.73 7.315 4.884 7.425 5.082 7.425 C 5.2469997 7.425 5.39 7.381 5.511 7.304 C 5.17 7.2269998 4.994 7.029 4.994 6.6879997 C 4.994 6.402 5.137 6.259 5.434 6.259 C 5.808 6.259 6.072 6.5889997 6.072 6.963 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> definieren wir fuer die Gleichung</p>
+  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 53.08844444444445 10.955999999999998" width="53.08844444444445pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g59D02650B577F02310912203ECE8C5F" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(6.38 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA07DCA7843013BD5F928C339BE4B0A10" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(10.659 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gFDC43A85D2916A881F4B3CE7E18EF9A4" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(16.951 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1AE458996AE830397F86ED426FFC2256" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(21.842333333333336 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g73A05AFD863E861508C32308D0278BC1" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(27.540333333333336 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g937D4A212D21091D3FA2D0C7B6242644" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(34.87488888888889 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gE728BB84FF42B5AE34971C357B078874" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(46.48844444444445 8.228)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gB4C48B79B115AF9A000576233830BB60" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g59D02650B577F02310912203ECE8C5F" overflow="visible">
+            <path d="M 6.072 6.963 C 6.072 7.447 5.599 7.755 5.082 7.755 C 4.4 7.755 3.927 7.315 3.674 6.446 C 3.619 6.248 3.498 5.687 3.322 4.763 L 2.6069999 4.763 C 2.365 4.763 2.244 4.752 2.244 4.521 C 2.244 4.4 2.354 4.345 2.585 4.345 L 3.245 4.345 L 2.442 0.088 C 2.321 -0.539 2.211 -1.001 2.112 -1.309 C 1.98 -1.716 1.793 -1.925 1.551 -1.925 C 1.386 -1.925 1.254 -1.881 1.133 -1.804 C 1.485 -1.749 1.661 -1.54 1.661 -1.188 C 1.661 -0.902 1.518 -0.759 1.221 -0.759 C 0.847 -0.759 0.583 -1.089 0.583 -1.4629999 C 0.583 -1.947 1.034 -2.2549999 1.551 -2.2549999 C 1.826 -2.2549999 2.079 -2.145 2.288 -1.914 C 2.6399999 -1.551 2.915 -1.034 3.113 -0.341 C 3.234 0.088 3.3439999 0.506 3.421 0.924 L 4.059 4.345 L 4.961 4.345 C 5.2139997 4.345 5.324 4.356 5.324 4.609 C 5.324 4.708 5.2139997 4.763 4.994 4.763 L 4.147 4.763 C 4.213 5.2139997 4.521 6.875 4.62 7.084 C 4.73 7.315 4.884 7.425 5.082 7.425 C 5.2469997 7.425 5.39 7.381 5.511 7.304 C 5.17 7.2269998 4.994 7.029 4.994 6.6879997 C 4.994 6.402 5.137 6.259 5.434 6.259 C 5.808 6.259 6.072 6.5889997 6.072 6.963 Z "/>
+        </symbol>
+        <symbol id="gA07DCA7843013BD5F928C339BE4B0A10" overflow="visible">
+            <path d="M 3.498 -2.728 C 3.597 -2.728 3.652 -2.673 3.652 -2.574 C 3.652 -2.541 3.6299999 -2.497 3.597 -2.453 C 3.025 -2.013 2.563 -1.287 2.222 -0.286 C 1.925 0.583 1.771 1.441 1.771 2.288 L 1.771 3.212 C 1.771 4.059 1.925 4.917 2.222 5.786 C 2.563 6.787 3.025 7.513 3.597 7.953 C 3.6299999 7.986 3.652 8.03 3.652 8.074 C 3.652 8.173 3.597 8.228 3.498 8.228 C 3.487 8.228 3.454 8.217 3.421 8.195 C 2.761 7.689 2.211 6.941 1.76 5.94 C 1.331 4.983 1.111 4.081 1.111 3.212 L 1.111 2.288 C 1.111 1.419 1.331 0.517 1.76 -0.44 C 2.211 -1.441 2.761 -2.189 3.421 -2.695 C 3.454 -2.717 3.487 -2.728 3.498 -2.728 Z "/>
+        </symbol>
+        <symbol id="gFDC43A85D2916A881F4B3CE7E18EF9A4" overflow="visible">
+            <path d="M 5.797 4.103 C 5.797 4.609 5.302 4.862 4.752 4.862 C 4.279 4.862 3.905 4.609 3.619 4.103 C 3.388 4.609 3.003 4.862 2.442 4.862 C 1.903 4.862 1.4629999 4.609 1.111 4.114 C 0.814 3.685 0.65999997 3.366 0.65999997 3.157 C 0.65999997 3.058 0.715 3.003 0.825 3.003 C 0.924 3.003 0.99 3.058 1.012 3.157 C 1.221 3.795 1.683 4.5429997 2.42 4.5429997 C 2.783 4.5429997 2.9589999 4.312 2.9589999 3.861 C 2.9589999 3.6299999 2.761 2.772 2.376 1.298 C 2.189 0.561 1.859 0.198 1.386 0.198 C 1.232 0.198 1.089 0.231 0.968 0.286 C 1.254 0.396 1.397 0.594 1.397 0.88 C 1.397 1.166 1.254 1.309 0.957 1.309 C 0.594 1.309 0.319 1.001 0.319 0.638 C 0.319 0.132 0.83599997 -0.121 1.375 -0.121 C 1.837 -0.121 2.211 0.132 2.508 0.638 C 2.717 0.132 3.113 -0.121 3.685 -0.121 C 4.213 -0.121 4.653 0.132 5.005 0.627 C 5.302 1.056 5.456 1.375 5.456 1.584 C 5.456 1.683 5.401 1.738 5.291 1.738 C 5.192 1.738 5.137 1.683 5.104 1.584 C 4.917 0.957 4.422 0.198 3.707 0.198 C 3.3439999 0.198 3.157 0.41799998 3.157 0.869 C 3.157 1.012 3.212 1.3199999 3.333 1.8149999 L 3.707 3.3 C 3.916 4.125 4.257 4.5429997 4.741 4.5429997 C 4.895 4.5429997 5.038 4.5099998 5.159 4.455 C 4.862 4.356 4.719 4.158 4.719 3.861 C 4.719 3.575 4.873 3.432 5.17 3.432 C 5.522 3.432 5.797 3.751 5.797 4.103 Z "/>
+        </symbol>
+        <symbol id="g1AE458996AE830397F86ED426FFC2256" overflow="visible">
+            <path d="M 1.529 1.166 C 1.177 1.166 0.946 0.902 0.946 0.55 C 0.946 0.22 1.199 -0.055 1.529 -0.055 C 1.683 -0.055 1.8149999 -0.011 1.914 0.088 L 1.925 0 C 1.925 -0.693 1.694 -1.287 1.232 -1.76 C 1.155 -1.848 1.111 -1.914 1.111 -1.958 C 1.111 -2.068 1.155 -2.123 1.254 -2.123 C 1.353 -2.123 1.485 -1.9909999 1.6719999 -1.738 C 2.046 -1.21 2.233 -0.627 2.233 0 C 2.233 0.583 2.035 1.166 1.529 1.166 Z "/>
+        </symbol>
+        <symbol id="g73A05AFD863E861508C32308D0278BC1" overflow="visible">
+            <path d="M 1.793 4.862 C 1.298 4.862 0.913 4.587 0.638 4.037 C 0.429 3.608 0.319 3.3109999 0.319 3.146 C 0.319 3.047 0.374 2.992 0.495 2.992 C 0.649 2.992 0.65999997 3.058 0.704 3.223 C 0.957 4.092 1.309 4.532 1.76 4.532 C 1.903 4.532 1.98 4.433 1.98 4.235 C 1.98 4.059 1.925 3.806 1.804 3.487 C 1.386 2.354 1.177 1.595 1.177 1.188 C 1.177 0.352 1.694 -0.143 2.541 -0.143 C 2.904 -0.143 3.245 -0.011 3.553 0.253 C 3.168 -1.199 2.563 -1.925 1.738 -1.925 C 1.364 -1.925 1.111 -1.804 0.979 -1.562 C 1.419 -1.54 1.6389999 -1.331 1.6389999 -0.935 C 1.6389999 -0.65999997 1.496 -0.517 1.199 -0.517 C 0.792 -0.517 0.55 -0.858 0.55 -1.265 C 0.55 -1.87 1.1 -2.2549999 1.738 -2.2549999 C 3.003 -2.2549999 4.037 -1.089 4.312 -0.011 L 5.346 4.147 C 5.379 4.268 5.39 4.356 5.39 4.411 C 5.39 4.631 5.269 4.741 5.038 4.741 C 4.862 4.741 4.719 4.653 4.62 4.488 C 4.554 4.257 4.499 4.059 4.466 3.894 L 3.762 1.067 C 3.652 0.671 3.069 0.176 2.574 0.176 C 2.156 0.176 1.947 0.451 1.947 1.012 C 1.947 1.474 2.134 2.178 2.497 3.124 C 2.6399999 3.509 2.717 3.773 2.717 3.927 C 2.717 4.466 2.332 4.862 1.793 4.862 Z "/>
+        </symbol>
+        <symbol id="g937D4A212D21091D3FA2D0C7B6242644" overflow="visible">
+            <path d="M 0.858 -2.695 C 1.518 -2.189 2.068 -1.441 2.519 -0.44 C 2.948 0.517 3.168 1.419 3.168 2.288 L 3.168 3.212 C 3.168 4.081 2.948 4.983 2.519 5.94 C 2.068 6.941 1.518 7.689 0.858 8.195 C 0.825 8.217 0.792 8.228 0.781 8.228 C 0.682 8.228 0.627 8.173 0.627 8.074 C 0.627 8.03 0.649 7.986 0.682 7.953 C 1.254 7.513 1.716 6.787 2.057 5.786 C 2.354 4.917 2.508 4.059 2.508 3.212 L 2.508 2.288 C 2.508 1.441 2.354 0.583 2.057 -0.286 C 1.716 -1.287 1.254 -2.013 0.682 -2.453 C 0.649 -2.497 0.627 -2.541 0.627 -2.574 C 0.627 -2.673 0.682 -2.728 0.781 -2.728 C 0.792 -2.728 0.825 -2.717 0.858 -2.695 Z "/>
+        </symbol>
+        <symbol id="gE728BB84FF42B5AE34971C357B078874" overflow="visible">
+            <path d="M 7.678 4.037 L 0.88 4.037 C 0.704 4.037 0.616 3.949 0.616 3.784 C 0.616 3.619 0.704 3.531 0.88 3.531 L 7.678 3.531 C 7.854 3.531 7.942 3.619 7.942 3.784 C 7.942 3.916 7.821 4.037 7.678 4.037 Z M 7.678 1.969 L 0.88 1.969 C 0.704 1.969 0.616 1.881 0.616 1.716 C 0.616 1.551 0.704 1.4629999 0.88 1.4629999 L 7.678 1.4629999 C 7.854 1.4629999 7.942 1.551 7.942 1.716 C 7.942 1.859 7.821 1.969 7.678 1.969 Z "/>
+        </symbol>
+        <symbol id="gB4C48B79B115AF9A000576233830BB60" overflow="visible">
+            <path d="M 5.907 1.507 C 5.654 0.638 5.291 0.198 4.84 0.198 C 4.697 0.198 4.62 0.308 4.62 0.517 C 4.62 0.671 4.686 0.924 4.818 1.265 C 5.258 2.464 5.478 3.256 5.478 3.6629999 C 5.478 4.433 4.961 4.862 4.191 4.862 C 3.542 4.862 2.981 4.576 2.53 3.993 C 2.442 4.4769998 2.057 4.862 1.496 4.862 C 0.88 4.862 0.638 4.29 0.484 3.795 C 0.374 3.443 0.319 3.234 0.319 3.157 C 0.319 3.058 0.374 3.003 0.495 3.003 C 0.55 3.003 0.583 3.014 0.616 3.036 C 0.671 3.135 0.704 3.212 0.715 3.289 C 0.913 4.125 1.166 4.5429997 1.4629999 4.5429997 C 1.661 4.5429997 1.76 4.389 1.76 4.081 C 1.76 3.938 1.705 3.641 1.584 3.19 L 0.957 0.693 C 0.924 0.55 0.858 0.264 0.858 0.20899999 C 0.858 -0.011 0.979 -0.121 1.221 -0.121 C 1.43 -0.121 1.584 -0.011 1.661 0.20899999 C 1.683 0.264 1.749 0.539 1.87 1.012 L 2.101 1.9909999 L 2.431 3.245 C 2.552 3.498 2.739 3.751 2.97 4.015 C 3.289 4.367 3.685 4.5429997 4.158 4.5429997 C 4.521 4.5429997 4.697 4.301 4.697 3.828 C 4.697 3.41 4.466 2.574 3.993 1.3199999 C 3.916 1.122 3.883 0.957 3.883 0.814 C 3.883 0.275 4.29 -0.121 4.818 -0.121 C 5.302 -0.121 5.687 0.154 5.962 0.704 C 6.171 1.144 6.281 1.441 6.281 1.584 C 6.281 1.683 6.226 1.738 6.105 1.738 C 6.072 1.738 5.907 1.6389999 5.907 1.507 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</figure>
+  <p>zwei Loesungen aequivalent, wenn TODO</p>
+</details></section><footer></footer></article>
+
+</div></body></html>
