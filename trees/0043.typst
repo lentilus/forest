@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Reell differenzierbare komplexwertige Funktion]
+
+Eine Funktion $f: U ->  CC$ heisst in $z_0 in U$ _reell differenzbar_,
+wenn es eine in $z_0$ stetige Funktion $Delta$, $E: U -> CC$, sodass
+$
+  f(z) =  f(z_0) + (z - z_0) * Delta(z) + (overline(z) - overline(z)_(0) ) E(z).
+$

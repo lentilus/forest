@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idee]
+#title[Aehnlichkeitsprinzip (Moral)]
+
+Eine zentrale Eigenschaft vieler Moralprinzipien besteht darin, dass mit steigender wahrgenommener Aehnlichkeit zu einem anderen Individuum auch die daraus abgeleiteten moralischen Regeln für dieses Individuum aehnlicher werden.

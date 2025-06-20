@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Auf $U$ holomorphe Funktionen bilden einen Ring]
+
+Die Menge der Funktionen, die auf einer offenenen Mengen $Uu$ #local("000V")[holomorph] sind, bilden einen #local("003Y")[Ring]. Wir bezeichnen ihn mit $Oo(U)$
+
+#proof[
+  Seien $f$, $g$ in $z_0$ #local("000T")[komplex differenzierbar]. Dann sind $f + g$ und $f * g$ ebenfalls in $z_0$ #local("000T")[komplex differenzierbar].
+
+  Ist $f(z_0) != 0$, dann ist auch $1/f$ in $z_0$ differenzierbar. Die einzelnen Beweise verlaufen symbolisch, wie in $RR$.
+]

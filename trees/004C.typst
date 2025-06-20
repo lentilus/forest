@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[aequivalente Loesungen einer binaeren Quadratischen Gleichung]
+
+Fuer eine gegebene #local("003I")[bineare quadratische Form] $f$ definieren wir fuer die Gleichung
+$
+  f(x,y) = n
+$
+
+zwei Loesungen aequivalent, wenn TODO

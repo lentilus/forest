@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Cauchy-Riemannsche Differenzialgleichungen]
+
+$
+  (del f) / (del overline(z)) = 0.
+$
+
+Siehe auch der #local("0044")[Cauchy-Riemann-Operator].

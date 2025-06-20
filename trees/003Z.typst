@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Biholomorph]
+
+Wir nennen eine Abildung $f: U ->  V$ zwischen offenen Teilmengen von $CC$ _biholomorph_, wenn sie #local("0040")[bijektiv], #local("000V")[holomorph]  ist und $f^(-1)$ #local("000V")[holomorph] ist.

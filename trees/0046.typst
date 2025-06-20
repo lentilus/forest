@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[Title]
+
+Eine Funktion $f: U -> CC$ ist in $z_0$ genau dann #local("000T")[komplex differenzierbar],
+wenn sie in $z_0 $ #local("0043")[reell differenzierbar] ist und 
+$
+  (del f) / (del overline(z)) (z_0 ) =  0
+$
+erfuellt.

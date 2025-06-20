@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Operator der Cauchy-Riemannschen Differenzialgleichungen]
+
+Der #local("0045")[Differenzialoperator]
+$
+  (del) / (del overline(z)) = 1/2 (del/ (del x) + i (del) / (del y)  )
+$
+
+heisst _Operator der Cauchy-Riemannschen Differenzialgleichungen_.

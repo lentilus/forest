@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Offene Abbildung]
+
+Eine Abbildung $f$ heisst _offen_,
+wenn die Bilder #local("0042")[offener Mengen] unter $f$ #local("0042")[offen] sind.

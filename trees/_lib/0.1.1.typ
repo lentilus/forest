@@ -21,7 +21,7 @@
 #let embed(slug, text) = context if target() == "html" {
   kodama.embed(slug, text, numbering: true, open: true)
 } else {
-  [![#text](#slug)\ ]
+  include "/" + slug + ".typst"
 }
 
 #let local(slug, text) = context if target() == "html" {

@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Harmonische Funktion]
+
+Eine Funktion $f$ heist _harmonisch_ falls $f$
+$
+  Delta f = 0
+$
+erfuellt. Wobei $Delta$ den #local("0047")[Laplace Operator] bezeichnet.

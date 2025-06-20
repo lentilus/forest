@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Forcing]
+
+If $bold(M)[G] tack.r.double phi ( tau_1^(G), ... , tau_(n)^(G)) $ for any generic ideal $G$ containing p, we say $p$ _forces_ $phi ( tau_(1)^(G), ... , tau_(n)^(G))$
+
+We write
+$
+  p forces phi ( tau_(1)^(G), ... , tau_(n)^(G)).
+$

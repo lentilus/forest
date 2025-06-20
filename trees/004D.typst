@@ -1,0 +1,25 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Anteil quadratfreier Zahlen]
+
+$
+  lim_(N -> oo) 1/N sum_(n <= N) mu(n)^(2)  =  1/zeta(2) = 6/pi^2.
+$
+Das bedeutet, der Anteil #local("001X")[quadratfreier Zahlen] geht gegen $6/pi^2$.
+
+#proof[
+  $
+    &lim_(N -> oo) 1/N sum_(n <= N) mu(n)^(2)
+    = lim_(N -> oo) 1/N sum_(n <= N) sum_(d^2|n) mu(d)
+    = lim_(N -> oo) sum_(d <= N) 1/N floor(N/d^2) mu(d)
+    = lim_(N -> oo) sum_(d <= sqrt(N)) 1/N floor(N/d^2) mu(d) =\
+
+    &= lim_(N -> oo) (sum_(d <= N) mu(d)/d^2) + underbrace(O(sqrt(N))/N, -> 0)
+    = 1/zeta(2) = 6/pi^2.
+  $
+]
+
+Siehe auch #local("001O")[Moebius-Funktion],#local("0033")[Zetafunktion] ,#local("002Z")[Mittelwerte arithmetischer Funktionen].
+
