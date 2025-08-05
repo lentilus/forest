@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+
+Sei $D$ eine natuerliche Zahl und kein Quadrat, dann bezeichnen wir die Menge
+${x,y in ZZ | x + y sqrt(D)}$ mit $ZZ[sqrt(D)]$, in Worten _$ZZ$ adjungiert
+$sqrt(D)$_.
+

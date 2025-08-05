@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Gruppenwirkung]
+
+Sei $G$ ein Gruppe, $X$ eine Menge. Eine Gruppenwirkung ist eine Abbildung
+$
+  G xx X ->  X, .. (g,x) |-> g dot.square x,
+$
+
+mit der Eigenschaft, dass fuer alle $g,h in G$ und $x in X$ gilt
++ $(g * h) dot.square x  = g dot.square ( h dot.square x ) $,
++ $1 dot.square x = x$, wobei $1 in G$ neutral.

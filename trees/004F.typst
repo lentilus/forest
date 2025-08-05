@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Darstellbar durch eine binaere quadratische Form]
+
+Eine natuerliche Zahl $n$ heisst bezueglich einer #local("003I")[binaeren quadratischen Form] _darstellbar_,
+wenn $f(x,y)=n$ eine Loesung in $ZZ^(2)$ hat.
+Gibt es eine loesung mit #local("001N")[teilerfremden] $x$ und $y$, heisst $n$ _primitiv darstellbar_.

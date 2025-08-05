@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Loesungen der Pellschen Gleichung als Einheiten]
+
+Wir koennen eine Loesung $(x,y)$ der #local("0030")[Pellschen Gleichung] mit
+dem Paar $xi overline(xi)$ identifizieren. In diesem Fall ist $overline(xi)$
+das Inverse von $xi$, denn $xi overline(xi)=1$. Aus dieser Perspektive
+entsprechen die Loesungen der #local("0030")[Pellschen Gleichung] genau den
+invertierbaren Elementen von $ZZ[sqrt(D)]$.

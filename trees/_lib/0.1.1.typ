@@ -2,6 +2,8 @@
 #import "@preview/scribe:0.2.0": *
 #import "kodama.typ"
 
+
+
 #let _to-string(it) = {
   if type(it) == str {
     it
@@ -18,10 +20,17 @@
   }
 }
 
+
+#let tree-level = state("tree-level", 1)
+#let taxon-value = state("taxon-value", "")
+
 #let embed(slug, text) = context if target() == "html" {
   kodama.embed(slug, text, numbering: true, open: true)
 } else {
+  context tree-level.update(x => x +1)
+  taxon-value.update("")
   include "/" + slug + ".typst"
+  context tree-level.update(x => x -1)
 }
 
 #let local(slug, text) = context if target() == "html" {
@@ -33,13 +42,14 @@
 #let title(it) = context if target() == "html" {
   kodama.meta("title", it)
 } else {
-  heading(it)
+  let full = taxon-value.get() + it
+  context heading(level: tree-level.get(), full)
 }
 
 #let taxon(it) = context if target() == "html" {
   kodama.meta("taxon", it)
 } else {
-  it
+  context taxon-value.update(it + ": ")
 }
 
 // Not working with html...
@@ -52,8 +62,11 @@
 #let gcd(..args) = ($"gcd"(#args.pos().join(","))$)
 
 #let template(doc) = {
+  set heading(numbering: "1.")
+
   show: scribe
   // show: thmrules
+  //
 
   context if target() == "html" {
     show: kodama.template

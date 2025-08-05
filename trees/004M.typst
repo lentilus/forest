@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Produkte von Loesungen der Pellschen Gleichung]
+
+Wir finden neue Loesungen durch Multiplizieren bereits gefundener Loesungen.
+Seien $xi$ und $nu$ in $ZZ[sqrt(D)]$ invertierbar, dann ist auch $xi nu$
+invertierbar mit $xi eta (xi eta)' = xi eta (xi' eta') = xi xi' eta eta'=1$.
+Also entspricht auch $xi eta$ einer Loesung.

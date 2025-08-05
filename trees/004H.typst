@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Diophantische Gleichung]
+
+Gleichungen die ueber der Menge der #local("0035")[ganzen Zahlen] zu loesen sind
+nennen wir _diophantische Gleichungen_.

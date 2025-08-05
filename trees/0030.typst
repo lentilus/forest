@@ -4,10 +4,6 @@
 #taxon[Definition]
 #title[Pellsche Gleichung]
 
-Eine Gleichung der Form
-
-$
-  x^2 -D y^2 = 1,
-$
-
-mit gegebenem $D$ nennen wir _Pellsche Gleichung_.
+Fuer eine #local("001Z")[natuerliche Zahl] D bezeichnen wir eine 
+#local("004H")[diophantische Gleichungen] der Form $x^2 -D y^2 = 1$
+als _Pellsche Gleichung_.

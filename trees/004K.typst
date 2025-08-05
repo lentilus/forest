@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Konjugiertes Element]
+
+Fuer ein Element $xi = x + y sqrt(D)$ aus $ZZ[sqrt(D)]$ definieren wir das zu
+$xi$ konjugierte Element als $overline(xi) := x - y sqrt(D)$.

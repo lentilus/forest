@@ -3,6 +3,7 @@
 
 #taxon[Theorem]
 #title[$sum_(d|n) mu(d) f(d) = product _(p|n) (1 - f(p))$]
+Sei $mu$ die #local("001O")[Moebius-Funktion].
 
 $
   sum_(d|n) mu(d) f(d) = prod_(p|n) (1 - f(p))

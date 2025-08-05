@@ -4,7 +4,10 @@
 #taxon[Definition]
 #title[Automorphismengruppe]
 
-Die Menge der Automorphismen einer #local("003I")[quadratischen Form] $f$ nennen wir
+Fuer eine gegebene #local("003I")[quadratischen Form] $f$
+ist die Menge der Automorphismen in der #local("003J")[Modulgruppe] $Gamma$ gegeben durch
 $
   "Aut"(f) =  {gamma in Gamma : f @ g = f}.
 $
+Wir nennen diese Gruppe _Automorphismengruppe_.
+
