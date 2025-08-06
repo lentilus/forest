@@ -4,16 +4,15 @@
 #taxon[Index]
 #title[Pellsche Gleichungen]
 
+Die hier dargelegte Theorie zu Pellschen Gleichungen hilft uns alle
+ganzzahligen Loesungen binaerer quadratischer Formen anzugeben.
+
 #embed("0030")[]
 
-Wir bemerken, dass $(x,y) in ZZ$ ist genau dann eine Loesung, der Gleichung ist,
-wenn $( x + y sqrt(D))(x - y sqrt(D))=1$ erfuellt ist.
-Wir untersuchen jetzt
+#embed("004N")[]
 
-
-// TODO: Triviale Loesungen
-
-// TODO: falls D ein quadrat
+Ungeklaert sind also nur noch die Faelle in denen $D$ positiv und kein Quadrat
+ist.
 
 #embed("004J")[]
 
@@ -23,9 +22,6 @@ Wir untersuchen jetzt
 
 #embed("004M")[]
 
-// TODO: minimale Loesung
+#embed("004O")[]
 
-// TODO: Loesungen sind genau Potenzen der Grundloesung
-
-// Mithilfe der Theorie zu Pellschen Gleichungen erhalten wir eine vollstaendige Uebersicht ueber die Loesungen der ganzzahligen Loesungen der binaeren Quadratischen Gleichung.
-// #embed("0011")[Ganzzahlige Loesungen]
+#embed("004P")[]

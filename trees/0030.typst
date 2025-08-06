@@ -4,6 +4,6 @@
 #taxon[Definition]
 #title[Pellsche Gleichung]
 
-Fuer eine #local("001Z")[natuerliche Zahl] D bezeichnen wir eine 
+Fuer eine #local("0035")[ganze Zahl] $D$ bezeichnen wir eine 
 #local("004H")[diophantische Gleichungen] der Form $x^2 -D y^2 = 1$
 als _Pellsche Gleichung_.

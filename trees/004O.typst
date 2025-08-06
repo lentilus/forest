@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Grundloesung der Pellschen Gleichung]
+
+Das Minimum von ${xi in ZZ[sqrt(D)] | xi > 1, xi overline(xi) = 1}$ ist
+wohldefiniert. Wir nennen es _Grundloesung_ der
+#local("0030")[pellschen Gleichung] und bezeichnen es mit $epsilon_(D)$.
+
+#proof[
+  TODO
+]

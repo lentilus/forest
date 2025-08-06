@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Loesungen der pellschen Gleichung]
+
+Sei $D in NN$ und kein Quadrat, dann sind die Loesungen der
+#local("0030")[pellschen Gleichung] genau die Potenzen der
+#local("004O")[Grundloesung] $+- epsilon_(D)^(k), k in NN$.
+
+#proof[
+  TODO
+]
