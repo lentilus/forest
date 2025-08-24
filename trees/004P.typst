@@ -4,9 +4,10 @@
 #taxon[Theorem]
 #title[Loesungen der pellschen Gleichung]
 
-Sei $D in NN$ und kein Quadrat, dann sind die Loesungen der
-#local("0030")[pellschen Gleichung] genau die Potenzen der
-#local("004O")[Grundloesung] $+- epsilon_(D)^(k), k in NN$.
+Sei $D in NN$ be non-square. Then the solutions of the
+#local("0030")[Pell equation] are exactly
+$+- epsilon_(D)^(k), k in NN$. where $epsilon_(D)$ is the
+#local("004O")[fundamental Solution].
 
 #proof[
   TODO

@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Division with Remainder]
+
+For every $a,b in ZZ$ where $b != 0$ there exists a unique pair of numbers
+$r in NN_(0)$ and $q in ZZ$ such that $a = q b + r$ and $0 <= r < |b|$.
+
+#proof[
+  The set ${a - q b | q in ZZ} nn NN_(0)$ is not empty, thus contains a minimal
+  element $r$. This gives us existence. Now to uniqueness: Let there be two pairs
+  that fullfill our requirements. We now have $a = q_1 b + r_1 = q_2 b + r_2$.
+  This gives us $b ( q_1 - q_2 ) = r_2 - r_1$, but $|r_2 - r_1| < |b|$, which
+  is only possible with $q_1 = q_2$. This forces $r_1 = r_2$ as well.
+]
+
+

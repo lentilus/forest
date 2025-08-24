@@ -2,13 +2,11 @@
 #show: template
 
 #taxon[Definition]
-#title[Groesster gemeinsamer Teiler.]
+#title[Greatest common Divisor]
 
-Seien $a$,$b$ ganze Zahlen.
-Sind $a,b$ nicht beide $0$,
-dann ist die Menge der gemeinsamen #local("001V")[Teiler] $Dd(a,b) := Dd(a) nn Dd(b)$ endlich und nicht leer.
-Wir nennen
-$
-  gcd(a,b) := max Dd(a,b)
-$
-dann den _groessten gemeinsamen Teiler_ von $a$ und $b$.
+Let $a,b$ be integers.
+If $a$ and $b$ are not both $0$, then the set of common #local("001V")[divisors]
+$Dd(a,b):=Dd(a) nn Dd(b)$
+is finite and nonempty.
+We then define the _greatest common divisor_ as $max Dd(a,b)$ and denote it by
+$gcd(a,b)$.

@@ -3,7 +3,6 @@
 
 #taxon[Definition]
 
-Sei $D$ eine natuerliche Zahl und kein Quadrat, dann bezeichnen wir die Menge
-${x,y in ZZ | x + y sqrt(D)}$ mit $ZZ[sqrt(D)]$, in Worten _$ZZ$ adjungiert
-$sqrt(D)$_.
-
+Let $D$ be a natural number and not a square. We denote the set
+${x,y in ZZ | x + y sqrt(D)}$ by $ZZ[sqrt(D)]$, read as
+_$ZZ$ adjoint with $sqrt(D)$_.

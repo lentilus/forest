@@ -2,7 +2,14 @@
 #show: template
 
 #taxon[Index]
-#title[Zahlentheorie - Number Theory]
+#title[Elementary Number Theory]
+
+These are my notes on the _Elementary Number Theory_ lecture by _Prof. Dr. Joerg Bruedern_
+from the summer semester 2025, Goettingen.
+
+#embed("004H")[]
+
+// #embed("004U")[]
 
 #embed("002S")[]
 #embed("002T")[]

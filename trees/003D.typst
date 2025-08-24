@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Landau $O$ Notation]
+#title[Landau O-Notation]
 
 Seien $F: M ->  CC, g: M ->  [0,oo)$ zwei beliebige Funktionen. Wenn eine Konstante $C$ existiert, sodass
 $

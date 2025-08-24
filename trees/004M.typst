@@ -2,9 +2,12 @@
 #show: template
 
 #taxon[Observation]
-#title[Produkte von Loesungen der Pellschen Gleichung]
+#title[Products of Solutions of the Pell Equation]
 
-Wir finden neue Loesungen durch Multiplizieren bereits gefundener Loesungen.
-Seien $xi$ und $nu$ in $ZZ[sqrt(D)]$ invertierbar, dann ist auch $xi nu$
-invertierbar mit $xi eta (xi eta)' = xi eta (xi' eta') = xi xi' eta eta'=1$.
-Also entspricht auch $xi eta$ einer Loesung.
+We obtain new solutions by multiplying solutions we have already found.
+
+#proof[
+Let $xi$ and $eta$ in $ZZ[sqrt(D)]$ be invertible; then $xi eta$ is also
+invertible since $(xi eta)(xi eta)' = xi eta xi' eta' = xi overline(xi)
+eta overline(eta) =1$. Therfore, $xi eta$ also corresponds to a solution.
+]

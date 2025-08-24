@@ -15,8 +15,12 @@ The source files for these notes are available on
 
 Below is a non-exhaustive list of entry points to various topics.
 - #local("0001")[Set Theory]
-- #local("0005")[Number Theory]
+- #local("0005")[Elementary Number Theory]
+- #local("004R")[HoTT (Homotopy Type Theory)]
+- #local("004S")[Writing a Theorem Prover]
 
 #context if target() == "html" {
   html.frame(image("_assets/thumbnail.svg", width: 410pt))
 }
+
+Hallo

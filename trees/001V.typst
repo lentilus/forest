@@ -2,12 +2,10 @@
 #show: template
 
 #taxon[Definition]
-#title[Teiler]
+#title[Divisor]
 
-Sei $n$ eine ganze Zahl. Eine #local("001J")[natuerliche Zahl] $d$ heisst Teiler von $n$, falls
-$
-  exists k in ZZ " " d k =  n.
-$
-Wir schreiben dann $d|n$ (_d teilt n_).
-Wir bezeichnen die Menge aller Teiler mit $Dd(n) := {d in NN : d|n}.$
-Wir schreiben $d(n)$ fuer die Anzahl der Teiler.
+Let $n$ be an integer. A #local("001J")[natural number] $d$ is called a
+_divisor_  of $n$ if there exists $k in ZZ$ such that $d k = n$
+We write $d | n$, say _$d$ divides $n$_.
+We denote the set of all divisors by $Dd(n) := {d in NN | d | n}$
+We write $d(n)$ for the number of divisors of $n$.

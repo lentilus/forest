@@ -2,11 +2,11 @@
 #show: template
 
 #taxon[Theorem]
-#title[Grundloesung der Pellschen Gleichung]
+#title[Fundamental Solution of the Pell Equation]
 
-Das Minimum von ${xi in ZZ[sqrt(D)] | xi > 1, xi overline(xi) = 1}$ ist
-wohldefiniert. Wir nennen es _Grundloesung_ der
-#local("0030")[pellschen Gleichung] und bezeichnen es mit $epsilon_(D)$.
+The minimum element of the set
+${xi in ZZ[sqrt(D)] | xi > 1, xi overline(xi) = 1}$ is well-defined.
+We call this element the _fundamental solution_ of the #local("0030")[Pell equation] and denote it by $epsilon_(D)$.
 
 #proof[
   TODO

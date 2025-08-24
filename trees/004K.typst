@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Konjugiertes Element]
+#title[Conjugate element]
 
-Fuer ein Element $xi = x + y sqrt(D)$ aus $ZZ[sqrt(D)]$ definieren wir das zu
-$xi$ konjugierte Element als $overline(xi) := x - y sqrt(D)$.
+For an element $xi = x + y sqrt(D)$ of $ZZ[sqrt(D)]$ we define its
+conjugate by $overline(xi) := x - y sqrt(D)$.

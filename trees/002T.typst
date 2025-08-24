@@ -2,6 +2,13 @@
 #show: template
 
 #taxon[Index]
-#title[Primzahlen]
+#title[Prime Numbers]
 
-TODO
+#embed("0034")[]
+= Euclidian Lemma
+= Definition Prime Factorization
+= Prime Factorization is unique
+= There are infinitely many primes
+= alternative way to solve pythagorean Triples
+
+

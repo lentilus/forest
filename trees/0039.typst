@@ -1,14 +1,12 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[Theorem]
+#taxon[Corollary]
 // #title[Title]
-Seien $a,b,c in NN$ mit #local("0010")[$gcd(a,b)=1$ und $a|b c$]. Dann gilt #local("001V")[$a|c$].
+Let $a,b,c in NN$ with the #local("0010")[gcd] of $a$ and $b$ equal to 1, and $a | b$. Then $a | c$.
 
 #proof[
-Aus #local("0038")[diesem Lemma] folgt, dass wir #local("0035")[ganze Zahlen]  $x,y$ mit $ 1 = a x + b y$ finden. Wir erhalten
-$
-  c = c a x + c b y.
-$
-Es gilt $a|a c x$ und $a|c b y$ also $a|c$.
+  From  #local("0038")[Bezout's Lemma] there exists integers $x,y$ with
+  $1 = a x + b y$. Multiply by $c$ to get $c = c a x + c b y$.
+  Since $a | a c x$ and $a | c b y$ by hypothesis, it follows that $a | c$.
 ]

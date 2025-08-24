@@ -1,4 +1,5 @@
-#import "@preview/ctheorems:1.1.3": *
+// #import "@preview/ctheorems:1.1.3": *
+#import "@preview/lovelace:0.3.0": *
 #import "@preview/scribe:0.2.0": *
 #import "kodama.typ"
 
@@ -52,9 +53,10 @@
   context taxon-value.update(it + ": ")
 }
 
-// Not working with html...
-// #let proof = thmproof("proof", "Proof")
-#let proof(it) = [ *#emph("Proof")*. #it #set align(right); $qed$ ]
+#let proof(it) = [
+  *Proof*.
+  #it
+]
 
 // Number Theory
 #let legendre(a,b) = $(#a/#b)$
@@ -63,6 +65,7 @@
 
 #let template(doc) = {
   set heading(numbering: "1.")
+  set par(justify: true)
 
   show: scribe
   // show: thmrules

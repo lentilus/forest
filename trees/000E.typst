@@ -4,6 +4,14 @@
 #taxon[Index]
 #title[Complex Analysis]
 
+// complex differentiability
+// homlomorphic functions
+// observe cauchy riemann from real differentiability
+// Cauchy Integralsatz
+// Cauchy Integralformel
+// Potenzreihen
+// Laurent-Reihen
+// Polstellen
 - #local("000U")[Gebiet]
 - #local("000V")[Holomorph]
 

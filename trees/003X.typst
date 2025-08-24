@@ -2,9 +2,9 @@
 #show: template
 
 #taxon[Theorem]
-#title[Auf $U$ holomorphe Funktionen bilden einen Ring]
+#title[Holomorphe Funktionen bilden einen Ring]
 
-Die Menge der Funktionen, die auf einer offenenen Mengen $Uu$ #local("000V")[holomorph] sind, bilden einen #local("003Y")[Ring]. Wir bezeichnen ihn mit $Oo(U)$
+Die Menge der Funktionen, die auf einer offenenen Mengen $U$ #local("000V")[holomorph] sind, bilden einen #local("003Y")[Ring]. Wir bezeichnen ihn mit $Oo(U)$
 
 #proof[
   Seien $f$, $g$ in $z_0$ #local("000T")[komplex differenzierbar]. Dann sind $f + g$ und $f * g$ ebenfalls in $z_0$ #local("000T")[komplex differenzierbar].

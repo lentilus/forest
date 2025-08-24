@@ -2,10 +2,9 @@
 #show: template
 
 #taxon[Observation]
-#title[Loesungen der Pellschen Gleichung als Einheiten]
+#title[Solutions of the Pell equation as units]
 
-Wir koennen eine Loesung $(x,y)$ der #local("0030")[Pellschen Gleichung] mit
-dem Paar $xi overline(xi)$ identifizieren. In diesem Fall ist $overline(xi)$
-das Inverse von $xi$, denn $xi overline(xi)=1$. Aus dieser Perspektive
-entsprechen die Loesungen der #local("0030")[Pellschen Gleichung] genau den
-invertierbaren Elementen von $ZZ[sqrt(D)]$.
+We can identify a solution $(x,y)$ of the Pell equation with the pair
+$xi overline(xi)$. In this case $overline(xi)$ is the inverse of $xi$,
+since $xi overline(xi) =1$. From this point of iew, the solutions of
+the Pell equation are precisely the units of $ZZ[sqrt(D)]$.

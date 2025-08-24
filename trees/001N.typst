@@ -2,6 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Teilerfremd]
+#title[Coprime]
 
-Zwei #local("001J")[natuerliche Zahlen] heissen _teilerfremd_, wenn ihr #local("0010")[groesster gemeinsamer Teiler] 1 ist.
+Two #local("001J")[natural numbers] are called _coprime_ if their
+#local("0010")[greatest common divisor] is 1.

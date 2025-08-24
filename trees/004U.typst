@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Pythagorean Triples]
+
+#embed("004V")[]
+
+#embed("004W")[]
+
+This concept generalizes to other conic sections.

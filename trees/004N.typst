@@ -2,18 +2,18 @@
 #show: template
 
 #taxon[Remark]
-#title[Triviale Faelle der Pellschen Gleichungen]
+#title[Trivial cases of the Pell equation]
 
-+ Falls $D=1$, $D< -1$ oder $D=n^2$, dann ist $(+-1,0)$ die einzige Loesung.
-+ Falls $D=0$, dann sind alle Loesgungen von der Form $x=+-1$, $y$ beliebig.
-+ Falls $D=-1$, dann sind alle Loesungen $(+-1,0), (0, +-1)$.
++ If $D=1$, $D< -1$ or $D=n^2$, then $(+-1,0)$ is the only solution.
++ If $D=0$ all solutions are $x=+-1$ and an aritrary $y$ .
++ If $D=-1$ all solutions are $(+-1,0), (0, +-1)$.
 
 #proof[
-  + Im ersten Fall koennen wir die Gleichung schreiben als
-    $x^2- y^2 = (x-y)(x+y) = 1$, dann ist $x=1, y=0$.
-    Falls $D < -1$, schreibe $x^2+|D|y^2=1$. Das zwingt $y=0$, und damit $x=+-1$.
-    Ist $D$ von der Form $D=n^2$, dann haben wir
-    $x^2 - n^2 y^2 = (x- n y)(x + n y) =1$, das zwingt wieder $y=0$ und $x=+-1$.
-  + Ist klar.
-  + Wir haben $x^2 + y^2 = 1$. Hier kommen nur $(+-1,0)$ und $(0, +-1)$ infrage.
+  + In the first case we can write the equation as
+    $x^2- y^2 = (x-y)(x+y) = 1$, then $x=1, y=0$.
+    If $D < -1$, write $x^2+|D|y^2=1$. This forces $y=0$ and thus $x=+-1$.
+    If $D$ is of the form $D=n^2$, then we have
+    $x^2 - n^2 y^2 = (x- n y)(x + n y) =1$, forcing $y=0$ and $x=+-1$.
+  + This is clear.
+  + We have $x^2 + y^2 = 1$. Our only options are $(+-1,0)$ and $(0, +-1)$
 ]

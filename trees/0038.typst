@@ -2,9 +2,9 @@
 #show: template
 
 #taxon[Lemma]
-// #title[]
-Seien $a, b$ #local("001J")[natuerliche Zahlen]. Es gibt #local("0035")[ganze Zahlen] $x,y$ sodass der #local("0010")[groesster gemeinsamer Teiler]  $gcd(a,b) = a x + b y$.
+#title[Bezout]
+For any #local("001J")[natural numbers] $a, b$. There exist #local("0035")[integers] $x,y$ such that the #local("0010")[gcd] of $a,b$ can we written as $gcd(a,b) = a x + b y$.
 
 #proof[
- #local("000Y")[Euklidischer Algorithmus].
+ Do the #local("000Y")[Euclidean Algorithm] in reverse.
 ]

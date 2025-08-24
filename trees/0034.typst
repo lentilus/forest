@@ -2,9 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Primzahl]
+#title[Prime Number]
 
-Eine #local("001J")[natuerliche Zahl] $p$ heisst _Primzahl_ wenn sie genau zwei #local("001V")[Teiler] hat. Also
-$
-  d(p) = 2.
-$
+A #local("001J")[natural number] $p$ is called _pime_ if it has exactly two
+#local("001V")[divisors]. Hence $d(p)=2$.

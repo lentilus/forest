@@ -2,8 +2,8 @@
 #show: template
 
 #taxon[Definition]
-#title[Pellsche Gleichung]
+#title[Pell's Equation]
 
-Fuer eine #local("0035")[ganze Zahl] $D$ bezeichnen wir eine 
-#local("004H")[diophantische Gleichungen] der Form $x^2 -D y^2 = 1$
-als _Pellsche Gleichung_.
+For an #local("0035")[integer] $D$ we call a
+#local("004H")[diophantine equation] of the form $x^2 -D y^2 = 1$
+_Pell's equation_.

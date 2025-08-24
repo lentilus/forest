@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Pythagorean Triple]
+
+Solutions of the #local("004H")[diophantine equation] $x^2 + y^2 = z^2$ are
+called _pythagorean triples_.

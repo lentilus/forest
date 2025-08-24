@@ -2,17 +2,14 @@
 #show: template
 
 #taxon[Index]
-#title[Pellsche Gleichungen]
-
-Die hier dargelegte Theorie zu Pellschen Gleichungen hilft uns alle
-ganzzahligen Loesungen binaerer quadratischer Formen anzugeben.
+#title[Pell's Equation]
 
 #embed("0030")[]
 
 #embed("004N")[]
 
-Ungeklaert sind also nur noch die Faelle in denen $D$ positiv und kein Quadrat
-ist.
+The only case left to discuss is the case where $D$ is positive and not a
+square.
 
 #embed("004J")[]
 
@@ -25,3 +22,7 @@ ist.
 #embed("004O")[]
 
 #embed("004P")[]
+
+// TODO negative pell euqation
+
+// TODO generalized pell equation

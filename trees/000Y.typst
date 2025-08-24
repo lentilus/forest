@@ -2,15 +2,23 @@
 #show: template
 
 #taxon[Theorem]
-#title[Euklidischer Algorithmus]
+#title[Euclidian Algorithm]
 
-Der Euklische Algorithmus berechnet den #local("0010")[ggT] zweier #local("0035")[ganzer Zahlen]
+The _Euclidian algorithm_ calculates the #local("0010")[greatest common divisor]
+of two #local("0035")[integers] by successively
+#local("004Y")[dividing with remainder] (_line 3_).
 
-Eine Implementierung in `Python`:
-```python
-def ggt(a,b):
-    r = a % b
-    if r == 0:
-        return b
-    return ggt(b,r)
-```
+_TODO: this is not visible in html_
+#pseudocode-list(booktabs: true, title: [Euclididan Algorithm])[
+  + *function* $"gcd"(a,b)$
+    + *while* $r != 0$
+      + *compute* $q b + r = a$
+      + $a <- b$
+      + $b <- r$
+    + *end while*
+    + *return* $a$ 
+]
+
+#proof[
+  TODO
+]

@@ -2,12 +2,16 @@
 #show: template
 
 #taxon[Index]
-#title[Teilbarkeit]
+#title[Divisibility]
 
 #embed("001V")[]
 #embed("0034")[]
 #embed("0010")[]
+#embed("004Y")[]
 #embed("000Y")[]
 #embed("001N")[]
+// Euclid's Theorem
+
 #embed("0038")[]
 #embed("0039")[]
+
