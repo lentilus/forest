@@ -3,10 +3,10 @@
 
 #taxon[Corollary]
 // #title[Title]
-Let $a,b,c in NN$ with the #local("0010")[gcd] of $a$ and $b$ equal to 1, and $a | b$. Then $a | c$.
+Let $a,b,c in NN$ with the #local("0010")[gcd] of $a$ and $b$ equal to 1, and $a | b c$. Then $a | c$.
 
 #proof[
   From  #local("0038")[Bezout's Lemma] there exists integers $x,y$ with
   $1 = a x + b y$. Multiply by $c$ to get $c = c a x + c b y$.
-  Since $a | a c x$ and $a | c b y$ by hypothesis, it follows that $a | c$.
+  Since $a | c a x$ and $a | c b y$ by hypothesis, it follows that $a | c$.
 ]

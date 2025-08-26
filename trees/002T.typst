@@ -5,10 +5,6 @@
 #title[Prime Numbers]
 
 #embed("0034")[]
-= Euclidian Lemma
-= Definition Prime Factorization
-= Prime Factorization is unique
-= There are infinitely many primes
-= alternative way to solve pythagorean Triples
-
-
+#embed("0050")[]
+#embed("0052")[]
+#embed("004X")[]

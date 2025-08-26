@@ -4,15 +4,13 @@
 #taxon[Index]
 #title[Elementary Number Theory]
 
-These are my notes on the _Elementary Number Theory_ lecture by _Prof. Dr. Joerg Bruedern_
-from the summer semester 2025, Goettingen.
+These are my notes on the Göttingen summer 2025 _Elementary Number Theory_
+lecture by _Prof. Dr. Jörg Bruedern_.
 
 #embed("004H")[]
-
-// #embed("004U")[]
-
-#embed("002S")[]
-#embed("002T")[]
+#embed("004U")[]
+#embed("002S")[] // doneish
+#embed("002T")[] // doneish
 #embed("002U")[]
 #embed("002V")[]
 #embed("002W")[]
@@ -24,3 +22,8 @@ from the summer semester 2025, Goettingen.
 #embed("002Z")[]
 #embed("003F")[]
 #embed("003Q")[]
+#embed("0053")[]
+#embed("0054")[]
+#embed("0055")[]
+#embed("0056")[]
+#embed("0057")[]

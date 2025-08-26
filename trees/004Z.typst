@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Euclid]
+
+The #local("000Y")[euclidean algorithm] computes the #local("0010")[greatest common divisor].
+
+#proof[
+  TODO
+]

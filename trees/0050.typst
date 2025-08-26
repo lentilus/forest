@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Euclid's Lemma]
+
+Let $a,b in NN$ and $p$ #local("0034")[prime] with $p | a b$ then $p | a$ or $p | b$.
+
+#proof[
+  We only need to show the case where $p divides.not a$. Because $p$ is prime, it has exactly the divisors ${1,p}$.
+  $p$ does not divide $a$ so their only common divisor is $1$. Thus $gcd(a,b) =1$.
+  We are done by applying #local("0039")[this corollary].
+]

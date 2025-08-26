@@ -1,5 +1,15 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-// #title[Title]
+#taxon[Theorem]
+#title[Infinity of Primes]
+There are infinitely many #local("0034")[primes]. 
+
+#proof[
+  Suppose $p_1,..., p_k$ are the only primes. Since $p_(1) dots.c p_k$ has a
+  #local("0052")[prime factorization] there exists
+  $1 <= i <= k$ with $p_(i)|p dots.c p_(k) + 1$. But $p_(i)|p_1 dots.c p_k$ so
+  $p_(i)$ must also divide $1$. That is a contradiction.
+]
+
+

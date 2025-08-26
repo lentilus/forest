@@ -1,0 +1,25 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Fundamental Theorem of Arithmetic]
+
+For any natural number $n >= 2$ there exists a unique finite series of
+#local("002T")[primes] $p_1 <= ... <= p_(s)$ such that $n = p_1 dots.c p_(s)$.
+
+#proof[
+  To show existence we perform induction over $n$. If $n=2$ there is nothing to
+  show. Thus let $n > 2$. If $n$ is prime there is nothing to show, so let $n$
+  be not prime. In that case ther exist $n_1, n_2 $ with $n = n_1 n_2$ By
+  induction hypothesis $n_1$ and $n_2$ are themselves products of primes, and
+  by extension $n$ as well.
+
+  To show uniqueness we assume two factorizations $n=p_1 dots.c p_s$
+  and $n= q_1 dots.c q_r$. Without loss of generality we assume that $s <= r$.
+  By #local("0050")[Euclid's Lemma] there exists $1 <= i <= s$ such that
+  $p_1 | p_(i)$ thus $p_1 = p_(i)$. We now perform induction over $s$.
+  if $s=1$ then $r$ must also be 1, since dividing by $p_1$ shows that
+  $prod _(j=1 \ i != j)^(r) p_(j) = 1$ is contradictory otherwise.
+  For $s>1$ we can divide both sides by $p_1$ (since $p_1 = p_(i)$) and apply
+  the induction hypothesis.
+]
