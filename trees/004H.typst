@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Diophantische Gleichung]
+#title[Diophantine Equations]
 
-Gleichungen die ueber der Menge der #local("0035")[ganzen Zahlen] zu loesen sind
-nennen wir _diophantische Gleichungen_.
+Equations that are to be solved over the set of  #local("0035")[integers] are
+called _diophantine equations_.

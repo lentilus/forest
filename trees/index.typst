@@ -15,12 +15,98 @@ The source files for these notes are available on
 
 Below is a non-exhaustive list of entry points to various topics.
 - #local("0001")[Set Theory]
+- #local("005J")[Category Theory]
 - #local("0005")[Elementary Number Theory]
-- #local("004R")[HoTT (Homotopy Type Theory)]
+- #local("004R")[Homotopy Type Theory]
 - #local("004S")[Writing a Theorem Prover]
 
-#context if target() == "html" {
-  html.frame(image("_assets/thumbnail.svg", width: 410pt))
+// from https://github.com/liuguangxi/fractusist
+#let fractal-tree(
+  n,
+  root-color: rgb("#46230A"),
+  leaf-color: rgb("#228B22"),
+  trunk-len: 100,
+  trunk-rad: 3.0,
+  theta: 1/2,
+  angle: 1/4,
+  ratio: 0.8,
+  paddingl: 0,
+  paddingr: 0
+) = {
+  let a = angle * calc.pi
+
+  // Generate fractal tree nodes recursively
+  let fractal-tree-node(level, x, y, t, r, theta) = {
+    if level == 0 {return ()}
+    let x1 = x + t * calc.cos(theta)
+    let y1 = y - t * calc.sin(theta)
+    let node0 = (level, x, y, x1, y1)
+    let theta1 = theta + a
+    let theta2 = theta - a
+    let node1 = fractal-tree-node(level - 1, x1, y1, t * r, r, theta1)
+    let node2 = fractal-tree-node(level - 1, x1, y1, t * r, r, theta2)
+    return ((node0,), node1, node2).join()
+  }
+
+  let v = fractal-tree-node(n, 0, 0, trunk-len, ratio, theta * calc.pi)
+  v = v.sorted(key: it => -it.at(0))
+
+  let (x-min, x-max, y-min, y-max) = (0, 0, 0, 0)
+  for node in v {
+    x-min = calc.min(x-min, node.at(1), node.at(3))
+    x-max = calc.max(x-max, node.at(1), node.at(3))
+    y-min = calc.min(y-min, node.at(2), node.at(4))
+    y-max = calc.max(y-max, node.at(2), node.at(4))
+  }
+  x-min -= paddingl
+  x-max += paddingr
+  // y-min -= padding
+  // y-max += padding
+
+  box(width: (x-max - x-min) * 1pt, height: (y-max - y-min) * 1pt,
+    for node in v {
+      let level-ratio = node.at(0) / n
+      let paint-color = color.mix((root-color, level-ratio), (leaf-color, 1 - level-ratio))
+      let line-width = calc.max(0.20, trunk-rad * level-ratio) * 1pt
+      place(
+        line(
+          start: ((node.at(1) - x-min) * 1pt, (node.at(2) - y-min) * 1pt),
+          end: ((node.at(3) - x-min) * 1pt, (node.at(4) - y-min) * 1pt),
+          stroke: (paint: paint-color, thickness: line-width)
+        )
+      )
+    }
+  )
 }
 
-Hallo
+#context if target() == "html" {
+  html.frame(fractal-tree(
+    7,
+    leaf-color: rgb("#FFFF33C0"),
+    trunk-len: 30,
+    angle: 0.11,
+    ratio: 0.70,
+  ))
+  html.frame(fractal-tree(
+    8,
+    leaf-color: rgb("#FFFF33C0"),
+    trunk-len: 50,
+    angle: 0.11,
+    ratio: 0.70,
+    paddingl: -84.0,
+    paddingr: -40
+  ))
+  html.frame(fractal-tree(
+    7,
+    leaf-color: rgb("#FFFF33C0"),
+    trunk-len: 20,
+    angle: 0.11,
+    ratio: 0.70,
+    paddingl: -30,
+  ))
+}
+
+// TODO
+// - find a way to link definitions. Example: phi as the totient in @005B
+//   it should not be too obstrusive. I want something like "see also"
+// - Link locally and create new note shortcut.

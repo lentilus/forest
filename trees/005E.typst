@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Multiplicative groups of units mod p are Fields]
+
+$(ZZ \/ p ZZ)$ is a field if and only if $p$ is #local("0034")[prime].
+
+#proof[
+  - $(<==)$ Let $p$ be prime then $(ZZ\/p ZZ)^(xx) =  ZZ\/p ZZ \\ {0 + p ZZ}$.
+    thus $ZZ\/p ZZ$ is a field.
+  - $(==>)$ Assume $ZZ\/p ZZ$ is a field and $p = p_(1) p _(2)$ with
+    $p_(1), p_(2) != 1 $. Then $q_1 | q$ thus $q_1 x equiv 1 mod q$ has no solution.
+    So $q_1 + q ZZ in.not (ZZ\/q ZZ)^(xx)$, which is contradictory.
+  We have already established here, that $ZZ\/p ZZ$ is a cummutative unitary ring. ($<-$ TODO)
+]

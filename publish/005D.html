@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Totient of primes</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/002U.html'" title="Quotient Rings">« Quotient Rings</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Observation"><details open><summary id="005D"><header><h1><span class="taxon">Observation. </span>Totient of primes <a class="slug" href="/005D.html">[005D]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>If <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 5.698 7.513000000000001" width="5.698pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g8C196B01574EDAA4C3FCD71B703F61A3" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g8C196B01574EDAA4C3FCD71B703F61A3" overflow="visible">
+            <path d="M 3.905 4.862 C 3.421 4.862 2.9589999 4.609 2.508 4.103 C 2.387 4.609 2.046 4.862 1.507 4.862 C 1.056 4.862 0.726 4.499 0.495 3.784 C 0.385 3.421 0.32999998 3.212 0.32999998 3.146 C 0.32999998 3.047 0.385 2.992 0.506 2.992 C 0.561 2.992 0.594 3.003 0.627 3.025 C 0.682 3.124 0.715 3.201 0.726 3.2779999 C 0.924 4.114 1.177 4.532 1.474 4.532 C 1.6719999 4.532 1.771 4.378 1.771 4.081 C 1.771 3.916 1.749 3.729 1.694 3.531 L 0.484 -1.298 C 0.385 -1.661 0.374 -1.705 -0.055 -1.705 C -0.253 -1.705 -0.352 -1.793 -0.352 -1.958 C -0.352 -2.079 -0.286 -2.134 -0.16499999 -2.134 C 0 -2.134 0.572 -2.101 0.737 -2.101 C 0.946 -2.101 1.606 -2.134 1.8149999 -2.134 C 1.98 -2.134 2.057 -2.046 2.057 -1.87 C 2.057 -1.76 1.958 -1.705 1.749 -1.705 C 1.551 -1.705 1.254 -1.716 1.254 -1.584 C 1.254 -1.441 1.705 0.286 1.749 0.473 C 1.969 0.066 2.299 -0.143 2.739 -0.143 C 3.454 -0.143 4.081 0.22 4.631 0.957 C 5.137 1.628 5.39 2.343 5.39 3.08 C 5.39 4.037 4.818 4.862 3.905 4.862 Z M 3.872 4.532 C 4.301 4.532 4.521 4.202 4.521 3.553 C 4.521 3.256 4.455 2.86 4.334 2.365 C 4.081 1.408 3.762 0.781 3.377 0.462 C 3.146 0.275 2.937 0.176 2.728 0.176 C 2.409 0.176 2.189 0.319 2.068 0.616 C 1.969 0.847 1.914 1.012 1.914 1.1 L 2.475 3.399 C 2.53 3.641 2.728 3.894 3.036 4.147 C 3.3439999 4.4 3.619 4.532 3.872 4.532 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> is <span class="link local"><a href="/0034.html" title="Prime Number [0034]">prime</a></span> then <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 60.76400000000001 7.513000000000001" width="60.76400000000001pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g26C15C4C1602B6E51DDECFF0A9BB030C" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(7.194 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA07DCA7843013BD5F928C339BE4B0A10" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(11.472999999999999 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g8C196B01574EDAA4C3FCD71B703F61A3" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(17.171 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g937D4A212D21091D3FA2D0C7B6242644" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(24.505555555555556 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gE728BB84FF42B5AE34971C357B078874" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(36.11911111111112 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g8C196B01574EDAA4C3FCD71B703F61A3" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(44.26155555555557 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gAAC0ACFFFBCC7CBB36DF3E0E143D3EC7" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(55.26400000000001 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA6E32141AB66C2BBBC5427F3806C29EA" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g26C15C4C1602B6E51DDECFF0A9BB030C" overflow="visible">
+            <path d="M 5.533 4.862 C 5.346 4.862 5.1809998 4.829 5.016 4.774 C 4.323 4.5429997 3.839 3.861 3.564 3.234 C 3.102 2.211 2.97 1.793 2.629 0.638 C 1.496 0.869 0.924 1.386 0.924 2.2 C 0.924 2.937 1.441 4.004 1.804 4.422 C 1.87 4.499 1.903 4.554 1.903 4.587 C 1.903 4.686 1.848 4.741 1.727 4.741 C 1.54 4.741 1.298 4.422 1.001 3.784 C 0.704 3.146 0.55 2.574 0.55 2.079 C 0.55 0.935 1.419 0.20899999 2.42 -0.033 L 1.859 -1.8149999 C 1.8149999 -1.936 1.793 -2.013 1.793 -2.046 C 1.793 -2.277 1.914 -2.398 2.156 -2.398 C 2.365 -2.398 2.508 -2.288 2.596 -2.079 L 2.97 -0.132 C 3.091 -0.143 3.19 -0.143 3.289 -0.143 C 4.191 -0.143 4.994 0.20899999 5.72 0.913 C 6.446 1.617 6.809 2.42 6.809 3.322 C 6.809 4.18 6.358 4.862 5.533 4.862 Z M 6.413 3.08 C 6.413 2.387 6.083 1.782 5.412 1.265 C 4.785 0.803 4.114 0.572 3.388 0.572 C 3.322 0.572 3.256 0.572 3.201 0.583 C 3.135 0.583 3.102 0.583 3.102 0.572 C 3.267 1.441 3.366 1.958 3.41 2.112 C 3.6629999 2.981 4.411 4.147 5.423 4.147 C 6.039 4.147 6.413 3.707 6.413 3.08 Z "/>
+        </symbol>
+        <symbol id="gA07DCA7843013BD5F928C339BE4B0A10" overflow="visible">
+            <path d="M 3.498 -2.728 C 3.597 -2.728 3.652 -2.673 3.652 -2.574 C 3.652 -2.541 3.6299999 -2.497 3.597 -2.453 C 3.025 -2.013 2.563 -1.287 2.222 -0.286 C 1.925 0.583 1.771 1.441 1.771 2.288 L 1.771 3.212 C 1.771 4.059 1.925 4.917 2.222 5.786 C 2.563 6.787 3.025 7.513 3.597 7.953 C 3.6299999 7.986 3.652 8.03 3.652 8.074 C 3.652 8.173 3.597 8.228 3.498 8.228 C 3.487 8.228 3.454 8.217 3.421 8.195 C 2.761 7.689 2.211 6.941 1.76 5.94 C 1.331 4.983 1.111 4.081 1.111 3.212 L 1.111 2.288 C 1.111 1.419 1.331 0.517 1.76 -0.44 C 2.211 -1.441 2.761 -2.189 3.421 -2.695 C 3.454 -2.717 3.487 -2.728 3.498 -2.728 Z "/>
+        </symbol>
+        <symbol id="g8C196B01574EDAA4C3FCD71B703F61A3" overflow="visible">
+            <path d="M 3.905 4.862 C 3.421 4.862 2.9589999 4.609 2.508 4.103 C 2.387 4.609 2.046 4.862 1.507 4.862 C 1.056 4.862 0.726 4.499 0.495 3.784 C 0.385 3.421 0.32999998 3.212 0.32999998 3.146 C 0.32999998 3.047 0.385 2.992 0.506 2.992 C 0.561 2.992 0.594 3.003 0.627 3.025 C 0.682 3.124 0.715 3.201 0.726 3.2779999 C 0.924 4.114 1.177 4.532 1.474 4.532 C 1.6719999 4.532 1.771 4.378 1.771 4.081 C 1.771 3.916 1.749 3.729 1.694 3.531 L 0.484 -1.298 C 0.385 -1.661 0.374 -1.705 -0.055 -1.705 C -0.253 -1.705 -0.352 -1.793 -0.352 -1.958 C -0.352 -2.079 -0.286 -2.134 -0.16499999 -2.134 C 0 -2.134 0.572 -2.101 0.737 -2.101 C 0.946 -2.101 1.606 -2.134 1.8149999 -2.134 C 1.98 -2.134 2.057 -2.046 2.057 -1.87 C 2.057 -1.76 1.958 -1.705 1.749 -1.705 C 1.551 -1.705 1.254 -1.716 1.254 -1.584 C 1.254 -1.441 1.705 0.286 1.749 0.473 C 1.969 0.066 2.299 -0.143 2.739 -0.143 C 3.454 -0.143 4.081 0.22 4.631 0.957 C 5.137 1.628 5.39 2.343 5.39 3.08 C 5.39 4.037 4.818 4.862 3.905 4.862 Z M 3.872 4.532 C 4.301 4.532 4.521 4.202 4.521 3.553 C 4.521 3.256 4.455 2.86 4.334 2.365 C 4.081 1.408 3.762 0.781 3.377 0.462 C 3.146 0.275 2.937 0.176 2.728 0.176 C 2.409 0.176 2.189 0.319 2.068 0.616 C 1.969 0.847 1.914 1.012 1.914 1.1 L 2.475 3.399 C 2.53 3.641 2.728 3.894 3.036 4.147 C 3.3439999 4.4 3.619 4.532 3.872 4.532 Z "/>
+        </symbol>
+        <symbol id="g937D4A212D21091D3FA2D0C7B6242644" overflow="visible">
+            <path d="M 0.858 -2.695 C 1.518 -2.189 2.068 -1.441 2.519 -0.44 C 2.948 0.517 3.168 1.419 3.168 2.288 L 3.168 3.212 C 3.168 4.081 2.948 4.983 2.519 5.94 C 2.068 6.941 1.518 7.689 0.858 8.195 C 0.825 8.217 0.792 8.228 0.781 8.228 C 0.682 8.228 0.627 8.173 0.627 8.074 C 0.627 8.03 0.649 7.986 0.682 7.953 C 1.254 7.513 1.716 6.787 2.057 5.786 C 2.354 4.917 2.508 4.059 2.508 3.212 L 2.508 2.288 C 2.508 1.441 2.354 0.583 2.057 -0.286 C 1.716 -1.287 1.254 -2.013 0.682 -2.453 C 0.649 -2.497 0.627 -2.541 0.627 -2.574 C 0.627 -2.673 0.682 -2.728 0.781 -2.728 C 0.792 -2.728 0.825 -2.717 0.858 -2.695 Z "/>
+        </symbol>
+        <symbol id="gE728BB84FF42B5AE34971C357B078874" overflow="visible">
+            <path d="M 7.678 4.037 L 0.88 4.037 C 0.704 4.037 0.616 3.949 0.616 3.784 C 0.616 3.619 0.704 3.531 0.88 3.531 L 7.678 3.531 C 7.854 3.531 7.942 3.619 7.942 3.784 C 7.942 3.916 7.821 4.037 7.678 4.037 Z M 7.678 1.969 L 0.88 1.969 C 0.704 1.969 0.616 1.881 0.616 1.716 C 0.616 1.551 0.704 1.4629999 0.88 1.4629999 L 7.678 1.4629999 C 7.854 1.4629999 7.942 1.551 7.942 1.716 C 7.942 1.859 7.821 1.969 7.678 1.969 Z "/>
+        </symbol>
+        <symbol id="gAAC0ACFFFBCC7CBB36DF3E0E143D3EC7" overflow="visible">
+            <path d="M 7.678 2.97 L 0.88 2.97 C 0.704 2.97 0.616 2.893 0.616 2.75 C 0.616 2.6069999 0.704 2.53 0.88 2.53 L 7.678 2.53 C 7.854 2.53 7.942 2.6069999 7.942 2.75 C 7.942 2.882 7.81 2.97 7.678 2.97 Z "/>
+        </symbol>
+        <symbol id="gA6E32141AB66C2BBBC5427F3806C29EA" overflow="visible">
+            <path d="M 2.9589999 7.3259997 C 2.508 6.864 1.848 6.633 0.979 6.633 L 0.979 6.204 C 1.551 6.204 2.024 6.292 2.387 6.468 L 2.387 0.902 C 2.387 0.704 2.343 0.572 2.244 0.517 C 2.145 0.462 1.87 0.429 1.43 0.429 L 1.045 0.429 L 1.045 0 C 1.3199999 0.022 1.914 0.033 2.827 0.033 C 3.74 0.033 4.334 0.022 4.609 0 L 4.609 0.429 L 4.224 0.429 C 3.773 0.429 3.498 0.462 3.41 0.517 C 3.322 0.572 3.267 0.704 3.267 0.902 L 3.267 6.996 C 3.267 7.2599998 3.245 7.3259997 2.9589999 7.3259997 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span>.</p>
+  <p><strong>Proof</strong>. By definition of the <span class="link local"><a href="/005C.html" title="Euler's Totient Function [005C]">totient function</a></span>.</p>
+</details></section><footer></footer></article>
+
+</div></body></html>

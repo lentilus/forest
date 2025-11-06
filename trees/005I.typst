@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[Title]
+
+Let $q_1, q_2 in NN$ be #local("001N")[coprime]. And let $Vv(q_1), Vv(q_2)$ be
+#local("005H")[systems of representatives] of $ZZ\/q_1 ZZ$ and $ZZ\/q_2 ZZ$
+respectively. Then ${x q_1 + y q_2 | x in Vv(q_1), y in Vv(q_2)}$ is a complete
+#local("005H")[system of representatives].

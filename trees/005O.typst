@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[locally small category]
+
+A #local("005K")[category] is _locally small_ if for any two objects, the morphisms between them fit in a #local("005N")[set].

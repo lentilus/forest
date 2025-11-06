@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Euler's Totient Function]
+
+Euler's totient function $phi$ is defined by
+$phi(q) := \#(ZZ\/q ZZ) = \#{a : 1 <= a < q, gcd(a,q) =1}$.
+
+

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Notation]
+// #title[Title]
+
+For $q in NN$ and $a, b in ZZ$ with $q | b-a$ we write $a equiv b mod q$.

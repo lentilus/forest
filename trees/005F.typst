@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Notation]
+// #title[Title]
+
+We denote the set of #local("0059")[residue classes] mod $q$ with $ZZ\/q ZZ$.

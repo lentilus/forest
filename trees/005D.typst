@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Totient of primes]
+If $p$ is #local("0034")[prime] then $phi(p) = p-1$.
+
+#proof[
+   By definition of the #local("005C")[totient function].
+]

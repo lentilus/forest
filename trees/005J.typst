@@ -1,0 +1,29 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Category Theory]
+
+This index collects some of my notes on the book
+#link("https://math.jhu.edu/~eriehl/context")[_Category Theory in Context_]
+by Emily Riehl.
+
+#embed("005K")[]
+#embed("005M")[]
+#embed("005O")[]
+
+
+TODO
+- isomorphism
+- retraction (left inverse)
+- section ( right inverse)
+- automorphism
+- groupoid
+- asubcategory
+- maximal subgroupoid
+
+
+
+
+
+

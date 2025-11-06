@@ -1,0 +1,19 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Category]
+
+A _category_ is a #local("005L")[collection] of _objects_ $X,Y,Z,...$
+with a #local("005L")[collection] of _morphisms_ $f,g,h,...$ with the following
+properties
+
+1. Each morphism $f$ has a _domain_ $X$ and _codomain_ $Y$. We write $f : X -> Y$.
+2. Each object $X$ has an _identity morphism_ $1_X : X ->  X$.
+3. For any morphisms $f: X ->  Y, g : Y ->  Z$ there exists a _composite morphism_ $g f : X -> Z$
+4. For any $f : X ->  Y$, both $1_Y f$ and $f 1_X$ are equal to $f$.
+5. For any composable triple of morphisms $f: X ->  Y$, $g: Y ->  Z$, $h : Z -> W$,
+   the composition is associative, e.g $h (g f) = (h g) f$. We will denote it
+   by $h g f$
+
+We will often call morphisms _arrows_.

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Set]
+
+A _set_ is an object in #local("000I")[ZFC] -- thus subject to the ZFC-Axioms.

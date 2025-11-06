@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Residue Class]
+
+The _residue class of $a$ modulo $q$_ is given by the
+#local("005A")[equivialence class] ${n in NN | n equiv a mod q}$.
+

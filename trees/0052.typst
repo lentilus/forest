@@ -19,7 +19,7 @@ For any natural number $n >= 2$ there exists a unique finite series of
   By #local("0050")[Euclid's Lemma] there exists $1 <= i <= s$ such that
   $p_1 | p_(i)$ thus $p_1 = p_(i)$. We now perform induction over $s$.
   if $s=1$ then $r$ must also be 1, since dividing by $p_1$ shows that
-  $prod _(j=1 \ i != j)^(r) p_(j) = 1$ is contradictory otherwise.
+  $prod _(j=1, j != i)^(r) p_(j) = 1$ is contradictory otherwise.
   For $s>1$ we can divide both sides by $p_1$ (since $p_1 = p_(i)$) and apply
   the induction hypothesis.
 ]

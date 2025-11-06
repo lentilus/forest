@@ -2,6 +2,17 @@
 #show: template
 
 #taxon[Index]
-#title[Restklassenringe]
+#title[Quotient Rings]
 
-TODO
+#embed("0058")[]
+#embed("0059")[]
+#embed("005F")[]
+= Ring structure of ZZ/qZZ
+#embed("005E")[]
+#embed("005C")[]
+#embed("005D")[]
+
+#embed("005B")[] // todo: ref totient function
+
+= little Fermat
+= Chinese Remainder Theorem

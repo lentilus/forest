@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Euler]
+
+Let $a in ZZ$ and $q in NN$ with $gcd(a,b)$ then $a^phi(q) equiv 1 mod q$.
+
+#proof[
+  TODO
+]
