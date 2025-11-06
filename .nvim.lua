@@ -29,8 +29,8 @@ end
 
 vim.lsp.config['zeta'] = {
   -- Command and arguments to start the server.
-  cmd = { 'zeta', '--logfile=/tmp/zeta.log' },
-  filetypes = { 'typst' },
+  cmd = {'zeta', '--logfile=/tmp/zeta.log' },
+  filetypes = { 'typst', 'agda' },
   root_markers = { 'index.typst' },
   init_options = {
     query = [[
@@ -58,7 +58,7 @@ function insert_workspace_symbol_link()
   local actions       = require('telescope.actions')
   local action_state  = require('telescope.actions.state')
 
-  ts_builtin.lsp_workspace_symbols({
+  ts_builtin.lsp_dynamic_workspace_symbols({
     prompt_title = "Workspace Symbols",
     attach_mappings = function(prompt_bufnr, map)
       -- override <CR>
