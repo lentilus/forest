@@ -4,4 +4,7 @@
 #taxon[Index]
 #title[Homotopy Type Theory]
 
+#local("005S")[HoTT Game]
+
 #embed("005P.lagda.md")[]
+

@@ -64,6 +64,26 @@
 </details></section><section class="block" data-taxon="Definition"><details ><summary id="005O"><header><h1><span class="taxon">Definition. </span>locally small category <a class="slug" href="/005O.html">[005O]</a></h1><div class="metadata"><ul></ul></div></header></summary>
   
   <p>A <span class="link local"><a href="/005K.html" title="Category [005K]">category</a></span> is <em>locally small</em> if for any two objects, the morphisms between them fit in a <span class="link local"><a href="/005N.html" title="Set [005N]">set</a></span>.</p>
+</details></section><section class="block" data-taxon=""><details ><summary id="005P.lagda"><header><h1><span class="taxon"></span>The Empty Type <a class="slug" href="/005P.lagda.html">[005P.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>We need to disable the K-Axiom, which is incompatible with Homotopy type theory</p>
+<pre><code class="language-agda">{-# OPTIONS --without-K #-}
+</code></pre>
+<p>In agda <code>Set</code> denotes the universe of small types. <span class="link local"><a href="/005N.html" title="Set [005N]">somelink</a></span></p>
+<p>The <em>emtpy type</em> is the type with no elements. It can be interpreted as a
+proposition that has no proofs.</p>
+<pre><code class="language-agda">data 𝟘 : Set where
+</code></pre>
+<p>The elimination rule for elements of the empty type yields an element of any
+depended type indexed by <code>x : 𝟘</code>. This is analogous to the idea, that you
+can prove anything from falsehood.</p>
+<pre><code class="language-agda">𝟘-elim : {A : 𝟘 → Set} (x : 𝟘) → A x
+𝟘-elim ()
+</code></pre>
+<p>Note that <code>()</code> refers to the impossible match. Since there is no <code>x : A</code>, there
+is nothing to define for that branch.</p>
+<p>We can define negation as a map that sends any type <code>A : Set</code> to <code>A -&gt; 𝟘 : Set</code>.</p>
+<pre><code class="language-agda">neg : Set -&gt; Set
+neg A = A -&gt; 𝟘 
+</code></pre>
 </details></section></details></section></footer></article>
 
 </div></body></html>

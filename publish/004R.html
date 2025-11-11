@@ -55,12 +55,31 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Index"><details open><summary id="004R"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory <a class="slug" href="/004R.html">[004R]</a></h1><div class="metadata"><ul></ul></div></header></summary><section class="block hide-metadata" data-taxon=""><details open><summary id="005P.lagda"><header><h1><span class="taxon"> 1. </span> <a class="slug" href="/005P.lagda.html">[005P.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><h2>–
-title: Agda Playground for HoTT</h2>
-<p>We need to disable the K-Axiom, which is incompatible with Homotopy type theory</p>
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Index"><details open><summary id="004R"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory <a class="slug" href="/004R.html">[004R]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p><span class="link local"><a href="/005S.html" title="HoTT Game [005S]">HoTT Game</a></span></p>
+  <section class="block hide-metadata" data-taxon=""><details open><summary id="005P.lagda"><header><h1><span class="taxon"> 1. </span>The Empty Type <a class="slug" href="/005P.lagda.html">[005P.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>We need to disable the K-Axiom, which is incompatible with Homotopy type theory</p>
 <pre><code class="language-agda">{-# OPTIONS --without-K #-}
 </code></pre>
-</details></section></details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="index"><header><h1><span class="taxon">Index. </span>Root <a class="slug" href="/index.html">[index]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+<p>In agda <code>Set</code> denotes the universe of small types. <span class="link local"><a href="/005N.html" title="Set [005N]">somelink</a></span></p>
+<p>The <em>emtpy type</em> is the type with no elements. It can be interpreted as a
+proposition that has no proofs.</p>
+<pre><code class="language-agda">data 𝟘 : Set where
+</code></pre>
+<p>The elimination rule for elements of the empty type yields an element of any
+depended type indexed by <code>x : 𝟘</code>. This is analogous to the idea, that you
+can prove anything from falsehood.</p>
+<pre><code class="language-agda">𝟘-elim : {A : 𝟘 → Set} (x : 𝟘) → A x
+𝟘-elim ()
+</code></pre>
+<p>Note that <code>()</code> refers to the impossible match. Since there is no <code>x : A</code>, there
+is nothing to define for that branch.</p>
+<p>We can define negation as a map that sends any type <code>A : Set</code> to <code>A -&gt; 𝟘 : Set</code>.</p>
+<pre><code class="language-agda">neg : Set -&gt; Set
+neg A = A -&gt; 𝟘 
+</code></pre>
+</details></section>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="index"><header><h1><span class="taxon">Index. </span>Root <a class="slug" href="/index.html">[index]</a></h1><div class="metadata"><ul></ul></div></header></summary>
   
   <p>You are viewing my personal collection of thoughts and notes. I write them for myself so not everything will make sense to you. This static page was generated using <a href="https://github.com/kokic/kodama"><em><strong>kodama</strong></em></a> which is itself inspired by <a href="https://www.forester-notes.org/index/index.xml"><em><strong>forester</strong></em></a>. The source files for these notes are available on <a href="https://github.com/lentilus/forest"><em><strong>github</strong></em></a>.</p>
   <p>Below is a non-exhaustive list of entry points to various topics.</p>
@@ -1631,4 +1650,4 @@ title: Agda Playground for HoTT</h2>
 
 </details></section></details></section></footer></article>
 
-<nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class=""><a class="bullet" href="/005P.lagda.html" title=" [005P.lagda]">■</a><span class="link local" onclick="window.location.href='#005P.lagda'"><span class="taxon"> 1. </span></span></li></ul></div></nav></div></body></html>
+<nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class=""><a class="bullet" href="/005P.lagda.html" title="The Empty Type [005P.lagda]">■</a><span class="link local" onclick="window.location.href='#005P.lagda'"><span class="taxon"> 1. </span>The Empty Type</span></li></ul></div></nav></div></body></html>

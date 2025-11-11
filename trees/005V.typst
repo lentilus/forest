@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[abelian Group]
+
+A #local("003K")[group] is called _abelian_ if its multiplication commutes.

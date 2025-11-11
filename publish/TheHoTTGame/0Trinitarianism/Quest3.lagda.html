@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width"><title>The Empty Type</title><link rel="stylesheet" href="/main.css">
+<meta name="viewport" content="width=device-width"><title>Pi Types</title><link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -55,26 +55,37 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/004R.html'" title="Homotopy Type Theory">« Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="005P.lagda"><header><h1><span class="taxon"></span>The Empty Type <a class="slug" href="/005P.lagda.html">[005P.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>We need to disable the K-Axiom, which is incompatible with Homotopy type theory</p>
-<pre><code class="language-agda">{-# OPTIONS --without-K #-}
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/005S.html'" title="HoTT Game">« HoTT Game</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest3.lagda"><header><h1><span class="taxon"></span>Pi Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html">[TheHoTTGame/0Trinitarianism/Quest3.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest3 where
+
+open import 0Trinitarianism.Preambles.P3
 </code></pre>
-<p>In agda <code>Set</code> denotes the universe of small types. <span class="link local"><a href="/005N.html" title="Set [005N]">somelink</a></span></p>
-<p>The <em>emtpy type</em> is the type with no elements. It can be interpreted as a
-proposition that has no proofs.</p>
-<pre><code class="language-agda">data 𝟘 : Set where
+<p><strong>Defining Addition</strong>*</p>
+<p>We can define addition of natural numbers by induction on one of the arguments.
+This yields two defitions for addition.</p>
+<pre><code class="language-agda">_+_ : ℕ → ℕ → ℕ
+zero + m   = m
+suc n + m = suc (n + m)
+
+_+'_ : ℕ → ℕ → ℕ
+n +' zero = n
+n +' suc m = suc (n +' m)
 </code></pre>
-<p>The elimination rule for elements of the empty type yields an element of any
-depended type indexed by <code>x : 𝟘</code>. This is analogous to the idea, that you
-can prove anything from falsehood.</p>
-<pre><code class="language-agda">𝟘-elim : {A : 𝟘 → Set} (x : 𝟘) → A x
-𝟘-elim ()
+<p><strong>The Statement</strong></p>
+<p>Using the definition <code>_+_</code> for addition it is easiest to do induction on the
+first argument it is easiest to do induction on <code>x</code>.</p>
+<pre><code class="language-agda">sumEven : ( x y : Σ ℕ isEven) -&gt; isEven (x .fst + y .fst)
+sumEven (zero , hx) y = y .snd
+sumEven (suc (suc x) , hx) y = sumEven (x , hx ) y
 </code></pre>
-<p>Note that <code>()</code> refers to the impossible match. Since there is no <code>x : A</code>, there
-is nothing to define for that branch.</p>
-<p>We can define negation as a map that sends any type <code>A : Set</code> to <code>A -&gt; 𝟘 : Set</code>.</p>
-<pre><code class="language-agda">neg : Set -&gt; Set
-neg A = A -&gt; 𝟘 
+<p>Analogously we can do induction on <code>y</code> since <code>_+'_</code> is defined by induction
+on the second argument.</p>
+<pre><code class="language-agda">sumEven' : ( x y : Σ ℕ isEven) -&gt; isEven (x .fst +' y .fst)
+sumEven' x (zero , hy) = x .snd
+sumEven' x (suc (suc y) , hy) = sumEven' x (y , hy )
 </code></pre>
+<p>Interestingly the second proof gets accepted for <code>_+_</code> too.</p>
+<p><strong>Decidability of <code>isEven</code></strong></p>
+<p>TODO</p>
 </details></section><footer></footer></article>
 
 </div></body></html>
