@@ -65,10 +65,13 @@
     in pkgs.mkShell {
       buildInputs = [
         pkgs.typst
-        pkgs.agda
         pkgs.tinymist
         pkgs.nodejs
         pkgs.miniserve
+        (pkgs.agda.withPackages (ps: [
+              ps.standard-library
+              ps.cubical
+            ]))
 
         inputs.zeta.packages.${system}.zeta
         kodama
