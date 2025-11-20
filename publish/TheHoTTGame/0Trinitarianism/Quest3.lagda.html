@@ -55,11 +55,11 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/005S.html'" title="HoTT Game">« HoTT Game</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest3.lagda"><header><h1><span class="taxon"></span>Pi Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html">[TheHoTTGame/0Trinitarianism/Quest3.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest3 where
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/H00B.lagda.html'" title="Agda in the context of Homotopy Type Theory">« Agda in the context of Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest3.lagda"><header><h1><span class="taxon"></span>Pi Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html">[TheHoTTGame/0Trinitarianism/Quest3.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest3 where
 
 open import 0Trinitarianism.Preambles.P3
 </code></pre>
-<p><strong>Defining Addition</strong>*</p>
+<h1>Defining Addition</h1>
 <p>We can define addition of natural numbers by induction on one of the arguments.
 This yields two defitions for addition.</p>
 <pre><code class="language-agda">_+_ : ℕ → ℕ → ℕ
@@ -70,7 +70,7 @@ _+'_ : ℕ → ℕ → ℕ
 n +' zero = n
 n +' suc m = suc (n +' m)
 </code></pre>
-<p><strong>The Statement</strong></p>
+<h1>Sum of even natural numbers</h1>
 <p>Using the definition <code>_+_</code> for addition it is easiest to do induction on the
 first argument it is easiest to do induction on <code>x</code>.</p>
 <pre><code class="language-agda">sumEven : ( x y : Σ ℕ isEven) -&gt; isEven (x .fst + y .fst)
@@ -83,9 +83,7 @@ on the second argument.</p>
 sumEven' x (zero , hy) = x .snd
 sumEven' x (suc (suc y) , hy) = sumEven' x (y , hy )
 </code></pre>
-<p>Interestingly the second proof gets accepted for <code>_+_</code> too.</p>
-<p><strong>Decidability of <code>isEven</code></strong></p>
-<p>TODO</p>
+<p>(Interestingly the second proof gets accepted for <code>_+_</code> too.)</p>
 </details></section><footer></footer></article>
 
 </div></body></html>

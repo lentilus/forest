@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Comfy Agda Dev Environment</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/H00B.lagda.html'" title="Agda in the context of Homotopy Type Theory">« Agda in the context of Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00D.lagda"><header><h1><span class="taxon"></span>Comfy Agda Dev Environment <a class="slug" href="/hca/H00D.lagda.html">[hca/H00D.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">open import Cubical.Foundations.Prelude
+</code></pre>
+<h1>What we need</h1>
+<ul>
+<li>an <em>agda</em> installation</li>
+<li>a nice text editor (<em>Neovim</em> + <em>Cornelis</em>)</li>
+<li>literate programming support</li>
+</ul>
+<h1>Working with Cornelis</h1>
+<p>We will assume two Types <code>A</code> and <code>B</code>.</p>
+<pre><code class="language-agda">data A : Type where
+  a1 : A
+  a2 : A
+
+postulate
+  B : Type
+
+</code></pre>
+<p>Load agda files with <code>:CornelisLoad</code></p>
+<p>Goals <code>{!!}</code>, <code>:CornelisTypeContextInfer</code></p>
+<pre><code class="language-agda">someFunc : A -&gt; B
+someFunc a = {!!}
+</code></pre>
+<p>Split cases with <code>:CornelisLoad</code>.</p>
+<pre><code class="language-agda">-- switch : A -&gt; A
+-- switch a1 = a2
+-- switch a2 = a1
+
+switch : A -&gt; A
+switch a = {!!}
+</code></pre>
+<p>What is <code>switch a1</code>? Normalize expressions with <code>:CornelisNormalize</code></p>
+<h1>Links</h1>
+<ul>
+<li>agda documentation: <span class="link external"><a href="https://agda.readthedocs.io/en/v2.8.0" title="agda.readthedocs.io/en/v2.8.0 [https://agda.readthedocs.io/en/v2.8.0]">agda.readthedocs.io/en/v2.8.0</a></span></li>
+<li>nvim documentation:  <span class="link external"><a href="https://neovim.io/doc" title="neovim.io/doc [https://neovim.io/doc]">neovim.io/doc</a></span></li>
+<li>cornelis plugin:  <span class="link external"><a href="https://github.com/agda/cornelis" title="github.com/agda/cornelis [https://github.com/agda/cornelis]">github.com/agda/cornelis</a></span></li>
+</ul>
+</details></section><footer></footer></article>
+
+</div></body></html>

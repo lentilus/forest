@@ -671,6 +671,16 @@
 </svg>
 </span>.</p>
   <p><strong>Proof</strong>. Do the <span class="link local"><a href="/000Y.html" title="Euclidean Algorithm [000Y]">Euclidean Algorithm</a></span> in reverse.</p>
+</details></section><section class="block" data-taxon="Definition"><details ><summary id="hca-H007.lagda"><header><h1><span class="taxon">Definition. </span>Natural Numbers <a class="slug" href="/hca/H007.lagda.html">[hca/H007.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">open import Cubical.Foundations.Prelude hiding (_∨_) public
+</code></pre>
+<p>We define the <span class="link local"><a href="/001J.html" title="Natural Numbers [001J]">natural numbers</a></span> as follows.</p>
+<pre><code class="language-agda">data ℕ : Type where
+  zero : ℕ
+  suc : ℕ → ℕ
+</code></pre>
+<p>This is indeed enough and we do not need to worry about them being cyclic,
+since for any <code>n : ℕ</code>, <code>suc n</code> wont be judgementally equal to <code>zero</code>,
+unless we define it to be.</p>
 </details></section></details></section></footer></article>
 
 </div></body></html>

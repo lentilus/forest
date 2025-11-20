@@ -1,0 +1,9 @@
+name: hca
+include: .
+depend: cubical
+flags:
+  --cubical
+  --guardedness
+  --no-import-sorts
+  -W noUnsupportedIndexedMatch
+  --allow-unsolved-metas

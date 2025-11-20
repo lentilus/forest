@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Section]
+
+For a #local("005K")[morphism] $f$ and a right inverse $g$ such that $f g$ is an identity,
+we call $g$ a _section_ of f.

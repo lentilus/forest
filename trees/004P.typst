@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Theorem]
-#title[Loesungen der pellschen Gleichung]
+#title[Solutions of Pell's equation]
 
 Sei $D in NN$ be non-square. Then the solutions of the
 #local("0030")[Pell equation] are exactly

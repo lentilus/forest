@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Preorder</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/005J.html'" title="Category Theory">« Category Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="0063"><header><h1><span class="taxon">Definition. </span>Preorder <a class="slug" href="/0063.html">[0063]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>A <em>preorder</em> is a <span class="link local"><a href="/000I.html" title="ZFC: Zermelo-Fraenkel Set Theory with Choice [000I]">set</a></span> with a <em>binary relation</em> <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.558 7.513000000000001" width="8.558pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g7FD4588F56624F02CE596415678B13A1" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g7FD4588F56624F02CE596415678B13A1" overflow="visible">
+            <path d="M 7.348 0.41799998 C 7.546 0.319 7.733 0.484 7.733 0.65999997 C 7.733 0.759 7.678 0.83599997 7.579 0.88 L 1.705 3.6629999 L 7.579 6.446 C 7.678 6.49 7.733 6.567 7.733 6.666 C 7.733 6.853 7.645 6.941 7.469 6.941 C 7.425 6.941 7.381 6.93 7.348 6.919 L 1.034 3.927 C 0.924 3.872 0.869 3.784 0.869 3.6629999 C 0.869 3.542 0.924 3.465 1.034 3.41 Z M 7.458 -0.792 L 1.1 -0.792 C 0.924 -0.792 0.83599997 -0.88 0.83599997 -1.045 C 0.83599997 -1.221 0.924 -1.309 1.1 -1.309 L 7.458 -1.309 C 7.634 -1.309 7.722 -1.221 7.722 -1.045 C 7.722 -0.913 7.601 -0.792 7.458 -0.792 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span>, that is <em>reflexive</em> and <em>transitive</em>.</p>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Observation"><details ><summary id="0064"><header><h1><span class="taxon">Observation. </span>Preorders as Categories <a class="slug" href="/0064.html">[0064]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>A <span class="link local"><a href="/0063.html" title="Preorder [0063]">preorder</a></span> is precisely a (<span class="link local"><a href="/005M.html" title="small Category [005M]">small</a></span>) <span class="link local"><a href="/005K.html" title="Category [005K]">category</a></span> in which there are no parallel pairs of distinct morphisms between any fixed pair of objects.</p>
+</details></section></details></section></footer></article>
+
+</div></body></html>

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Automorphism]
+
+An #local("0068")[endomorphism] that is also an #local("005W")[isomorphism] is called an an _automorphism_.

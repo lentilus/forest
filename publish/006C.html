@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Maximal groupoid</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/005J.html'" title="Category Theory">« Category Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="006C"><header><h1><span class="taxon">Definition. </span>Maximal groupoid <a class="slug" href="/006C.html">[006C]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>For a <span class="link local"><a href="/005K.html" title="Category [005K]">category</a></span> <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.667999999999997 7.513000000000001" width="8.667999999999997pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1BA9C3A73F3EFA749DECBBAE55E7C341" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g1BA9C3A73F3EFA749DECBBAE55E7C341" overflow="visible">
+            <path d="M 1.628 2.398 C 1.628 3.806 2.244 5.236 2.937 6.028 C 3.498 6.677 4.466 7.3259997 5.555 7.3259997 C 6.699 7.3259997 7.2599998 6.457 7.2599998 5.269 C 7.2599998 5.17 7.2269998 4.818 7.2269998 4.719 C 7.2269998 4.62 7.2929997 4.565 7.436 4.565 C 7.491 4.565 7.535 4.576 7.568 4.587 C 7.623 4.664 7.656 4.741 7.678 4.818 L 8.36 7.601 C 8.36 7.7 8.305 7.755 8.195 7.755 C 8.151 7.755 8.085 7.711 7.9969997 7.612 L 7.282 6.809 C 6.853 7.436 6.248 7.755 5.467 7.755 C 4.862 7.755 4.268 7.612 3.6629999 7.337 C 2.442 6.765 1.551 5.863 0.979 4.631 C 0.693 4.026 0.55 3.41 0.55 2.783 C 0.55 1.903 0.825 1.188 1.386 0.616 C 1.947 0.044 2.662 -0.242 3.542 -0.242 C 4.411 -0.242 5.203 0.077 5.9179997 0.704 C 6.215 0.957 6.468 1.265 6.677 1.606 C 6.974 2.101 7.128 2.442 7.128 2.651 C 7.128 2.75 7.073 2.805 6.952 2.805 C 6.853 2.805 6.798 2.761 6.776 2.662 C 6.545 1.947 6.182 1.375 5.687 0.968 C 5.06 0.451 4.4 0.187 3.718 0.187 C 2.398 0.187 1.628 1.078 1.628 2.398 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span>, we call the collection of isomorphisms in <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.667999999999997 7.513000000000001" width="8.667999999999997pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1BA9C3A73F3EFA749DECBBAE55E7C341" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g1BA9C3A73F3EFA749DECBBAE55E7C341" overflow="visible">
+            <path d="M 1.628 2.398 C 1.628 3.806 2.244 5.236 2.937 6.028 C 3.498 6.677 4.466 7.3259997 5.555 7.3259997 C 6.699 7.3259997 7.2599998 6.457 7.2599998 5.269 C 7.2599998 5.17 7.2269998 4.818 7.2269998 4.719 C 7.2269998 4.62 7.2929997 4.565 7.436 4.565 C 7.491 4.565 7.535 4.576 7.568 4.587 C 7.623 4.664 7.656 4.741 7.678 4.818 L 8.36 7.601 C 8.36 7.7 8.305 7.755 8.195 7.755 C 8.151 7.755 8.085 7.711 7.9969997 7.612 L 7.282 6.809 C 6.853 7.436 6.248 7.755 5.467 7.755 C 4.862 7.755 4.268 7.612 3.6629999 7.337 C 2.442 6.765 1.551 5.863 0.979 4.631 C 0.693 4.026 0.55 3.41 0.55 2.783 C 0.55 1.903 0.825 1.188 1.386 0.616 C 1.947 0.044 2.662 -0.242 3.542 -0.242 C 4.411 -0.242 5.203 0.077 5.9179997 0.704 C 6.215 0.957 6.468 1.265 6.677 1.606 C 6.974 2.101 7.128 2.442 7.128 2.651 C 7.128 2.75 7.073 2.805 6.952 2.805 C 6.853 2.805 6.798 2.761 6.776 2.662 C 6.545 1.947 6.182 1.375 5.687 0.968 C 5.06 0.451 4.4 0.187 3.718 0.187 C 2.398 0.187 1.628 1.078 1.628 2.398 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> the <em>maximal groupoid</em> inside <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.667999999999997 7.513000000000001" width="8.667999999999997pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1BA9C3A73F3EFA749DECBBAE55E7C341" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g1BA9C3A73F3EFA749DECBBAE55E7C341" overflow="visible">
+            <path d="M 1.628 2.398 C 1.628 3.806 2.244 5.236 2.937 6.028 C 3.498 6.677 4.466 7.3259997 5.555 7.3259997 C 6.699 7.3259997 7.2599998 6.457 7.2599998 5.269 C 7.2599998 5.17 7.2269998 4.818 7.2269998 4.719 C 7.2269998 4.62 7.2929997 4.565 7.436 4.565 C 7.491 4.565 7.535 4.576 7.568 4.587 C 7.623 4.664 7.656 4.741 7.678 4.818 L 8.36 7.601 C 8.36 7.7 8.305 7.755 8.195 7.755 C 8.151 7.755 8.085 7.711 7.9969997 7.612 L 7.282 6.809 C 6.853 7.436 6.248 7.755 5.467 7.755 C 4.862 7.755 4.268 7.612 3.6629999 7.337 C 2.442 6.765 1.551 5.863 0.979 4.631 C 0.693 4.026 0.55 3.41 0.55 2.783 C 0.55 1.903 0.825 1.188 1.386 0.616 C 1.947 0.044 2.662 -0.242 3.542 -0.242 C 4.411 -0.242 5.203 0.077 5.9179997 0.704 C 6.215 0.957 6.468 1.265 6.677 1.606 C 6.974 2.101 7.128 2.442 7.128 2.651 C 7.128 2.75 7.073 2.805 6.952 2.805 C 6.853 2.805 6.798 2.761 6.776 2.662 C 6.545 1.947 6.182 1.375 5.687 0.968 C 5.06 0.451 4.4 0.187 3.718 0.187 C 2.398 0.187 1.628 1.078 1.628 2.398 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span>.</p>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Lemma"><details ><summary id="006D"><header><h1><span class="taxon">Lemma. </span>Maximal groupoids are subcategories <a class="slug" href="/006D.html">[006D]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.667999999999997 7.513000000000001" width="8.667999999999997pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1BA9C3A73F3EFA749DECBBAE55E7C341" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g1BA9C3A73F3EFA749DECBBAE55E7C341" overflow="visible">
+            <path d="M 1.628 2.398 C 1.628 3.806 2.244 5.236 2.937 6.028 C 3.498 6.677 4.466 7.3259997 5.555 7.3259997 C 6.699 7.3259997 7.2599998 6.457 7.2599998 5.269 C 7.2599998 5.17 7.2269998 4.818 7.2269998 4.719 C 7.2269998 4.62 7.2929997 4.565 7.436 4.565 C 7.491 4.565 7.535 4.576 7.568 4.587 C 7.623 4.664 7.656 4.741 7.678 4.818 L 8.36 7.601 C 8.36 7.7 8.305 7.755 8.195 7.755 C 8.151 7.755 8.085 7.711 7.9969997 7.612 L 7.282 6.809 C 6.853 7.436 6.248 7.755 5.467 7.755 C 4.862 7.755 4.268 7.612 3.6629999 7.337 C 2.442 6.765 1.551 5.863 0.979 4.631 C 0.693 4.026 0.55 3.41 0.55 2.783 C 0.55 1.903 0.825 1.188 1.386 0.616 C 1.947 0.044 2.662 -0.242 3.542 -0.242 C 4.411 -0.242 5.203 0.077 5.9179997 0.704 C 6.215 0.957 6.468 1.265 6.677 1.606 C 6.974 2.101 7.128 2.442 7.128 2.651 C 7.128 2.75 7.073 2.805 6.952 2.805 C 6.853 2.805 6.798 2.761 6.776 2.662 C 6.545 1.947 6.182 1.375 5.687 0.968 C 5.06 0.451 4.4 0.187 3.718 0.187 C 2.398 0.187 1.628 1.078 1.628 2.398 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> be a <span class="link local"><a href="/005K.html" title="Category [005K]">category</a></span>. The <span class="link local"><a href="/006C.html" title="Maximal groupoid [006C]">maximal groupoid</a></span> inside <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.667999999999997 7.513000000000001" width="8.667999999999997pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1BA9C3A73F3EFA749DECBBAE55E7C341" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g1BA9C3A73F3EFA749DECBBAE55E7C341" overflow="visible">
+            <path d="M 1.628 2.398 C 1.628 3.806 2.244 5.236 2.937 6.028 C 3.498 6.677 4.466 7.3259997 5.555 7.3259997 C 6.699 7.3259997 7.2599998 6.457 7.2599998 5.269 C 7.2599998 5.17 7.2269998 4.818 7.2269998 4.719 C 7.2269998 4.62 7.2929997 4.565 7.436 4.565 C 7.491 4.565 7.535 4.576 7.568 4.587 C 7.623 4.664 7.656 4.741 7.678 4.818 L 8.36 7.601 C 8.36 7.7 8.305 7.755 8.195 7.755 C 8.151 7.755 8.085 7.711 7.9969997 7.612 L 7.282 6.809 C 6.853 7.436 6.248 7.755 5.467 7.755 C 4.862 7.755 4.268 7.612 3.6629999 7.337 C 2.442 6.765 1.551 5.863 0.979 4.631 C 0.693 4.026 0.55 3.41 0.55 2.783 C 0.55 1.903 0.825 1.188 1.386 0.616 C 1.947 0.044 2.662 -0.242 3.542 -0.242 C 4.411 -0.242 5.203 0.077 5.9179997 0.704 C 6.215 0.957 6.468 1.265 6.677 1.606 C 6.974 2.101 7.128 2.442 7.128 2.651 C 7.128 2.75 7.073 2.805 6.952 2.805 C 6.853 2.805 6.798 2.761 6.776 2.662 C 6.545 1.947 6.182 1.375 5.687 0.968 C 5.06 0.451 4.4 0.187 3.718 0.187 C 2.398 0.187 1.628 1.078 1.628 2.398 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> defines a <span class="link local"><a href="/006A.html" title="Subcategory [006A]">subcategory</a></span>.</p>
+  <p><strong>Proof</strong>. TODO</p>
+</details></section></details></section></footer></article>
+
+</div></body></html>

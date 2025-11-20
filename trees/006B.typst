@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Inverse isomorphisms are unique]
+
+the #local("0066")[left inverse] and #local("0067")[right inverse] to a common
+#local("005K")[morphism] coincide.
+This means every morphism can have at most one inverse #local("005W")[isomorphism].
+
+#proof[
+  TODO
+]

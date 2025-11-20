@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Endomorphism]
+
+A #local("005K")[morphism] with equal domain and codomain is called an _endomorphism_.

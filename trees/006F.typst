@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+#title[opposite categories are categories]
+
+Note that for every #local("005K")[category]  $C$, its #local("006E")[opposite category] $C^"op"$ fullfills all axioms of a category.
+
+#proof[
+  TODO
+]

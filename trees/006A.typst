@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Subcategory]
+
+A _subcategory_ $D$ of a a #local("005K")[category]  $C$ is definded by
+restricting to a subcollection of objects and subcollection of morphisms
+in $D$, the identity morphism of any object in $D$ and the composite of
+any composable pair of morphisms in $D$.

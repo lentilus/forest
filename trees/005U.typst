@@ -1,50 +1,87 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
+#set heading(numbering: none)
+#set enum(numbering: "(a)")
+
 #taxon[Exercise]
-#title[Algebra I - Blatt 01]
+#title[Algebra I - 01]
 
 == Aufgabe 1
-+ TODO
++ *Lemma*. Zyklische Gruppen $<<g>>$ mit unendlich vielen Elementen haben
+  unendlich viele Untergruppen, denn fuer jedes $l in NN$ ist ${g^(l k) | k in ZZ}$ eine andere Untergruppe.
 
-+ Sei $G$ eine #local("005V")[abelsche Gruppe] , dann ist $U := { g in G | "ord"(g) "ist endlich" }$
+  Jetzt zur eigentlichen Aufgabe: Jede unendliche Gruppe $G$ hat unendlich viele Untergruppen.
+
+  #proof[
+    Sei $g in G$, dann ist $<<g>> subset.eq G$ eine Untergruppe. Im naechsten Schritt waehlen wir ein $g' in G$, sodass $g' in.not <<g>>$. Bemerke, dass $<<g>> != <<g'>>$.
+    Diesen Prozess wiederholen wir, bis wir eine zyklische Gruppe mit unendlich vielen Elementen finden. In dem Fall wenden wir das obige _Lemma_ an und sind fertig.
+    Finden wir nicht nach endlich vielen Schritten eine zyklische Untergruppe mit unendlich vielen Elementen, generieren wir mit dem Algorithmus unendlich viele endliche Untergruppen.
+  ]
+
++ Sei $G$ eine abelsche Gruppe, dann ist $U := { g in G | "ord"(g) "ist endlich" }$
   eine Untergruppe von $G$.
+
   #proof[
     Wir zeigen, dass $U$ abgeschlossen unter Inversen-Bildung ist.
     Ist $g in U$ mit $"ord"(g) = k$, dann ist $g^(-1) = g^(k-1)$.
-    Es wir schreiben $1 = (g g^(-1))^k$ als
-    $
-      1 = g^k (g^(-1))^k = (g^(-1))^k.
-    $
+    Es wir schreiben $1 = (g g^(-1))^k$ als $1 = g^k (g^(-1))^k = (g^(-1))^k.$
     Also hat auch $g^(-1)$ endliche Ordnung.
 
     Es ist noch zu zeigen, dass das Produkt zweier Elemente $g,h in U$ stets endliche Ordnung hat.
     Sei wieder $"ord"(g) = k$ und $"ord"(h) = l$.
-    Wir nutzen, dass Inverse beidseitig und sehen, dass
-    $
-      1 = (g h)^(k * l) =_"abelsch" (g^(k))^(l) (h^(l))^(k) = 1.
-    $
+    Wir sehen, dass $(g h)^(k * l) =_"abelsch" (g^(k))^(l) (h^(l))^(k) = 1.$
   ]
   Also hat $g h$ endliche Ordnung.
 
-== Aufgabe 2
-
 == Aufgabe 3
-+ $(==>)$ Seien $H_1, H_2 subset.eq G$. Angenommen $H_1 uu H_2$ ist ein Untergruppe,
-  aber  weder $H_1 subset.eq  H_2$ noch $H_2 subset.eq H_1$,
-  dann existiert ein Element $g_1 in H_1$ mit $g_1 in.not H_2$,
-  sowie ein Element $g_2 in H_2$, aber $g_2 in.not H_1$.
-  Angenommen $g_1 * g_2 in H_1$, dann waere $g_1^(-1) g_1 g_2  = g_2 in H_1$,
-  also ist $g_1 g_2 in.not H_1$
-  Analog sehen wir, dass $g_1 g_2 in.not H_2$.
-  Also ist $g_1 g_2 in.not H_1 uu H_2$. 
 
-  $(<==)$ Ist $H_1 subset.eq H_2$, dann ist $H_1 uu H_2 = H_2$ eine Untergruppe.
-  Der Fall $H_2 subset.eq  H_1$ ist analog.
++ Sei $G$ eine Gruppe mit Untergruppen $H_1, H_2$. Dann ist $H_1 uu H_2$ eine Untergruppe von $G$, genau dann wenn $H_1 subset.eq H_2$, oder $H_2 subset.eq H_1$.
+
+  #proof[
+    $(==>)$ Seien $H_1, H_2 subset.eq G$. Angenommen $H_1 uu H_2$ ist ein Untergruppe,
+    aber weder $H_1 subset.eq  H_2$ noch $H_2 subset.eq H_1$,
+    dann existiert ein Element $g_1 in H_1$ mit $g_1 in.not H_2$,
+    sowie ein Element $g_2 in H_2$, aber $g_2 in.not H_1$.
+    Angenommen $g_1 * g_2 in H_1$, dann waere $g_1^(-1) g_1 g_2  = g_2 in H_1$,
+    also ist $g_1 g_2 in.not H_1$
+    Analog sehen wir, dass $g_1 g_2 in.not H_2$.
+    Also ist $g_1 g_2 in.not H_1 uu H_2$. 
+
+    $(<==)$ Ist $H_1 subset.eq H_2$, dann ist $H_1 uu H_2 = H_2$ eine Untergruppe.
+    Der Fall $H_2 subset.eq  H_1$ ist analog.
+  ]
   
-+ Der Fall, wo $H_1 subset.eq H_2$ oder $H_2 subset.eq H_1$ ist trivial. Andernfalls greifen die Ueberlegungen aus Aufgaenteil $(a)$.
++ Seinen $H_1, H_2$ echte Untergruppen der Gruppe $G$. Dann ist $H_1 uu H_2 != G$.
+
+ #proof[
+   Der Fall, wo $H_1 subset.eq H_2$ oder $H_2 subset.eq H_1$ ist trivial. Andernfalls greifen die Ueberlegungen aus Aufgaenteil $(a)$.
+ ]
 
 == Aufgabe 4
+Sei $G$ eine endliche Gruppe mit $n$ Elementen. Dann wird $hash "Aut"(G)$ von $(n-1)!$ geteilt.
 
-+ Wir schaetzen die groesse der Menge der Automorphismen gegen $(n-1)!$ ab.
-Jede kleinere Zahl 
+#proof[
+  Wir betrachten die Gruppe der bijektiven Abbildungen $H = {f : G ->  G | f "bijektiv", f(1)=1}$, die die $1$ fixieren.
+  $G$ ist eine Untergruppe von $H$ und $hash H = (n-1)!$. Aus dem Satz von Lagrange folgt dann direkt: $hash G$ teilt $hash H = (n-1)!$.
+]
+
+
+== Aufgabe 5
+Die Gruppe $G$ operiert auf der Menge $M$.
++ Sei $g in G$, $m in M$. Dann ist $"Stab"(g m) = g "Stab"(m) g^(-1)$.
+
+  #proof[
+    Die Gleichheit folgt direkt aus der Definition des Stabilisators.
+    $
+      "Stab"(g m) =& {h | h in G, h g m = g m} = {h | h in G, g^(-1) h g m = m} \
+                  =& {g h g^(-1) | h in G, h m = m}  = g "Stab"(m) g^(-1).
+    $
+
+  ]
++ $"Stab"(m)$ it genau dann Normalteiler in $G$, wenn $"Stab"(g m) = "Stab"(m)$ fuer alle $g in G$.
+
+  #proof[
+    $"Stab"(m)$ ist Normalteiler in $G$, genau dann wenn $g"Stab"(m) g^(-1) = "Stab"(m)$ fuer alle $g in G$. Wir haben bereits in (a) gesehen, dass $"Stab"(g m) = g"Stab"(m) g^(-1)$.
+    Durch einsetzen von $"Stab"(m)$ fuer $"Stab"(g m)$ folgt die Behauptung.
+  ]

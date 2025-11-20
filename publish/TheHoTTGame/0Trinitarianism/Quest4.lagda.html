@@ -55,38 +55,38 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/005S.html'" title="HoTT Game">« HoTT Game</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest4.lagda"><header><h1><span class="taxon"></span>Paths and Equality <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html">[TheHoTTGame/0Trinitarianism/Quest4.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest4 where
-
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/H00B.lagda.html'" title="Agda in the context of Homotopy Type Theory">« Agda in the context of Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest4.lagda"><header><h1><span class="taxon"></span>Paths and Equality <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html">[TheHoTTGame/0Trinitarianism/Quest4.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest4 where
 open import 0Trinitarianism.Preambles.P4
 
 </code></pre>
-<p><strong>The Identity Type</strong></p>
+<h1>The Identity Type</h1>
+<p>We will view elements of <code>Id</code> as identifications / equalities.</p>
 <p><code>Id</code> denotes the identity type. We give a proof <code>rfl</code> for <code>Id x x</code>. In other words – <code>Id</code> is reflexive.</p>
 <pre><code class="language-agda">data Id {A : Type} : (x y : A) -&gt; Type where
   rfl : {x : A} -&gt; Id x x
 </code></pre>
 <p>Since <code>rfl</code> is the only element of type <code>Id</code> it suffices to show that <code>rfl</code> is symmetric. We do this by casing on <code>p : Id</code> which only allows <code>rfl</code> thus judgementally equal <code>x</code> and <code>y</code>.</p>
 <pre><code class="language-agda">idSym : (A : Type) (x y : A) -&gt; Id x y -&gt; Id y x
-idSym A x x rfl = rfl
+idSym A x y rfl = rfl
 </code></pre>
 <p>Or implicitly (what we will use from now on).</p>
 <pre><code class="language-agda">Sym : {A : Type} {x y : A} → Id x y → Id y x
 Sym rfl = rfl
 </code></pre>
-<pre><code class="language-agda">-- transitivity
-idTrans : (A : Type) (x y z : A) -&gt; Id x y -&gt; Id y z -&gt; Id x z
+<p>We can concatenate identifications to get results about <em>transitivity</em>.</p>
+<pre><code class="language-agda">idTrans : (A : Type) (x y z : A) -&gt; Id x y -&gt; Id y z -&gt; Id x z
 idTrans A x y z rfl rfl = rfl
 </code></pre>
-<p>with implicit arguments</p>
+<p>Implicit concatenation</p>
 <pre><code>_*_ : {A : Type} {x y z : A}  -&gt; Id x y -&gt; Id y z -&gt; Id x z
 rfl * p = p
 </code></pre>
-<p><strong>Groupoid Laws</strong></p>
-<p>concatenation is right neutral.</p>
+<h1>Groupoid Laws</h1>
+<p>Concatenation is right neutral.</p>
 <pre><code class="language-agda">rfl* : {A : Type} {x y : A} (p : Id x y) → Id (rfl * p) p
 rfl* p = rfl
 </code></pre>
-<p>concatenation with rfl is left neutral.</p>
+<p>Concatenation with rfl is left neutral.</p>
 <pre><code>*rfl : {A : Type} {x y : A} (p : Id x y) → Id (p * rfl) p
 *rfl rfl = rfl
 </code></pre>
@@ -97,11 +97,12 @@ Sym* rfl = rfl
 *Sym : {A : Type} {x y : A} (p : Id x y) → Id (p * Sym p) rfl
 *Sym rfl = rfl
 </code></pre>
+<p>Concatenation is associative.</p>
 <pre><code class="language-agda">Assoc : {A : Type} {w x y z : A} (p : Id w x) (q : Id x y) (r : Id y z)
         → Id ((p * q) * r) (p * (q * r))
 Assoc rfl q r = rfl
 </code></pre>
-<p><strong>Recursor - The Mapping Out Property of <code>Id</code></strong></p>
+<h1>Recursor - The Mapping Out Property of <code>Id</code></h1>
 <pre><code class="language-agda">private
   variable
     A : Type
@@ -110,17 +111,6 @@ Assoc rfl q r = rfl
 <pre><code class="language-agda">outOfId : (M : (y : A) → Id x y → Type) → M x rfl
   → {y : A} (p : Id x y) → M y p
 outOfId M x rfl = x
-</code></pre>
-<h2>The Path Space</h2>
-<p>We will from now on use the <em>path space</em> <code>x ≡ y</code> from cubical agda representing the same idea as our <code>Id</code>.</p>
-<p>We equip <code>≡</code> with three axioms:</p>
-<pre><code class="language-agda">-- If `x` is a point in some space then `refl` is a proof of `x ≡ x`.
-</code></pre>
-<pre><code class="language-agda">J : (M : (y : A) → x ≡ y → Type) → M x refl
-  → {y : A} (p : x ≡ y) → M y p
-</code></pre>
-<pre><code class="language-agda">JRefl : (M : (y : A) → x ≡ y → Type) (h : M x refl)
-  → J M h refl ≡ h
 </code></pre>
 </details></section><footer></footer></article>
 

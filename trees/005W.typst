@@ -2,4 +2,8 @@
 #show: template
 
 #taxon[Definition]
-#title[Groupoid]
+#title[Isomorphism in a Category]
+
+An _isomorphism_ is a morphism $f: X ->  Y$ for which there exists a morphism
+$g: Y -> X$ such that $g f = 1_(X) $ and $f g = 1_(Y)$. In that case we say
+that $X$ and $Y$ are _isomorophic_ , in symbols $X ~= Y$.

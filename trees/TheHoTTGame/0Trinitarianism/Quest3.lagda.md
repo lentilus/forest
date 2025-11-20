@@ -8,7 +8,7 @@ module 0Trinitarianism.Quest3 where
 open import 0Trinitarianism.Preambles.P3
 ```
 
-**Defining Addition***
+# Defining Addition
 
 We can define addition of natural numbers by induction on one of the arguments.
 This yields two defitions for addition.
@@ -23,7 +23,7 @@ n +' zero = n
 n +' suc m = suc (n +' m)
 ```
 
-**The Statement**
+# Sum of even natural numbers
 
 Using the definition `_+_` for addition it is easiest to do induction on the
 first argument it is easiest to do induction on `x`.
@@ -40,9 +40,4 @@ sumEven' : ( x y : Σ ℕ isEven) -> isEven (x .fst +' y .fst)
 sumEven' x (zero , hy) = x .snd
 sumEven' x (suc (suc y) , hy) = sumEven' x (y , hy )
 ```
-Interestingly the second proof gets accepted for `_+_` too.
-
-
-**Decidability of `isEven`**
-
-TODO
+(Interestingly the second proof gets accepted for `_+_` too.)

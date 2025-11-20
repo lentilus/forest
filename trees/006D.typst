@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Maximal groupoids are subcategories]
+
+Let $C$ be a #local("005K")[category]. The #local("006C")[maximal groupoid] inside $C$ defines a #local("006A")[subcategory].
+
+#proof[
+  TODO
+]

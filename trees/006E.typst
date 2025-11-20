@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Opposite Category]
+For a #local("005K")[category] $C$, the _opposite category_ $C^"op"$ is given by
+the same objects and morhpisms as in $C$, where every morphism $f^"op" : Y -> X$ in $C^"op"$
+is defined to have opposite domain and codomain compared to the corresponding morphism $f : X -> Y$ in $C$.
+For each object $X$, $1_(X)^"op"$ serves as the identity in $C^"op"$
+
+We define composition $g^"op" f^"op"$ to be $(f g)^"op"$. Observe that $g^"op"$
+and $f^"op"$ are precisely composable when $f$ and $g$ are composable.

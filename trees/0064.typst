@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Preorders as Categories]
+
+A #local("0063")[preorder]  is precisely a (#local("005M")[small])  #local("005K")[category]
+in which there are no parallel pairs of distinct morphisms between any fixed
+pair of objects.

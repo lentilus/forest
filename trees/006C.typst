@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Maximal groupoid]
+
+For a #local("005K")[category] $C$, we call the collection of isomorphisms in $C$ the _maximal groupoid_ inside $C$.

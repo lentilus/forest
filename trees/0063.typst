@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Preorder]
+
+A _preorder_ is a #local("000I")[set] with a _binary relation_ $<=$, that is
+_reflexive_ and _transitive_.
