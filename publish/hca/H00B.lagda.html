@@ -55,9 +55,12 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00B.lagda"><header><h1><span class="taxon"></span>Agda in the context of Homotopy Type Theory <a class="slug" href="/hca/H00B.lagda.html">[hca/H00B.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Just some notes for a small presentation on (cubical) agda in the context of HoTT.</p>
-<p><section class="block hide-metadata" data-taxon=""><details open><summary id="hca-H00C.lagda"><header><h1><span class="taxon"> 1. </span>Some intuition on HoTT in Agda <a class="slug" href="/hca/H00C.lagda.html">[hca/H00C.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code>open import Cubical.Foundations.Prelude
-</code></pre>
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00B.lagda"><header><h1><span class="taxon"></span>Agda in the context of Homotopy Type Theory <a class="slug" href="/hca/H00B.lagda.html">[hca/H00B.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Some notes for getting started with (cubical) agda in the context of HoTT.</p>
+<p><section class="block hide-metadata" data-taxon=""><details ><summary id="hca-H00C.lagda"><header><h1><span class="taxon"></span>Some intuition on HoTT in Agda <a class="slug" href="/hca/H00C.lagda.html">[hca/H00C.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```
+open import Cubical.Foundations.Prelude
+```
+-->
 <p>HoTT is a foundation for mathematics based on <em>MLTT</em>.
 In HoTT we don’t have <em>sets</em> like in ZFC, but <em>elements</em> of <em>types</em>.</p>
 <p><code>A</code> is a type and <code>x : A</code> is an element of type <code>A</code>.</p>
@@ -69,8 +72,11 @@ In HoTT we don’t have <em>sets</em> like in ZFC, but <em>elements</em> of <em>
 id a = a
 </code></pre>
 </details></section>
-<section class="block hide-metadata" data-taxon=""><details open><summary id="hca-H00D.lagda"><header><h1><span class="taxon"> 2. </span>Comfy Agda Dev Environment <a class="slug" href="/hca/H00D.lagda.html">[hca/H00D.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">open import Cubical.Foundations.Prelude
-</code></pre>
+<section class="block hide-metadata" data-taxon=""><details ><summary id="hca-H00D.lagda"><header><h1><span class="taxon"></span>Comfy Agda Dev Environment <a class="slug" href="/hca/H00D.lagda.html">[hca/H00D.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
+open import Cubical.Foundations.Prelude
+```
+-->
 <h1>What we need</h1>
 <ul>
 <li>an <em>agda</em> installation</li>
@@ -108,7 +114,7 @@ switch a = {!!}
 <li>cornelis plugin:  <span class="link external"><a href="https://github.com/agda/cornelis" title="github.com/agda/cornelis [https://github.com/agda/cornelis]">github.com/agda/cornelis</a></span></li>
 </ul>
 </details></section>
-<section class="block hide-metadata" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest1.lagda"><header><h1><span class="taxon"> 3. </span>Dependent Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest1.lagda.html">[TheHoTTGame/0Trinitarianism/Quest1.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest1 where
+<section class="block hide-metadata" data-taxon=""><details ><summary id="TheHoTTGame-0Trinitarianism-Quest1.lagda"><header><h1><span class="taxon"></span>Dependent Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest1.lagda.html">[TheHoTTGame/0Trinitarianism/Quest1.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest1 where
 open import 0Trinitarianism.Preambles.P1
 </code></pre>
 <h1>Predicates / Dependent Constructions / Bundles</h1>
@@ -118,7 +124,7 @@ isEven (suc zero) = ⊥
 isEven (suc (suc n)) = isEven n
 </code></pre>
 </details></section>
-<section class="block hide-metadata" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest2.lagda"><header><h1><span class="taxon"> 4. </span>Sigma Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest2.lagda.html">[TheHoTTGame/0Trinitarianism/Quest2.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest2 where
+<section class="block hide-metadata" data-taxon=""><details ><summary id="TheHoTTGame-0Trinitarianism-Quest2.lagda"><header><h1><span class="taxon"></span>Sigma Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest2.lagda.html">[TheHoTTGame/0Trinitarianism/Quest2.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest2 where
 
 open import 0Trinitarianism.Preambles.P2
 
@@ -152,7 +158,7 @@ curry : (A × B → C) → (A → B → C)
 curry f a b = f (a , b)
 </code></pre>
 </details></section>
-<section class="block hide-metadata" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest3.lagda"><header><h1><span class="taxon"> 5. </span>Pi Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html">[TheHoTTGame/0Trinitarianism/Quest3.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest3 where
+<section class="block hide-metadata" data-taxon=""><details ><summary id="TheHoTTGame-0Trinitarianism-Quest3.lagda"><header><h1><span class="taxon"></span>Pi Types <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html">[TheHoTTGame/0Trinitarianism/Quest3.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest3 where
 
 open import 0Trinitarianism.Preambles.P3
 </code></pre>
@@ -182,9 +188,8 @@ sumEven' x (suc (suc y) , hy) = sumEven' x (y , hy )
 </code></pre>
 <p>(Interestingly the second proof gets accepted for <code>_+_</code> too.)</p>
 </details></section>
-<section class="block hide-metadata" data-taxon=""><details open><summary id="TheHoTTGame-0Trinitarianism-Quest4.lagda"><header><h1><span class="taxon"> 6. </span>Paths and Equality <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html">[TheHoTTGame/0Trinitarianism/Quest4.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest4 where
+<section class="block hide-metadata" data-taxon=""><details ><summary id="TheHoTTGame-0Trinitarianism-Quest4.lagda"><header><h1><span class="taxon"></span>Paths and Equality <a class="slug" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html">[TheHoTTGame/0Trinitarianism/Quest4.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module 0Trinitarianism.Quest4 where
 open import 0Trinitarianism.Preambles.P4
-
 </code></pre>
 <h1>The Identity Type</h1>
 <p>We will view elements of <code>Id</code> as identifications / equalities.</p>
@@ -217,7 +222,8 @@ rfl* p = rfl
 <pre><code>*rfl : {A : Type} {x y : A} (p : Id x y) → Id (p * rfl) p
 *rfl rfl = rfl
 </code></pre>
-<p>Concatenation with <code>p</code> on the left and right gives <code>rfl</code>.</p>
+<p>Concatenation <code>Sym p</code> with <code>p</code> on the left and right gives <code>rfl</code>.
+In that sense <code>Sym p</code> can be interpreted as the “inverse” of <code>p</code>.</p>
 <pre><code class="language-agda">Sym* : {A : Type} {x y : A} (p : Id x y) → Id (Sym p * p) rfl
 Sym* rfl = rfl
 
@@ -229,18 +235,13 @@ Sym* rfl = rfl
         → Id ((p * q) * r) (p * (q * r))
 Assoc rfl q r = rfl
 </code></pre>
-<h1>Recursor - The Mapping Out Property of <code>Id</code></h1>
-<pre><code class="language-agda">private
-  variable
-    A : Type
-    x y : A
-</code></pre>
-<pre><code class="language-agda">outOfId : (M : (y : A) → Id x y → Type) → M x rfl
-  → {y : A} (p : Id x y) → M y p
-outOfId M x rfl = x
-</code></pre>
+</details></section>
+<section class="block hide-metadata" data-taxon=""><details ><summary id="hca-H00F.lagda"><header><h1><span class="taxon"></span>A word of caution <a class="slug" href="/hca/H00F.lagda.html">[hca/H00F.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Agda uses its own type theory that is not <em>HoTT</em>.</p>
+<p>Specifically the <code>K-Rule</code> is incompabtible with Homotopy Type Theory.
+Adding <code>{-# OPTIONS --with-K #-}</code> disables it.</p>
+<p><em>Cubical Agda</em> impelemts a different type theory that pairs more nicely with
+<em>HoTT</em>.</p>
 </details></section></p>
-<p>TODO: Add some notes on cubical agda and the K-axiom</p>
 </details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="hca-index"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory in Cubical Agda <a class="slug" href="/hca/index.html">[hca]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>This index collects the notes I wrote while playing the <a href="%22https://thehottgameguide.readthedocs.io%22">Hott Game</a>.
 I compiled them into a small demo I gave <span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">here</a></span>.</p>
 <p>
@@ -264,4 +265,4 @@ TheHoTTGame/0Trinitarianism/Quest4.lagda.md
 TheHoTTGame/0Trinitarianism/Quest5.lagda.md</p>
 </details></section></details></section></footer></article>
 
-<nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class=""><a class="bullet" href="/hca/H00C.lagda.html" title="Some intuition on HoTT in Agda [hca/H00C.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H00C.lagda'"><span class="taxon"> 1. </span>Some intuition on HoTT in Agda</span></li><li class=""><a class="bullet" href="/hca/H00D.lagda.html" title="Comfy Agda Dev Environment [hca/H00D.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H00D.lagda'"><span class="taxon"> 2. </span>Comfy Agda Dev Environment</span></li><li class=""><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest1.lagda.html" title="Dependent Types [TheHoTTGame/0Trinitarianism/Quest1.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest1.lagda'"><span class="taxon"> 3. </span>Dependent Types</span></li><li class=""><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest2.lagda.html" title="Sigma Types [TheHoTTGame/0Trinitarianism/Quest2.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest2.lagda'"><span class="taxon"> 4. </span>Sigma Types</span></li><li class=""><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html" title="Pi Types [TheHoTTGame/0Trinitarianism/Quest3.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest3.lagda'"><span class="taxon"> 5. </span>Pi Types</span></li><li class=""><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html" title="Paths and Equality [TheHoTTGame/0Trinitarianism/Quest4.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest4.lagda'"><span class="taxon"> 6. </span>Paths and Equality</span></li></ul></div></nav></div></body></html>
+<nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class="item-summary"><a class="bullet" href="/hca/H00C.lagda.html" title="Some intuition on HoTT in Agda [hca/H00C.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H00C.lagda'"><span class="taxon"></span>Some intuition on HoTT in Agda</span></li><li class="item-summary"><a class="bullet" href="/hca/H00D.lagda.html" title="Comfy Agda Dev Environment [hca/H00D.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H00D.lagda'"><span class="taxon"></span>Comfy Agda Dev Environment</span></li><li class="item-summary"><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest1.lagda.html" title="Dependent Types [TheHoTTGame/0Trinitarianism/Quest1.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest1.lagda'"><span class="taxon"></span>Dependent Types</span></li><li class="item-summary"><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest2.lagda.html" title="Sigma Types [TheHoTTGame/0Trinitarianism/Quest2.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest2.lagda'"><span class="taxon"></span>Sigma Types</span></li><li class="item-summary"><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest3.lagda.html" title="Pi Types [TheHoTTGame/0Trinitarianism/Quest3.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest3.lagda'"><span class="taxon"></span>Pi Types</span></li><li class="item-summary"><a class="bullet" href="/TheHoTTGame/0Trinitarianism/Quest4.lagda.html" title="Paths and Equality [TheHoTTGame/0Trinitarianism/Quest4.lagda]">■</a><span class="link local" onclick="window.location.href='#TheHoTTGame-0Trinitarianism-Quest4.lagda'"><span class="taxon"></span>Paths and Equality</span></li><li class="item-summary"><a class="bullet" href="/hca/H00F.lagda.html" title="A word of caution [hca/H00F.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H00F.lagda'"><span class="taxon"></span>A word of caution</span></li></ul></div></nav></div></body></html>

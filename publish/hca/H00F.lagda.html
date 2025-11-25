@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width"><title>Some intuition on HoTT in Agda</title><link rel="stylesheet" href="/main.css">
+<meta name="viewport" content="width=device-width"><title>A word of caution</title><link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -55,21 +55,11 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/H00B.lagda.html'" title="Agda in the context of Homotopy Type Theory">« Agda in the context of Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00C.lagda"><header><h1><span class="taxon"></span>Some intuition on HoTT in Agda <a class="slug" href="/hca/H00C.lagda.html">[hca/H00C.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
-```
-open import Cubical.Foundations.Prelude
-```
--->
-<p>HoTT is a foundation for mathematics based on <em>MLTT</em>.
-In HoTT we don’t have <em>sets</em> like in ZFC, but <em>elements</em> of <em>types</em>.</p>
-<p><code>A</code> is a type and <code>x : A</code> is an element of type <code>A</code>.</p>
-<pre><code>data A : Type where
-  a : A
-</code></pre>
-<p>Pi Types / Dependent function types</p>
-<pre><code>id : A -&gt; A
-id a = a
-</code></pre>
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/H00B.lagda.html'" title="Agda in the context of Homotopy Type Theory">« Agda in the context of Homotopy Type Theory</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00F.lagda"><header><h1><span class="taxon"></span>A word of caution <a class="slug" href="/hca/H00F.lagda.html">[hca/H00F.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Agda uses its own type theory that is not <em>HoTT</em>.</p>
+<p>Specifically the <code>K-Rule</code> is incompabtible with Homotopy Type Theory.
+Adding <code>{-# OPTIONS --with-K #-}</code> disables it.</p>
+<p><em>Cubical Agda</em> impelemts a different type theory that pairs more nicely with
+<em>HoTT</em>.</p>
 </details></section><footer></footer></article>
 
 </div></body></html>

@@ -1,5 +1,5 @@
 // #import "@preview/ctheorems:1.1.3": *
-#import "@preview/lovelace:0.3.0": *
+// #import "@preview/lovelace:0.3.0": *
 #import "@preview/scribe:0.2.0": *
 #import "kodama.typ"
 
