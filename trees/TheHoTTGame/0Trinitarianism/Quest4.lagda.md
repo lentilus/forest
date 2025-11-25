@@ -5,7 +5,6 @@ title: Paths and Equality
 ```agda
 module 0Trinitarianism.Quest4 where
 open import 0Trinitarianism.Preambles.P4
-
 ```
 
 # The Identity Type
@@ -56,7 +55,8 @@ Concatenation with rfl is left neutral.
 *rfl rfl = rfl
 ```
 
-Concatenation with `p` on the left and right gives `rfl`.
+Concatenation `Sym p` with `p` on the left and right gives `rfl`.
+In that sense `Sym p` can be interpreted as the "inverse" of `p`.
 ```agda
 Sym* : {A : Type} {x y : A} (p : Id x y) → Id (Sym p * p) rfl
 Sym* rfl = rfl
@@ -70,19 +70,4 @@ Concatenation is associative.
 Assoc : {A : Type} {w x y z : A} (p : Id w x) (q : Id x y) (r : Id y z)
         → Id ((p * q) * r) (p * (q * r))
 Assoc rfl q r = rfl
-```
-
-# Recursor - The Mapping Out Property of `Id`
-
-```agda
-private
-  variable
-    A : Type
-    x y : A
-```
-
-```agda
-outOfId : (M : (y : A) → Id x y → Type) → M x rfl
-  → {y : A} (p : Id x y) → M y p
-outOfId M x rfl = x
 ```
