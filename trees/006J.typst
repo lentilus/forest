@@ -1,0 +1,57 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#set heading(numbering: none)
+#set enum(numbering: "(a)")
+
+// #taxon[Exercise]
+#title[Algebra I - 02]
+_Lotte und Linus_
+
+== Aufgabe 1
+
+*Lemma* Jede Gruppe $H$ der Ordnung $15$ ist zyklisch.
+#proof[
+  Wir wenden die Sylow-Saetze an. Wir sehen, $P_3$ und $P_5$ sind eindeutig.
+  Damit sind $P_3$ und $P_5$ normal und kommutieren. Der Schnitt ist trivial.
+  Sei $a in P_3$ Erzeuger und $b in P_5$ Erzeuger, dann ist $"ord"(a) =3, "ord"(b) = 5$. Da beide Teilerfremd sind ist,
+  wegen Kommutativitaet $"ord"(a b) = 15$ und $<<a b>> = H$.
+]
+
+
+Es gibt bis auf Isomomorphie nur eine Grupe $G$ mit $hash G = 255 = 3 * 5 * 17$
+
+#proof[
+  Wegen Sylow-III gibt es genau eine $17$-Sylow Untergruppe $P$ von $G$.
+  Nach Satz 3 ist $P$ Normalteiler.
+  $P$ ist zyklisch und hat Ordung $17$, also ist $hash"Aut"(P) = 16$. 
+
+  Wir betrachten den Homomorphismus
+  $
+    phi : G -> "Aut"(P), .. g |-> (p |-> g p g^(-1)).
+  $
+
+  Das Bild von $phi$ ist Untergruppe von $"Aut"(P)$, also ist $hash"im"(phi)$ Teiler von $16$, und ausserdem (Homomorphiesatz) Teiler von $hash G = 255$.
+  Damit ist $hash"im"(phi) =1$.
+  Also ist $"ker"(phi)=G$.
+
+  $P$ ist also Teilmenge des Zentrums $Z(G)$.
+  Weil $P$ Normalteiler ist, ist  $hash G\/P = 255\/17=15$.
+  $G\/P$ ist wegen obigem Lemma zyklisch. Da $P$ im Zentrum liegt, ist $G$, nach _Aufgabe 3_ abelsch.
+
+  Als endliche abelsche Gruppe zerfaellt $G$ in das Produkt zyklischer Untergruppen
+  $G ~= C_3 xx C_5 xx C_17$. Da $3,5$ und $17$ paarweise teilerfremnd sind, ist $G ~= C_255$ zyklisch.
+]
+
+== Aufgabe 3
+
+Eine Gruppe $G$ ist genau dann abelsch, wenn $G\/Z(G)$ zyklisch ist.
+
+($==>$) trivial.
+
+($<==$) Sei $G \/ Z(G) = <<g Z(G)>>$ zyklisch. Dann ist jedes Element $a in G$ von der Form $g^(n) z$ mit $z in Z(G)$. Sei nun $b in G$ mit $b= g^(m) y$ mit $y in Z(G)$, dann ist
+$
+a b = g^(n) z g^(m) y = g ^(n + m) z y = g^(n+m)  y z = g^(m) y g^(n) z = b a.
+$
+Also ist $G$ abelsch.
+Wir bemerken, dass das Argument auch fuer zentrale Normalteiler funktionert.

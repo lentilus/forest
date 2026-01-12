@@ -1,0 +1,223 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Course]
+#title[Surreale Zahlen - Eine Welt der Exoten]
+
+Surreal numbers thing
+---------------------
+
+Hot take: Surreale Zahlen sind eine Sprache, die zwischen Spielen, Ordinals, Reals und ... uebersetzen kann.
+
+Krass
+- Abitrary Unendlichekit
+- Körper
+- Totally Ordered
+- Universal Property (maximal totally ordered field)
+- Können ALLES darein einbetten => Vergleichen
+
+
+1. Es ist verblueffend wie aus zwei einfachen Regel so eine schoene Welt waechst. (Es ist schoen , vielleicht auch ohne anspruch an nuetzlichkeit)
+2. Unified theory
+3. Comparison of different games
+
+
+== 1
+
+Meta-Orga
+---------
+
+Hallo
+Wenn ihr Probleme / Anmerkungen habe, kommt zu uns oder Vertrauenspersonen.
+Was erwartet ihr von dem Kurs?
+Mathematischer Hintergrund
+
+maybe telefonnummern geben?
+
+0, 1, -1
+=> Rumspielen
+-> Sollen darauf kommen, das man schaut, was die Werte von Positionen sind, auf die man das Spiel überführen kann
+Versch positionen
+
+Rot,Blau => 1/2
+Positonen-Baum
+
+Wir geben vor, was 0, 1, -1 ist. Daraus +, dass Spiele eine additive Gruppe sein sollen finden Teilis 1/2 n, n/(2^m).
+
+Raetsel : "Finde ein Spiel mit Wert 1/3"
+--> Idee: Leute sehen, dass sie da beliebig nah dran kommen.
+Raetsel: "Finde ein Spiel, was keine relle Zahl ist"
+Raetsel: "Find ein positives Spiel < als alle reellen Zahlen"
+
+Raetsel: Mit Omega herum experimentieren -> Obwohl unendlich nur endlich langes Spiel (Wert von Omega vs 2 Omega / Was ist > Omega / Omega - Omega?)
+
+Grüne sachen
+=> Grüne Felix Blume 0 < up < ....
+Raetsel: Ist Felix Blume oder 1/omega größer
+=> Stängel
+
+Maybe Definition : n,m sind vergleichbar wenn n-m immer von G oder immer von B gewonnen werden kann. 
+Raetsel: Was ist Stern + Stern, Stern + 2 Stern? Nim Addition Table (5+4=1)
+Raetsel : (Präfix: Ständel nicht vergleichbar mit 0 -> Ausbreiten mit größerem Raum) n < m. Finde ein Spiel, dass sicher groesser als n ist. Nicht vergleichbar mit k ist, fuer n < k < m, sicher kleiner als m ist.
+
+== 2
+
+Konstruktion von "ueblichen" Zahlen
+- Natural (Peano)
+  - kurz Induktion
+  Frage: Was ist 2+2? => Wie definiert man..
+  - Arithmetik
+- Whole
+- Real (Dedekind Schnitte) - mit Präfix: Nicht so wichtig, nur als Intuition / Denkanstoß
+Neuere Konstruktionen
+- Ordinal Numbers (Anfangen mit von-Neuman)
+  - Ordered
+  - Descend Property (Deshalb interessant?)
+  - Damit macht infinite Hackenbush sinn
+  - "nicht nur endliche Zahlen sind sinnvoll"
+  - Transfinite Induktion (Descent Property, Definitions)
+- Surreal Numbers
+  - Tag 0, Tag 1, .... Definition (rechts/links) => anschalich an Hackenbush
+  - Wenn wir Braum haben, dann koennten wir auch map from beginning segement of ordinals to +-1 machen fuer links oder rechts abbiegen.
+     -> Fragen die entstehen : Wie waere dann addition, multiplikation etc hier definiert
+  - Welchen Wert habe eine random surreale Zahl? "Finding the correct number is simplicity itself"
+  
+  - Was ist mit abitrary Games (Was ist mit Gruen?)
+
+== 3
+
+Frage: Verallg. Reelle Zahlen?
+- Addition, Negation (Fokus auf Herstellung aus vorher entstandenen Zahlen)
+- Multiplikation... mit natürlichen /ganzen Zahlen
+Raetsel: Binärdarstellung Stack
+Raetsel: Wie teilt man einen Stack durch 2?
+=> Es gibt keine tolle grafische Regel (units und nachkommastellen und separat)
+- Formale Definition (mit transfiniter Induktion)
+- evt. prüfen, dass es Definition erfüllt
+- Zu tedious -- nicht machen: (Raetsel : Finde zu allg. Zahl ein inverses.)
+- Es gibt Inverse => Körper; aber nicht schön
+
+Warum machen wir das? Motivation: Ermoeglicht Rechnen mit Zahlen groesser als Omega, die konsistent mit uns bekannter multiplikation ist.
+andere Motivation: Wir konnten nicht nur die reellen Zahlen in den surrealen recovern, sondern auch noch ihre struktur.
+--> Haben also einen groesseren Zahlenraum geschaffen ohne Struktur zu verlieren (Sternchen: kein Kontinuum mehr)
+Antworten:
+- Objekte kennen lernen; damit andere Spiele analysieren können
+- Transfinite Induktion => Anwenden auf konkrete Probleme, wie zB Nim Kreise (Multiplikation definieren)
+-
+DAS ist Mathematk. Wir nehmen irgendwelche Spielregeln. Und spielen.
+=> Wir sollten das irgendwie noch benutzen
+
+Rätsel: Epsilon mal Omega (sehr toll)
+?? Rätsel: Finde ein Bild für Omega x Omega
+?? Rätsel: Find ein Bild für 1/2 Omega
+
+=> Wir können damit Alles einbettern, Analysis machen, etc.
+(Einziges Problem: Sehr viele Zahlen -> nicht die optimale Menge für manche Dinge)
+
+zB: Hyperreals, Analysis
+R + Epsilon => Definiere Limits, ...
+
+== 4
+
+Only green Hackenbush? = NIM
+https://math.stackexchange.com/questions/4834066/what-cut-should-be-made-in-a-green-hackenbush-game-after-solving-its-correspondi
+
+We talked about green Hackenbush.. Lets explore them some more
+Rätsel: Value of some positions
+Rätsel: 16+4? (Addition of powers of 2)
+Rätsel: Somehow get people to see that it is a field mod 2
+Frage: Multiplikation?
+
+Notion: Somehow some n-stars are simpler than others. (1 vs 8)
+
+Introduce Nim(?)
+
+Rätsel: Was passiert mit Kreisen?
+?Rätsel: Beweis für Kreise?
+Rätsel/Berechnung: (\*Omega)³ = \*2 (ansonsten analoges raetsel)
+
+Circle Collapsing
+Binary addition
+
+== 5
+
+Cooling Processes
+
+== 6
+
+Puffer: Let people explore what they want.
+Suggestion:
+- Look at other games (Conway)
+Maybe some Q and A
+
+
+== 6
+
+Rotation
+- Hackenbush / Nim
+- Spiele sind Zahlen ??
+- Spiele addieren und so werte bestimmen
+=> Schienenteilis Rätseln lassen (letzt 5/10 minuten)
+
+(Feedback)
+
+
+
+Todoooo
+- Cooling process anschauen?
+- Very weak Script.. Rätsel !!!
+- Inhalt
+
+
+Narrativ
+Wir gucken uns spiele an und sehen irgendwie, dass spiele ein bisschen wie Zahlen sind
+manche spiele (nimbers) sind aber komisch und passen nicht ganz zu unseren "normalen" vorstelung von zahlen.
+Wenn wir ein bisschen struktur wieder wegnehmen (uns nur rb hackenbusch anschauen), koennen wir vielleicht unsere "Alltagszahlen" recovern, so dass sich alles verhaelt, wie wir es kennen.
+OKay super, wir finden alle zahlen die wir schon kannten, aber haben sogar noch mehr.
+Das ist irgendwie toll, weil wir einen allgemeineren Zahlenbegriff gefunden haben
+
+Was ist, wenn wir jetzt gruen wieder dazu tun?
+Dann werden dinge komisch, aber wir koennen trotzdem damit arbeiten als waeren es "normale zahlen"
+
+
+
+Rotation
+-
+
+Feedback
+
+
+
+
+Random Themen, die wir noch hatten:
+- Funktionen
+- Analysis
+- Cooling Process
+- Formal Definition Game
+- Partial information 
+- Other games : childish Hackenbush, Col, cutcake
+
+
+Geburtstage feieren
+
+
+Probleme
+--------
+ - Was ist mit Gaps? (was wenn L/R kein set ist?) ~ Dedekind Schnitte
+
+
+
+
+Numbers sind Games
+Wir haben unsere Labormaus: Hackenbush
+Wollen versch. positionen Zahlen zuordnen
+
+
+
+Formal Definition "Game"
+see https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://figshare.mq.edu.au/ndownloader/files/43233216&ved=2ahUKEwja_MO6oqGRAxUj3AIHHYO3KyMQFnoECBoQAQ&usg=AOvVaw2Os6zAf-dm_K-ycXwrZ1lc
+- each game state has a function that assigns it its prev. game
+- moves are maps from game states to game states
+- a strategie is a set of moves closed under itself (oder so)
+
+Surreal "Neu" 

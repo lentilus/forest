@@ -7,11 +7,8 @@ title: Homotopy Type Theory in Cubical Agda
 This index collects the notes I wrote while playing the [Hott Game]("https://thehottgameguide.readthedocs.io").
 I compiled them into a small demo I gave [here](/hca/H00B.lagda.md#).
 
-[+](/hca/H05Y.lagda.md#:embed)
-[+](/hca/H05Z.lagda.md#:embed)
-[+](/hca/H05X.lagda.md#:embed)
-[+](/hca/H060.lagda.md#:embed)
-[+](/hca/H061.lagda.md#:embed)
+[+](/hca/H002.lagda.md#:embed)
+[+](/hca/H003.lagda.md#:embed)
 
 
 - propositions as types

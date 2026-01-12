@@ -1,0 +1,43 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Aufgabe 1]
+
+Sei $R$ ein Ring und $frak(a), frak(b) subset R$ Ideale.
+Dann ist
+$frak(a) + frak(b) := { a + b | a in frak(a), b in frak(b)}$
+ein Ideal in R.
+
+#proof[
+  Wir zeigen, $frak(a) + frak(b)$ ist eine abelsche Untergruppe von $(R, +)$.
+
+  Sind $a_1+b_1, a_2 + b_2 in frak(a) + frak(b)$, dann ist $a_1 + a_2 in frak(a)$ und
+  $b_1 + b_2 in frak(b)$, also auch $a_1 + a_2 + b_1 + b_2 in frak(a) + frak(b)$.
+  $frak(a) + frak(b)$ ist also abgeschlossen unter $+$.
+  Kommutativitaet wird von $(R,+)$ geerbt.
+
+  Weil in $R$ Distributivitaet gilt, und $frak(a), frak(b)$ Ideale sind,
+  gilt fuer beliebige $r in R$ und $a + b in frak(a) + frak(b)$, dass
+  $
+    r * (a + b) = r * a + r * b in frak(a) + frak(b).
+  $
+
+  Also ist $frak(a) + frak(b)$ ein Ideal.
+]
+
+Definiere $frak(a) * frak(b)$ als das folgende Erzeugte Ideal.
+$
+  frak(a) * frak(b) := ({a * b | a in frak(a), b in frak(b)}).
+$
+
+Dieses Produkt ist mit der Addition distributiv, also $frak(a) * ( frak(b) + frak(c)) = frak(a) * frak(b) + frak(a) * frak(c)$.
+
+#proof[
+  Alle Elemente  $x in frak(a) * ( frak(b) + frak(c))$ sind von der Form $x = a_1 * ( b_1 + c_1 ) + ... + a_n * ( b_n + c_n )$,
+  mit $a_i in frak(a), b_i in frak(b), c_(i) in frak(c)$ und $n in NN$. Wegen Distributivitaet in $R$ koennen wir $x$ auch schreiben als
+  $a_i * b_1 + a_i * c_1 + ... + a_n * b_1 + a_n * c_n$. In dieser Form sind genau die Elemente von $frak(a) * frak(b) + frak(a) * frak(c)$.
+  Also ist $frak(a) * ( frak(b) + frak(c)) = frak(a) * frak(b) + frak(a) * frak(c)$
+
+  TODO: Warum haben die Elemente genau diese Form?
+]

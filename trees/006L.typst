@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Forcing]
+
+#embed("006M")[]
+
+#embed("006N")[]
+

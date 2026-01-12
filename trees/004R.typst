@@ -4,7 +4,9 @@
 #taxon[Index]
 #title[Homotopy Type Theory]
 
-#local("hca/index.md")[]
+- #local("hca/H00B.lagda.md")[Cubical Agda HoTT Demo]
+- #local("hca/index.md")[Homotopy Type Theory in Cubical Agda]
+- #local("hca/H00A.lagda.md")[Contractible Types]
 
-#embed("005P.lagda.md")[]
+// #embed("005P.lagda.md")[]
 

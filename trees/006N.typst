@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+#title[Forcing]
+
+_Forcing_ is a technique that makes it possible to prove independence results, particularly about _ZFC_.

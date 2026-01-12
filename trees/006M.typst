@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+We can show, that being _abelian_ is independed of the other group axioms by constucting a group that is _abelian_ and a group that is _not abelian_.
+Assuming our theory is consistent, this ought to be possible if and only if being _abelian_ is independend of the other axioms.

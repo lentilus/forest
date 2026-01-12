@@ -19,6 +19,9 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("0005")[Elementary Number Theory]
 - #local("004R")[Homotopy Type Theory]
 - #local("004S")[Writing a Theorem Prover]
+- #local("006L")[Forcing]
+- #local("006K")[Surreal Numbers]
+
 
 // from https://github.com/liuguangxi/fractusist
 #let fractal-tree(

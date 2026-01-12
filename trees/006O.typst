@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Algebra I - Blatt 04]
+
+#embed("006P")[]
+#embed("006Q")[]
+#embed("006R")[]
+#embed("006S")[]
