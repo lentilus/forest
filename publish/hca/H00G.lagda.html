@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width"><title>Empty Type</title><link rel="stylesheet" href="/main.css">
+<meta name="viewport" content="width=device-width"><title>Surreal Numbers Playground</title><link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -55,21 +55,32 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/hca/index.html'" title="Homotopy Type Theory in Cubical Agda">« Homotopy Type Theory in Cubical Agda</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="hca-H002.lagda"><header><h1><span class="taxon">Definition. </span>Empty Type <a class="slug" href="/hca/H002.lagda.html">[hca/H002.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
-```agda
-open import Cubical.Foundations.Prelude hiding (_∨_) public
-```
--->
-<p>The simplest type we can define in agda is the <em>empty</em> type.</p>
-<pre><code class="language-agda">data 𝟘 : Type where
-</code></pre>
-<p>Since we are giving no way to introduce it, it has no elements.
-Because we can be sure to never encounter an element <code>x : 𝟘</code>, we assume an elimination rule that gives us an element of any type <code>A</code> given <code>x : 𝟘</code>.</p>
-<pre><code class="language-agda">postulate
-  A : Type
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00G.lagda"><header><h1><span class="taxon"></span>Surreal Numbers Playground <a class="slug" href="/hca/H00G.lagda.html">[hca/H00G.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">{-# OPTIONS --cubical #-}
 
-explosion : 𝟘 -&gt; A
-explosion ()
+open import Agda.Primitive using (Level; lzero; Set)
+open import Agda.Builtin.Nat using (Nat; zero; suc)
+open import Agda.Builtin.List using (List; []; _∷_)
+open import Agda.Builtin.Unit using (⊤; tt)
+
+-- Stage-indexed forms
+data Form : Nat → Set lzero where
+  mk : {n : Nat} → (L R : List (Form n)) → Form (suc n)
+
+length : {A : Set lzero} → List A → Nat
+length []       = zero
+length (_ ∷ xs) = suc (length xs)
+
+-- inductive ordering on Naturals
+data _&lt;n_ : Nat → Nat → Set lzero where
+  z&lt;s : {m : Nat} → zero &lt;n suc m
+  s&lt;s : {n m : Nat} → n &lt;n m → suc n &lt;n suc m
+
+-- Toy ordering on Form
+data _&lt;_ {n : Nat} : Form (suc n) → Form (suc n) → Set lzero where
+  byLeftLength :
+    {L R L' R' : List (Form n)} →
+    length L &lt;n length L' →
+    mk {n} L R &lt; mk {n} L' R'
 </code></pre>
 </details></section><footer></footer></article>
 

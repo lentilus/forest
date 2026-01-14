@@ -55,7 +55,7 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00B.lagda"><header><h1><span class="taxon"></span>Agda in the context of Homotopy Type Theory <a class="slug" href="/hca/H00B.lagda.html">[hca/H00B.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Some notes for getting started with (cubical) agda in the context of HoTT.</p>
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Talk"><details open><summary id="hca-H00B.lagda"><header><h1><span class="taxon">Talk. </span>Agda in the context of Homotopy Type Theory <a class="slug" href="/hca/H00B.lagda.html">[hca/H00B.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>Some notes for getting started with (cubical) agda in the context of HoTT.</p>
 <p><section class="block hide-metadata" data-taxon=""><details ><summary id="hca-H00C.lagda"><header><h1><span class="taxon"></span>Some intuition on HoTT in Agda <a class="slug" href="/hca/H00C.lagda.html">[hca/H00C.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
 ```
 open import Cubical.Foundations.Prelude
@@ -104,7 +104,8 @@ someFunc a = {!!}
 -- switch a2 = a1
 
 switch : A -&gt; A
-switch a = {!!}
+switch a1 = a2
+switch a2 = a1
 </code></pre>
 <p>What is <code>switch a1</code>? Normalize expressions with <code>:CornelisNormalize</code></p>
 <h1>Links</h1>
@@ -242,13 +243,42 @@ Adding <code>{-# OPTIONS --with-K #-}</code> disables it.</p>
 <p><em>Cubical Agda</em> impelemts a different type theory that pairs more nicely with
 <em>HoTT</em>.</p>
 </details></section></p>
-</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="hca-index"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory in Cubical Agda <a class="slug" href="/hca/index.html">[hca]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>This index collects the notes I wrote while playing the <a href="%22https://thehottgameguide.readthedocs.io%22">Hott Game</a>.
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="004R"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory <a class="slug" href="/004R.html">[004R]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <ul>
+    <li><span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">Cubical Agda HoTT Demo</a></span></li>
+    <li><span class="link local"><a href="/hca/index.html" title="Homotopy Type Theory in Cubical Agda [hca/index]">Homotopy Type Theory in Cubical Agda</a></span></li>
+    <li><span class="link local"><a href="/hca/H00A.lagda.html" title="Contractible types [hca/H00A.lagda]">Contractible Types</a></span></li>
+  </ul>
+</details></section><section class="block" data-taxon="Index"><details ><summary id="hca-index"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory in Cubical Agda <a class="slug" href="/hca/index.html">[hca]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>This index collects the notes I wrote while playing the <a href="%22https://thehottgameguide.readthedocs.io%22">Hott Game</a>.
 I compiled them into a small demo I gave <span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">here</a></span>.</p>
-<p>
+<p><section class="block" data-taxon="Definition"><details ><summary id="hca-H002.lagda"><header><h1><span class="taxon">Definition. </span>Empty Type <a class="slug" href="/hca/H002.lagda.html">[hca/H002.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
+open import Cubical.Foundations.Prelude hiding (_∨_) public
+```
+-->
+<p>The simplest type we can define in agda is the <em>empty</em> type.</p>
+<pre><code class="language-agda">data 𝟘 : Type where
+</code></pre>
+<p>Since we are giving no way to introduce it, it has no elements.
+Because we can be sure to never encounter an element <code>x : 𝟘</code>, we assume an elimination rule that gives us an element of any type <code>A</code> given <code>x : 𝟘</code>.</p>
+<pre><code class="language-agda">postulate
+  A : Type
 
-
-
-</p>
+explosion : 𝟘 -&gt; A
+explosion ()
+</code></pre>
+</details></section>
+<section class="block" data-taxon="Definition"><details ><summary id="hca-H003.lagda"><header><h1><span class="taxon">Definition. </span>Unit Type <a class="slug" href="/hca/H003.lagda.html">[hca/H003.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
+open import Cubical.Foundations.Prelude hiding (_∨_) public
+```
+-->
+<p>The unit type is the type with only one element <code>★ : 𝟙</code></p>
+<pre><code class="language-agda">data 𝟙 : Type where
+  ★ : 𝟙
+</code></pre>
+</details></section></p>
 <ul>
 <li>propositions as types</li>
 <li>lambda abstaction</li>

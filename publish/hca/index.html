@@ -57,11 +57,33 @@
   });
 </script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Index"><details open><summary id="hca-index"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory in Cubical Agda <a class="slug" href="/hca/index.html">[hca]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>This index collects the notes I wrote while playing the <a href="%22https://thehottgameguide.readthedocs.io%22">Hott Game</a>.
 I compiled them into a small demo I gave <span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">here</a></span>.</p>
-<p>
+<p><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="hca-H002.lagda"><header><h1><span class="taxon">Definition 1. </span>Empty Type <a class="slug" href="/hca/H002.lagda.html">[hca/H002.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
+open import Cubical.Foundations.Prelude hiding (_∨_) public
+```
+-->
+<p>The simplest type we can define in agda is the <em>empty</em> type.</p>
+<pre><code class="language-agda">data 𝟘 : Type where
+</code></pre>
+<p>Since we are giving no way to introduce it, it has no elements.
+Because we can be sure to never encounter an element <code>x : 𝟘</code>, we assume an elimination rule that gives us an element of any type <code>A</code> given <code>x : 𝟘</code>.</p>
+<pre><code class="language-agda">postulate
+  A : Type
 
-
-
-</p>
+explosion : 𝟘 -&gt; A
+explosion ()
+</code></pre>
+</details></section>
+<section class="block hide-metadata" data-taxon="Definition"><details open><summary id="hca-H003.lagda"><header><h1><span class="taxon">Definition 2. </span>Unit Type <a class="slug" href="/hca/H003.lagda.html">[hca/H003.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
+open import Cubical.Foundations.Prelude hiding (_∨_) public
+```
+-->
+<p>The unit type is the type with only one element <code>★ : 𝟙</code></p>
+<pre><code class="language-agda">data 𝟙 : Type where
+  ★ : 𝟙
+</code></pre>
+</details></section></p>
 <ul>
 <li>propositions as types</li>
 <li>lambda abstaction</li>
@@ -78,28 +100,11 @@ TheHoTTGame/0Trinitarianism/Quest4.lagda.md
 TheHoTTGame/0Trinitarianism/Quest5.lagda.md</p>
 </details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="004R"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory <a class="slug" href="/004R.html">[004R]</a></h1><div class="metadata"><ul></ul></div></header></summary>
   
-  <p><span class="link local"><a href="/hca/index.html" title="Homotopy Type Theory in Cubical Agda [hca/index]">Homotopy Type Theory in Cubical Agda</a></span></p>
-  <section class="block" data-taxon=""><details ><summary id="005P.lagda"><header><h1><span class="taxon"></span>The Empty Type <a class="slug" href="/005P.lagda.html">[005P.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><p>We need to disable the K-Axiom, which is incompatible with Homotopy type theory</p>
-<pre><code class="language-agda">{-# OPTIONS --without-K #-}
-</code></pre>
-<p>In agda <code>Set</code> denotes the universe of small types. <span class="link local"><a href="/005N.html" title="Set [005N]">somelink</a></span></p>
-<p>The <em>emtpy type</em> is the type with no elements. It can be interpreted as a
-proposition that has no proofs.</p>
-<pre><code class="language-agda">data 𝟘 : Set where
-</code></pre>
-<p>The elimination rule for elements of the empty type yields an element of any
-depended type indexed by <code>x : 𝟘</code>. This is analogous to the idea, that you
-can prove anything from falsehood.</p>
-<pre><code class="language-agda">𝟘-elim : {A : 𝟘 → Set} (x : 𝟘) → A x
-𝟘-elim ()
-</code></pre>
-<p>Note that <code>()</code> refers to the impossible match. Since there is no <code>x : A</code>, there
-is nothing to define for that branch.</p>
-<p>We can define negation as a map that sends any type <code>A : Set</code> to <code>A -&gt; 𝟘 : Set</code>.</p>
-<pre><code class="language-agda">neg : Set -&gt; Set
-neg A = A -&gt; 𝟘 
-</code></pre>
-</details></section>
+  <ul>
+    <li><span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">Cubical Agda HoTT Demo</a></span></li>
+    <li><span class="link local"><a href="/hca/index.html" title="Homotopy Type Theory in Cubical Agda [hca/index]">Homotopy Type Theory in Cubical Agda</a></span></li>
+    <li><span class="link local"><a href="/hca/H00A.lagda.html" title="Contractible types [hca/H00A.lagda]">Contractible Types</a></span></li>
+  </ul>
 </details></section></details></section></footer></article>
 
-</div></body></html>
+<nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class=""><a class="bullet" href="/hca/H002.lagda.html" title="Empty Type [hca/H002.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H002.lagda'"><span class="taxon">Definition 1. </span>Empty Type</span></li><li class=""><a class="bullet" href="/hca/H003.lagda.html" title="Unit Type [hca/H003.lagda]">■</a><span class="link local" onclick="window.location.href='#hca-H003.lagda'"><span class="taxon">Definition 2. </span>Unit Type</span></li></ul></div></nav></div></body></html>

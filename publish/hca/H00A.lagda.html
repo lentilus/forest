@@ -55,9 +55,11 @@
       minRuleThickness: 0.05,
     });
   });
-</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00A.lagda"><header><h1><span class="taxon"></span>Contractible types <a class="slug" href="/hca/H00A.lagda.html">[hca/H00A.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><pre><code class="language-agda">module _ where
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="hca-H00A.lagda"><header><h1><span class="taxon"></span>Contractible types <a class="slug" href="/hca/H00A.lagda.html">[hca/H00A.lagda]</a></h1><div class="metadata"><ul></ul></div></header></summary><!--
+```agda
 open import Cubical.Foundations.Prelude hiding (_∨_)
-</code></pre>
+```
+-->
 <h1>Contractible Types</h1>
 <p><em>Definition:</em> A type <code>A</code> is contractible if it comes equipped with an element of type
 $\Sigma_{(c:A)} \Pi_{(x:A)} c=x$.</p>
@@ -86,6 +88,32 @@ from_a_Contractible x = (x , refl) , {!!}
 </code></pre>
 <h1>Singleton induction</h1>
 <p><em>Definition</em> A Type <code>A</code> satisfies singleton induction if for every type family <code>B</code> over <code>A</code>, the map $$ \text{ev-pt} : ( \Pi_{(x:A)} B(x)) \to B(a), \quad \text{ev-pt} (f) := f(a)$$ has a section.</p>
-</details></section><footer></footer></article>
+<pre><code class="language-agda">ev-pt : {A : Type} {B : A -&gt; Type} {a : A} -&gt; (( x : A ) -&gt; B x) -&gt; B a
+ev-pt {A} {B} {a} f = f a
+
+-- identity type
+id : {A : Type} -&gt; (A -&gt; A)
+id a = a
+
+-- compose
+_∘_ : {A B C : Type} -&gt; (B -&gt; C) -&gt; (A -&gt; B)  -&gt; (A -&gt; C)
+f ∘ g = λ x -&gt; f (g x)
+
+-- type of homotopies
+_~_ = {A : Type} {B : A -&gt; Type} -&gt; (f g : (x : A) -&gt; (B x)) -&gt; (x : A) -&gt; ((f x) ≡ (g x))
+
+sec : {A B : Type} (f : A -&gt; B) -&gt; Σ (B -&gt; A) (λ g -&gt; ((f ∘ g) ~ (id B)))
+</code></pre>
+<p>dependent function $\Pi_(x:A)B(x)$</p>
+<pre><code class="language-agda">dep-fun = {A : Type} -&gt; (A -&gt; Type)
+</code></pre>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Index"><details ><summary id="004R"><header><h1><span class="taxon">Index. </span>Homotopy Type Theory <a class="slug" href="/004R.html">[004R]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <ul>
+    <li><span class="link local"><a href="/hca/H00B.lagda.html" title="Agda in the context of Homotopy Type Theory [hca/H00B.lagda]">Cubical Agda HoTT Demo</a></span></li>
+    <li><span class="link local"><a href="/hca/index.html" title="Homotopy Type Theory in Cubical Agda [hca/index]">Homotopy Type Theory in Cubical Agda</a></span></li>
+    <li><span class="link local"><a href="/hca/H00A.lagda.html" title="Contractible types [hca/H00A.lagda]">Contractible Types</a></span></li>
+  </ul>
+</details></section></details></section></footer></article>
 
 </div></body></html>
