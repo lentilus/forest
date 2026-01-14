@@ -6,7 +6,7 @@ vim.filetype.add {
 
 -- zeta --
 local on_attach = function(client, bufnr)
-  print('LSP attached to buffer', bufnr)
+  print('Zeta attached to buffer', bufnr)
 
   local function buf_set_keymap(...)
     vim.api.nvim_buf_set_keymap(bufnr, ...)
@@ -29,26 +29,53 @@ end
 
 vim.lsp.config['zeta'] = {
   -- Command and arguments to start the server.
-  cmd = {'zeta', '--logfile=/tmp/zeta.log' },
-  filetypes = { 'typst', 'agda' },
+  cmd = {'/home/lentilus/git/zeta.git/markdown/zeta', '--logfile=/tmp/zeta.log' },
+  filetypes = { 'typst', 'markdown', 'markdown.agda'},
   root_markers = { 'index.typst' },
   init_options = {
-    query = [[
-      (call item: (ident) @embed (#eq? @embed "embed") (group (string) @target) )
-      (call item: (ident) @local (#eq? @local "local") (group (string) @target) )
-      (call item: (ident) @ident (#eq? @ident "title") (_) @title)
-      (call item: (ident) @ident (#eq? @ident "taxon") (_) @taxon)
-    ]],
-    select_regex = '^"(.*)"$',
-    default_extension = ".typst",
-    file_extensions = {".typst"},
+    typst = {
+      query = [[
+        (call item: (ident) @embed (#eq? @embed "embed") (group (string) @target) )
+        (call item: (ident) @local (#eq? @local "local") (group (string) @target) )
+        (call item: (ident) @ident (#eq? @ident "title") (_) @title)
+        (call item: (ident) @ident (#eq? @ident "taxon") (_) @taxon)
+      ]],
+      select_regex = '^"(.*)"$',
+      default_extension = ".typst",
+      title_template = "%s %s %s",
+      title_substitutions = {"taxon", "title", "path"},
+    },
+    markdown = {
+      query = [[
+        (link text: (label) @label destination: (destination) @target)
+        (metadata_pair
+          key: (metadata_key) @taxon_key (#eq? @taxon_key "taxon")
+          value: (metadata_value) @taxon )
+        (metadata_pair
+          key: (metadata_key) @title_key (#eq? @title_key "title")
+          value: (metadata_value) @title)
+      ]],
+      select_regex = '^/(.*)#.*$',
+      default_extension = ".md",
+      title_template = "%s %s %s",
+      title_substitutions = {"taxon", "title", "path"},
+    },
+    extensions =  {
+        [".typst"] = "typst",
+        [".md"] = "markdown",
+        [".lagda.md"] = "markdown",
+    },
   },
   on_attach = on_attach,
 }
 
 local function new_zettel()
-    name = vim.fn.system({'increment'})
-    vim.schedule(function() vim.cmd("e " .. name) end)
+    local base = vim.fn.input("base: ")
+    local name = vim.fn.system({'increment', base})
+
+    vim.schedule(function()
+        vim.cmd("e " .. name)
+    end)
 end
 
 vim.keymap.set('n', '<leader>nn', new_zettel)
