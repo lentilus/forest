@@ -1,0 +1,27 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
++ Sei $G$ eine Gruppe mit Untergruppen $H_1, H_2$. Dann ist $H_1 uu H_2$ eine Untergruppe von $G$, genau dann wenn $H_1 subset.eq H_2$, oder $H_2 subset.eq H_1$.
+
+  #proof[
+    $(==>)$ Seien $H_1, H_2 subset.eq G$. Angenommen $H_1 uu H_2$ ist ein Untergruppe,
+    aber weder $H_1 subset.eq  H_2$ noch $H_2 subset.eq H_1$,
+    dann existiert ein Element $g_1 in H_1$ mit $g_1 in.not H_2$,
+    sowie ein Element $g_2 in H_2$, aber $g_2 in.not H_1$.
+    Angenommen $g_1 * g_2 in H_1$, dann waere $g_1^(-1) g_1 g_2  = g_2 in H_1$,
+    also ist $g_1 g_2 in.not H_1$
+    Analog sehen wir, dass $g_1 g_2 in.not H_2$.
+    Also ist $g_1 g_2 in.not H_1 uu H_2$. 
+
+    $(<==)$ Ist $H_1 subset.eq H_2$, dann ist $H_1 uu H_2 = H_2$ eine Untergruppe.
+    Der Fall $H_2 subset.eq  H_1$ ist analog.
+  ]
+  
++ Seinen $H_1, H_2$ echte Untergruppen der Gruppe $G$. Dann ist $H_1 uu H_2 != G$.
+
+ #proof[
+   Der Fall, wo $H_1 subset.eq H_2$ oder $H_2 subset.eq H_1$ ist trivial. Andernfalls greifen die Ueberlegungen aus Aufgaenteil $(a)$.
+ ]

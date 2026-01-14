@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Eine Gruppe $G$ ist genau dann abelsch, wenn $G\/Z(G)$ zyklisch ist.
+
+($==>$) trivial.
+
+($<==$) Sei $G \/ Z(G) = <<g Z(G)>>$ zyklisch. Dann ist jedes Element $a in G$ von der Form $g^(n) z$ mit $z in Z(G)$. Sei nun $b in G$ mit $b= g^(m) y$ mit $y in Z(G)$, dann ist
+$
+a b = g^(n) z g^(m) y = g ^(n + m) z y = g^(n+m)  y z = g^(m) y g^(n) z = b a.
+$
+Also ist $G$ abelsch.
+Wir bemerken, dass das Argument auch fuer zentrale Normalteiler funktionert.

@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Sei $G$ eine endliche Gruppe mit $n$ Elementen. Dann wird $hash "Aut"(G)$ von $(n-1)!$ geteilt.
+
+#proof[
+  Wir betrachten die Gruppe der bijektiven Abbildungen $H = {f : G ->  G | f "bijektiv", f(1)=1}$, die die $1$ fixieren.
+  $G$ ist eine Untergruppe von $H$ und $hash H = (n-1)!$. Aus dem Satz von Lagrange folgt dann direkt: $hash G$ teilt $hash H = (n-1)!$.
+]

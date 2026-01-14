@@ -1,0 +1,23 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Die Gruppe $G$ operiert auf der Menge $M$.
++ Sei $g in G$, $m in M$. Dann ist $"Stab"(g m) = g "Stab"(m) g^(-1)$.
+
+  #proof[
+    Die Gleichheit folgt direkt aus der Definition des Stabilisators.
+    $
+      "Stab"(g m) =& {h | h in G, h g m = g m} = {h | h in G, g^(-1) h g m = m} \
+                  =& {g h g^(-1) | h in G, h m = m}  = g "Stab"(m) g^(-1).
+    $
+
+  ]
++ $"Stab"(m)$ it genau dann Normalteiler in $G$, wenn $"Stab"(g m) = "Stab"(m)$ fuer alle $g in G$.
+
+  #proof[
+    $"Stab"(m)$ ist Normalteiler in $G$, genau dann wenn $g"Stab"(m) g^(-1) = "Stab"(m)$ fuer alle $g in G$. Wir haben bereits in (a) gesehen, dass $"Stab"(g m) = g"Stab"(m) g^(-1)$.
+    Durch einsetzen von $"Stab"(m)$ fuer $"Stab"(g m)$ folgt die Behauptung.
+  ]

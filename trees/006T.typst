@@ -1,0 +1,23 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[] 
+
+Sei $R$ ein kommutativer Ring mit Eins.
+Sei $a in R$, dann liegt $a$ genau dann in jedem maximalen Ideal, wenn fuer alle $x in R$  $1 - a x$ invertierbar ist.
+
+#proof[
+  ($==>$) Sei $a$ in jedem maximalen Ideal.
+  Angenommen $1 - a x$ ist nicht invertierbar, dann waere $1-a x$ in einem maximalen Ideal.
+  In diesem Ideal liegt aber schon $a$ und damit $a x$, also auch $(1 - a x) + a x =1$.
+  Damit ist das Ideal der ganze Ring, was ein Widerspruch zur Maximalitaet ist.
+  Also ist $1 - a x$ invertierbar.
+
+
+  ($<==$) Sei $1 - a x$ invertierbar fuer alle $x in R$. Sei $frak(m)$ ein maximales Ideal.
+  Angenommen $a in.not frak(m)$, dann generiert ${a} uu frak(m)$ den ganzen Ring.
+  Also gibt es $m in frak(m)$ und $r in R$, sodass $m + a r = 1$, dann ist aber $m = 1 - a r$ in $frak(m)$.
+  Das ist ein Widerspruch zur invertierbarkeit von $1 - a x$.
+  Also liegt $a$ in jedem maximalen Ideal.
+]

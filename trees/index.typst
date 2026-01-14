@@ -21,6 +21,7 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("004S")[Writing a Theorem Prover]
 - #local("006L")[Forcing]
 - #local("006K")[Surreal Numbers]
+- #local("006V")[Algebra]
 
 
 // from https://github.com/liuguangxi/fractusist
@@ -113,3 +114,4 @@ Below is a non-exhaustive list of entry points to various topics.
 // - find a way to link definitions. Example: phi as the totient in @005B
 //   it should not be too obstrusive. I want something like "see also"
 // - Link locally and create new note shortcut.
+// - find an elegant way to deal with citations (doi)

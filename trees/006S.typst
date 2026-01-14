@@ -1,17 +1,19 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Aufgabe 4]
+// #taxon[]
+// #title[]
 
 Sei $R$ ein kommutativer Ring. Sei $N := { x in R | EE n in NN : x^(n) = 0}$ die Menge der Nilpotenten Elemente.
 $N$ ist ein Ideal in $R$.
 
 #proof[
-   Wir zeigen, das $N$ eine Untergruppe von $(R, +)$ ist.
-   Seien $x,y in N$ mit $x^(n) = 0$ und $y^(m)=0$ fuer $n,m in NN$.
-   Dann ist, wegen dem Binomischen Lehrsatz und der Nilpotenz von $x$ und $y$, $(x + y)^(n+m) = 0$, also auch Element von $N$.
+   Wir zeigen zunaechst, dass $N$ eine Untergruppe von $(R, +)$ ist.
+   Hier ist nur zu zeigen, dass $N$ abgeschlossen unter Addition ist.
+   Seien $x,y in N$ beliebig mit $x^(n) = 0$ und $y^(m)=0$.
+   Dann ist, wegen des Binomischen Lehrsatzes und der Nilpotenz von $x$ und $y$, $(x + y)^(n+m) = 0$ _trust me_, also auch Element von $N$.
 
+   Wegen der Kommutativitaet von $R$ reicht es jetzt zu zeigen, dass $N$ ein Linksideal ist.
    Sei $r in R$ beliebig, dann ist $(r * x)^n = r^n x^n = r^n * 0 = 0$, also ist $r * n$ nilpotent und Element von $N$.
    Damit ist $N$ ein Ideal.
 ]

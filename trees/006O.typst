@@ -1,10 +1,13 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Algebra I - Blatt 04]
+#set heading(numbering: none)
+#set text(lang: "de")
 
-#embed("006P")[]
-#embed("006Q")[]
-#embed("006R")[]
-#embed("006S")[]
+#taxon[Exercise]
+#title[Algebra I - 04]
+
+#embed("006R")[Aufgabe 3]
+#embed("006S")[Aufgabe 4]
+#embed("006T")[Aufgabe 5]
+

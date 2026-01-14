@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Algebra]
+
+#embed("005U")[Blatt 01]
+#embed("006J")[Blatt 02]
+#embed("006O")[Blatt 04]

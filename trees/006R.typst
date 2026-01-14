@@ -2,13 +2,18 @@
 #show: template
 
 // #taxon[Taxon]
-#title[Aufgabe 3]
+// #title[]
 
-Sei $R$ ein kommutativer Ring, $a in R$, $frak(p) subset R$ ein Primideal.
+Sei $R$ ein kommutativer Ring, $a in R$ und $frak(p) subset R$ ein Primideal.
 Sei $n in NN$, sodass $a^(n) in frak(p)$, dann ist $frak(a) in frak(p)$
 
 #proof[
   Da $frak(p)$ Primideal ist, und $a^(n) = a * a^(n-1) in frak(p)$, ist $a in frak(p)$ oder $a^(n-1) in frak(p)$.
-  Dieses Argument muessen wir jetzt noch maximal $n-1$ mal fuer $a^(n-1)$ wiederholen und erhalten, dass $a in frak(p)$.
+  Ist $a in frak(p)$, sind wir fertig.
+  Ansonsten wiederholen wir dieses Argument fuer $a^(n-1)$.
+  Spaetestens bei $n=2$ sind wir dann fertig, denn $a^2 in frak(p) ==> a in frak(p)$.
 ]
+
+ _Frage: Benutzen wir hier irgendwo implizit Kommutativitaet, oder ist die Bedingung ueberfluessig?_ 
+
 
