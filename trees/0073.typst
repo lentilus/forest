@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Kommutativer Ring]
+
+Ein #local("0072")[Ring] $(R, +, *)$ heisst _kommutativ_, wenn $*$ kommutativ ist.

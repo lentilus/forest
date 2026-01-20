@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Ringhomomorphismus]
+
+Seien $R$, $S$ #local("0072")[Ringe]. Eine Abbildung $phi : R ->  S$ heisst _Ringhomomorphismus_, wenn fuer alle $x,y in R$ gilt
+$
+  phi(x+y) = phi(x) + phi(y), .. .. phi(x y) = phi(x)phi(y)
+$

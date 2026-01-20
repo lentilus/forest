@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Ideal]
+
+Sei $R$ ein #local("0072")[Ring].
+Ein #local("0079")[Unterring]  $U subset.eq R$ heisst
+_Linksideal_, wenn $R U subset.eq U$,
+_Rechtsideal_, wenn $U R subset.eq U$
+und _Ideal_, wenn U Links- und Rechtsideal ist.

@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Ring]
+
+Eine #local("005V")[abeschle Gruppe] $(R, +)$ heisst _Ring_, wenn sie mit einer Verknuepfung $* : R xx R -> R$ ausgestattet ist, sodass fuer alle $a,b c in R$
+$
+  a * ( b * c ) &= (a * b) * c .. &"(assoziativ)", \
+  a * (b + c) &= (a * b) + (a * c), .. (a + b) * c = (a * c) + (b * c) .. &"(distributiv)" .
+$
+
+Schreibe $(R, +, *)$

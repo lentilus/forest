@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Faktorring]
+
+Sei $I subset.neq R$ ein #local("0078")[Ideal]. Dann ist $R\/I$ mit
+$
+  (r_1 + I) + (r_2 + I) &|->  (r_1 + r_2 ) + I \
+  "und" (r_1 + I) * (r_2 + I) &|-> (r_1 * r_2 ) + I
+$
+
+ein Ring, genannt _Faktorring_.

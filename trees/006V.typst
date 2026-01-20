@@ -4,6 +4,33 @@
 #taxon[Index]
 #title[Algebra]
 
+#embed("0072")[]
+#embed("0079")[]
+#embed("0073")[]
+#embed("0074")[]
+#embed("0075")[]
+#embed("0077")[]
+#embed("007C")[]
+#embed("0078")[]
+#embed("007A")[]
+
+
+- Homosatz fuer Ringe
+- Erzeugtes Ideal
+- def. Nullteilerfrei
+- maximales Ideal
+- partielle Ordnung
+- vollstaendige Ordnung
+- Lemma von Zorn
+- Jedes Ideal ist in einem max. Ideal enthalten
+- Def Primideal
+- Def Teiler
+- Def Prim
+- Def Irreduzibel
+- Def assoziiert
+
 #embed("005U")[Blatt 01]
 #embed("006J")[Blatt 02]
 #embed("006O")[Blatt 04]
+
+

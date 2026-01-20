@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Koerper]
+
+Ein #local("0073")[kommutativer Ring] heisst _Koerper_, wenn er ein #local("0075")[Schiefkoerper] ist.

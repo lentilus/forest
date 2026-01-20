@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Schiefkoerper]
+
+Ein #local("0072")[Ring] heisst _Schiefkoerper_, wenn bis auf die Null, alle Elemente invertierbar sind.

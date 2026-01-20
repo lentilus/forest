@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Unterring]
+
+Sei $R$ ein #local("0072")[Ring]. Ein Ring $S subset.eq R$ heisst Unterring, falls seine Addition dieselbe wie in $R$ ist.
