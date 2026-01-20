@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Kommutativer Ring</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/006V.html'" title="Algebra">« Algebra</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="0073"><header><h1><span class="taxon">Definition. </span>Kommutativer Ring <a class="slug" href="/0073.html">[0073]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>Ein <span class="link local"><a href="/0072.html" title="Ring [0072]">Ring</a></span> <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 38.56966666666667 7.513000000000001" width="38.56966666666667pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA07DCA7843013BD5F928C339BE4B0A10" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(4.279 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gB559EAAEAA855510D19933EC3FC08042" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(12.892000000000001 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1AE458996AE830397F86ED426FFC2256" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(17.783333333333335 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g9EA9D9AA1A5C38B6F4E25EE93D63DF7C" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(26.341333333333335 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g1AE458996AE830397F86ED426FFC2256" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(31.23266666666667 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gB869AC1CB1BBC9EBC42EA5C8EDBEDC09" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(34.290666666666674 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g937D4A212D21091D3FA2D0C7B6242644" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="gA07DCA7843013BD5F928C339BE4B0A10" overflow="visible">
+            <path d="M 3.498 -2.728 C 3.597 -2.728 3.652 -2.673 3.652 -2.574 C 3.652 -2.541 3.6299999 -2.497 3.597 -2.453 C 3.025 -2.013 2.563 -1.287 2.222 -0.286 C 1.925 0.583 1.771 1.441 1.771 2.288 L 1.771 3.212 C 1.771 4.059 1.925 4.917 2.222 5.786 C 2.563 6.787 3.025 7.513 3.597 7.953 C 3.6299999 7.986 3.652 8.03 3.652 8.074 C 3.652 8.173 3.597 8.228 3.498 8.228 C 3.487 8.228 3.454 8.217 3.421 8.195 C 2.761 7.689 2.211 6.941 1.76 5.94 C 1.331 4.983 1.111 4.081 1.111 3.212 L 1.111 2.288 C 1.111 1.419 1.331 0.517 1.76 -0.44 C 2.211 -1.441 2.761 -2.189 3.421 -2.695 C 3.454 -2.717 3.487 -2.728 3.498 -2.728 Z "/>
+        </symbol>
+        <symbol id="gB559EAAEAA855510D19933EC3FC08042" overflow="visible">
+            <path d="M 8.129 5.841 C 8.129 6.402 7.843 6.831 7.282 7.139 C 6.831 7.392 6.292 7.513 5.687 7.513 L 2.585 7.513 C 2.332 7.513 2.222 7.502 2.222 7.249 C 2.222 7.172 2.2549999 7.117 2.321 7.106 C 2.431 7.095 2.519 7.084 2.574 7.084 C 2.904 7.073 3.091 7.051 3.146 7.04 C 3.201 7.029 3.234 6.996 3.234 6.941 C 3.234 6.919 3.223 6.853 3.19 6.743 L 1.738 0.902 C 1.683 0.65999997 1.573 0.506 1.408 0.451 C 1.331 0.429 1.133 0.41799998 0.792 0.41799998 C 0.55 0.41799998 0.451 0.407 0.451 0.16499999 C 0.451 0.044 0.517 -0.011 0.649 0 L 2.013 0.033 L 3.399 0 C 3.575 -0.011 3.6629999 0.088 3.6629999 0.253 C 3.6629999 0.363 3.542 0.41799998 3.3109999 0.41799998 C 2.871 0.41799998 2.651 0.473 2.651 0.572 C 2.651 0.572 2.662 0.594 2.684 0.748 L 3.388 3.597 L 4.653 3.597 C 5.412 3.597 5.797 3.2779999 5.797 2.651 C 5.797 2.552 5.742 2.31 5.643 1.914 C 5.522 1.452 5.467 1.144 5.467 0.979 C 5.467 0.143 6.116 -0.242 6.952 -0.242 C 7.2599998 -0.242 7.557 -0.099 7.854 0.176 C 8.151 0.451 8.305 0.748 8.305 1.056 C 8.305 1.166 8.25 1.221 8.129 1.221 C 8.052 1.221 7.986 1.166 7.953 1.045 C 7.832 0.704 7.678 0.451 7.502 0.308 C 7.3259997 0.16499999 7.161 0.088 6.996 0.088 C 6.743 0.088 6.611 0.297 6.611 0.704 C 6.611 0.968 6.644 1.375 6.721 1.936 C 6.754 2.167 6.765 2.332 6.765 2.453 C 6.765 3.036 6.457 3.465 5.841 3.729 C 6.875 3.9819999 8.129 4.719 8.129 5.841 Z M 6.699 6.776 C 6.919 6.633 7.029 6.391 7.029 6.05 C 7.029 5.83 6.985 5.577 6.886 5.2799997 C 6.5889997 4.378 5.841 3.927 4.642 3.927 L 3.476 3.927 L 4.169 6.71 C 4.224 6.941 4.312 7.062 4.433 7.073 C 4.488 7.084 4.708 7.084 5.093 7.084 C 5.808 7.084 6.226 7.062 6.699 6.776 Z "/>
+        </symbol>
+        <symbol id="g1AE458996AE830397F86ED426FFC2256" overflow="visible">
+            <path d="M 1.529 1.166 C 1.177 1.166 0.946 0.902 0.946 0.55 C 0.946 0.22 1.199 -0.055 1.529 -0.055 C 1.683 -0.055 1.8149999 -0.011 1.914 0.088 L 1.925 0 C 1.925 -0.693 1.694 -1.287 1.232 -1.76 C 1.155 -1.848 1.111 -1.914 1.111 -1.958 C 1.111 -2.068 1.155 -2.123 1.254 -2.123 C 1.353 -2.123 1.485 -1.9909999 1.6719999 -1.738 C 2.046 -1.21 2.233 -0.627 2.233 0 C 2.233 0.583 2.035 1.166 1.529 1.166 Z "/>
+        </symbol>
+        <symbol id="g9EA9D9AA1A5C38B6F4E25EE93D63DF7C" overflow="visible">
+            <path d="M 7.678 3.014 L 4.5429997 3.014 L 4.5429997 6.149 C 4.5429997 6.325 4.455 6.413 4.279 6.413 C 4.103 6.413 4.015 6.325 4.015 6.149 L 4.015 3.014 L 0.88 3.014 C 0.704 3.014 0.616 2.9259999 0.616 2.75 C 0.616 2.574 0.704 2.486 0.88 2.486 L 4.015 2.486 L 4.015 -0.649 C 4.015 -0.825 4.103 -0.913 4.279 -0.913 C 4.455 -0.913 4.5429997 -0.825 4.5429997 -0.649 L 4.5429997 2.486 L 7.678 2.486 C 7.854 2.486 7.942 2.574 7.942 2.75 C 7.942 2.893 7.821 3.014 7.678 3.014 Z "/>
+        </symbol>
+        <symbol id="gB869AC1CB1BBC9EBC42EA5C8EDBEDC09" overflow="visible">
+            <path d="M 2.112 2.75 C 2.112 3.069 1.848 3.333 1.529 3.333 C 1.21 3.333 0.946 3.069 0.946 2.75 C 0.946 2.431 1.21 2.167 1.529 2.167 C 1.848 2.167 2.112 2.431 2.112 2.75 Z "/>
+        </symbol>
+        <symbol id="g937D4A212D21091D3FA2D0C7B6242644" overflow="visible">
+            <path d="M 0.858 -2.695 C 1.518 -2.189 2.068 -1.441 2.519 -0.44 C 2.948 0.517 3.168 1.419 3.168 2.288 L 3.168 3.212 C 3.168 4.081 2.948 4.983 2.519 5.94 C 2.068 6.941 1.518 7.689 0.858 8.195 C 0.825 8.217 0.792 8.228 0.781 8.228 C 0.682 8.228 0.627 8.173 0.627 8.074 C 0.627 8.03 0.649 7.986 0.682 7.953 C 1.254 7.513 1.716 6.787 2.057 5.786 C 2.354 4.917 2.508 4.059 2.508 3.212 L 2.508 2.288 C 2.508 1.441 2.354 0.583 2.057 -0.286 C 1.716 -1.287 1.254 -2.013 0.682 -2.453 C 0.649 -2.497 0.627 -2.541 0.627 -2.574 C 0.627 -2.673 0.682 -2.728 0.781 -2.728 C 0.792 -2.728 0.825 -2.717 0.858 -2.695 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> heisst <em>kommutativ</em>, wenn <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 3.0580000000000003 7.513000000000001" width="3.0580000000000003pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gB869AC1CB1BBC9EBC42EA5C8EDBEDC09" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="gB869AC1CB1BBC9EBC42EA5C8EDBEDC09" overflow="visible">
+            <path d="M 2.112 2.75 C 2.112 3.069 1.848 3.333 1.529 3.333 C 1.21 3.333 0.946 3.069 0.946 2.75 C 0.946 2.431 1.21 2.167 1.529 2.167 C 1.848 2.167 2.112 2.431 2.112 2.75 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> kommutativ ist.</p>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Definition"><details ><summary id="0077"><header><h1><span class="taxon">Definition. </span>Koerper <a class="slug" href="/0077.html">[0077]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>Ein <span class="link local"><a href="/0073.html" title="Kommutativer Ring [0073]">kommutativer Ring</a></span> heisst <em>Koerper</em>, wenn er ein <span class="link local"><a href="/0075.html" title="Schiefkoerper [0075]">Schiefkoerper</a></span> ist.</p>
+</details></section></details></section></footer></article>
+
+</div></body></html>
