@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[rational cardinalities]
+
+Other than sets, proper #local("0065")[Groupoids] may admit non-integer cardinalities.
+The groupoid consisting of a single point with 3 automorphisms has cardinality $1/3$.

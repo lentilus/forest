@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Sei $R$ ein kommutativer Ring mit Eins. Sei $Nn(R)$ das Ideal der nilpotenten Elemente. Dann gilt
+$
+  Nn(R) = inter_(frak(p) subset R "Primideal") frak(p)
+$

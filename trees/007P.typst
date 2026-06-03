@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Groupoid Cardinality]
+
+For the _cardinality_ of a groupoid $X$ we pick a representative for each
+isomorphism class of objects in $X$. Each representative $[x]$ then contributes
+to the formal sum by $1/(|"Aut"(x)|)$, where $|"Aut"(x)|$ denotes the
+cardinality of the automorphism group of x. In symbols
+
+$ |X| := sum_([x] in pi_0 (X)) 1/(|"Aut"(x)|). $
+
+In the case where $"Aut(x)"$ is finite for all $x$ and the series converges we
+may evaluate it to a real number.

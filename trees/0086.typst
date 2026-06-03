@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[tame]
+
+We call a species $F$ _tame_ if $F(n)$ is finite for every finite set $n$.

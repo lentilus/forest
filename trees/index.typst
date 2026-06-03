@@ -22,7 +22,7 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("006L")[Forcing]
 - #local("006K")[Surreal Numbers]
 - #local("006V")[Algebra]
-
+- #local("007K")[Species]
 
 // from https://github.com/liuguangxi/fractusist
 #let fractal-tree(

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[not so tame species]
+
+For a finite set $n$ define $F(n)$ as the set of all real valued funcitons with domain $n$.

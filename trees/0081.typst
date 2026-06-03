@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Species]
+
+A (combinatorial) _species_ is a functor $F: "core(FinSet)" -> "Set"$.
+Given a finite set of labels $n$ we let $F(n)$ denote the set of $F$-structures one can put on the set.

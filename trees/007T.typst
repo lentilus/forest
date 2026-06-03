@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Eulers Number]
+
+The cardinality of the the groupoid of $"core(FinSet)"$ is eulers number $e$.

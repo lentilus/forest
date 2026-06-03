@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+//#title[Title]
+
+We consider the action groupoid of the symmetric group acting of F(n).
+This should give rise to the generating function of species quite naturally.

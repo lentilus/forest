@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[finite Sets with bijections]
+
+It is easy to see that the category of finite sets with bijections as morphisms
+forms a #local("007M")[groupoid].
+We will denote this category with $"core(FinSet)"$.

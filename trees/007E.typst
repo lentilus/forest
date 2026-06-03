@@ -1,0 +1,29 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Sei im folgenden $R = ZZ[sqrt(-5)]$. Ein paar Ueberlegungen vorab: Fuer $alpha = a + i sqrt(-5)b in R$ definieren wir $N(alpha) = a^2 + 5b^2$. Wir bemerken, dass fuer beliebige $beta in R$ gilt $N(alpha beta) = N(alpha) N(beta)$ mit der Multiplikation aus $ZZ$.
+
+Interessant ist, dass $N(alpha) = 1$, genau dann wenn $alpha$ eine Einheit ist. Denn ist $alpha beta = 1$ fuer ein $beta in R$, dann
+$
+  1 = N(1) = N(alpha beta) = N(alpha) N(beta) =>  N(alpha) =1
+$
+
+Sei umgekehrt $N(alpha) = 1$ und $alpha = a + sqrt(-5)b$,
+dann betrachte $overline(alpha) = a - sqrt(-5)b$.
+Dann ist $alpha overline(alpha) =N (alpha )= 1$, also ist $alpha$ eine Einheit.
+
++ $2,3$ und $1+- sqrt(5)$ sind irreduzibel in $ZZ[sqrt(-5)]$.
+  #proof[
+    Wir versuchen $2$ als Produkt von nicht-Einheiten zu schreiben, und betrachten dafuer $N(2)=4$. Jetzt nutzen wir, dass $N$ multiplikativ ist. $4$ kann wesentlich nur in $1*4$ und $2*2$ faktorisiert werden.
+    Nur zweitere Faktorisierung kommt infrage, wir suchen also $a + b i in R$ 
+    mit $N(a + sqrt(-5)b) = 2$. Ist $b =0$, muss $a^2 =2$ sein, unmoeglich. Ist $b != 0$, dann ist $N(a + sqrt(-5)b) > 2$, also ist $2$ irreduzibel.
+    Es ist $N(3) = 9$ und $N(1+ sqrt(-5)) = 6$, dann verwenden wir ein analoges Argument.
+  ]
++ $ZZ[sqrt(-5)]$ ist kein Hauptidealring. #proof[
+  Es ist $ (1 + i sqrt(5))(1 - i sqrt(5)) = 6 = 2 * 3$,
+  also ist $ZZ[sqrt(-5)]$ nicht faktoriell,
+  aber Hauptidealringe sind faktoriell, also ist $ZZ[sqrt(-5)]$ kein Hauptidealring.
+]

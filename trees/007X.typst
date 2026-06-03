@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Product of Groupoids]
+
+TODO. Objects are pairs of G and H, morphisms are pairs of morphisms.

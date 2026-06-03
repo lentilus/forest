@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Set]
+
+We can view a _set_ as the groupoid with the sets elements as objects and
+identity morphism only. Essentially a set is the most boring kind of groupoid
+we can think about since its points carry no symmetries.

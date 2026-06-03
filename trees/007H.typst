@@ -1,0 +1,43 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#set heading(numbering: none)
+#set text(lang: "de")
+
+#title[Algebra Portfolio]
+
+*Lemma 1.* _Jede endliche Gruppe der Ordnung $n$ ist zu $ZZ_n$ isomorph. Insbesonder ist ein Isomorphismus gegeben durch .... fuer einen Erzeuger $g$._ 
+
+#proof[
+  Einen Beweis hierfuer gibt @Karpfinger2024 auf Seite XXX. $square$
+]
+
+*Lemma 2.* _In endlichen Gruppen teilt die Ordnung jedes Elements die Gruppenordnung._
+
+#proof[
+ Einen Beweis hierfuer gibt Karpfinger auf Seite XXX.
+]
+
+Im folgenden bezeichnen wir mit $R$ den 25 elementigen Koerper $FF_5[X]\/(X^2 -X +1)$, und mit $alpha$ die Restklasse $overline(X+1) in R$.
+
+*Satz.* _Die Erzeuger der Einheitengruppe $R^(xx)$ sind genau die $alpha^k$ fuer $k in {1,5,7,11,13,17,19,23}$._
+
+#proof[
+  Wir fuehren die Erzeuger von $R^(xx)$ zureuck auf die Erzeuger der zyklischen Gruppe $ZZ_24$. Da $R$ ein Koerper ist, entspricht die Einheitengruppe genau $R \\ {0}$. Also hat $R^(xx)$ Ordnung 24. Wir zeigen jetzt, dass $alpha$ ein Erzeuger ist. In $R$ gilt die Relation $overline(X^2) = overline(X-1)$, damit berechnen wir
+  $
+    alpha^2 = overline(X^2+ 2X +1) = overline(3X), .. alpha^8 = overline(4X), .. alpha^12 = overline(4), .. "alle ungleich" overline(1) in R^(xx).
+  $
+  
+  Nach _Lemma 2_ ist die Ordnung von $alpha$ Teiler von 24. Jeder echte Teiler von 24 ist aber Teiler von $8$ oder $12$, da aber $alpha^8 != overline(1)$ und $alpha^12 != overline(1)$, hat $alpha$ Ordnung 24. Folglich erzeugt $alpha$ die ganze Gruppe.
+  
+  Nach dem _Lemma 1_ definiert $phi: R^(xx) -> ZZ_24, alpha^k |-> k + 24ZZ$ einen Isomorphismus.
+  Die Einheitengruppe von $ZZ_24$ ist mit _Lemma 3_ gut verstanden.
+  Ihre Erzeuger sind genau ${overline(a) in ZZ_24 | "ggt"(a, 24) = 1}$.
+  Enstprechend sind die Erzeuger von $R^(xx)$ genau
+  $
+    phi^(-1)({overline(a) in ZZ_24 | "ggt"(a, 24) = 1}) = {alpha^k in R^xx | k in {1,5, 7, 11, 13, 17, 19, 23}}.
+  $ Das beweist den Satz.
+]
+  
+#bibliography("./refs.bib")
+

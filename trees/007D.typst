@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+
+#set heading(numbering: none)
+#set text(lang: "de")
+
+// #taxon[Exercise]
+// #title[Algebra I - 05]
+
+#embed("007E")[Aufgabe 1]
+#embed("007F")[Aufgabe 2]
+
+
+

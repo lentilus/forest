@@ -1,0 +1,26 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Groupoid Cardinality]
+
+#embed("007M")[]
+#embed("007N")[]
+#embed("007O")[]
+#embed("007W")[]
+#embed("007Y")[]
+#embed("007X")[]
+#embed("007Z")[]
+
+We now want to extend our definition of a cardinality from sets to groupoids.
+To make this a nice definition it should be invariant under equivalences.
+#embed("007P")[]
+#embed("007R")[]
+#embed("007S")[]
+#embed("007T")[]
+
+#embed("007U")[] // TODO
+#embed("007V")[] // TODO
+
+#embed("0080")[]
+

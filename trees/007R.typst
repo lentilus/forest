@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[]
+
+Notice how the definition of #local("007P")[groupoid cardinality] is crafted
+explicitly to be an invariant with respect to equivalence of categories.
+
+#proof[
+  TODO
+]
+
+Consider for example the terminal category as well as the groupoid with two
+isomorphic objects and the obvious 4 morphisms. Both are equivalent as
+categories and indeed they both have cardinality 1.
+
