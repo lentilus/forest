@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Morphism of Species of Types]
+
+Let $F: Uu_1 -> Uu_2$ and $G : Uu_1 -> Uu_3$ be #local("008K")[species of types]. We define the type of $F$ and $G$ to be $Pi_(X : Uu_1) F(X) ->  G(X)$. We denote it by $"Hom"(F,G)$.
+

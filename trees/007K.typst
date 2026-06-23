@@ -5,7 +5,8 @@
 #title[Combinatorial Species]
 
 *Resources*
-- (une theorie combinatoire des series formelles) https://mahalex.net/teaching/seminars/semag/joyal.pdf
+
+- #external("https://mahalex.net/teaching/seminars/semag/joyal.pdf")[Andre Joyal, Une theorie combinatoire des series formelles]
 - (Introduction to the Theory of Species of Structures) http://bergeron.math.uqam.ca/wp-content/uploads/2013/11/book.pdf 
 - (combinatorics groupoid cardinality and species) https://youtu.be/yLtgs7Fz8aw
 - (species and their generating functions) https://youtu.be/EAM3K4rzLTQ
@@ -42,3 +43,5 @@ degenerate examples like the following.
 -> univalence
 
 - species as dependent types
+
+#embed("008K")[]

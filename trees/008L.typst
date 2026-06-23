@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Assuming enough Universes]
+
+We will assume that for every finite list of of types in context $Gamma_1$ trough $Gamma_n$ there exists a universe $Uu$ that contains these types.
+See Postulate 6.2.1 in #local("008M")[Introduction to Homotopy Type Theory]

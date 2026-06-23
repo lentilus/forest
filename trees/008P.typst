@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Transport in Species of Types]
+
+Let $F : Uu_1 -> Uu_2$ be a #link("008K")[species of types] and let $X$, $Y$ be types in the universe $Uu_1$. Then for any equivalence of types $e: X ~= Y$, we get obtain a term of type $F(X) -> F(Y)$ as follows.
+
+By #local("008Q")[univalence] we upgrade $e$  to a path $p_e : X = Y$.
+Then transport gives us the desired map.
+$
+  "tr"_F (X,Y, p_e) : F(X) -> F(Y)
+$

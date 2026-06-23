@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Equivalence of Species of Types]
+
+An _equivalence_ of species is a pointwise equivalence of types. In symbols: For species $F : Uu_1 -> Uu_2$ and $G: Uu_1 -> Uu_3$ we define the type of equivalences as
+$
+ "equiv-species-types" := Pi_(X: Uu_1) F(X) = F(Y).
+$

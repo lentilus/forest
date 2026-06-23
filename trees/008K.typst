@@ -1,0 +1,110 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Species of Types]
+
+This is a small attempt at _deformalizing_ the foundational work on *species*
+that is present in `agda-unimath` with the goal to be more human-readable.
+
+See
+#external("https://unimath.github.io/agda-unimath/species.html")[agda-unimath/species]
+
+#embed("008L")[]
+#embed("008Q")[]
+#embed("008T")[]
+
+
+// `module species.species-of-types` (done) 
+#embed("008N")[]
+
+Compare the definition to Joyal's definition of a _species_.
+#embed("0081")[Species (Joyal)]
+
+Notice that this definition requires a species to be functorial. Conveniently
+for any species of types we can get functoriality in the following sense.
+#embed("008P")[]
+
+
+// `module species.equivalences-species-of-types` (done)
+#embed("008S")[]
+#embed("008R")[]
+
+// `module species.morphisms-species-of-types` (done)
+#embed("008U")[]
+#embed("008V")[]
+#embed("008W")[]
+
+// `module species.cauchy-series-species-of-types` TODO
+#embed("008X")[]
+- TODO: Motivate this definition using the "classical" generating function
+- TODO: Equivalent Species of types have equivalent cauchy series
+- TODO: Cauchy series are equivalence invariant.
+
+#embed("008Y")[]
+
+TODO: The adjunction between cartesian products and exponents of species of types???
+
+---
+- How important is it to track universes closely when working informally? Can we just say F(X) and G(X) is a species without worrying about the universes that index them?
+
+```
+== Modules in agda-unimath ==
+  species-of-types
+  equivalences-species-of-types
+  morphisms-species-of-types 
+  cauchy-series-species-of-types 
+- coproducts-species-of-types 
+  cauchy-products-species-of-types 
+cartesian-exponents-species-of-types .
+cartesian-products-species-of-types .
+
+cauchy-exponentials-species-of-types (little)
+
+products-cauchy-series-species-of-types 
+composition-cauchy-series-species-of-types
+dirichlet-series-species-of-types 
+products-dirichlet-series-species-of-types 
+cauchy-composition-species-of-types (little)
+unit-cauchy-composition-species-of-types 
+cycle-index-series-species-of-types (interesting)
+derivatives-species-of-types 
+dirichlet-exponentials-species-of-types
+dirichlet-products-species-of-types
+exponentials-cauchy-series-of-types 
+
+cauchy-exponentials-species-of-types-in-subuniverses (more)
+cauchy-products-species-of-types-in-subuniverses (more)
+cauchy-series-species-of-types-in-subuniverses 
+products-cauchy-series-species-of-types-in-subuniverses 
+composition-cauchy-series-species-of-types-in-subuniverses (little)
+dirichlet-series-species-of-types-in-subuniverses 
+products-dirichlet-series-species-of-types-in-subuniverses 
+cauchy-composition-species-of-types-in-subuniverses (more)
+unit-cauchy-composition-species-of-types-in-subuniverses 
+small-cauchy-composition-species-of-types-in-subuniverses 
+coproducts-species-of-types-in-subuniverses (more)
+dirichlet-exponentials-species-of-types-in-subuniverses (more)
+dirichlet-products-species-of-types-in-subuniverses (more) 
+equivalences-species-of-types-in-subuniverses 
+exponentials-cauchy-series-of-types-in-subuniverses 
+
+dirichlet-series-species-of-finite-inhabited-types 
+products-dirichlet-series-species-of-finite-inhabited-types 
+small-cauchy-composition-species-of-finite-inhabited-types 
+
+morphisms-finite-species 
+
+
+precategory-of-finite-species 
+
+--- KINDS OF SPECIES ---
+hasse-weil-species 
+species-of-finite-inhabited-types 
+species-of-finite-types 
+species-of-inhabited-types 
+pointing-species-of-types 
+unlabeled-structures-species 
+```
+
+

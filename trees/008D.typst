@@ -1,0 +1,36 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Schemes]
+
+#embed("008F")[]
+#embed("008H")[]
+#embed("008I")[]
+
+
+
+- spectrum of a ring
+- Spec(A) with zariski (zariski spectrum)
+- Nullstellensatz
+ 
+- presheaves
+- germs
+- limits
+- stalks
+- sheaves
+ 
+- sheaf on a base
+- structure sheaf
+ 
+- ringed space
+- affine scheme
+- scheme
+- gluing of schemes
+- affine line with double origin
+- projective line
+
+- Proj construction
+- zariski on proj
+- Projective Hilberts Nullstellensatz
+- 

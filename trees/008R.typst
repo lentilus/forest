@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Species of Types are extensional]
+
+The identity type of species is equivalent to the #link("008S")[type of equivalences] between them.
+This is immediate by #link("008T")[function extensionality]
+

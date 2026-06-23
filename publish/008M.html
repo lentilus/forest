@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Introduction to Homotopy Type Theory</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Reference"><details open><summary id="008M"><header><h1><span class="taxon">Reference. </span>Introduction to Homotopy Type Theory <a class="slug" href="/008M.html">[008M]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>by Egbert Rijke.</p>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon=""><details ><summary id="008L"><header><h1><span class="taxon"></span>Assuming enough Universes <a class="slug" href="/008L.html">[008L]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>We will assume that for every finite list of of types in context <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.892299999999999 7.513000000000001" width="9.892299999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA322DCFDB01F15589F00FDCBFCFF2055" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(4.895 10.23)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g86D609FB172A7A93251B47A159937091" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="gA322DCFDB01F15589F00FDCBFCFF2055" overflow="visible">
+            <path d="M 3.014 7.051 L 4.136 7.051 C 4.873 7.051 5.357 6.886 5.599 6.5559998 C 5.9179997 6.105 5.9509997 5.72 6.05 4.95 L 6.413 4.95 L 6.094 7.48 L 0.363 7.48 L 0.363 7.051 L 0.671 7.051 C 1.056 7.051 1.287 7.029 1.364 6.974 C 1.441 6.919 1.485 6.787 1.485 6.5889997 L 1.485 0.891 C 1.485 0.693 1.441 0.561 1.364 0.506 C 1.287 0.451 1.056 0.429 0.671 0.429 L 0.363 0.429 L 0.363 0 C 0.649 0.022 1.21 0.033 2.057 0.033 C 3.014 0.033 3.6299999 0.022 3.916 0 L 3.916 0.429 L 3.52 0.429 C 2.937 0.429 2.618 0.484 2.563 0.605 C 2.541 0.65999997 2.53 0.759 2.53 0.902 L 2.53 6.666 C 2.53 7.051 2.596 7.051 3.014 7.051 Z "/>
+        </symbol>
+        <symbol id="g86D609FB172A7A93251B47A159937091" overflow="visible">
+            <path d="M 2.3331 5.1128 C 2.002 4.7894 1.5092 4.6277 0.8393 4.6277 L 0.8393 4.2889 C 1.2936 4.2889 1.6554999 4.3582 1.9327 4.4891 L 1.9327 0.6545 C 1.9327 0.55439997 1.925 0.4928 1.9018999 0.462 C 1.8634 0.3773 1.6324 0.3311 1.2089 0.3311 L 0.8932 0.3311 L 0.8932 0 L 2.2638 0.0308 L 3.6421 0 L 3.6421 0.3311 L 3.3264 0.3311 C 2.9029 0.3311 2.6719 0.3773 2.6257 0.462 C 2.6103 0.4928 2.6026 0.55439997 2.6026 0.6545 L 2.6026 4.8664 C 2.6026 5.0743 2.5718 5.1128 2.3331 5.1128 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> trough <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 10.9472 7.513000000000001" width="10.9472pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA322DCFDB01F15589F00FDCBFCFF2055" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(4.895 10.23)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g9362F5BF95A8E3AB23A17E50612CD9A1" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="gA322DCFDB01F15589F00FDCBFCFF2055" overflow="visible">
+            <path d="M 3.014 7.051 L 4.136 7.051 C 4.873 7.051 5.357 6.886 5.599 6.5559998 C 5.9179997 6.105 5.9509997 5.72 6.05 4.95 L 6.413 4.95 L 6.094 7.48 L 0.363 7.48 L 0.363 7.051 L 0.671 7.051 C 1.056 7.051 1.287 7.029 1.364 6.974 C 1.441 6.919 1.485 6.787 1.485 6.5889997 L 1.485 0.891 C 1.485 0.693 1.441 0.561 1.364 0.506 C 1.287 0.451 1.056 0.429 0.671 0.429 L 0.363 0.429 L 0.363 0 C 0.649 0.022 1.21 0.033 2.057 0.033 C 3.014 0.033 3.6299999 0.022 3.916 0 L 3.916 0.429 L 3.52 0.429 C 2.937 0.429 2.618 0.484 2.563 0.605 C 2.541 0.65999997 2.53 0.759 2.53 0.902 L 2.53 6.666 C 2.53 7.051 2.596 7.051 3.014 7.051 Z "/>
+        </symbol>
+        <symbol id="g9362F5BF95A8E3AB23A17E50612CD9A1" overflow="visible">
+            <path d="M 1.2628 3.3957 C 1.0087 3.3957 0.80079997 3.2570999 0.6391 2.9722 C 0.5313 2.7797 0.4466 2.5795 0.3927 2.3562 C 0.3696 2.2714999 0.3619 2.2253 0.3619 2.2099 C 0.3619 2.1252 0.4158 2.079 0.5236 2.079 C 0.6699 2.079 0.6776 2.1637 0.7161 2.3253999 C 0.847 2.8567 1.0241 3.1262 1.2474 3.1262 C 1.3937 3.1262 1.4629999 3.0107 1.4629999 2.7797 C 1.4629999 2.695 1.4245 2.4948 1.3398 2.1637 L 0.9317 0.5159 C 0.8778 0.308 0.85469997 0.20019999 0.85469997 0.1925 C 0.85469997 0.0154 0.9548 -0.077 1.1473 -0.077 C 1.2936 -0.077 1.4014 -0.0154 1.4707 0.1078 C 1.4938 0.154 1.54 0.3157 1.6093 0.5852 L 1.771 1.2628 C 1.8634 1.6247 1.9173 1.8249 1.9327 1.8711 C 1.9943 2.0713 2.0867 2.2638 2.2175999 2.4409 C 2.541 2.8952 2.9106 3.1262 3.3341 3.1262 C 3.6113 3.1262 3.7498999 2.9568 3.7498999 2.6257 C 3.7498999 2.3253999 3.6036 1.7941 3.3033 1.0241 C 3.2263 0.8239 3.1878 0.6853 3.1878 0.6006 C 3.1878 0.1848 3.5266 -0.077 3.9424 -0.077 C 4.3043 -0.077 4.5969 0.1078 4.8048 0.4774 C 4.9818997 0.7931 5.0666 1.001 5.0666 1.1087999 C 5.0666 1.1935 5.0127 1.2397 4.9126 1.2397 C 4.8587 1.232 4.8048 1.1935 4.7509 1.1165 C 4.7432 1.1087999 4.7432 1.0934 4.7432 1.0857 C 4.5661 0.4928 4.3043 0.1925 3.9654999 0.1925 C 3.8576999 0.1925 3.8037999 0.2695 3.8037999 0.4312 C 3.8037999 0.539 3.8654 0.7392 3.9809 1.0318 C 4.2504 1.7171 4.3813 2.2099 4.3813 2.5025 C 4.3813 2.8567 4.2581 3.1031 4.0194 3.234 C 3.8269 3.3418 3.6036 3.3957 3.3648999 3.3957 C 2.8644 3.3957 2.4409 3.1801 2.1021 2.7489 C 2.0328 3.1262 1.7017 3.3957 1.2628 3.3957 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> there exists a universe <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.184 7.513000000000001" width="8.184pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g6903EE04BEA2445B4BC15E84044491C7" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g6903EE04BEA2445B4BC15E84044491C7" overflow="visible">
+            <path d="M 1.441 1.254 C 1.441 1.507 1.474 1.793 1.551 2.101 C 1.628 2.442 1.837 2.9589999 2.156 3.6629999 C 2.585 4.598 2.871 5.357 3.014 5.929 C 3.091 6.237 3.135 6.512 3.124 6.765 C 3.113 7.3259997 2.816 7.612 2.2549999 7.612 C 1.419 7.612 0.88 6.974 0.65999997 6.347 C 0.583 6.116 0.506 5.742 0.44 5.225 L 0.869 5.346 C 0.99 6.094 1.001 6.424 1.43 6.776 C 1.551 6.875 1.683 6.919 1.804 6.919 C 2.112 6.919 2.222 6.6549997 2.222 6.347 C 2.222 6.193 2.189 6.006 2.134 5.797 C 2.013 5.313 1.76 4.62 1.364 3.718 C 0.968 2.816 0.704 2.112 0.583 1.628 C 0.506 1.331 0.473 1.089 0.473 0.88 C 0.473 0.187 1.023 -0.176 1.595 -0.176 C 2.321 -0.176 3.047 0.121 3.762 0.726 L 4.224 1.111 C 4.224 0.462 4.367 -0.099 4.983 -0.099 C 5.302 -0.099 5.61 0.022 5.929 0.275 C 6.16 0.451 6.413 0.737 6.6879997 1.122 L 6.435 1.331 C 6.248 1.089 6.083 0.913 5.962 0.792 C 5.819 0.65999997 5.665 0.594 5.511 0.594 C 5.412 0.594 5.335 0.627 5.291 0.693 C 5.1809998 0.83599997 5.126 1.067 5.137 1.397 C 5.137 1.705 5.203 2.123 5.346 2.662 C 5.665 3.971 6.028 5.082 6.435 5.984 C 6.71 6.5889997 7.007 7.018 7.3259997 7.249 C 7.425 7.3259997 7.579 7.414 7.777 7.513 L 7.557 7.7 C 7.051 7.513 6.523 7.249 5.973 6.93 C 5.148 4.598 4.587 2.838 4.29 1.65 C 4.103 1.474 3.872 1.265 3.575 1.034 C 3.036 0.594 2.574 0.374 2.167 0.374 C 1.65 0.374 1.441 0.693 1.441 1.254 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> that contains these types. See Postulate 6.2.1 in <span class="link local"><a href="/008M.html" title="Introduction to Homotopy Type Theory [008M]">Introduction to Homotopy Type Theory</a></span></p>
+</details></section></details></section></footer></article>
+
+</div></body></html>

@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Species of Types]
+
+Let $Uu_1$ and $Uu_2$ be universes, then a _species of types_ is simply a map
+$F : Uu_1 -> Uu_2$.
+
+Note that the type $Uu_1 -> Uu_2$ is well-formed if we #local("008L")[assume enough universes].

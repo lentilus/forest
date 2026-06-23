@@ -9,6 +9,7 @@ isomorphism class of objects in $X$. Each representative $[x]$ then contributes
 to the formal sum by $1/(|"Aut"(x)|)$, where $|"Aut"(x)|$ denotes the
 cardinality of the automorphism group of x. In symbols
 
+
 $ |X| := sum_([x] in pi_0 (X)) 1/(|"Aut"(x)|). $
 
 In the case where $"Aut(x)"$ is finite for all $x$ and the series converges we

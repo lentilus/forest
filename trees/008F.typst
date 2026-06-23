@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Convention]
+#title[Ring]
+
+We will use the word Ring to refer to #local("0073")[commutative rings] with
+#local("0074")[unit].

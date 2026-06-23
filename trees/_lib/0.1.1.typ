@@ -36,6 +36,7 @@
   underline(text)
 }
 
+#let external(dest, content) = link(dest, underline(content))
 
 #let taxon(it) = context if target() == "html" {
   kodama.meta("taxon", it)

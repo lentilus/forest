@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+
+#metadata((
+  "title": "testing refs",
+  "taxon": "Reference",
+  "date": "2017-06-12",
+  "asref": true,
+  "url": "wikipedia.org",
+))
+
+This should reference wikipedia

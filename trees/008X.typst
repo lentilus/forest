@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Cauchy Series of Species of Types]
+
+Let $F: Uu_1 -> Uu_2$ be a #local("008K")[species of types]. For a universe $Uu$ we define the _cauchy series_ of $F$ as the type
+$
+  Pi_(X: Uu) Sigma_(A : Uu_1) F(A) xx (A -> X).
+$

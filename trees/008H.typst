@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Spectrum]
+
+The _spectrum_ of a #local("008F")[ring] $A$ is the set of all prime ideals. We
+denote it by $"Spec"(A)$

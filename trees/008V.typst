@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Homotopy of Morphisms of Species of Types]
+
+Let $F: Uu_1 -> Uu_2$ and $G : Uu_1 -> Uu_3$ be #local("008K")[species of types] and let $f$ and $g$ be #local("008U")[morphisms of species of types] between $F$ and $G$. We define the type of homotopies between $f$ and $g$ as the type of pointwise homotopies, in symbols $Pi_(X:Uu_1) f(X) ~ g(X)$.
+
+
