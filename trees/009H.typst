@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[Title]
+#local("009G")[Smoothness] is independent of the choice of #local("0096")[atlas].
+
+TODO: show this

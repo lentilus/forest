@@ -4,6 +4,86 @@
 // #taxon[Taxon]
 #title[Analysis on Manifolds]
 
-- abstract manifold
+// (3) Manifolds
+#embed("0095")[]
+#embed("0092")[]
+#embed("0093")[]
+#embed("0094")[]
+- atlas and change of charts
+- Tangent space (from chart)
+- Tangent space (from height function)
+- differential
+- smooth map between ... manifolds
+- immersion
+- embedding
+
+// (4) Abstract Manifolds
+#embed("0096")[]
+#embed("0098")[]
+#embed("0099")[]
+#embed("009A")[]
+#embed("009B")[]
+#embed("009C")[]
+#embed("009E")[]
+#embed("009F")[]
+
+- weirdnesses if we dont assume hausdorff / second countable
+
+#embed("009D")[]
+- examples
+#embed("009G")[]
+#embed("009H")[]
+#embed("009I")[]
+#embed("009J")[]
+#embed("009K")[]
+#embed("009L")[]
+#embed("009M")[]
+#embed("009N")[]
+#embed("009O")[]
+
+// (5) Tangent Bundle
+#embed("009P")[]
+#embed("009Q")[]
+#embed("009R")[]
+#embed("009S")[]
+#embed("009T")[]
+
+#embed("009U")[]
+#embed("009V")[]
+#embed("009W")[]
+#embed("009X")[]
+#embed("009Y")[]
+
+// (6) Ordinary differential equations: Vector fields and flows
+#embed("009Z")[]
+#embed("00A0")[]
+#embed("00A1")[]
+#embed("00A2")[]
+#embed("00A3")[]
+#embed("00A4")[]
+#embed("00A5")[]
+#embed("00A6")[]
+#embed("00A7")[]
+#embed("00A8")[]
+#embed("00A9")[]
+#embed("00AA")[]
+#embed("00AB")[]
+#embed("00AC")[]
+#embed("00AD")[]
+#embed("00AE")[]
+
+// (7) Submanifolds of abstract manifolds and Transversality 1
+#embed("00AF")[]
+#embed("00AG")[]
+
+
+
+// (8) Parition of Unity
+// (9) Transversality and Sard's theorem
+// (10) Embeding Manifolds in Euclidian space
+// (11) Manifolds with boundary
+// (12) Orientation
+// (13) Differential Forms
+
 
 

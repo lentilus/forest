@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[compatible atlas]
+
+Let $Aa_1$ and $Aa_2$ be #local("0096")[atlasses] for a set $X$. We say that $Aa_1$ and $Aa_2$ are compatible if $Aa_1 uu Aa_2$ is again an atlas.

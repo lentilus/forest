@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Equator Sphere]
+
+TODO: The equator sphere is a #link("00AF")[submanifold] of $SS^(n)$ and is #link("009V")[homeomorphic] to the $SS^(n-1)$.

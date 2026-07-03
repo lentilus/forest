@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Normal form of vector fields]
+
+Let $M$ be a #link("009D")[smooth n-dimensional manifold] equipped with a #link("009S")[smooth vector field] $X: M -> T M$. For a every point $p in M$ where the $X$ does not vanish, there is a local chart $kappa: Uu ->  Vv$ of $M$ around $p$, such that the $X$ is given by a constant function in this chart.
+
+Concretely such that for all $x in Uu$ $D_(x)kappa (X (x)) =  e_(1)$, the first basis vecotor of the standard basis.

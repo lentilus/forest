@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Vector space of vectorfields</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/0088.html'" title="Analysis on Manifolds">« Analysis on Manifolds</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Remark"><details open><summary id="009T"><header><h1><span class="taxon">Remark. </span>Vector space of vectorfields <a class="slug" href="/009T.html">[009T]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>The <span class="link local"><a href="/009S.html" title="Smooth vectorfield [009S]">smooth vectorfields</a></span> on a given manifold form a vectorspace. We denote it by <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 35.277 7.513000000000001" width="35.277pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA322DCFDB01F15589F00FDCBFCFF2055" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(6.875 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gA07DCA7843013BD5F928C339BE4B0A10" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(11.154 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gC5CA03B8E36E89677F6F36F405BA9572" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(19.206 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#gD166990EF97B02159C94D0C52815C284" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(30.997999999999998 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g937D4A212D21091D3FA2D0C7B6242644" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="gA322DCFDB01F15589F00FDCBFCFF2055" overflow="visible">
+            <path d="M 3.014 7.051 L 4.136 7.051 C 4.873 7.051 5.357 6.886 5.599 6.5559998 C 5.9179997 6.105 5.9509997 5.72 6.05 4.95 L 6.413 4.95 L 6.094 7.48 L 0.363 7.48 L 0.363 7.051 L 0.671 7.051 C 1.056 7.051 1.287 7.029 1.364 6.974 C 1.441 6.919 1.485 6.787 1.485 6.5889997 L 1.485 0.891 C 1.485 0.693 1.441 0.561 1.364 0.506 C 1.287 0.451 1.056 0.429 0.671 0.429 L 0.363 0.429 L 0.363 0 C 0.649 0.022 1.21 0.033 2.057 0.033 C 3.014 0.033 3.6299999 0.022 3.916 0 L 3.916 0.429 L 3.52 0.429 C 2.937 0.429 2.618 0.484 2.563 0.605 C 2.541 0.65999997 2.53 0.759 2.53 0.902 L 2.53 6.666 C 2.53 7.051 2.596 7.051 3.014 7.051 Z "/>
+        </symbol>
+        <symbol id="gA07DCA7843013BD5F928C339BE4B0A10" overflow="visible">
+            <path d="M 3.498 -2.728 C 3.597 -2.728 3.652 -2.673 3.652 -2.574 C 3.652 -2.541 3.6299999 -2.497 3.597 -2.453 C 3.025 -2.013 2.563 -1.287 2.222 -0.286 C 1.925 0.583 1.771 1.441 1.771 2.288 L 1.771 3.212 C 1.771 4.059 1.925 4.917 2.222 5.786 C 2.563 6.787 3.025 7.513 3.597 7.953 C 3.6299999 7.986 3.652 8.03 3.652 8.074 C 3.652 8.173 3.597 8.228 3.498 8.228 C 3.487 8.228 3.454 8.217 3.421 8.195 C 2.761 7.689 2.211 6.941 1.76 5.94 C 1.331 4.983 1.111 4.081 1.111 3.212 L 1.111 2.288 C 1.111 1.419 1.331 0.517 1.76 -0.44 C 2.211 -1.441 2.761 -2.189 3.421 -2.695 C 3.454 -2.717 3.487 -2.728 3.498 -2.728 Z "/>
+        </symbol>
+        <symbol id="gC5CA03B8E36E89677F6F36F405BA9572" overflow="visible">
+            <path d="M 3.784 6.941 C 3.784 6.908 3.773 6.831 3.74 6.721 L 2.288 0.913 C 2.244 0.748 2.2 0.649 2.167 0.605 C 2.068 0.484 1.694 0.429 1.034 0.429 C 0.693 0.429 0.539 0.462 0.539 0.176 C 0.539 0.055 0.616 0 0.759 0 C 1.3199999 0 2.112 0.044 2.585 0.033 L 3.487 0.022 C 3.641 0.022 4.246 0 4.433 0 C 4.62 0 4.708 0.088 4.708 0.264 C 4.708 0.374 4.576 0.429 4.301 0.429 C 3.729 0.429 3.399 0.451 3.3 0.506 C 3.267 0.528 3.245 0.572 3.245 0.638 L 4.73 6.633 C 4.763 6.787 4.796 6.886 4.829 6.919 C 4.873 6.985 5.137 7.018 5.621 7.018 C 6.226 7.018 6.644 6.974 6.853 6.875 C 7.062 6.776 7.172 6.545 7.172 6.171 C 7.172 5.973 7.139 5.687 7.084 5.313 C 7.062 5.225 7.051 5.159 7.051 5.104 C 7.051 4.983 7.106 4.917 7.2269998 4.917 C 7.3259997 4.917 7.392 5.016 7.425 5.203 L 7.722 7.095 C 7.733 7.15 7.744 7.216 7.744 7.282 C 7.744 7.392 7.634 7.447 7.403 7.447 L 1.375 7.447 C 1.089 7.447 1.067 7.414 0.979 7.205 L 0.32999998 5.291 C 0.297 5.192 0.275 5.126 0.264 5.082 C 0.264 4.972 0.319 4.917 0.44 4.917 C 0.528 4.917 0.605 5.005 0.65999997 5.17 C 0.935 5.973 1.21 6.468 1.4629999 6.677 C 1.749 6.908 2.299 7.018 3.102 7.018 L 3.531 7.018 C 3.652 7.018 3.784 7.029 3.784 6.941 Z "/>
+        </symbol>
+        <symbol id="gD166990EF97B02159C94D0C52815C284" overflow="visible">
+            <path d="M 6.534 0.176 C 6.534 0.055 6.6 0 6.743 0 L 8.096 0.033 C 8.349 0.044 9.24 0 9.449 0 C 9.614 0 9.702 0.088 9.702 0.264 C 9.702 0.374 9.592 0.429 9.361 0.429 C 8.91 0.429 8.69 0.473 8.69 0.572 C 8.69 0.605 8.712 0.682 8.745 0.825 L 10.197 6.6219997 C 10.252 6.853 10.3619995 6.996 10.505 7.051 C 10.571 7.073 10.769 7.084 11.088 7.084 C 11.363 7.084 11.484 7.095 11.484 7.348 C 11.484 7.458 11.374 7.513 11.143 7.513 L 9.702 7.513 C 9.383 7.513 9.383 7.491 9.24 7.282 L 5.324 1.188 L 4.488 7.2269998 C 4.444 7.502 4.422 7.513 4.103 7.513 L 2.6069999 7.513 C 2.365 7.513 2.244 7.502 2.244 7.2599998 C 2.244 7.139 2.365 7.084 2.596 7.084 C 2.816 7.084 3.267 7.117 3.267 6.941 C 3.267 6.919 3.256 6.853 3.223 6.743 L 1.837 1.21 C 1.738 0.792 1.485 0.539 1.1 0.462 C 0.825 0.429 0.462 0.473 0.462 0.176 C 0.462 0.055 0.528 0 0.65999997 0 C 0.858 0 1.551 0.033 1.749 0.033 C 1.958 0.033 2.662 0 2.871 0 C 3.036 0 3.113 0.088 3.113 0.264 C 3.113 0.363 3.036 0.41799998 2.871 0.429 C 2.409 0.429 2.178 0.572 2.178 0.858 C 2.178 0.902 2.189 0.979 2.222 1.1 L 3.652 6.831 L 4.565 0.286 C 4.598 0.099 4.664 0 4.774 0 C 4.862 0 4.95 0.077 5.049 0.22 L 9.328 6.897 L 7.832 0.902 C 7.766 0.65999997 7.656 0.517 7.491 0.462 C 7.425 0.44 7.216 0.429 6.875 0.429 C 6.644 0.429 6.534 0.407 6.534 0.176 Z "/>
+        </symbol>
+        <symbol id="g937D4A212D21091D3FA2D0C7B6242644" overflow="visible">
+            <path d="M 0.858 -2.695 C 1.518 -2.189 2.068 -1.441 2.519 -0.44 C 2.948 0.517 3.168 1.419 3.168 2.288 L 3.168 3.212 C 3.168 4.081 2.948 4.983 2.519 5.94 C 2.068 6.941 1.518 7.689 0.858 8.195 C 0.825 8.217 0.792 8.228 0.781 8.228 C 0.682 8.228 0.627 8.173 0.627 8.074 C 0.627 8.03 0.649 7.986 0.682 7.953 C 1.254 7.513 1.716 6.787 2.057 5.786 C 2.354 4.917 2.508 4.059 2.508 3.212 L 2.508 2.288 C 2.508 1.441 2.354 0.583 2.057 -0.286 C 1.716 -1.287 1.254 -2.013 0.682 -2.453 C 0.649 -2.497 0.627 -2.541 0.627 -2.574 C 0.627 -2.673 0.682 -2.728 0.781 -2.728 C 0.792 -2.728 0.825 -2.717 0.858 -2.695 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span></p>
+  <p>TODO: Show that this is indeed a vectorspace.</p>
+</details></section><footer></footer></article>
+
+</div></body></html>

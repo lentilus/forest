@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[compatible chart]
+
+Let $Aa$ be a #local("0096")[smooth atlas] of some set $X$. We call a map $phi$ compatible with $Aa$ if $A uu {phi}$ is again a smooth atlas of $X$

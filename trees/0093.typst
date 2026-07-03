@@ -1,0 +1,19 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Characterization of k-dimensional smooth submanifolds of cartesian space]
+
+For a subset $M$ of $RR^n$ the following are equivalent
+
+1. $M$ is a #local("0092")[k-dimensional smooth submanifold of cartesian space].
+2. _"Locally M is the zero set of a regular height function."_
+
+   For all points $x$ in $M$ there is an open neighbourhood $Uu$ of $x$ and a smooth map $q: Uu ->  RR^(n-k)$ such that $q(x) = 0$, $D_(x)q : RR^(n) ->  RR^(n-k)$ is surjective and $M nn Uu = q^(-1)(0)$.
+
+3. _"Locally M is the graph of a smooth function."_
+
+   For all points $x$ in $M$ there is a diffeomorphism $alpha$ permuting coordinates, and open neighbourhood of $x$ and a smooth map $f : Vv -> RR^(n-k)$ such that $alpha(Uu nn Mm) = { (x,f(x)) | x in Vv}$.
+
+
+

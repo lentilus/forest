@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Smooth vectorfield]
+
+Let $M$ be a #link("009D")[smooth manifold]. A _vectorfield_ is a #link("009G")[smooth map] $X: M -> T M $ into the #link("009P")[tangent bundle] such that for all points $x$ in $M$ $X(x) in T_(x) M $, or equivalently such that the _footpoint projection_ $p$ after $X$ is the identity.

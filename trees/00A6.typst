@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[attracting / repelling critical points]
+
+TODO: Contruct vector fields on $RR^(2)$ with attracting / repelling / mixed critival points.

@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Differential of a smooth map between manifolds]
+
+Let  $f: M -> N$ be a #local("009G")[smooth map] between #local("009D")[manifolds]. For a poing $x$ in $M$ and a chart $psi$ around $x$ and a chart $psi$ around $f(x)$ we define the _differential_ of $f$ at $x$ as
+$
+  D_x f : T_x M ->  T_(f(x)) N, [(phi,v)] -> [(psi, D_(phi(x))(psi @ f @ phi^(-1)  (v)))].
+$
+
+TODO: Show that this is well defined and independent of the choice of charts.
+TODO: Show the differential is functorial.

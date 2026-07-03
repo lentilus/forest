@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[]
+Let $M$ be a connected compact #link("009D")[smooth manifold] of positive dimension, equipped with a smooth function $f: M ->  RR$ with exactly two #link("00A5")[critical points], then $M$ is #link("009V")[homeomorphic], but not necessarily #link("009U")[diffeomorphic], to the $SS^(n)$.
+

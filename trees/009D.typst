@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[k-dimensional smooth manifold]
+
+A set $X$ with a #local("0096")[smooth k-dimensional manifold atlas] is called a manifold if the $X$ equipped with the #local("009C")[canonical topology of the altas] is #local("009E")[hausdorff] and #local("009F")[second countable].

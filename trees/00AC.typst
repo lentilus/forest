@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Flow of a time dependent smooth vectorfield]
+
+A flow of a #link("00AB")[time dependent smooth vectorfield] is a smooth function $Phi: Uu ->  M$ satisfying
+1. $Uu subset RR xx M$ is open such that for all $x in M$ the set $Uu nn RR xx {x}$ is an open interval containing $0$.
+2. $Phi(0,x) =  x$ _"initial condition"_.
+3. $del_(t) Phi(t,x) = X (Phi(t,x),t) $ _"time dependent differential equation"_.

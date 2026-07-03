@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[k-dimensional smooth submanifold of cartesian space]
+
+A _$k$-dimensional smooth submanifold of $RR^(n)$_ is a subset $M$ of $RR^n$ with the following properties.
+For all $x in M$ there is an open neighbourhood $Uu$ with $x in Uu$ with a diffemorphism $phi : Uu -> Vv subset RR^n$, such that
+$
+  phi(M nn Uu) = (RR^(k) xx {0}^(n-k)) nn Vv.
+$
+
+We call $phi$ a chart.

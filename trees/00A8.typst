@@ -1,0 +1,24 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Picard-Lindeloef (improved)]
+
+Let $Uu subset RR^(n) $ be open, $c > 0$ and $F(-c,c) xx Uu ->  RR^n$ smooth.
+Assume that $v_0 in Uu$.
+Then there exists an open neighbourhood $Vv$ of $v_0 $ such that $Vv subset Uu$
+and an $epsilon > 0$, with a unique smooth map $f: (-epsilon,epsilon) xx Vv ->  U subset  RR^(n)$
+such that
+
+1. $f(0,v) =  v $ for all $v in Vv$ _"initial value"_
+2. $del_(t)f (t,v) = F(t,f(t,v))$ for all $t in (-epsilon,epsilon)$ and $v in
+   Vv$ _"solution of the OdE $f' = F(t,f)$"_
+3. If for $v_0$ the solution can be found on $(a,b)$ with $a < 0 < b$ then for
+   every $epsilon >0$ we find a neighbourhood $Uu_(epsilon)$ of $v_0$ such
+   that the (unique) solution can be found on $(a + epsilon, b - epsilon) xx
+   Uu_(epsilon)$.
+4. For each $v in Uu$, there is a maximal open interval $I_(v) subset  RR$ with
+   $0 in I_(v)$ on which one can define the (unique) solution of the initial
+   value problem. By (3.) this defines a maximal open subset $Omega subset  RR
+   xx Uu$ such that the intersection with $RR xx {v}$ is an interval containing
+   $0$ on which the solution function $f$ can be defined.

@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[]
+For every compact #local("0092")[smooth manifold embedded in euclidiean space] $M$ and #local("009S")[smooth vectorfield] $X$ on $M$, there is a unique flow $Phi : RR xx M ->  M$ of $X$.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>maximal atlas</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/0088.html'" title="Analysis on Manifolds">« Analysis on Manifolds</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="009A"><header><h1><span class="taxon">Definition. </span>maximal atlas <a class="slug" href="/009A.html">[009A]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>There is a partial order on <span class="link local"><a href="/0096.html" title="Smooth k-dimensional manifold atlas [0096]">atlases</a></span> of a set <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.669 7.513000000000001" width="9.669pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g7A69A27216C0815E9F6EA68EDDF8A486" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g7A69A27216C0815E9F6EA68EDDF8A486" overflow="visible">
+            <path d="M 9.174 7.513 C 8.9869995 7.513 8.338 7.48 8.151 7.48 C 7.9309998 7.48 7.161 7.513 6.941 7.513 C 6.776 7.513 6.6879997 7.425 6.6879997 7.249 C 6.6879997 7.15 6.743 7.095 6.864 7.084 C 7.128 7.051 7.2599998 6.963 7.2599998 6.798 C 7.2599998 6.699 7.194 6.578 7.062 6.435 L 5.346 4.587 C 5.027 5.335 4.719 6.072 4.4 6.82 C 4.411 6.842 4.422 6.864 4.455 6.886 C 4.554 6.996 4.741 7.062 5.005 7.084 C 5.1809998 7.106 5.269 7.194 5.269 7.337 C 5.269 7.458 5.203 7.513 5.06 7.513 C 4.796 7.513 3.949 7.48 3.685 7.48 C 3.454 7.48 2.695 7.513 2.464 7.513 C 2.299 7.513 2.222 7.425 2.222 7.249 C 2.222 7.139 2.321 7.084 2.519 7.084 C 3.014 7.084 3.168 7.084 3.3 6.765 L 4.576 3.762 L 2.288 1.309 C 2.2549999 1.276 2.211 1.232 2.156 1.199 C 1.705 0.726 1.188 0.462 0.583 0.429 C 0.396 0.41799998 0.297 0.319 0.297 0.154 C 0.32999998 0.055 0.341 0 0.484 0 C 0.671 0 1.3199999 0.033 1.507 0.033 C 1.738 0.033 2.497 0 2.728 0 C 2.893 0 2.97 0.088 2.97 0.264 C 2.97 0.363 2.915 0.41799998 2.794 0.429 C 2.53 0.451 2.398 0.55 2.398 0.715 C 2.398 0.825 2.497 0.979 2.684 1.177 C 3.366 1.903 4.059 2.629 4.73 3.366 C 5.104 2.475 5.489 1.595 5.8519998 0.693 C 5.841 0.671 5.83 0.649 5.797 0.616 C 5.698 0.517 5.522 0.462 5.258 0.429 C 5.093 0.407 5.005 0.319 5.005 0.176 C 5.005 0.055 5.071 0 5.2139997 0 L 6.5889997 0.033 C 6.82 0.033 7.59 0 7.788 0 C 7.953 0 8.041 0.088 8.041 0.253 C 8.041 0.363 7.9639997 0.41799998 7.799 0.429 C 7.458 0.429 7.238 0.44 7.161 0.484 C 7.084 0.528 6.996 0.65999997 6.908 0.88 L 5.511 4.213 C 6.259 5.005 6.82 5.599 7.183 6.006 C 7.447 6.281 7.623 6.468 7.722 6.545 C 8.129 6.886 8.58 7.062 9.075 7.084 C 9.306 7.095 9.361 7.15 9.361 7.3589997 C 9.328 7.458 9.317 7.513 9.174 7.513 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> given by inclusion. We say that an atlas is maximal if it is maximal with respect to this partial order.</p>
+  <p>TODO: show that this is welldefined.</p>
+</details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Question"><details ><summary id="009B"><header><h1><span class="taxon">Question. </span> <a class="slug" href="/009B.html">[009B]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>Is every atlas contained in a <span class="link local"><a href="/009A.html" title="maximal atlas [009A]">maximal atlas</a></span>?</p>
+</details></section></details></section></footer></article>
+
+</div></body></html>

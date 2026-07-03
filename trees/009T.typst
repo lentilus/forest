@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+#title[Vector space of vectorfields]
+
+The #local("009S")[smooth vectorfields] on a given manifold form a vectorspace.
+We denote it by $Gamma(T M)$
+
+TODO: Show that this is indeed a vectorspace.

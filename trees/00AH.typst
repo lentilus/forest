@@ -1,0 +1,31 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Overview]
+#title[Morphisms of Schemes]
+
+#embed("00AI")[]
+#embed("00AK")[]
+#embed("00AJ")[]
+#embed("00AL")[]
+
+
+
+
+
+// morphisms of schemes
+- Morphisms of ringed spaces
+- Morphisms of locally ringed spaces
+- Morphisms of schemes
+- Morphisms to affine schemes
+- Morphisms from affine schemes
+- maps of graded rings and projective schmees
+- rational maps
+
+// Classes of Morphissms of Schemes
+- open embeddings
+- quasi coherent quasi separated
+- affine and finite morphisms
+- Lying over Going up
+- Morphisms of (locally) finite type
+- Chevalley's Theorem

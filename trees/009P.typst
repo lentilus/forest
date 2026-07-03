@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Tangent bundle]
+
+Let $M$ be a #local("0092")[smooth manifold embedded into euclidean space]. We define the tangent bundle as
+$
+  T M := {(x,v) in M xx RR^(n) | v in T_(x) M }.
+$
+
+It comes equipped with a projection $p: T M -> M, (x,v) |-> x $ called the _foot projection_.
+the preimage of a point $x$ under the foot projection $p^(-1)(x) =  {x} xx T_(x)M $ is called the _fibre_ of $x$ of the tangent bundle. We call $M -> T M, x |-> (x,0)$ the _zero-section_
+

@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+#title[Title]
+The idea with the $pi^(hash)$ is that we want to be able to pull back functions from $X$ to $Y$.

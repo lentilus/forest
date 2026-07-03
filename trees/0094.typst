@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[The n-sphere]
+
+We can define the _n-dimensional_ sphere as the set of vectors in $RR^(n+1)$ with norm one.
+There are several ways to see that this defines a #link("0092")[manifold].
+
+1. _Using charts._ We can give charts by using stereographic projections. The stereographic projection is only well defined onto $R^n+1$ if we take out the pole. We can simply use two stereographic projections, one missing the northpole, and one missing the southpole.
+
+2. _As a local zero set of a regular height function._ Consider the function $g: RR^(n+1) ->  RR, x |-> norm(x)$. Notice that $x in S^(n)$ iff $g(x) = 0$. Notice that the differential of $g$ is surjective on $S^(n)$ since it is given by $x |-> 2x^T x$. Its only zero is the origin, which does not lie in $S^n$.
+
+3. _Locally as the graph of a smooth function._ Consider the map $f$ given by $(x_1, ..., x_n) |-> sqrt(1- sum_(i=1)^n x_i^2)$. By restriciting the domain we obtain a smooth well defined map whose image is the upper hemisphere (without the equator). We can use $-f$ to hit the lower hemisphere. Using coordinate permutations we can move a small-enough neighbourhood of any point into the upper or lower hemisphere.
+
+TODO: Details
+
+

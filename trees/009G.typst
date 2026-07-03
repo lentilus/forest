@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[smooth map between manifolds]
+
+Let $f:M -> N$ be a map between #local("009D")[smooth manifolds] $M$ and $N$.
+We say that $f$ is smooth if for all charts $phi$ of $M$ and $psi$ of $N$
+the composition $phi @ f| @ psi^(-1)$ is a smooth map between subsets of $RR^n$.
+

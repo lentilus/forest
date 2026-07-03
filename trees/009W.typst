@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Trivial tangent bundle]
+
+Let $M$ be a #link("009D")[manifold] of dimension $n$. We call the tangent bundle $T M$ trivial if we find $n$ pointwise linearly independent #link("009S")[vectorfields]. I.e vectorfields $X_1, ... , X_(n) in Gamma(T M)$ such that for all $x in M$ $(X_1(x), ..., X_n(x))$ is linearly independent.

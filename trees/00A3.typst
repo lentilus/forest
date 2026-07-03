@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Local existence and uniqueness of flows]
+
+Let $M$ be a smooth #local("009D")[smooth manifold] equipped with a #local("009S")[smooth vectorfield]. For all point $x in M$ there is an open neighbourhood $Uu$ of $x$ and $epsilon>0$ such that there is a flow $Phi : (-epsilon, epsilon) xx Uu ->  M$ of $X$, uniquely determined by $X$ and the choice of domain.
+
+There exists a maximal flow as well, defined on an open subset $Omega subset  RR xx M$. Where $Omega n_n RR xx {x}$ is the maximal open interval containing 0, on which the flow line through $x$ can be defined.

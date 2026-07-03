@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Construction]
+#title[Tangent bundle of abstract manifold]
+
+We want to construct the analogue of the #local("009P")[tangent bundle] just for abstract manifolds this time.
+
+Let $X$ be a #link("009D")[k-dimensional smooth manifold] with #local("0096")[atlas] $A$.
+We define the _tangent bundle_ as the dijoint union of all tangent spaces.
+$
+  T M := U_(x in M) {x} xx T_(x) M
+$
+
+TODO: equip this with charts to make it into a manifold

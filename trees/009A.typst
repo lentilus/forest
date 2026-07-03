@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[maximal atlas]
+
+There is a partial order on #local("0096")[atlases] of a set $X$ given by inclusion. We say that an atlas is maximal if it is maximal with respect to this partial order.
+
+TODO: show that this is welldefined.

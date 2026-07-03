@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+#title[Manifold]
+
+We want to work with spaces that locally look like $RR^n$. Informally this is exaclty the concept that a manifold captures.

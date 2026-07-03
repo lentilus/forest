@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Defintion]
+#title[Flow]
+
+The flow of a #link("009S")[smooth vectorfield] $X$ on a #link("009D")[smooth manifold] $M$ is a map $Phi : (-epsilon,epsilon) xx Uu ->  M$, with $Uu$ open in $M$ and
+1. $del_(t) Phi(t,x) = X(Phi(t,x)) $ for all $(t,x) in (-epsilon,epsilon) xx Uu$   _"differential equation"_
+2. $Phi(0,x) = x$ for all $x in Uu$ _"initial condition"_

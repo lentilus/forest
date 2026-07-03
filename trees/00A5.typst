@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Critical Points]
+
+The zeros of a #local("009S")[smooth vectorfield] are called critical points.

@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Time-dependent smooth vectorfield]
+
+A #link("009S")[smooth vectorfield] $X$ on $M xx RR$ (or a suitable open subset) is called time-dependent if
+$
+  X(x,t) in T_(x) M subset  T_((x,t)) (M xx RR)
+$
+
+for all $(x,t)$. Here we use the cacnonical decomposition $T_((x,t)) (M xx RR) = T_(x)M o+ T_(t) RR$.

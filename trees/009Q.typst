@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+// #title[]
+
+1. The #local("009P")[tangent bundle] is a a manifold of twice the dimension of M.
+2. The tangent bundle is a smooth sub-vector-bundle of $M xx RR^(n)$
+
+TODO
+
+

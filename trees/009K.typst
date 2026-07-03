@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+#title[Vectorspace structure on tangent space]
+
+The tangent space naturally comes equipped with the structure of a vectorspace.

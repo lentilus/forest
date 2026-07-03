@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Submanifold]
+
+A subset of a #link("009D")[smooth n-dimensional manifold] is called a _smooth submanifold_ of dimension $k$ if for all $x in N$ there is a smooth chart $phi: Uu ->  Vv subset RR^(n)$ of $M$ with $x in Uu$ such that $phi(x) = 0$ and $phi (N nn Uu) =  RR^(k) xx {0} nn Vv$.
+These charts of $M$ are called submanifold charts for $N$

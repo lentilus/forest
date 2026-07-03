@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Smooth k-dimensional manifold atlas]
+
+A _smooth k-dimensional manifold atlas_ for a set $X$ is an arbitrary
+collection of bijections ${phi_i : U_i ->  V_i}_(i in I)$ with the following
+properties.
+1. The domains cover $X$
+2. for all $i in I$, $V_i$ is open in $RR^k$,
+3. for all $i,j in I$, $phi_j (U_i nn U_j)$ and $phi_i(U_i nn U_j)$ are open in
+   $RR^k$ and $ phi_i @ phi_j^(-1) : phi_j (U_i nn U_j) -> phi_i (U_i nn U_j) $
+   is a diffeomorphism.
+
+We call the elements of the atlas _charts_.

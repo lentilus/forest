@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Question]
+
+Is every atlas contained in a #local("009A")[maximal atlas]?

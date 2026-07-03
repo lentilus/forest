@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Interal curve]
+
+Given a #link("009S")[smooth vector field] $X$ for some #link("009D")[smooth manifold] $M$
+and an initial point $x_0$ in $M$. Then an _integral curve_ through $x_0$ is a #link("009M")[curve]
+$gamma: (-epsilon, epsilon) ->  M$ with
+1. $gamma (0) =  x_0$ _"initial condition"_
+2. $gamma'(t) =  X(gamma(t))$ for all $t in (-epsilon,epsilon)$ _"solution of the OdE is determined by the vector field"_

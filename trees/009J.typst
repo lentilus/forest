@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Tangent space to a point of a manifold]
+
+For a #local("009D")[smooth manifold] $M$ with atlas $A$ we define the _tangent space_ to the point $x$ in $M$ to be the following set of equivalence classes
+
+$
+  { (phi, v) | phi in A, v in RR^n}\/~,
+$
+where $(phi,v) ~ (psi,w) :<==> D_(phi(x))  (psi @ phi^(-1))(w) = v$.

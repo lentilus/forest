@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Flow Property]
+Let $M$ be a #local("009D")[smooth manifold] equipped with a #link("009S")[smooth vectorfield] $X: M ->  T M$. Let $Phi : Omega -> M$ be the maximal flow of $X$.
+
+Set $phi_(t)(x) := Phi(t,x)$ where $Phi(t,x)$ is defined, then
+$
+  phi_(s) @ phi_(t) (x) = phi_(s + t) (x).
+$
