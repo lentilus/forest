@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[qcqs]
+
+We call morphisms that are quasicompact and quasiseparated _qcqs_.

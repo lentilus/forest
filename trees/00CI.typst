@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+#title[Integral morphisms are reasonable]
+
+Is this true? TODO

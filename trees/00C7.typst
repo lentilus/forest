@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+#title[Quasicompact morphisms are reasonable]
+
+#proof[
+  1. Proposition 7.7
+  2.
+  3.
+]

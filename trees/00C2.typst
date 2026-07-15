@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Locally finite type but not finite type]
+
+every open embedding (finite type only if qc)

@@ -1,0 +1,32 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[Une theorie combinatoire des series formelles]
+
+This paper presents a combinatorial theory of formal power series. The
+combinatorial interpretation of formal power series is based on the concept
+of species of structures. A categorical approach is used to formulate it. A
+new proof of Cayley's formula for the number of labelled trees is given as
+well as a new combinatorial proof (due to G. Labelle) of Lagrange's inversion
+formula. Polya's enumeration theory of isomorphism classes of structures is
+entirely renewed. Recursive methods for computing cycle index polynomials are
+described. A combinatorial version of the implicit function theorem is stated
+and proved. The paper ends with general considerations on the use of
+coalgebras in combinatorics.
+
+```bibtex
+@article{JOYAL19811,
+  title = {Une théorie combinatoire des séries formelles},
+  journal = {Advances in Mathematics},
+  volume = {42},
+  number = {1},
+  pages = {1-82},
+  year = {1981},
+  issn = {0001-8708},
+  doi = {https://doi.org/10.1016/0001-8708(81)90052-9},
+  url = {https://www.sciencedirect.com/science/article/pii/0001870881900529},
+  author = {André Joyal},
+}
+```
+

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+#title[Morphisms of ringed spaces glue]
+
+TODO: #link("00AJ")[morphisms of ringed spaces] glue.

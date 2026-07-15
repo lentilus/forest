@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Cauchy exponential species of types]
+
+For a species $S: Uu_1 ->  Uu_2$ and we define the _cauchy exponential_ at $X : Uu_1$ as
+$
+  "exp"(S)(X) := Sigma_(U: Uu_1) Sigma_(V : U ->  Uu_1) Sigma_(e:(Sigma_(u:U) V(u)) ~= X) Pi_(u:U) S(V(u))
+$

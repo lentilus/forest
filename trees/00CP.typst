@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Finite]
+
+- $"Spec" ZZ -> "Spec" ZZ[i]$
+- polynomial map of affine line
+- noether normalization

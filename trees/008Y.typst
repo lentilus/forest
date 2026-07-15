@@ -4,9 +4,8 @@
 #taxon[Definition]
 #title[Cauchy Product of Species of Types]
 
-Let $F: Uu_1 -> Uu_2$ and $G : Uu_1 -> Uu_3$ be #local("008K")[species of types]. We define the _cauchy product_ of $F$ and $G$ as the species
+Let $F: Uu_1 -> Uu_2$ and $G : Uu_1 -> Uu_3$ be #local("008K")[species of types]. We define the _cauchy product_ of $F$ and $G$ on $X :Uu$ as
 $
-  Pi_(X:Uu) Sigma_(k, l : Uu_1) Sigma_(e : k+l ~= X) F(k) xx F(l).
+(S * T)(X) := Sigma_(k, l : Uu_1) Sigma_(e : k+l ~= X) F(k) xx F(l).
 $
 
-The _cauchy product_ captures the idea of putting both an $F$-structure and a $G$-structure on $X$ by writing $X$ as a coproduct of and putting an $F$-structure one one summand and a $G$-structure on the other.

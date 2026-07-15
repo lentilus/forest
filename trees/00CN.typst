@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+#embed("00BP")[]
+#embed("00BV")[]
+#embed("00C6")[]
+#embed("00C9")[]
+#embed("00CA")[]
+#embed("00CC")[]
+#embed("00CD")[]
+#embed("00BT")[]
+#embed("00BS")[]
+#embed("00BQ")[]
+#embed("00BR")[]
+#embed("00CK")[]

@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Cartesian product species of types]
+
+The cartesian product of two species of types $F: Uu_(1) ->  Uu_(2)$ and  $G : Uu_1 ->  Uu_(2)$ at $X : Uu$ is their pointwise cartesian product
+$
+  (F xx G)(X) := F(X) xx G(X)
+$

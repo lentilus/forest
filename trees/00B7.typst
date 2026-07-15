@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[A course on combinatorial species]
+
+```bibtex
+https://tetrapharmakon.github.io/species/
+```

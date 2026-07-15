@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Finite morphism]
+
+A morphism of schemes $pi : X -> Y$ is finite if it is #local("00BT")[affine] and for every affine open $"Spec"(B) subset Y$, the open subscheme $pi^(-1) "Spec" (B)) subset X$ is the afine scheme $"Spec"(A)$ of a finite $B$-algebra $A$.

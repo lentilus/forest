@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Structure morphism]
+
+The structure morphism of a #local("00BH")[scheme] $X$ is the unique #link("00BF")[morphism of schemes] $pi_X : X -> "Spec" ZZ$.
+This is well-defined since $"Spec" ZZ$ is the final object in the category of schemes.

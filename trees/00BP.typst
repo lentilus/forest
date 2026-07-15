@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[open embedding]
+
+An open embedding is a morphism $pi: (X, Oo_X) ->  (Y, Oo_Y)$ that factors as
+$
+  (X, Oo_X) ->^~  (U, Oo_Y|U) ->  (Y, Oo_Y),
+$
+where the first map is an isomorphism and the second is the inclusion of the open set $U subset Y$ into $Y$ (as a ringed space). In this situation, we often write $X arrow.hook Y$.

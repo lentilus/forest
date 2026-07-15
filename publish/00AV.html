@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Structure Sheaf on the Zariski Spectrum</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/00BE.html'" title="">« </span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon="Definition"><details open><summary id="00AV"><header><h1><span class="taxon">Definition. </span>Structure Sheaf on the Zariski Spectrum <a class="slug" href="/00AV.html">[00AV]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  
+  <p>TODO: Define the structure sheaf as a sheaf on the base of distinguished opens by assigning to a prime ideal <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 5.698 7.513000000000001" width="5.698pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g8C196B01574EDAA4C3FCD71B703F61A3" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g8C196B01574EDAA4C3FCD71B703F61A3" overflow="visible">
+            <path d="M 3.905 4.862 C 3.421 4.862 2.9589999 4.609 2.508 4.103 C 2.387 4.609 2.046 4.862 1.507 4.862 C 1.056 4.862 0.726 4.499 0.495 3.784 C 0.385 3.421 0.32999998 3.212 0.32999998 3.146 C 0.32999998 3.047 0.385 2.992 0.506 2.992 C 0.561 2.992 0.594 3.003 0.627 3.025 C 0.682 3.124 0.715 3.201 0.726 3.2779999 C 0.924 4.114 1.177 4.532 1.474 4.532 C 1.6719999 4.532 1.771 4.378 1.771 4.081 C 1.771 3.916 1.749 3.729 1.694 3.531 L 0.484 -1.298 C 0.385 -1.661 0.374 -1.705 -0.055 -1.705 C -0.253 -1.705 -0.352 -1.793 -0.352 -1.958 C -0.352 -2.079 -0.286 -2.134 -0.16499999 -2.134 C 0 -2.134 0.572 -2.101 0.737 -2.101 C 0.946 -2.101 1.606 -2.134 1.8149999 -2.134 C 1.98 -2.134 2.057 -2.046 2.057 -1.87 C 2.057 -1.76 1.958 -1.705 1.749 -1.705 C 1.551 -1.705 1.254 -1.716 1.254 -1.584 C 1.254 -1.441 1.705 0.286 1.749 0.473 C 1.969 0.066 2.299 -0.143 2.739 -0.143 C 3.454 -0.143 4.081 0.22 4.631 0.957 C 5.137 1.628 5.39 2.343 5.39 3.08 C 5.39 4.037 4.818 4.862 3.905 4.862 Z M 3.872 4.532 C 4.301 4.532 4.521 4.202 4.521 3.553 C 4.521 3.256 4.455 2.86 4.334 2.365 C 4.081 1.408 3.762 0.781 3.377 0.462 C 3.146 0.275 2.937 0.176 2.728 0.176 C 2.409 0.176 2.189 0.319 2.068 0.616 C 1.969 0.847 1.914 1.012 1.914 1.1 L 2.475 3.399 C 2.53 3.641 2.728 3.894 3.036 4.147 C 3.3439999 4.4 3.619 4.532 3.872 4.532 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span> the localization <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 13.401299999999999 7.513000000000001" width="13.401299999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g82D0304DDC3756F3131C734796383808" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g transform="translate(8.25 10.23)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g26E77E95CEFCDA0E09E8A2D3AD203A19" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g82D0304DDC3756F3131C734796383808" overflow="visible">
+            <path d="M 1.507 0.033 C 1.705 0.033 2.387 0 2.596 0 C 2.761 0 2.838 0.088 2.838 0.253 C 2.838 0.352 2.772 0.41799998 2.629 0.429 C 2.31 0.44 2.156 0.55 2.156 0.759 C 2.156 0.858 2.2549999 1.078 2.464 1.408 C 2.761 1.903 2.97 2.266 3.113 2.508 L 5.786 2.508 C 5.786 2.431 5.797 2.277 5.83 2.035 C 5.907 1.232 5.9509997 0.792 5.9509997 0.737 C 5.9509997 0.528 5.709 0.429 5.2139997 0.429 C 5.005 0.429 4.906 0.341 4.906 0.16499999 C 4.906 0.055 4.972 0 5.104 0 C 5.368 0 6.204 0.033 6.468 0.033 C 6.6879997 0.033 7.469 0 7.689 0 C 7.854 0 7.9309998 0.088 7.9309998 0.264 C 7.9309998 0.374 7.832 0.429 7.634 0.429 C 7.3259997 0.429 7.139 0.451 7.084 0.484 C 7.029 0.517 6.985 0.616 6.974 0.781 L 6.314 7.579 C 6.281 7.788 6.292 7.876 6.061 7.876 C 5.929 7.876 5.819 7.81 5.742 7.667 L 1.958 1.3199999 C 1.628 0.77 1.188 0.473 0.649 0.429 C 0.473 0.41799998 0.385 0.32999998 0.385 0.16499999 C 0.385 0.055 0.451 0 0.572 0 C 0.748 0 1.331 0.033 1.507 0.033 Z M 5.412 6.347 L 5.742 2.937 L 3.377 2.937 Z "/>
+        </symbol>
+        <symbol id="g26E77E95CEFCDA0E09E8A2D3AD203A19" overflow="visible">
+            <path d="M 3.1185 3.3957 C 2.7412 3.3957 2.387 3.2263 2.0559 2.8875 C 1.9404 3.2263 1.6709 3.3957 1.2628 3.3957 C 0.9009 3.3957 0.6314 3.1108 0.4466 2.5333 C 0.385 2.3485 0.3542 2.2407 0.3542 2.2022 C 0.3542 2.1175 0.4081 2.0713 0.5159 2.0713 C 0.6699 2.0713 0.6776 2.156 0.7161 2.3253999 C 0.847 2.8567 1.0164 3.1185 1.2397 3.1185 C 1.386 3.1185 1.4553 3.003 1.4553 2.7797 C 1.4553 2.695 1.4476 2.618 1.4322 2.5564 L 0.5698 -0.9086 C 0.5159 -1.1242 0.5005 -1.1626999 0.231 -1.1626999 C 0.069299996 -1.1626999 -0.0077 -1.2089 -0.0077 -1.3475 C -0.0077 -1.4476 0.0385 -1.4938 0.1309 -1.4938 C 0.2541 -1.4938 0.6545 -1.4629999 0.7854 -1.4629999 C 0.9317 -1.4629999 1.4322 -1.4938 1.5785 -1.4938 C 1.7017 -1.4938 1.7633 -1.4245 1.7633 -1.2936 C 1.7633 -1.2089 1.6863 -1.1626999 1.5323 -1.1626999 C 1.309 -1.1626999 1.1935 -1.1396 1.1935 -1.1011 C 1.1935 -1.0934 1.2012 -1.0549 1.2166 -1.001 L 1.54 0.308 C 1.7171 0.0385 1.9789 -0.0924 2.31 -0.0924 C 2.8336 -0.0924 3.2956 0.1463 3.7037 0.616 C 4.0964 1.0703 4.2889 1.5631 4.2889 2.0944 C 4.2889 2.8105 3.8423 3.3957 3.1185 3.3957 Z M 3.0954 3.1185 C 3.4419 3.1185 3.619 2.8875 3.619 2.4178 C 3.619 1.9789 3.388 1.2012 3.234 0.9009 C 3.08 0.5852 2.7181 0.1771 2.31 0.1771 C 2.156 0.1771 2.0251 0.2233 1.9173 0.3234 C 1.7479 0.4851 1.6632 0.6468 1.6632 0.8085 C 1.6632 0.8239 1.6709 0.8624 1.6863 0.9163 L 2.0636 2.4409 C 2.4024 2.8952 2.7489 3.1185 3.0954 3.1185 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span></p>
+</details></section><footer></footer></article>
+
+</div></body></html>

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Notes on existing work]
+- #local("00BA")[]
+- #local("008K")[]

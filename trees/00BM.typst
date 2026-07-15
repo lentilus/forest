@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+All of the above classes of morphisms are #link("00BL")[qcqs], making them affine local on the target.
+
+Most morphisms we encounter are qcqs. Compare
+-
+- 
+- 

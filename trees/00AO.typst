@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Morphism of locally ringed spaces]
+
+A morphism of locally ringed spaces is a #local("00AJ")[morphism of ringed spaces]
+$(pi, pi^(hash))$, such that the induces map on stalks
+$ pi^(hash)_p : Oo_(Y, pi(p)) ->  Oo_X,p$ is a local homomorphism of local rings.
+I.e the unique maximal ideal is sent to the unique maximal ideal.
+
+Recall that $pi: X -> Y$ is a continous map, and $pi^(hash): Oo_Y -> pi_(**) Oo_X$ is a morphism of sheaves, where
+$pi_(**)Oo_X$ is a sheaf on $Y$ by $V |-> Oo_X pi^(-1)(V)$.

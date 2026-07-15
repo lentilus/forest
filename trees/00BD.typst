@@ -1,0 +1,89 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+// #title[Title]
+
+Let $S : Uu_1 -> Uu_2$ and $T : Uu_1 -> Uu_3$ be #local("008N")[species of types]. The #local("00BC")[cauchy exponential] fullfills the following identity.
+$
+  "exp"(S + T) ~= ("exp"(S) * "exp"(T))
+$
+
+#proof[
+  We give an equivalence by contructing maps $phi$ and $psi$ that are mutual inverses.
+
+  *Forward map $phi$.* Given an element of the LHS i.e a term $(U,V,e,f) : "exp"(S+T)(X)$ with
+  $
+    U : Uu_1,..
+    V:U -> Uu_1,..
+    e:(Sigma_(u:U V(u)) ~= X),..
+    f : Pi_(u:U) S(V(u)) + T(V(u)),
+  $
+  we need write $X$ as a binary coproduct such that we can put an _exp_-structure on each summand.
+
+  We start by splitting $U$ into subtypes $U_S$ and $U_T$ as follows.
+  TODO: are these actually subtypes?
+  $
+    U_S := Sigma_(u:U) Sigma_(s: S(V(u))) "inl"(s) = f(u),\
+    U_T := Sigma_(u:U) Sigma_(s: S(V(u))) "inl"(s) = f(u).
+  $
+
+  Now we choose our summands as
+  $
+    A := Sigma_(w : U_S) V(u), " and "
+    B := Sigma_(w : U_T) V(u).
+  $
+
+  Since $A + B ~=_"TODO" Sigma_(u:U)V(u) ~=_e X$, we can upgrade $e$ to an equivalence equivalence $e' : A+B ~= X$.
+
+  Now we want to place an $"exp"(T)$- and $"exp"(S)$-structure on $A$ and $B$ repectively.
+  For this we need to construct the remaining terms.
+  $
+    V_1 : U_S -> Uu_1, V_1(u,s,p) := V(u), \
+    V_2 : U_T -> Uu_1, V_2(u,t,p) := V(u), \
+    s_1 : U_S -> S(V(u)), s_1(u,s,p) := s, \
+    s_2 : U_T -> T(V(u)), s_2(u,t,p) := t.
+  $
+
+  Now
+  $
+    (U_S, V_1, "id", s_1) : "exp"(S)(A), \
+    (U_T, V_2, "id", s_2) : "exp"(T)(B).
+  $
+
+  This completes our construction of $phi$. Notice that
+  $
+  ((A,B,e'), ((U_S, V_1, "id", s_1),(U_T, V_2, "id", s_2))) : ("exp"(S) * "exp"(T))(X)
+  $
+
+  *Reverse map $psi$.* We are given an element $((A,B,e'), ((U_S, V_1, e_1, s_1),(U_T, V_2, e_2, s_2)))$ with
+  $
+    A,B : Uu_1,.. e': A+B ~= X,\
+    U_1 : Uu_1,.. V_1 : U_1 ->  Uu_1,.. e_1 : (Sigma_(u:U_1) V_1(u)) ~= A,.. s_1 : Pi_(u : U_1) S(V_1 (u)), \
+    U_2 : Uu_1,.. V_2 : U_2 ->  Uu_1,.. e_2 : (Sigma_(u:U_2) V_2(u)) ~= B,.. s_2 : Pi_(u : U_2) S(V_2 (u))
+  $,
+  define
+  $
+    U :=  U_1 + U_2,\
+    V: U -> Uu_1,\
+    V("inl"(u)) := V_1(u),\
+    V("inr"(v)) := V_2(v)
+  $
+
+  then
+  $
+    Sigma_(u:U) V(u) ~= (Sigma_(u:U_1) V_1(u)) + ( Sigma_(v : U_2) V_2(v)) ~=_(e_1 + e_2) A + B ~=_(e') X
+  $
+
+  giving $e: Sigma_(u:U)S(V(u)) ~= X$.
+  Define
+  $
+    f : Pi_(u:U) (S(V((u))) + T(V(u)) \
+    f("inl"(u)) :=  "inl"(s_1(u))\
+    f("inr"(v)) :=  "inl"(s_2(v))
+  $
+
+  And $(U,V,e,f) : "exp"(S + T)$.
+
+  TODO: Make sure $phi$ and $psi$ really compose to the identity both ways.
+]

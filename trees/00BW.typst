@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Outlook]
+// #title[Title]
+
+
+All classes of morphisms we have just dicussed are _affine-local_ on the target. To prove this we need the _qcqs_ lemma, that we will hear about in the next presentation.
+
+This makes all classes morphisms we have discussed #local("00BN")[reasonable].

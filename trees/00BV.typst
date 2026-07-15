@@ -1,0 +1,6 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Quasicompact morphism]
+A morphism $pi: X -> Y$ of schemes is _quasicompact_ if for every affine open subset $V subset Y$, the preimage $pi^(-1)(V)$ is quaiscompact.

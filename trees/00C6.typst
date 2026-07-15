@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+A scheme $X$ is quasicompact as a topological space if its structure morphism $X -> "Spec" ZZ$ is quasicompact.

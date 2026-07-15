@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Integral morphism]
+
+A morphism of schemes $pi : X ->  Y$ is _integral_ if it is affine and for every affine open set $"Spec"(B) subset Y$ with $pi^(-1) ("Spec"(B)) ~= "Spec"(A)$, the ring $A$ is an inegral extension of $B$ via $pi^hash$

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[finite type]
+- $PP_k^1 -> "Spec" k$ (from earlier)
+- open embeddings that are qc

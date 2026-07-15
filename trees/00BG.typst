@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+// #title[Title]
+
+Let $A$ be a ring, let $X$ be a #link("00BH")[scheme]. Then the morphisms
+$X -> "Spec"(A)$ are in bijection with ring homomorphisms to global sections
+$A -> Gamma(X,Oo_X)$.
+
+#proof[
+  See 6.15
+]

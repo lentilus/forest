@@ -2,5 +2,5 @@
 #show: template
 
 #taxon[Idea]
-#title[Title]
+// #title[Title]
 The idea with the $pi^(hash)$ is that we want to be able to pull back functions from $X$ to $Y$.

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+// #title[]
+
+TODO: #link("00AO")[morphisms of locally ringed spaces] induce inclusion or #link("00AR")[residue fields], in particualr functions #link("00AP")[vanishing] at ... pull back to funcitons vanishing at ... .

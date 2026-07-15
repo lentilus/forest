@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Proposition]
+#title[Open embeddings are reasonable]
+
+#local("00BP")[Open embeddings] are #local("00BN")[reasonable].
+
+#proof[
+  1. See 7.3
+  2. See 7.4
+  3. See 7.3
+]

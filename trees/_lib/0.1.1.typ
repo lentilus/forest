@@ -13,8 +13,8 @@
   skip-title.update(x => false)
 }
 
-#let embed(slug, text) = context if target() == "html" {
-  kodama.embed(slug, text, numbering: true, open: true)
+#let embed(slug, text, numbering: true, open: true) = context if target() == "html" {
+  kodama.embed(slug, text, numbering: numbering, open: open)
 } else {
   context tree-level.update(x => x +1)
   taxon-value.update("")

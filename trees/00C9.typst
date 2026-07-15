@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Quasi separated]
+
+A morphisms $pi: X ->  Y$ of schemes is _quasiseperated_ if for every open subset $V subset Y$, the preimage $pi^(-1) (V)$ is a quasiseparated scheme, i.e the intersection of any two quasicompact open sets is quasicompact.

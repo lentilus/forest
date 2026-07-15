@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[Species and their generating functions]
+
+```bibtex
+https://youtu.be/EAM3K4rzLTQ
+```

@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+If $M$ and $N$ are #local("009D")[smooth manifolds] and $F: M -> N$ is a
+continous map. Then $F$ is a morphism of manifolds (a #local("009G")[smooth
+map]) if and only if it is a #link("00AJ")[morphism of ringed spaces] with
+respect to the sheaves $Oo_M$ and $Oo_N$ of smooth functions on $M$ and $N$.

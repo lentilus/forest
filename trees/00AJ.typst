@@ -4,9 +4,9 @@
 #taxon[Definition]
 #title[Morphism of ringed spaces]
 
-A _morphism_ of #local("008E")[ringed spaces] $(X,Oo_(X))$ and $(Y, Oo_(Y))$
-is a continous map $pi : X ->  Y$, together with a #link("00AK")[morphism of sheaves] $pi^(hash) : Oo_Y -> pi_(**) Oo _(X)$
-
-$pi_(**) Oo _(X) $ is the pushforward given by $Uu |-> Oo _(X) (pi^(-1)( Uu)) $.
+A _morphism_ of #local("008E")[ringed spaces] $(X,Oo_(X))$ and $(Y, Oo_(Y))$ is
+a continous map $pi : X ->  Y$, together with a #local("00AK")[morphism of
+sheaves] $pi^(hash) : Oo_Y -> pi_(**) Oo _(X)$. Where $pi_(**) Oo _(X) $ is the
+pushforward given by $Uu |-> Oo _(X) (pi^(-1)( Uu)) $.
 
 

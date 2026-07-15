@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+A scheme should have property $P$ if its structure morphism has property $P$.
+This is part of the philosophy, that we should understand objects of a category
+by their interaction with other objects via morphisms. This principle will
+*not* hold for all properties of schemes that we define.

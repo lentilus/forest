@@ -1,0 +1,37 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Classical Species]
+
+Groupoid cardinality as motivation
+#embed("007L")[]
+
+Species count the number of structure of a specific type that one can put on a finite set of labels.
+Formally we define a species as follows.
+
+#embed("0081")[]
+#embed("0082")[]
+#embed("0083")[]
+
+The above are examples where there is only a finite number of ways to put a
+structure on a given finite set. But our definition of a species permits
+degenerate examples like the following.
+#embed("0085")[]
+#embed("0086")[]
+
+#embed("0084")[]
+
+
+--
+- generating functions
+- Coproduct
+- Hamard Product
+- Cauchy-Product
+
+- Catalan Numbers and binary rooted trees
+
+- species count things up to isomorphism
+-> univalence
+
+- species as dependent types

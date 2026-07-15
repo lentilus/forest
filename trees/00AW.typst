@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+TODO: The structure sheaf on Spec(A) is the unique sheaf satisfying that on any distinguished open its sections are given by $Oo_X(D(f)) = A_(f)$ and restriction maps are canonical localization maps.

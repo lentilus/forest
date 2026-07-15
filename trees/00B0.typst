@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+The _cauchy product_ captures the idea of putting both an $F$-structure and a $G$-structure on $X$ by writing $X$ as a coproduct of and putting an $F$-structure one one summand and a $G$-structure on the other.

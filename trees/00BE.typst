@@ -1,0 +1,27 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[]
+
+#embed("00AV")[]
+#embed("00AW")[]
+#embed("00AQ")[]
+#embed("00AX")[]
+#embed("00AZ")[]
+#embed("00AY")[]
+#embed("00AP")[]
+#embed("00AR")[]
+#embed("00AI")[]
+#embed("00AK")[]
+
+
+#embed("00AJ")[]
+#embed("00AL")[]
+#embed("00AN")[]
+
+#embed("00AS")[]
+
+#embed("00AO")[]
+#embed("00AU")[]
+#embed("00AT")[]

@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+When we talk about regular functions on manifolds, we talk about functions taking values in a field.
+We want to conserve this property for schemes

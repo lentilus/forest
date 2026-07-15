@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[]
+#title[References on Species]
+- #local("00B3")[]
+- #local("00B4")[]
+- #local("00B5")[]
+- #local("00B6")[]
+- #local("00B7")[]
+- #local("00B8")[]

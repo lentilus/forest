@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Reasonable class of morphisms]
+We say a class of morphisms of schemes is _reasonable_ if it fullfills the following properties.
+0. All _isomorphisms_ are in the class.
+1. The class is closed under composition.
+2. The class is closed under base change: if $pi: X ->  Y$ is in the class, and $rho: Y' -> Y$ is in the class, then the induced map $X xx_Y Y' -> Y'$ is also in the class.
+3. (The class is local on the target)

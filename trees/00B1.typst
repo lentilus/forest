@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Cartesian exponent of species of types]
+
+Given species of types $F: Uu_(1) ->  Uu_(2)$ and $G Uu_(1) ->  Uu_3$, we define the cartesian exponent of $F$ and $G$ at $X : Uu$ as the pointwise exponent
+$
+  "cart-exp"(F,G)(X) := F(X) -> G(X)
+$

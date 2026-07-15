@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Morpisms of (locally) finite type]
+
+A morphism $pi: X -> Y$ is locally of finite type if for every affine open subset $"Spec"(B) subset Y$ and every affine open subset $"Spec"(A) subset pi^(-1) ("Spec"(B))$, the induces morphism $B -> A$ (induced by $pi^hash("Spec"(B))$ makes $A$ a finitely generated $B$-algebra.
+A morphism of _locally finite type_ is of finite type if it also #local("00BV")[quasicompact].

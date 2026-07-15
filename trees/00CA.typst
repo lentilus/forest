@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+A scheme $X$ is quasiseparated if its structure morphism $X -> "Spec" ZZ$ is quasiseparareted.

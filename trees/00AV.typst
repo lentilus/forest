@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Structure Sheaf on the Zariski Spectrum]
+
+TODO: Define the structure sheaf as a sheaf on the base of distinguished opens by
+assigning to a prime ideal $p$ the localization $A_p$

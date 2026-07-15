@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Meta-Theorem]
+// #title[Title]
+All classes we will see today are #local("00BN")[reasonable].
+#proof[
+  Almost the entire chapter on _classes of morphisms_.
+]

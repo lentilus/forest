@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[species in agda-unimath]
+
+```bibtex
+  https://unimath.github.io/agda-unimath/species.html
+```

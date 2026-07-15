@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Value of a function]
+
+TODO: value of section s is the residue class of the germ of s in the residue field.

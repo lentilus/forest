@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[integral but not finite]
+
+$
+  "Spec"(Q) -> "Spec" (overline(Q))
+$

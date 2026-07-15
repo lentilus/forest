@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Hierachy of notions of finiteness]
+
+$
+  "affine" supset "integral" supset "finite = integral + finite type" subset "finite type" subset "locally finite type"
+$

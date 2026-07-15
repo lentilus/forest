@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Morphism of schemes]
+
+Let $X = PP_k^(1)$, $Y = "Spec" k$
+
+$
+  pi: X -> Y
+$
+
+The map between topological spaces is the constant map (to the zero ideal). It is trivially continous. 
+The structure sheaf of $"Spec" k$ at ${<<0>>}$ is $k$ and at empty sets its $0$.
+
+For the morphism of sheaves $pi^(hash)$, give $pi^hash$ on $V$ by $k -> k$ restricted to $V$ or $0$ if $V$ is empty.
+
+TODO show its local

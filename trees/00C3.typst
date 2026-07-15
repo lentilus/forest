@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Example]
+#title[Affine but not integral]
+
+$
+  "Spec" (k[t]) -> "Spec" k
+$
+... or a base change version.

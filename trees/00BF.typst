@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Morphism of schemes]
+
+A _morphism of schemes_ is a #link("00AO")[morphism of locally ringed spaces] between #local("00BH")[schemes].

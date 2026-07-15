@@ -4,28 +4,28 @@
 #taxon[Overview]
 #title[Morphisms of Schemes]
 
-#embed("00AI")[]
-#embed("00AK")[]
-#embed("00AJ")[]
-#embed("00AL")[]
+This page collects some notes I took for a small presentation on classes of morphisms of schemes and notions of finiteness. These notes are almost exclusively based on #local("00C4")[this lecture].
 
+// #embed("00BE", numbering: false, open: false)[Preliminaries]
 
+// Preliminaries
+#embed("00CM")[Preliminaries]
 
+// Classes
+#embed("00CN")[Classes of morphisms]
 
+// Examples
+#embed("00CO")[Examples]
 
-// morphisms of schemes
-- Morphisms of ringed spaces
-- Morphisms of locally ringed spaces
-- Morphisms of schemes
-- Morphisms to affine schemes
-- Morphisms from affine schemes
-- maps of graded rings and projective schmees
-- rational maps
+// Hierachy
+#embed("00BK")[]
 
-// Classes of Morphissms of Schemes
-- open embeddings
-- quasi coherent quasi separated
-- affine and finite morphisms
-- Lying over Going up
-- Morphisms of (locally) finite type
-- Chevalley's Theorem
+// #embed("00BW", numbering: false)[]
+
+// #embed("00C5", open: false)[] // reasonableness
+// #embed("00C7", open: false)[]
+// #embed("00CB", open: false)[]
+// #embed("00CE")[]
+// #embed("00CF", open: false)[]
+// #embed("00CI", open: false)[]
+// #embed("00CH", open: false)[]

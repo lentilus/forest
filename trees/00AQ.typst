@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Functions on a Scheme]
+
+Let $(X, Oo_X)$ be a scheme. We call sections of $Oo_X|Uu$ (regular) functions on $Uu$. We call global sections _regular_ functions on $X$.
