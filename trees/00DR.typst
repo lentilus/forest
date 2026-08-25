@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+For $n: NN$ and $S : B S_n$, the transported Dirichlet product is
+$
+  (F *_D G)(n,S) = Sigma (a,b : NN, A: B S_a, B : B S_b, e:A xx B ~= S), F(a,A) xx G(b,B),
+$
+
+where $A xx B$ denotes the product of the underlying finite sets.
+
+- Aut(A) xx Aut(B) acting on F(a,A) xx G(b,B).
+- In the case where A = [a] and B = [b], we get an $S_a xx S_b$-set
+- given an equivalence we can view S_a xx S_b as subgroup of S_n.

@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Species restrict to S_n-sets]
+
+Consider a species $X: "FinSet" -> "Set"$. By #local("00DE")[this] and by #local("00DF")[this], $X$ restricts to
+$
+  X_n:B S_n -> "Set".
+$
+
+In other words, $X$ is given precisely by what is does on each $B S_n$, since
+$
+  ("FinSet" -> "Set") ~= (Sigma (n:NN),("FinSet"_n -> "Set"))
+$

@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Total space is action groupoid]
+
+Given $X : B S_n -> "Set"$ for a fix $n : NN$,
+the total space $Sigma (S : B S_N), X(S)$ is by definition what we call the _action type_ $X([n]) slash.double S_n$.
+Its objects are pairs of the form $([n], x)$, with $x:X([n])$
+
+See also definition 5.4.1 in the #link("00D6")[symmetry book]. The action type corresponds to what we call the #link("007U")[action groupoid or weak quotient] in category theory. We will see #local("00DK")[in a second] that paths in the identity type of the action type correspond precisely to the morphisms in the the #link("007U")[action groupoid]
+
+

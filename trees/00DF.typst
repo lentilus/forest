@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Loop space of FinSet_n]
+
+The groupoid of finite sets with cardinality $n$, $"FinSet"_n$ is pointed connected with base point $[n] := {0,1,...,n-1}$. Its loop space is the symmetric group $S_n$.
+$
+  Omega ("FinSet"_n, [n]) ~= S_n.
+$
+
+In other words $"FinSet"_n ~= B S_n$
+
+#proof[
+  TODO.
+]

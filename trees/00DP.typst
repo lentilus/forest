@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Dirichlet Product Species]
+
+Not yet sure if this is usefull in any way.
+
+#embed("00DR")[]

@@ -1,0 +1,33 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Models of HoTT]
+
+there are *lots* of categorical models of dependent types
+- Categorical models with families: CwF
+- Natural models (see Awodey)
+- Categrogies with attributes: CwA
+- Comprehensible categories
+- Display map categories
+- B C systems
+
+Intetional Identity Types correspond to  weak factorization systems.
+
+See https://ncatlab.org/nlab/show/weak+factorization+system
+
+- some people also look at weak factorization systems
+
+To convice a mathematician that HoTT is actually synthetical homotopy theory,
+refer them to https://doi.org/10.48550/arXiv.1211.2851 .
+- they use kan fibrations and kan complexes
+
+With HoTT we talk about higher structures, so we need to think about what
+higher category theory should be.
+
+Idea: Replace equalities with higher morphisms
+- 0-cells become objects
+- 1-cells morphisms
+- ...
+
+

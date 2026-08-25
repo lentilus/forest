@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[Symmetry Book]
+
+```bibtex
+@misc{Symmetry,
+  title = {Symmetry},
+  author = {Marc Bezem and Ulrik Buchholtz and Pierre Cagne
+            and Bjørn Ian Dundas and Daniel R. Grayson},
+  date = {2026-05-07},
+  howpublished = {\url{https://github.com/UniMath/SymmetryBook}},
+  note = {Commit: \texttt{64ccc42}}
+}
+```

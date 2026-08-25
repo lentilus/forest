@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[isFinSet]
+
+$
+  "isFinSet"(X) :-= EE (n:NN),(X="Fin"(n)).
+$
+
+See #link("00D6")[symmetry book] definition 2.24.1
+

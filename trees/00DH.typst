@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[X([n]) is an S_n-set]
+
+Given a path $p: S=T$ in $B S_n$, any type family $X : B S_n -> "Set"$ gives a transport map
+$
+  "tr"_X (p) : X(S)->X(T).
+$
+
+In particular for $tau: [n] = [n]$ we have $"tr"_X (tau): X([n]) -> X([n])$.
+So $X([n])$ becomes an $S_n$-set (see #local("00DI")[G-set]) with the action
+$
+  tau * x :-= "tr"_X (tau,x).
+$

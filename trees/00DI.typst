@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[G-Set]
+Given a #local("00DL")[group] $G$, a $G$-set is a function $X : B G -> "Set"$.
+
+Any paths $p : x = y$ in $B G$ gives us a map $X(x)->X(y)$ that we call the group action of $X$.

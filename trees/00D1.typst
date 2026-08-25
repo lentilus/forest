@@ -1,0 +1,52 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Equality and Identity types]
+
+A distinguishing feature of MLTT is the introduction of intentional equality in
+addition to the strict syntactic definitional equality. This way we can use
+MLTT to talk about equality just like other propositions that we model using
+types.
+
+The formation rule for the family of identity types states that given any two
+terms $a,b:A$ we may form the type of identifications between them.
+$
+  "Formation"
+  (Gamma tack a:A)/
+  (Gamma, x:A tack "Id"_A (a,x) "type")
+$
+
+The introduction rule essentially states that things that are judgementally
+equal should have a canonical witness of equality inhabiting the identity type.
+We call this witness $"refl"$. In order words, equality should be _reflexive_.
+$
+  "Introduction"
+  (Gamma tack a:A)/
+  (Gamma tack "refl"_a : "Id"_A (a,a))
+$
+
+
+TODO
+$
+  "Elimination"
+  (Gamma tack a:A quad Gamma, x:A, p:"Id"_A (a,x) tack P(x,p) "type")/
+  (Gamma tack J_a : P(a,"refl"_a) ->  Pi_(x:A) Pi_(p : "Id"_A (a,x)) P(x,p))
+$
+
+TODO
+$
+ "Computation"
+ (Gamma tack a:A quad Gamma, x:A, p:"Id"_A (a,x) tack P(x,p) "type")/
+ (Gamma, u:P(a,"refl"_a) tack J(u,a,"refl"_a) -= u:P(a, "refl"_a))
+$
+
+When doing mathematics using HoTT we will (almost) never talk about definitional equality between things.
+We can see it more as a mechanism to reduce terms.
+
+- The difference between judgemental equality and intentional equality
+- MLTT undespecifies the identity types
+  - Axiom K
+- Why J does not proof that every path is refl
+  - short answer: It would not even typechek
+

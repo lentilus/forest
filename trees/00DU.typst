@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[Dirichlet Species and Arithmetic Zeta Functions]
+
+```bibtex
+@misc{baez2025dirichletspeciesarithmeticzeta,
+      title={Dirichlet Species and Arithmetic Zeta Functions}, 
+      author={John C. Baez},
+      year={2025},
+      eprint={2502.01833},
+      archivePrefix={arXiv},
+      primaryClass={math.CT},
+      url={https://arxiv.org/abs/2502.01833}, 
+}
+```

@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Putting all of the above together we get that 
+$
+  Sigma (S : "FinSet"), X(S) ~= Sigma (n:NN, S: B S_n), X(S) ~= Sigma (n:NN), X([n]) slash.double S_n.
+$
+
+In words: The total space of a species splits into components by cardinality and the n-th component is precisely the action type $X([n]) slash.double S_n$.

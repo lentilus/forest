@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[]
+#local("00DA")[isFinSet(X)] is a proposition and equivalent to $Sigma (n:NN),||X="Fin"(n)||$.
+See #link("00D6")[symmetry book] lemma 2.24.4

@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Dirichlet product from an action-type point of view]
+
+Not yet sure if this is usefull in any way.
+
+#embed("00DQ")[]
+#embed("00DP")[]
+#embed("00DR")[]
+
+- the S_n acts on the dirichlet product
+- the stabelizer of $[n] xx [m]$ is $S_n xx S_m$

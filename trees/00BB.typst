@@ -3,5 +3,5 @@
 
 // #taxon[Taxon]
 #title[Notes on existing work]
-- #local("00BA")[]
-- #local("008K")[]
+#embed("00BA", open: false)[]
+#embed("008K", open: false)[]

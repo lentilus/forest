@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Identity type of the total space]
+
+As a Sigma-Type, the identity type of the total space is given by
+$
+  (([n],x) = ([n],y)) ~= Sigma (tau:[n]=[n]), "tr"_X (tau, x) =y
+$,
+since $tr_X (tau,x) = tau x$ (by #local("00DH")[definition]), this is
+$
+  (([n],x) = ([n],y)) ~= Sigma (tau:S_n), tau x=y.
+$
+
+So an element of the identity type is an element $tau: S_n$ together with a proof that
+$tau x = y$, which is exacly what we would expect from a morphism in the #link("007U")[action groupoid].

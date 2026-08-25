@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[What do you mean by "Types are Spaces"?]
+
+TODO: Look at #local("00CW")[models], specifically simplicial sets.
+

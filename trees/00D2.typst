@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Contractible means more than connected]
+
+- Define contractible
+- Define connected
+- Equal vs merely equal
+- truncation kills higher paths
+- S^1 is not contractible
+- S^1 does not have distinct connected components
+- S^1 is connected

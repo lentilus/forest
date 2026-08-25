@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Stone Duality]
+
+- Boolean Algebras
+#embed("00CR")[]
+#embed("00CS")[]
+#embed("00CT")[]
+#embed("00CU")[]
+#embed("00CV")[]
+
+
+
+- Stone Spaces
+- Stones Theorem
+- Applications and Generalization

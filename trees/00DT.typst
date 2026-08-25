@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Species on FinSet]
+
+A _species_ is a function $F : "FinSet" -> "Set"$, where $"FinSet"$ is the #link("00DD")[groupoid of finite sets and bijections].

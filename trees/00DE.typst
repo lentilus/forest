@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[Title]
+
+By #local("00DB")[Lemma 2.24.4] we get that
+$
+  "FinSet" ~= Sigma (n:NN),"FinSet"_n
+$

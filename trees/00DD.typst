@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Groupoid of finite sets]
+
+We define the groupoid of finite sets as
+$
+  "FinSet" :-= Sigma (S:"Set"),"isFinSet"(S).
+$
+and the groupoid of sets with cardinality $n$ by
+$
+  "FinSet"_n :-= Sigma (S: "Set"),||"Fin"(n) = S||.
+$
+

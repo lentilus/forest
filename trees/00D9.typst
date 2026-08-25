@@ -1,0 +1,20 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Species on FinSet and action types]
+
+This is an eleaboration on the notes from my call with _Egbert_ on the XX.XX.
+
+#embed("00DA")[]
+#embed("00DB")[]
+#embed("00DD")[]
+#embed("00DE")[]
+#embed("00DI")[]
+
+#embed("00DF")[]
+#embed("00DG")[]
+#embed("00DH")[]
+#embed("00DJ")[]
+#embed("00DK")[]
+#embed("00DN")[]
