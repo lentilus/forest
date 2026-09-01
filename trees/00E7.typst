@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[cartesian decomposition of fixed shape]
+
+Define
+$
+  "cart-dec"_(k,l) (S) :-= sum (A,B : "FinSet") ||A ~= [k]|| xx ||B ~= [l]|| xx (A xx B ~= S).
+$
+
+

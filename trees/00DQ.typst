@@ -3,4 +3,9 @@
 
 #taxon[Definition]
 #title[cartesian decomposition]
-TODO
+Given a finite set $S : "FinSet"$, we define the type of _cartesian decompositions_ by
+$
+  "cart-dec" (S) :-= Sigma (A,B : "FinSet"), A xx_"FinSet" B  ~= S.
+$
+
+Where $xx_"FinSet"$ #local("00DZ")[cartesian product in FinSet].

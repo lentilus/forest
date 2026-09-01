@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Dirichlet Product of Species]
+#embed("00DZ")[]
+#embed("00E0")[]
+#embed("00DQ")[]
+#embed("00DP")[]
+#embed("00DY")[]
+#embed("00E4")[]
+#embed("00E3")[]
+

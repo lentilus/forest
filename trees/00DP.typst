@@ -4,6 +4,9 @@
 #taxon[Definition]
 #title[Dirichlet Product Species]
 
-Not yet sure if this is usefull in any way.
+Given #link("00DT")[species] $F,G$ define the dirichlet product by
+$
+  (F *_D G) (S) :-= Sigma ((T,U,e) : "cart-dec"(S)),F(T) xx G(U),
+$
 
-#embed("00DR")[]
+where $"cart-dec"(S)$ is the #link("00DQ")[type of cartesian decompositions] of $S$.

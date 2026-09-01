@@ -1,0 +1,32 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Cartesian Decomposition of fixed shape]
+Recall the definition of the cartesian decomposition
+#embed("00DQ")[]
+
+#embed("00E7")[]
+
+$
+  S_n ~= (("Fin"_n, [n]) = ("Fin"_n, [n])
+$
+
+We can view the $S_n$ as
+$
+  S_n := (S ~= S)
+$
+
+write $(A,B,e) : "cart-dec"_(k,l)(S)$ for $(A,B,p_1,p_2,e)$.
+
+Now the $S_n$ acts on $"cart-dec"_(k,l)(S)$ by
+$
+  sigma * (A,B,e) := (A,B, sigma @ e)
+$
+
+Transitivity (there is only one orbit)
+
+Consider two decompositions
+$
+  (A,B,e), (A',B',e') : "cart-dec"_(k,l)(S)
+$

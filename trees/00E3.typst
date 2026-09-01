@@ -1,0 +1,112 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Unit Law Dirichlet Product]
+
+Define $I : "FinSet" -> "Set"$ by 
+$
+  I(S) :-= (S ~= bb(1)_"FinSet")
+$
+
+Note that $(S ~= bb(1)_"FinSet")$ is a proposition (TODO: write out why) so in particular a set.
+
+Note also that this fits the definition of $I$ in the #link("00DU")[paper] quite well.
+
+We prove that
+$
+  F *_D ~= F,
+$
+by constructing for each $S : "FinSet"$ a map
+$
+  f : (F *_D I)(S) -> F(S)
+$
+and showing it has contractible fibers.
+
+#proof[
+  A term of type $(F *_D I) (S)$ is of the form
+  $
+    (T,U,e,a,b)
+  $
+  where
+  $
+    T,U: "FinSet", .. e: T xx U ~= S, .. a : F(T), .. b: I(U).
+  $
+  Note that $b: U ~= bb(1)$, so $U$ contractible.
+  We denote its center of contraction by $y_0 :U$.
+  We now define an equivalence
+  $
+  p : T ~= S,
+  $
+  by $p(t) :-= e(t,y_0)$. Because $U$ is contractible, $T xx U ~= T$, so $p$ is indeed an equivalence.
+  
+  By univalence $p$ gives us a path
+  $
+    r : T = S.
+  $
+  
+  Define
+  $
+    f(T,U,e,a,b) :-= "tr"_F (r,a) : F(S)
+  $
+  
+  Now we show that the fibers of $f$ are contracible:
+  
+  Let $a_0: F(S)$. Then the fiber is given by
+  $
+    "fib"_f (a_0) -= sum (x : (F *D I)(S)), f(x) = a_0.
+  $
+  
+  Define
+  $
+   x_0 :-= (S, bb(1), e_0, a_0, b_0),
+  $
+  where $e_0 : S xx bb(1) ~= S$ is the right unit equivalence and $b_0 : bb(1) ~= bb(1)$ is the identity.
+  
+  Then
+  $
+    f(x_0) = "tr"_F("refl"_S, a_0) = a_0.
+  $
+  
+  Pick $(x_0, "refl"_(a_0))$ as the center.
+  
+  We now show that given $(x,q) : "fib"_f (a_0)$, with
+  $
+    x -= (T,U,e,a,b), .. q : f(s) = a_0,
+  $
+  $(x_0, "refl"_(a_0)) = (x,q)$ holds.
+  
+  Observe, that using $r : T = S$ (from $p : T~=S$), we get that
+  $
+    f(s) = "tr"_F (r,a)
+  $.
+  
+  this means we get an element
+  $
+    q : "tr"_F (r,a) = a_0
+  $
+  
+  (that we also call $q$ by abuse of notation)
+  
+  We now use the the characterization of the #local("00E4")[Identity type of Dirichlet Product], so we only need to give a path
+  $
+    (T,U,e,a,b) = (S,bb(1),e_0, a_0, b_0)
+  $
+  
+  Thus we need
+  $
+    r : T = S,\
+    s: U =1,\
+    h : e_0 @ (r xx s) = e,\
+    g : "tr"_F (r,a) = a_0,\
+    k : "tr"_I (s,b) = b_0,\
+  $
+  We already have have $r$. Define $s$ by applying univalence to $b$. Set $g :-= q$.
+  Note that $"tr"_I(s,b) : I(1)$, which is contracible,so
+  $
+    "tr"_I (s,b) = b_0.
+  $
+  
+  It only reamains to construct $h$.
+  TODO
+]

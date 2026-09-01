@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Definition]
-#title[Groupoid of finite sets]
+#title[Groupoid of finite sets FinSet]
 
 We define the groupoid of finite sets as
 $

@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[FinSet is closed under cartesian Products]
+
+FinSet is closed under cartesian products.
+#proof[
+  See _Notebook I_.
+]

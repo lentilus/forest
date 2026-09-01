@@ -1,43 +1,136 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
+#set text(font: "New Computer Modern")
+
+#let proof(it) = context if text.lang == "de" [
+  _Beweis_. #it #h(1fr) $qed$
+] else [
+  *Proof*. #it
+]
+
 #set heading(numbering: none)
 #set text(lang: "de")
 
-#title[Algebra Portfolio]
+  28.08.26 #h(1fr) Blatt 01 - A2 und Blatt 04 - A4 #h(1fr) Linus Preusser
+#{
+  line(length: 100%)
+  align(center,text(22pt, weight: "bold",title[Algebra II - Portfolio]))
+  line(length: 100%)
+}
 
-*Lemma 1.* _Jede endliche Gruppe der Ordnung $n$ ist zu $ZZ_n$ isomorph. Insbesonder ist ein Isomorphismus gegeben durch .... fuer einen Erzeuger $g$._ 
 
+== Hilfsaetze
+Die folgenden Hilfsaetze sind Standardresultate aus der Vorlesung und werden in den den Bearbeitungen der Aufgaben verwendet.
+
+*Lemma 1.* Jede endliche zyklische Gruppe $G = << g >>$ der Ordnung $n$ ist isomorph zu $ZZ_n$. Insbesondere ist ein Isomorphismus $ZZ_n ->^~ G$ gegeben durch $k |-> g^k$.\
 #proof[
-  Einen Beweis hierfuer gibt @Karpfinger2024 auf Seite XXX. $square$
+  Siehe Satz 5.1 in @Karpfinger2024 auf Seite 61.
 ]
 
-*Lemma 2.* _In endlichen Gruppen teilt die Ordnung jedes Elements die Gruppenordnung._
-
+*Lemma 2 (Korollar aus Lagrange).* In endlichen Gruppen teilt die Ordnung jedes Elements die Gruppenordnung.\
 #proof[
- Einen Beweis hierfuer gibt Karpfinger auf Seite XXX.
+ Siehe Satz 3.9 auf Seite 39 und das zugehoerige Korollar 3.10 auf Seite 40 in @Karpfinger2024.
 ]
 
-Im folgenden bezeichnen wir mit $R$ den 25 elementigen Koerper $FF_5[X]\/(X^2 -X +1)$, und mit $alpha$ die Restklasse $overline(X+1) in R$.
+*Lemma 3.* Endliche Koerpererweiterungen sind algebraisch.\
+#proof[
+ Siehe Lemma 20.4 in @Karpfinger2024 auf Seite 233f.
+]
 
-*Satz.* _Die Erzeuger der Einheitengruppe $R^(xx)$ sind genau die $alpha^k$ fuer $k in {1,5,7,11,13,17,19,23}$._
+== Blatt 01 - A2
 
+
+Im folgenden bezeichnen wir mit $R$ den 25-elementigen Koerper $FF_5[X]\/(X^2 -X +1)$, und mit $alpha$ die Restklasse $overline(X+1) in R$.
+Man hatte in der vorangegangenen _Aufgabe 1_ gezeigt, dass dieser tatsaechlich ein Koerper ist und 25 Elemente enthaelt.
+
+*Satz.* _Die Erzeuger der Einheitengruppe $R^(xx)$ sind genau die $alpha^k$ fuer $k in {1,5,7,11,13,17,19,23}$._\
 #proof[
   Wir fuehren die Erzeuger von $R^(xx)$ zureuck auf die Erzeuger der zyklischen Gruppe $ZZ_24$. Da $R$ ein Koerper ist, entspricht die Einheitengruppe genau $R \\ {0}$. Also hat $R^(xx)$ Ordnung 24. Wir zeigen jetzt, dass $alpha$ ein Erzeuger ist. In $R$ gilt die Relation $overline(X^2) = overline(X-1)$, damit berechnen wir
   $
     alpha^2 = overline(X^2+ 2X +1) = overline(3X), .. alpha^8 = overline(4X), .. alpha^12 = overline(4), .. "alle ungleich" overline(1) in R^(xx).
   $
   
-  Nach _Lemma 2_ ist die Ordnung von $alpha$ Teiler von 24. Jeder echte Teiler von 24 ist aber Teiler von $8$ oder $12$, da aber $alpha^8 != overline(1)$ und $alpha^12 != overline(1)$, hat $alpha$ Ordnung 24. Folglich erzeugt $alpha$ die ganze Gruppe.
+  Nach _Lemma 2_ ist die Ordnung von $alpha$ Teiler von 24. Jeder echte Teiler von 24 ist aber Teiler von $8$ oder $12$, da aber $alpha^8 != overline(1)$ und $alpha^12 != overline(1)$, hat $alpha$ Ordnung 24. Folglich erzeugt $alpha$ die ganze Gruppe und $R^(xx)$ ist zyklisch.
   
   Nach dem _Lemma 1_ definiert $phi: R^(xx) -> ZZ_24, alpha^k |-> k + 24ZZ$ einen Isomorphismus.
-  Die Einheitengruppe von $ZZ_24$ ist mit _Lemma 3_ gut verstanden.
+  Die Gruppe $ZZ_24$ ist damit gut verstanden.
   Ihre Erzeuger sind genau ${overline(a) in ZZ_24 | "ggt"(a, 24) = 1}$.
-  Enstprechend sind die Erzeuger von $R^(xx)$ genau
+  Entsprechend sind die Erzeuger von $R^(xx)$ genau
   $
     phi^(-1)({overline(a) in ZZ_24 | "ggt"(a, 24) = 1}) = {alpha^k in R^xx | k in {1,5, 7, 11, 13, 17, 19, 23}}.
   $ Das beweist den Satz.
 ]
-  
+
+*Koeffizienten der Erzeuger.*
+Die Erzeuger in der Form $a + b X in R$ koennen wir wie folgt berechnen.
+Es ist $alpha = overline(X+1)$ und $overline(X^2) = overline(X-1)$. Damit erhalten wir
+$
+  alpha^2 = (X+1)^2 = X^2 + 2X + 1 = (X-1) + 2X +1 = 3X.
+$
+Damit erhalten wir weiter
+$
+  alpha^3 = X+2,.. alpha^4 = 4X+1,.. alpha^5 = 4X+2,.. alpha^6 = 3,\
+  alpha^7 = 3X + 3,.. alpha^8 = 4X,.. alpha^11 = 2X +1,.. alpha^12 = 4.
+$
+mit $alpha^12 = 4$ folgt fuer die uebrigen Exponenten
+$
+  alpha^13 = 4 alpha = 4 X + 4,..
+  alpha^17 = 4 alpha^5 = X +3,..
+  alpha^19 = 4 alpha^7 = 2 X + 2,..
+  alpha^23 = 4 alpha^11 = 3 X + 4,
+$
+
+Also sind die Erzeuger
+$
+  alpha^(1) = overline(X+1),.. alpha^(5) = overline(4X + 2),.. alpha^(7) = overline(3X + 3),.. alpha^(11) = overline(2X + 1),\
+  alpha^(13) = overline(4X+4),.. alpha^(17) = overline(X + 3),.. alpha^(19) = overline(2X +2),.. alpha^(23) = overline(3X + 4).
+$
+
+== Blatt 04 - A4
+
+
+*Konstruktion.* Definiere $K_i := FF_(p^(i!))$. Da $i! | (i+1)!$ gibt es eine Einbettung (Koerperhomomorphismus) $FF_(p^(i!)) arrow.hook FF_(p^((i+1)!))$. Von nun an schreiben wir $FF_(p^(i!)) subset FF_(p^((i+1)!))$. Wir erhalten also eine Kette
+$
+  K_1 subset K_2 subset ...
+$
+
+_Anmerkung: Fuer eine tatsaechliche Enthaltenseinsrelation, muessten wir einen algebraischen Abschluss von $FF_p$ fixieren, allerdings reicht uns fuer die Konstruktion von $L$ eine kohaerente Wahl an Einbettungen, sodass fuer alle $i <= j <= k$ und Einbettungen $phi_(i,j) : K_i arrow.hook K_j$, $phi_(j,k) : K_j arrow.hook K_k$, $phi_(i,k) : K_i arrow.hook K_k$ gilt_
+$
+  phi_(j,k) @ phi_(i,j) = phi_(i,k)
+$
+
+Jetzt setzen wir
+$
+  L = union.big_(i=1)^(oo)  K_i.
+$
+
+Wir statten $L$ mit einer Koerperstruktur wie folgt aus: Fuer $x,y in L$ waehle $i,j$ mit $x in K_i$ und $y in K_j$, dann nutze Koerperoperationen in $K_"max"(i,j)$. Dies ist unabhaengig von der konkreten Wahl fuer $i$ und $j$, da fuer $k < l$ gilt $K_k subset K_l$ durch einen Koerperhomomorphismus.
+
+Per Konstruktion sind die Koerperoperationen in $L$ vertraeglich mit allen $K_i$. So wird die inklusion von $K_i arrow.hook L$ selbst zu einem Koerperhomomorphismus.
+
+*Satz.* $L \/ FF_p$ ist algebraisch.\
+#proof[
+  Sei $a in L$ , dann existiert ein $i in NN$ mit $a in K_i = FF_(p^(i!))$. Wir erinnern uns, dass $FF_(p^(i!))\/FF_p$ eine Koerpererweiterung ist. Diese ist insbesondere endlich, also nach _Lemma 3_ algebraisch. $a$ ist also algebraisch ueber $FF_p$
+]
+
+_Anmerkung._ In der Aufgabenstellung sind konstante Polynome nicht ausgeschlossen. Fuer diese gilt folgende Aussage im allgemeinen nicht.
+
+*Satz.* Jedes nichtkonstante Polynom $f in FF_p [X]$ hat eine Nullstelle in $L$.\
+#proof[
+  Sei $g$ ein irreduzibler Faktor von $f$, und sei $d = deg g$. Dann ist $(g)$ ein maximales ideal in $FF_p [X]$ und $FF_p [X]\/(g)$ ein Koerper mit Dimension $d$ ueber $FF_p$. Bis auf Isomorphie ist $FF_(p^d)$ der einzige Koerper mit $p^d$ Elementen, also ist
+  $
+    FF_p [X] \/(g) ~= FF_(p^d).
+  $
+
+  $g$ hat eine Nullstelle $alpha = X + (g)$ in $FF_p [X] \/(g)$ und der Isomorphismus erhaelt Polynomgleichungen, bildet also $alpha$ auf eine Nullstelle in $FF_(p^d)$ ab.
+
+  Fuer $i >= d$, gilt $d | i!$ also 
+  $
+    FF_(p^d) arrow.hook FF_(p^(i!)) = K_i subset L.
+  $
+  Deshalb hat $f$ auch eine Nullstelle in $L$.
+]
+
 #bibliography("./refs.bib")
 
