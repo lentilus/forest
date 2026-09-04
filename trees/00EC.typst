@@ -1,0 +1,22 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Zeta Species]
+
+Given 
+
+$
+  X : "FinCommRing" -> "FinSet"
+$
+
+define
+$
+  Z_X :-= sum_(R : "FinSemisimpleCommRing") (U(R)~= F) xx X(R),
+$
+where $U(R)$ is the underlying type of $R$. See also #local("00B8")[Hasse-Weil species in agda-unimath]
+
+then (hopefully) for $H(X) :-= B C_n$ we get that
+$
+  hat(Z_X)(s) = zeta_X (s)
+$

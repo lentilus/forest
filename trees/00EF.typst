@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Main Theorem]
+
+Follows from Lemma 1 and Lemma 2.
+The zeta species $Z_X$ and the eulerproduct on the right hand side are isomorphic as types.
+$
+  Z_X ~= prod_(p in PP)^D "exp"_D (F_(X,p))
+$

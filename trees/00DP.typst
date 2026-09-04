@@ -4,9 +4,9 @@
 #taxon[Definition]
 #title[Dirichlet Product Species]
 
-Given #link("00DT")[species] $F,G$ define the dirichlet product by
+Given #local("00DT")[species] $F,G$ define the dirichlet product by
 $
   (F *_D G) (S) :-= Sigma ((T,U,e) : "cart-dec"(S)),F(T) xx G(U),
 $
 
-where $"cart-dec"(S)$ is the #link("00DQ")[type of cartesian decompositions] of $S$.
+where $"cart-dec"(S)$ is the #local("00DQ")[type of cartesian decompositions] of $S$.

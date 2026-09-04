@@ -2,7 +2,7 @@
 #show: template
 
 // #taxon[Taxon]
-#title[FinSet is closed under cartesian Products]
+#title[FinSet is closed under cartesian products]
 
 FinSet is closed under cartesian products.
 #proof[

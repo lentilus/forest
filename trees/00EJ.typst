@@ -1,0 +1,19 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Identity type of dirichlet product with FTIT]
+
+We present an alternative proof of the characterization of the identity type of the dirichlet product using the #local("00EK")[fundamental theorem of identity types].
+
+Let $(T,U,e,a,b)$ and $(T',U',e',a',b')$ be terms in the #local("00DP")[dirichlet product] $(F
+*_D G)(S)$ of #local("00DT")[species] $F$ and $G$.
+Then there is an equivalence
+$
+  ((T,U,e,a,b) =_((F *_D G)(S)) (T',U',e',a',b'))\
+  ~= sum (r : T ~= T'), sum (s : U ~= U'), sum (h : e' @ (r xx s) = e)
+$
+
+#proof[
+  See folder.
+]

@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Commutativity Dirichlet Product]
+
+Given #link("00DT")[species on FinSet] $F$ and $G$ we have that
+$
+  F *_D G = G *_D F
+$
+
+#proof[
+  TODO: just rearranging things
+]

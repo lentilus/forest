@@ -4,6 +4,7 @@
 #taxon[Notation]
 // #title[Title]
 
-For #link("00DD")[finite sets] $A$ and $B$, we write $A xx_"FinSet" B$ for finte set that is the cartesian product of $A$ and $B$ as constructed #local("00DZ")[here].
-
+For #link("00DD")[finite sets] $A$ and $B$, we write $A xx_"FinSet" B$ for
+finte set that is the cartesian product of $A$ and $B$ as constructed
+#local("00DZ")[here].
 By abuse of notation we will sometimes just write $A xx B$.

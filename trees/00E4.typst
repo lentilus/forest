@@ -1,36 +1,51 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Lemma]
 #title[Identity type of Dirichlet Product]
 
-Let $(T,U,e,a,b)$ and $(T',U',e',a',b')$ be terms in the dirichlet product $(F *_D G)(S)$ of #link("00DT")[species] $F$ and $G$.
+Let $(T,U,e,a,b)$ and $(T',U',e',a',b')$ be terms in the dirichlet product $(F
+*_D G)(S)$ of #local("00DT")[species] $F$ and $G$.
 
-Let $A(T,U,e) :-= F(T) xx G(U)$ be indexed by the type of #local("00DQ")[cartesian decompositions], then
+Let $C(T,U,e) :-= F(T) xx G(U)$ be indexed by the type of
+#local("00DQ")[cartesian decompositions], then
 $
-  &((T,U,e,a,b) =_(F *_D G) (T',U',e',a',b'))\
-  &~= sum (p : (T,U,e) =_"cart-dec"(S) (T',U',e')),"tr"_A (p,(a,b))=(a',b')\
-  &~= sum ((r,s,f): sum (p: A = A', q : B = B'), e' @ (p xx q) =_(A xx B ~= S) e), ("tr"_A (h(r,s,f), (a,b)) = (a',b'))\
-  &~= sum ((r,s,f): sum (p: A = A', q : B = B'), e' @ (p xx q) =_(A xx B ~= S) e), (("tr"_F (r,a) = a') xx ("tr"_G (s,b) = b'))\
+  ((T,U,e,a,b) =_(F *_D G) (T',U',e',a',b'))\
+  ~= sum ((r,s,f): "Eq-cart-dec"((T,U,e), (T',U',e')), (("tr"_F (r,a) = a') xx ("tr"_G (s,b) = b'))\
 $
+#proof[
 
+  Given $(A,B,e) : "cart-dec"(S)$, define $C(A,B,e) :-= F(A) xx G(B)$.
+  We then have that
+  $
+  ((T,U,e,a,b) =_(F *_D G) (T',U',e',a',b'))\
+  ~= sum (p : (T,U,e) =_"cart-dec"(S) (T',U',e')),"tr"_C (p,(a,b))=(a',b').
+  $
 
+  We make use of the following charcterization of the idenity type of cartesian
+  decompositions constructed #local("00DY")[here], and denote it by $iota$.
+  $
+    iota : (sum (p: A ~= A', q : B ~= B'), e' @ (p xx q) = e)
+    arrow.long^~  ((A,B,e) =_"cart-dec"(S) (A',B',e'))
+  $
 
-where $h$ is the equivalence characterizing the #local("00DY")[identity type of cart-dec].
+  With that the equivalence becomes
+  $
+  ((T,U,e,a,b) =_(F *_D G) (T',U',e',a',b'))\
+  ~= sum ((r,s,f): "Eq-cart-dec"(S), ("tr"_C (iota(r,s,f), (a,b)) = (a',b'))\
+  $
+  Here we are using that, given some equivalence of types $p: A ~= A'$, we get
+  an equivalence $sum (a : A), B(p(a)) ~= sum (a: A'), B(a)$.
 
-In the second step we are using that, given some equivalence of types $p: A = A'$, we get an equivalence
-
-$
-  sum (a: A), B(a) ~= sum (a : A'), B(p^(-1)( a)) .. "TODO: Details"
-$
-
-
-In the third step we are using the follwing.
-Given any $p:(T,U,e) =_"cart-dec"(S) (T',U',e')$, we have
-$
-  ("tr"_A (h(p),(a,b))=(a',b')) ~= (("tr"_F (p, a) = a') xx ("tr"_F (q, b) = b'))
-$
-TODO is this true? (third step):
-- spell this out using path induction.
-- here $h$ is again the equivalence characterizing the #link("00DY")[identity type of cart-dec].
-- A(T,U,e) ignores e
+  Now since $C(A,B,e)$ is constant in $e$ we have by #local("00EH")[this lemma], that
+  $
+    ("tr"_C (iota(r),(a,b))=(a',b'))\
+    ~= (("tr"_F (p, a) = a') xx ("tr"_F (q, b) = b')).
+  $
+  
+  We conclude that 
+  $
+  ((T,U,e,a,b) =_(F *_D G) (T',U',e',a',b'))\
+  ~= sum ((r,s,f): "Eq-cart-dec"(S)), (("tr"_F (p, a) = a') xx ("tr"_F (q, b) = b'))
+  $
+]

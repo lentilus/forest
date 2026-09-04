@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Associativity Dirichlet Product]
+
+$
+  ((F *_D G) *_D H) = (F *_D (G *_D H))
+$
+#proof[
+  TODO
+]

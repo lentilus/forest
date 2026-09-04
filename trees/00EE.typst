@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Eulerproduct of Species]
+
+We try to get around the colimit by doing the following construction.
+For $p$-local species $A_p$ define the eueler product as the pi-type
+$
+  prod_(p in PP)^D A_p (n) :-= prod_(p^k||n) A_p (p^k)
+$
+
+Does this definition behave well with our dirichlet product?

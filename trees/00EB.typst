@@ -1,0 +1,48 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Dirichlet Series]
+
+Given a species $F$ we obtain a dirichlet series $hat(F)$, classically given by
+$
+  hat(F) (s) := sum_(n >= 1) (|F(n)|)/(n!) n^(-s).
+$
+See #local("00DU")[the paper].
+A categorification of this is the $H$-Dirichlet series in #local("00B8")[agda-unimath] defined for $H : Uu ->
+Uu$ with $H(X xx Y) ~= H(X) xx H(Y)$ by
+$
+  Sigma (X : "FinSet"), (F(X) × (S → H(X))).
+$
+Evidentily this is a good definition to recover a lot of algebraic properties
+of the dirichlet product, as has been done in agda unimath.
+
+For $X : "FinSet"$, consider $H(X) :-= B C_n$, where $n$ is the cardinality of $X$, and $B C_n$ the delooping of the cyclic group in $n$ elements. Then this could be a nice categorification of the dirichlet series, since the #local("007P")[groupoid cardinality] of $B C_n$ is
+$
+  |B C_n| = 1/n .. "and" .. |S -> B C_n| = n^(-|S|)
+$
+
+Note though that $H$ is not multiplicative in the sense of the $H$-Dirichlet series. E.g.
+$
+  "TODO"
+$
+
+But we still get multiplicativity of cardinalities (hopefully), since
+$
+  |B C_n| |B C_m|= 1/n * 1/m = 1/(n m) = |B C_(n m)|
+$
+
+Define the categorified version of the dirichlet series to be
+$
+  Dd_F (S) :-= sum  (X : "FinSet"), (F(X) × (S → B C_(|X|)))
+$
+the we can decategorigy by taking the groupoid cardinality (in the case where F is wellbehaved)
+TODO : elaborate on constraints
+$
+  hat(F) (s) &:= |Dd_F ([s])|\
+  &= |sum  (X : "FinSet"), (F(X) × ([s] → B C_(|X|)))| \
+  &= sum_(n >= 1) (|F([n])|)/(n!) * n^(-s)
+$
+
+-> Still need to work out how to take the groupoidcardinality in HoTT and in which cases this is well-defined.
+

@@ -1,7 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Lemma]
 #title[Unit Law Dirichlet Product]
 
 Define $I : "FinSet" -> "Set"$ by 
@@ -9,9 +9,9 @@ $
   I(S) :-= (S ~= bb(1)_"FinSet")
 $
 
-Note that $(S ~= bb(1)_"FinSet")$ is a proposition (TODO: write out why) so in particular a set.
+Note that $(S ~= bb(1)_"FinSet")$ is a proposition (TODO: explain) so in particular a set.
 
-Note also that this fits the definition of $I$ in the #link("00DU")[paper] quite well.
+Note also that this fits the definition of $I$ in the #local("00DU")[paper] quite well.
 
 We prove that
 $
@@ -54,8 +54,9 @@ and showing it has contractible fibers.
   
   Let $a_0: F(S)$. Then the fiber is given by
   $
-    "fib"_f (a_0) -= sum (x : (F *D I)(S)), f(x) = a_0.
+    "fib"_f (a_0) -= sum (x : (F *_D I)(S)), f(x) = a_0. 
   $
+  
   
   Define
   $
@@ -88,7 +89,7 @@ and showing it has contractible fibers.
   
   (that we also call $q$ by abuse of notation)
   
-  We now use the the characterization of the #local("00E4")[Identity type of Dirichlet Product], so we only need to give a path
+  We now use the the #local("00E4")[characterization of the Identity type of Dirichlet Product], so we only need to give a path
   $
     (T,U,e,a,b) = (S,bb(1),e_0, a_0, b_0)
   $
@@ -108,5 +109,5 @@ and showing it has contractible fibers.
   $
   
   It only reamains to construct $h$.
-  TODO
+  (TODO: copy from Notebook II)
 ]

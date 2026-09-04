@@ -1,0 +1,36 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Transport ignores constant components]
+
+For path in the identity type of #link("00DQ")[cartesian decompositions] $p -= (r,s,t) : (T,U,e) =_"cart-dec"(S) (T',U',e')$ and any $(a,b) : F(T) xx G(U)$, we have
+$
+  "tr"_A (p, (a,b)) = ("tr"_F (r,a), "tr"_G (s,b))
+$
+This Lemma can probably be generalized.
+
+#proof[
+Let
+$
+  B : Uu xx Uu -> Uu, B(T,U) := F(T) xx G(U).
+$
+
+Define $A(T,U,e) = B(T,U)$. In other words $A = B @ pi_12$.
+Thus $"tr"_A (p) = "tr"_B ( "ap"_(pi_12) (p)) $
+
+Note that
+$
+  "ap"_(pi_12) (p) = ( "ap"_pi_T (p), "ap"_(pi_U) (p))
+$
+
+Let $q_T :-= "ua"(r)$ and $q_U :-= "ua"(s)$, then
+$
+  "tr"_F (q_T,a) = "tr"_F (r,a), .. "tr"_G (q_U, b) = "tr"_G (s,b)
+$
+so
+$
+  "tr"_A (p, (a,b)) = ("tr"_F (r,a), "tr"_G (s,b))
+$
+
+]

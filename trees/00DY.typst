@@ -1,13 +1,13 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Identity type of cart-dec]
+#taxon[Lemma]
+#title[Identity type of cartesian decompositions]
 
 Fix a finite set $S$. There is an equivalence
 
 $
-((A,B,e) =_"cart-dec"(S) (A',B',e')) ~= (sum (p: A = A', q : B = B'), e' @ (p xx q) = e) 
+((A,B,e) =_"cart-dec"(S) (A',B',e')) ~= (sum (p: A ~= A', q : B ~= B'), e' @ (p xx q) = e) 
 $
 
 Where $(p xx q ) : (A xx B) ->  (A' xx B')$ is the induced map from the paths $p$ and $q$.
@@ -15,15 +15,15 @@ Where $(p xx q ) : (A xx B) ->  (A' xx B')$ is the induced map from the paths $p
 #proof[
 Denote by $C$ the type family $C(X,Y) :-= X xx_"FinSet" Y ~= S$.
 $
-  ((A,B,e) =_"cart-dec"(S) (A',B',e')) &~= (sum (p: A = A', q : B = B'), "tr"_C ("pair"(p,q), e) = e')\
-  &~=_J (sum (p: A = A', q : B = B'), e' @ (p xx q) =_C(A,B) e).
+  ((A,B,e) =_"cart-dec"(S) (A',B',e')) &~= (sum (p: A ~= A', q : B ~= B'), "tr"_C ("pair"(p,q), e) = e')\
+  &~=_J (sum (p: A ~= A', q : B ~= B'), e' @ (p xx q) =_C(A,B) e).
 $
 
 In the second step, we make use of the $J$ rule:
 
-For a path $r: (A,B) -> (A',B') $
-denote by $overline(r)$ the induced path $overline(r) : A xx B -> A' xx B'$.
-then for $e : C(A,B)$ and $e' : C(A',B')$ we get a term of type
+For a path $r: (A,B) -> (A',B')$ denote by $overline(r)$ the induced path
+$overline(r) : A xx B -> A' xx B'$. then for $e : C(A,B)$ and $e' : C(A',B')$
+we get a term of type
 $
   ("tr"_C (r,e) = e') ~= (e' @ overline(r) = e),
 $

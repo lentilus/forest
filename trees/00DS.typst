@@ -4,40 +4,40 @@
 // #taxon[Taxon]
 #title[Roadmap WIP]
 This note attempts to state a HoTTification of the key results from the paper
-#link("00DU")[Dirichlet Species and Arithmetic Zeta Functions]. Some things I say here may
+#local("00DU")[Dirichlet Species and Arithmetic Zeta Functions]. Some things I say here may
 simply be wrong because I have not proved most of what I am claiming here. This
 serves more as a roadmap than as a collection of results.
 
 #embed("00DT")[]
 
-Given a species $F$ we obtain a dirichlet series $hat(F)$, classically given by
+#embed("00EB")[]
+
+#embed("00EC")[]
+
+#embed("00ED")[]
+
+#embed("00EE")[]
+
+Define $Z_(X,p)$-structure on a finite set is a way to make that set into a ring $k_p$ that is a product of finite fields of characteristic $p$ and then choose an element of $X(k_p)$ X(kp)  
 $
-  hat(F) (s) := sum_(n >= 1) (|F(n)|)/(n!) n^(-s).
+  Z_(X,p)(S) :-= sum (R : "Ring"), sum (P : "ProdFinFieldsChar(p)"), (U(R) ~= S) xx (P ~= R) xx X(R)
 $
 
-See #link("00DU")[the paper]
-
-A categorification of this is the $H$-Dirichlet series defined for $H : Uu -> Uu$ with $H(X xx Y) ~= H(X) xx H(Y)$ by
+then Lemma 1
 $
-  hat(F)(S) := Sigma (X : "FinSet"), (F(X) × (S → H(X))).
+  Z_X ~= prod_(p in PP)^D Z_(X,p)
 $
-See #link("00B8")[Dirichlet series of species of types in agda-unimath]
 
-It is not quite clear to me how this unifies what should happen to `s` and `-s` -> TODO.
+Define an $F_(X,p)$-structure on a finite set to be a way of making that set into a field $k$ of characteristic $p$ and then choose an element of $X(k)$. 
+$
+  F_(X,p)(S) :-= sum (k : "FieldOfChar(p)"), (U(k) ~= S) xx X(k)
+$
+then Lemma 2
+$
+  Z_(X,p) ~= "exp"_D (F_(X,p))
+$
 
-Given a function $X : "CommRing" ->  "Set"$ we get a species $Z_X$ as follows. A $Z_X$ structure on a finite set is a way of making it into a simisimple commutative ring $k$ and picking an element of $X(k)$.
-
-This is called the Hasse-Weil species
-
-For a HoTTification see #link("00B8")[Hasse-Weil species in agda-unimath]
-
-- Artin-Wedderburn Theorem
-Finite semisimple commutative ring is the same as a finite product of finite fields.
---> Pobably "just" isomorphism of types
-
-The Dirichlet series of the hasse-weil species is equal to the usual hasse-weil zeta function.
---> How do we say this in HoTT, in particular, how do we category the hasse-weil zeta function for a given X nicely?
-
+#embed("00EF")[]
 
 generalization to stuff types
 --> (in n-lab entry but not paper)
