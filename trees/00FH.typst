@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  "Dir"(D_("exp"_D (F))(S)) = "exp"("Dir"(D_F (S)))
+$

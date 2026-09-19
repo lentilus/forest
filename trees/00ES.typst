@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Rational Numbers]
+
+We assume some construction of type of rational numbers. We assume that this
+type is a set with decidable equality, equipped with the usual addition and
+multiplication making it a field. We denote the field of rational numbers with
+$QQ$. For a sketched construction see the #local("00ET")[HoTT book, section
+11., section 11.1].
+
+TODO: Make very clear what for what properties we need witnesses and find a construction we can borrow.

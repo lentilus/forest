@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Notation]
+
+Given a 1-type $X$, denote by $|"Aut"_X (-)| : X -> NN$ the set cardinality of the set of automorphisms.
+The universal property of the set truncation gives a unique map from $||X||_0$ to $NN$, that is compatible with the Automorphism-Cardinality.
+By abuse of notation we also denote this map by $|"Aut"_X (-)| : ||X||_0 -> NN$.

@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  Z_(X,p) ~= "exp"_D (F_(X,p))
+$

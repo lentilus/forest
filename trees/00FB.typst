@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Dirichlet Product of functions]
+
+We can model the formal product of two dirichlet series by defining a dirichlet product for functions from $NN_+$ into a ring, say $QQ$.
+
+For $f,g : NN_+ -> QQ$, define
+$
+  (f *_D g)(n) :-= plus.big_(sum (k,l : NN), k * l = n) f(k) * g(l).
+$
+

@@ -8,3 +8,5 @@ $
   "cart-dec" (S) :-= Sigma (A,B : "FinSet"), A xx_"FinSet" B  ~= S.
 $
 Where $xx_"FinSet"$ #local("00DZ")[cartesian product in FinSet].
+
+hello world

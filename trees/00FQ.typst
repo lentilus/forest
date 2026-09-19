@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  Z_X ~= prod_(p in PP)^D Z_(X,p)
+$

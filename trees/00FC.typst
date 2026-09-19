@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  |(F *_D G)| = plus.big_(sum (k,l : NN), k*l=n) (n!)/(k!l!) |F([k])|*|F([l])|
+$

@@ -1,0 +1,41 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Groupoid cardinality for some 1-types]
+
+oo-groupoids are model for types in HoTT. We would like to take the groupoid cardinality of types of the form
+$
+  Dd_F (S) -= sum  (X : "FinSet"), (F(X) × (S → B C_(|X|)))
+$,
+where $F(X) : "FinSet"$. This is a 1-type, so it would be enough to have a reliable way of taking groupoid cardinalities of 1-types.
+To me assigning a given 1-type a groupoid in some model seems non-trivial, because you can only reason about types up to isomorphism of types i.e equivalence of categories. This makes the following idea very hard to work with.
+
+To turn a type into a (category) groupoid use as the class of objects terms (up to judgementl equality) and given terms $a$ and $b$ define $"Hom"(a,b) := "\"Terms in a=b up to judgemental equality\""$ .
+
+Maybe we can work with the following internal definition of groupoid cardinality for now.
+We assume a type of real numbers $RR$ with the usual operations, that is a set.
+
+Let $X$ be a 1-type such that for any $a : X$ the set $a=a$ is finite.
+Denote by $\#"Aut"(a)$ the set cardinality of $a=a$ in $RR$.
+
+Since $RR$ is a set, by the universal property of the set truncation, there is a unique map $"numAut" : ||X||_0 -> RR$ such that $\#"Aut"(a) = "numAut" @ eta$.
+
+Now for a 1-type with finite automorphism groups $X$, and finite $||X||_0$ define
+$
+  |X| := plus.big_(a : ||X||_0) 1/("numAut"(a))
+$
+
+where $plus.big$ is the finite sum of real numbers indexed by $a : ||X||_0$.
+
+Remark: the groupoid cardinality of finite sets agrees with finite set cardinality.
+
+It would be nice to be able to take the groupoid cardinality of a type with countably many connected components i.e $||A||_0 ~= NN$. I.e dropping the requirement that $||A||_0$ is finite.
+
+Propositions
+- |AxB| = |A| times_RR |B|
+- |A + B| = |A| + |B|
+for generalized notion
+- |sum_(a: A) B(a)|  = plus.big_(a: ||A||) |B()|
+
+

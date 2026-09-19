@@ -15,12 +15,12 @@
 
 #let embed(slug, text, numbering: true, open: true) = context if target() == "html" {
   kodama.embed(slug, text, numbering: numbering, open: open)
-} else {
+} else if open {
   context tree-level.update(x => x +1)
   taxon-value.update("")
   if text == [] {
     include "/" + slug + ".typst"
-  } else {
+  } else  {
     // If the a title is given, override the one from the included tree
     title(text)
     context skip-title.update(x => true)

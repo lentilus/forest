@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Groupoid Cardinality of 1-types]
+
+Let $X$ be a 1-type such that $pi_0 (X)$ is finite, and for all $x:X$ $"Aut"(x)$ is finite. Define the _groupoid cardinality_ of $X$ as the rational number
+
+$
+  |X| :-= plus.big_(c : pi_0 (X)) 1/(|"Aut"_X (c)|) : QQ,
+$
+
+where $plus.big$ denotes a finite sum over rational numbers indexed by the finite set $pi_0 (X)$.

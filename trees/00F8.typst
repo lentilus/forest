@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+#title[Generating Type of Species]
+
+We can categorify the generating functions very similarly:
+
+$
+  G_F (X) :-= sum_(A: "FinSet") F(A) xx (A -> X)
+$

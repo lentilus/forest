@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Dirichlet Series]
+
+For a dirichlet species $F$ define
+$
+  "Dir"(D_F (S)) : NN^+ -> QQ, n |-> |D(S)_n|),
+$
+
+where $D_F (S)$ is the #local("00EY")[dirichlet type] of $F$, and $|D(S)_n|$ is
+the #local("00ER")[groupoid cardinality] of the n-th component of the dirichlet
+type. We call $"Dir"(D_F (S))$ the dirichlet series of $F$, and $"Dir"(D_F
+(S))(n)$ the $n$-th summand.

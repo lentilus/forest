@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+
+Define an $F_(X,p)$-structure on a finite set to be a way of making that set into a field $k$ of characteristic $p$ and then choose an element of $X(k)$. 
+$
+  F_(X,p)(S) :-= sum (k : "FieldOfChar(p)"), (U(k) ~= S) xx X(k)
+$

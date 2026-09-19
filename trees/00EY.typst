@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Dirichlet Type of Species]
+
+Given a species $F$ define the _dirichlet type_ of $F$ by
+$
+  D_F (S) :-= sum (A: "FinSet"), F(A) xx (S -> B C_(|A|)),
+$
+

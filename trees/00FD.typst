@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Euler Product of Species]
+
+#embed("00FE")[]
+#embed("00FF")[]
+#embed("00FG")[]
+#embed("00FH")[]
+#embed("00FI")[]
+#embed("00FJ")[]
+

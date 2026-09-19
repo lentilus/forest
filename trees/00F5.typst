@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  D_F (S)_n ~= F([n]) slash.double S_n xx (S -> B C_n)
+$

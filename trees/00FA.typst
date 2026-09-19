@@ -1,0 +1,27 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+#title[Dirichlet series of dirichlet product of species is dirchlet product of dirichlet series]
+
+$
+  D_(F *_D G) (S) (n) = (D_F (S) *_D D_G (S))(n)
+$
+
+i.e
+$
+  (|(F *_D G)([n])|)/(n!) n^(-|S|) =
+  plus.big_(sum (k,l : NN), k*l=n) (|F([k])|)/(k!) k^(-|S|) *
+  (|G([l])|)/(l!) l^(-|S|) 
+$
+
+clearly
+$
+  plus.big_(sum (k,l : NN), k*l=n) (|F([k])|)/(k!) k^(-|S|) *
+  (|G([l])|)/(l!) l^(-|S|) =
+
+  plus.big_(sum (k,l : NN), k*l=n) (|F([k])|)/(k!) *
+  (|G([l])|)/(l!) n^(-|S|)
+$
+
+To continue here we must first make progress on the groupoid cardinality of the dirichlet product of F and G, for that look at group action of $S_n$ on cartesian decompositions

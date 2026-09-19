@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Groupoid Cardinality of Types]
+
+#embed("00EO")[]
+#embed("00EP")[]
+#embed("00EQ")[]
+#embed("00ES")[]
+#embed("00ER")[]
+#embed("00EX")[]
+#embed("00EU")[]
+#embed("00EV")[]
+#embed("00EW")[]
+

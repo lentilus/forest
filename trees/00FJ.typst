@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[TODO]
+// #title[Title]
+
+$
+  "Dir"(D("euler-prod"(A)))(n) = product_(p : p^k||n) "Dir"(D(A(p)))
+$

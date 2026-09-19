@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Euler Product of Species]
+
+For $A(p)$ type family of species indexed by $p : PP$ with $A(p)$ a p-local dirichlet species.
+
+$
+  "euler-prod"(A)(n) :-= product (p : p^k||n) A(p^k)
+$

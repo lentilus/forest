@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Notation]
+
+For a type $X$ write $pi_0 (X)$ for $||X||_0$.

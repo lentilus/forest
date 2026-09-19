@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Notation]
+// #title[Title]
+
+$
+  D_F (S)_n :-= sum ((A,y,f) : D(S)), ||A = [n]||
+$

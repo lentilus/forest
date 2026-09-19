@@ -2,7 +2,7 @@
 #show: template
 
 // #taxon[Taxon]
-#title[Roadmap WIP]
+#title[Overview]
 This note attempts to state a HoTTification of the key results from the paper
 #local("00DU")[Dirichlet Species and Arithmetic Zeta Functions]. Some things I say here may
 simply be wrong because I have not proved most of what I am claiming here. This
@@ -10,41 +10,26 @@ serves more as a roadmap than as a collection of results.
 
 #embed("00DT")[]
 
-#embed("00EB")[]
+// #embed("00EB")[]
+#embed("00EY")[]
+#embed("00ER")[]
+#embed("00F1")[]
+
+#embed("00DP")[]
+#embed("00FA")[]
+#embed("00FE")[]
+#embed("00FG")[]
+#embed("00FI")[]
+#embed("00FJ")[]
 
 #embed("00EC")[]
 
-#embed("00ED")[]
+// #embed("00ED")[]
+// #embed("00EE")[]
 
-#embed("00EE")[]
-
-Define $Z_(X,p)$-structure on a finite set is a way to make that set into a ring $k_p$ that is a product of finite fields of characteristic $p$ and then choose an element of $X(k_p)$ X(kp)  
-$
-  Z_(X,p)(S) :-= sum (R : "Ring"), sum (P : "ProdFinFieldsChar(p)"), (U(R) ~= S) xx (P ~= R) xx X(R)
-$
-
-then Lemma 1
-$
-  Z_X ~= prod_(p in PP)^D Z_(X,p)
-$
-
-Define an $F_(X,p)$-structure on a finite set to be a way of making that set into a field $k$ of characteristic $p$ and then choose an element of $X(k)$. 
-$
-  F_(X,p)(S) :-= sum (k : "FieldOfChar(p)"), (U(k) ~= S) xx X(k)
-$
-then Lemma 2
-$
-  Z_(X,p) ~= "exp"_D (F_(X,p))
-$
-
+#embed("00FP")[]
+#embed("00FQ")[]
+#embed("00FR")[]
+#embed("00FS")[]
 #embed("00EF")[]
-
-generalization to stuff types
---> (in n-lab entry but not paper)
---> some of this is present in agda-unimath
-- this feels very similar to what we are doing to species in HoTT already
-- groupoid cardinality instead of cardinality
-- dirichlet series
-- multiplicative species generalize to multiplicative stuff types
---> allegedly these too have dirichlet series admitting euler factorizations.
 

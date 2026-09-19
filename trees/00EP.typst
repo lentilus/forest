@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Notation]
+
+For a $1$-type $X$ and $x:X$ write $"Aut"_X (x)$ for the set $x =_X x$.
