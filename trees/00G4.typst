@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Exponential Generating Type]
+
+Given a species $F$ define the exponential generating type (at the finite set $X$) as 
+$
+  sum_(A : "FinSet") F(A) xx (A-> X)
+$
+
+TODO : it is isomorphic to
+$
+  sum_(n : NN) (F([n]) xx X^n) slash.double S_n
+$
+
+Compare #local("00G5")[From Finite Sets to Feynman Diagrams].

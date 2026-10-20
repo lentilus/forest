@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+Since $"is-surj"$ is a proposition, the identity type of non-degenerate cartesian decompostions is the same as the identity type of the inclusions into general cartesian decomposions.
+
+TODO

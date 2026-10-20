@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Exponential Generating Type]
+
+#embed("00G4")[]
+
+

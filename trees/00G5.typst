@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[From Finite Sets to Feynman Diagrams]
+
+```
+arXiv:math/0004133v1
+```

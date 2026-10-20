@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[cartesian decomposition]
+
+A cartesian decomposition of a finite set $Omega$ is a collection $Ee$ of partitians $Gamma_1, ..., Gamma_l$ of $Omega$ such that
+$
+ |gamma_1 nn ... nn gamma_l| = 1 " for all " gamma_1 in Gamma_1, ..., gamma_l in Gamma_l.
+ $

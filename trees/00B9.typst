@@ -3,6 +3,11 @@
 
 // #taxon[]
 #title[References on Species]
+- #local("00DU")[]
+- #local("00G5")[]
+- #local("00G8")[]
+- #local("00GF")[]
+- #local("00GG")[]
 - #local("00B3")[]
 - #local("00B4")[]
 - #local("00B5")[]
@@ -10,5 +15,8 @@
 - #local("00B7")[]
 - #local("00B8")[]
 - #local("00D6")[]
-- #local("00DU")[]
 - Thesis of Brent Abraham Yorgey
+- https://math.ucr.edu/home/baez/counting/
+- #local("00G9")[]
+
+

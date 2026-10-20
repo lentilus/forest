@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+#title[non-empty case]
+
+In the case where $S: "FinSet"$ is non-empty the type of general cartesian decompositions on $S$ agrees with the type of non-degenerate cartesian decompositions on $S$.
+TODO

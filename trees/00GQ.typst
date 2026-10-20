@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[general cartesian decomposion]
+
+We define a _cartesian decomposition_ of a finite set $S$ to be a term of the type
+$
+  "general-cart-dec" (S) :-= sum_(A,B : "FinSet")(A xx_"FinSet" B  ~= S).
+$
+Where $xx_"FinSet"$ is the #local("00DZ")[cartesian product in FinSet].

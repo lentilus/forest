@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[Homotopy Cardinality via Extrapolation of Morava-Euler Characteristics]
+
+
+```
+arXiv:2303.02603v1
+```

@@ -2,11 +2,10 @@
 #show: template
 
 #taxon[Definition]
-#title[cartesian decomposition]
-Given a finite set $S : "FinSet"$, we define the type of _cartesian decompositions_ by
+#title[Species of non-degenerate cartesian decompositions]
+We define a _non-degenerate cartesian decomposition_ of a finite set $S$ to be a term of the type
 $
-  "cart-dec" (S) :-= Sigma (A,B : "FinSet"), A xx_"FinSet" B  ~= S.
+  "cart-dec" (S) :-= sum_(A,B : "FinSet")(A xx_"FinSet" B  ~= S) xx "is-surj"(pi_1) xx "is-surj"(pi_2).
 $
-Where $xx_"FinSet"$ #local("00DZ")[cartesian product in FinSet].
-
-hello world
+Where $xx_"FinSet"$ is the #local("00DZ")[cartesian product in FinSet].
+$pi_1 : A xx B -> A$ and $pi_2 : A xx B -> B$ are the projections onto the first and second factor respectively.

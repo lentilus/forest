@@ -1,0 +1,65 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Class Formula]
+
+Let $X : B G -> "1-Type"$ be a finite group $G$, with base point $"sh"_G : B G$
+acting on the 1-type $X("sh"_G)$. Then
+$
+  |sum_(s: B G) X(s)|  = (|X("sh"_G)|)/(|G|).
+$
+
+
+#proof[ To save keystrokes we use the abbreviation $T :-= sum_(z:B G) X(z) $.
+
+  To compute the cardinality of $T$, we begin by showing that its connected
+  components are the orbits of $G$'s action on the set truncation of $"sh"_G$.
+
+  The action on $X("sh"_G)$ induces an action on $pi_0(X("sh"_G))$ as follows.
+  Using the universal property of the set truncation it is enough to define our
+  action for elements in $pi_0(X("sh"_G))$ of the form $|x|_0$ for some $x :
+  X("sh"_G)$.
+  $
+    g * |x|_0 :-= |"tr"_X (l_g, x)|_0.
+  $
+
+  We now define an equivalence reation on $pi_0(X("sh"_G))$ that identifies two
+  elements whenever they lie in the same orbit.
+  $
+    a ~ b :-= || sum_(g : G) g*a=b ||_(-1)
+  $
+
+  The quotient $pi_0(X("sh"_G)) slash G$ has the following univeral property:
+  TODO
+
+// #figure(diagram($
+//   T edge(f, ->) edge("d", |\_|_0, ->) & S \
+//   pi_0(T) edge("ur", tilde(f), "-->")
+// $))
+//
+//  TODO: Universal property of the set quotient
+// #figure(diagram($
+//   pi_0(X(**)) edge(g, ->) edge("d", q, ->) & S' \
+//   pi_0(X(**)) slash G edge("ur", tilde(g), "-->")
+// $))
+
+  TODO: Conclude with UP of set quotient and UP of set truncation that
+  $
+    pi_0(T) ~= pi_0(X("sh"_G)) slash G
+  $
+
+  We now move on to classify the automorphisms of the connected components.
+  Consider a point in $T$ of the form $("sh"_G, x)$, then 
+  $
+    (("sh"_G,x) = ("sh"_G,x)) &~= sum_(p : "sh"_G = "sh"_G) "tr"_X (p,x)=x\
+    & ~= sum_(g : U G) g*x = x
+  $
+]
+
+See also
+- https://ncatlab.org/nlab/show/class+equation
+- https://ncatlab.org/nlab/show/groupoid+cardinality
+
+
+

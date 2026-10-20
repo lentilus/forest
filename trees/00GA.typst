@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+#title[Homotopy Cardinality]
+
+All of this is the $1$-truncated case of the notion of homotopy cardinality.
+See #local("00G9")[week 147]
+

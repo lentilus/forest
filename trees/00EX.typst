@@ -4,4 +4,4 @@
 #taxon[Observation]
 #title[Groupoid Cardinality is compatible with set cardinality]
 
-TODO
+In the case of sets the groupoid cardinality agrees with set-cardinality, because sets (by definition) have trivial automorphism groups.

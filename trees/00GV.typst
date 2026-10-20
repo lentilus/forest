@@ -1,0 +1,18 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[General Decompositions vs non-degenerate decompositions]
+
+*Pro general*
+- its the simpler definition
+- mirros what happens with natural numbers: any natural number divides $0$
+- dirichlet convolution as pointwise cartesian product works even if F and G do not vanish on empty set
+
+*Pro non-degenerate*
+- its equivalent to what people use in the literature
+- its a tame species
+- dirichlet product of tame species is always tame, no matter what happens on empty set
+
+*To be decided*
+- What works better with dirichlet powers and the dirichlet exponential?

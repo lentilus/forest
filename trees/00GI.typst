@@ -1,0 +1,21 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Cartesian Decompositions]
+
+#embed("00E0")[]
+#embed("00GQ")[]
+#embed("00DQ")[]
+#embed("00GN")[]
+#embed("00GR")[]
+#embed("00DY")[]
+#embed("00GS")[]
+// #embed("00EL")[]
+// #embed("00GJ")[]
+#embed("00GL")[]
+#embed("00GO")[]
+#embed("00GP")[]
+#embed("00GM")[]
+#embed("00GX")[]
+#embed("00GV")[]

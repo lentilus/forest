@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Goup action]
+
+Let $G$ be a group. Any map $X : B G -> Uu$ can be viewed as the group $G$ acting on the type $X(**)$ as follows. For $g : G$, and $x : X(**)$ define
+
+$
+  g * x :-= tr_X (l_g, x),
+$
+
+where $l_g$ is the loop corresponding to the group element $g$.

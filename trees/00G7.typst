@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Dirichlet Series of the zeta species]
+
+A $Z_X$-structure on $A$ is given by a tuple $(R,e,x)$, with $R : "FinSemisimpleCommRing"$, $e : U(R) ~= A$ and $x : X(R)$.
+
+Notice $R$ already contains a group $G_R$ with the correct cardinality. Baez thus suggests in week300, that we use the following dirichlet type for $Z_X$.
+
+$
+  D_(Z_X) (S) :-= sum_(A: "FinSet") sum_((R,e,x) : Z_X (A)) (S -> B G_R),
+$

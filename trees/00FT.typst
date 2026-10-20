@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Thoughts on another definition for the dirichlet type]
+
+Update: The following definition is much closer to what Baez describes in week300
+
+In some cases, such as with the #link("00EC")[zeta species] $Z$, a $Z$ structure already gives us a group of the correct order.
+$
+  D_F (S) :-= sum_(A:"FinSet"), sum_(R: Z(A) ) S -> T(G(R)),
+$
+where $G(R)$ is the underlying additive group of the Ring, and $T(G)$ the type of G-torsors.
+Baez calls the inner sigma type a twisted product, because of automorphisms.
+The #link("00D6")[symmetry book] has a section on $G$-torsors. $T(G(R))$ is equivalent to the type $B G(R)$.

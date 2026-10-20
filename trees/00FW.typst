@@ -1,0 +1,16 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+// #title[Title]
+//
+
+huhu haha
+hoho
+
+#figure(
+  diagram($
+	G edge(->) edge("d", ->) & im(f) \
+	G slash ker(f) edge("ur",  ->)
+$)
+)

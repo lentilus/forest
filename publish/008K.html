@@ -56,13 +56,23 @@
     });
   });
 </script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/00BB.html'" title="Notes on existing work">« Notes on existing work</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="008K"><header><h1><span class="taxon"></span>Species of Types <a class="slug" href="/008K.html">[008K]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>This is a small attempt at <em>deformalizing</em> the foundational work on <strong>species</strong> that is present in <code>agda-unimath</code> with the goal to be more human-readable.</p>
-  <p>See <a href="https://unimath.github.io/agda-unimath/species.html">agda-unimath/species</a></p>
-  <pre>TODO LIST<br>--- species of types ---<br>- [x] species-of-types<br>- [x] equivalences-species-of-types<br>- [x] morphisms-species-of-types <br>- [x] coproducts-species-of-types <br>- [x] cauchy-products-species-of-types <br>- [x] cartesian-exponents-species-of-types<br>- [x] cartesian-products-species-of-types<br>- [x] cauchy-exponentials-species-of-types<br>- [ ] dirichlet-exponentials-species-of-types (long)<br>- [ ] dirichlet-products-species-of-types (easy)<br>- [ ] cycle-index-series-species-of-types (interesting)<br>- [ ] derivatives-species-of-types (easy)<br><br>--- cauchy series of species of types ---<br>- [x] cauchy-series-species-of-types <br>- [ ] products-cauchy-series-species-of-types (easy)<br>- [ ] composition-cauchy-series-species-of-types (long)<br>- [ ] exponentials-cauchy-series-of-types (mid)<br><br>--- dirichlet product of species of types ---<br>- [ ] dirichlet-series-species-of-types (easy)<br>- [ ] products-dirichlet-series-species-of-types (long)<br><br>--- cauchy composition of species of types ---<br>- [ ] cauchy-composition-species-of-types (long)<br>- [ ] unit-cauchy-composition-species-of-types (easy)<br><br>--- species of types in subuniverses ---<br>- [ ] cauchy-exponentials-species-of-types-in-subuniverses (long)<br>- [ ] cauchy-products-species-of-types-in-subuniverses (long)<br>- [ ] cauchy-series-species-of-types-in-subuniverses <br>- [ ] products-cauchy-series-species-of-types-in-subuniverses <br>- [ ] composition-cauchy-series-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-series-species-of-types-in-subuniverses <br>- [ ] products-dirichlet-series-species-of-types-in-subuniverses <br>- [ ] cauchy-composition-species-of-types-in-subuniverses (long)<br>- [ ] unit-cauchy-composition-species-of-types-in-subuniverses <br>- [ ] small-cauchy-composition-species-of-types-in-subuniverses <br>- [ ] coproducts-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-exponentials-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-products-species-of-types-in-subuniverses (long) <br>- [ ] equivalences-species-of-types-in-subuniverses <br>- [ ] exponentials-cauchy-series-of-types-in-subuniverses <br><br><br><br><br>--- species of finite inhabited types ---<br>- [ ] species-of-finite-inhabited-types <br>- [ ] dirichlet-series-species-of-finite-inhabited-types <br>- [ ] products-dirichlet-series-species-of-finite-inhabited-types <br>- [ ] small-cauchy-composition-species-of-finite-inhabited-types <br><br>--- other kinds of species ---<br>- [ ] hasse-weil-species <br>- [ ] species-of-finite-types <br>- [ ] species-of-inhabited-types <br>- [ ] pointing-species-of-types <br>- [ ] unlabeled-structures-species <br><br>--- finite species ---<br>- [ ] morphisms-finite-species <br>- [ ] precategory-of-finite-species </pre>
-  <section class="block hide-metadata" data-taxon=""><details open><summary id="008L"><header><h1><span class="taxon"> 1. </span>Assuming enough Universes <a class="slug" href="/008L.html">[008L]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>We will assume that for every finite list of of types in context <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.892299999999999 7.513000000000001" width="9.892299999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>This is a small attempt at <em>deformalizing</em> the foundational work on <strong>species</strong> that is present in <code>agda-unimath</code> with the goal to be more human-readable.</p>
+    <p>See <a href="https://unimath.github.io/agda-unimath/species.html">agda-unimath/species</a></p>
+    <pre>TODO LIST<br>--- species of types ---<br>- [x] species-of-types<br>- [x] equivalences-species-of-types<br>- [x] morphisms-species-of-types <br>- [x] coproducts-species-of-types <br>- [x] cauchy-products-species-of-types <br>- [x] cartesian-exponents-species-of-types<br>- [x] cartesian-products-species-of-types<br>- [x] cauchy-exponentials-species-of-types<br>- [ ] dirichlet-exponentials-species-of-types (long)<br>- [ ] dirichlet-products-species-of-types (easy)<br>- [ ] cycle-index-series-species-of-types (interesting)<br>- [ ] derivatives-species-of-types (easy)<br><br>--- cauchy series of species of types ---<br>- [x] cauchy-series-species-of-types <br>- [ ] products-cauchy-series-species-of-types (easy)<br>- [ ] composition-cauchy-series-species-of-types (long)<br>- [ ] exponentials-cauchy-series-of-types (mid)<br><br>--- dirichlet product of species of types ---<br>- [ ] dirichlet-series-species-of-types (easy)<br>- [ ] products-dirichlet-series-species-of-types (long)<br><br>--- cauchy composition of species of types ---<br>- [ ] cauchy-composition-species-of-types (long)<br>- [ ] unit-cauchy-composition-species-of-types (easy)<br><br>--- species of types in subuniverses ---<br>- [ ] cauchy-exponentials-species-of-types-in-subuniverses (long)<br>- [ ] cauchy-products-species-of-types-in-subuniverses (long)<br>- [ ] cauchy-series-species-of-types-in-subuniverses <br>- [ ] products-cauchy-series-species-of-types-in-subuniverses <br>- [ ] composition-cauchy-series-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-series-species-of-types-in-subuniverses <br>- [ ] products-dirichlet-series-species-of-types-in-subuniverses <br>- [ ] cauchy-composition-species-of-types-in-subuniverses (long)<br>- [ ] unit-cauchy-composition-species-of-types-in-subuniverses <br>- [ ] small-cauchy-composition-species-of-types-in-subuniverses <br>- [ ] coproducts-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-exponentials-species-of-types-in-subuniverses (long)<br>- [ ] dirichlet-products-species-of-types-in-subuniverses (long) <br>- [ ] equivalences-species-of-types-in-subuniverses <br>- [ ] exponentials-cauchy-series-of-types-in-subuniverses <br><br><br><br><br>--- species of finite inhabited types ---<br>- [ ] species-of-finite-inhabited-types <br>- [ ] dirichlet-series-species-of-finite-inhabited-types <br>- [ ] products-dirichlet-series-species-of-finite-inhabited-types <br>- [ ] small-cauchy-composition-species-of-finite-inhabited-types <br><br>--- other kinds of species ---<br>- [ ] hasse-weil-species <br>- [ ] species-of-finite-types <br>- [ ] species-of-inhabited-types <br>- [ ] pointing-species-of-types <br>- [ ] unlabeled-structures-species <br><br>--- finite species ---<br>- [ ] morphisms-finite-species <br>- [ ] precategory-of-finite-species </pre>
+    <section class="block hide-metadata" data-taxon=""><details open><summary id="008L"><header><h1><span class="taxon"> 1. </span>Assuming enough Universes <a class="slug" href="/008L.html">[008L]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>We will assume that for every finite list of of types in context <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.892299999999999 7.513000000000001" width="9.892299999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -121,15 +131,33 @@
     </defs>
 </svg>
 </span> that contains these types. See Postulate 6.2.1 in <span class="link local"><a href="/008M.html" title="Introduction to Homotopy Type Theory [008M]">Introduction to Homotopy Type Theory</a></span></p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Axiom"><details open><summary id="008Q"><header><h1><span class="taxon">Axiom 2. </span>Univalence <a class="slug" href="/008Q.html">[008Q]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>TODO: write some nice prose here.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>TODO: write some nice prose here.</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon=""><details open><summary id="008T"><header><h1><span class="taxon"> 3. </span>Function Extensionality <a class="slug" href="/008T.html">[008T]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>TODO, follows from univalence.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>TODO, follows from univalence.</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008N"><header><h1><span class="taxon">Definition 4. </span>Species of Types <a class="slug" href="/008N.html">[008N]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 13.181299999999998 7.513000000000001" width="13.181299999999998pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 13.181299999999998 7.513000000000001" width="13.181299999999998pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -233,7 +261,7 @@
     </defs>
 </svg>
 </span>.</p>
-  <p>Note that the type <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 43.47371111111111 7.513000000000001" width="43.47371111111111pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Note that the type <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 43.47371111111111 7.513000000000001" width="43.47371111111111pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -277,11 +305,17 @@
     </defs>
 </svg>
 </span> is well-formed if we <span class="link local"><a href="/008L.html" title="Assuming enough Universes [008L]">assume enough universes</a></span>.</p>
+  </body>
 </details></section>
-  <p>Compare the definition to Joyal's definition of a <em>species</em>.</p>
-  <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="0081"><header><h1><span class="taxon">Definition 5. </span>Species (Joyal) <a class="slug" href="/0081.html">[0081]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>A (combinatorial) <em>species</em> is a functor <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 109.88022222222222 7.513000000000001" width="109.88022222222222pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Compare the definition to Joyal's definition of a <em>species</em>.</p>
+    <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="0081"><header><h1><span class="taxon">Definition 5. </span>Species (Joyal) <a class="slug" href="/0081.html">[0081]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>A (combinatorial) <em>species</em> is a functor <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 109.88022222222222 7.513000000000001" width="109.88022222222222pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -434,11 +468,17 @@
     </defs>
 </svg>
 </span>-structures one can put on the set.</p>
+  </body>
 </details></section>
-  <p>Notice that this definition requires a species to be functorial. Conveniently for any species of types we can get functoriality in the following sense.</p>
-  <section class="block hide-metadata" data-taxon=""><details open><summary id="008P"><header><h1><span class="taxon"> 6. </span>Transport in Species of Types <a class="slug" href="/008P.html">[008P]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Notice that this definition requires a species to be functorial. Conveniently for any species of types we can get functoriality in the following sense.</p>
+    <section class="block hide-metadata" data-taxon=""><details open><summary id="008P"><header><h1><span class="taxon"> 6. </span>Transport in Species of Types <a class="slug" href="/008P.html">[008P]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -663,7 +703,7 @@
     </defs>
 </svg>
 </span> as follows.</p>
-  <p>By <span class="link local"><a href="/008Q.html" title="Univalence [008Q]">univalence</a></span> we upgrade <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 5.126 7.513000000000001" width="5.126pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>By <span class="link local"><a href="/008Q.html" title="Univalence [008Q]">univalence</a></span> we upgrade <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 5.126 7.513000000000001" width="5.126pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -732,7 +772,7 @@
     </defs>
 </svg>
 </span>. Then transport gives us the desired map.</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 141.6463888888889 11.021999999999998" width="141.6463888888889pt" height="11.021999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 141.6463888888889 11.021999999999998" width="141.6463888888889pt" height="11.021999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -879,9 +919,15 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon=""><details open><summary id="008S"><header><h1><span class="taxon"> 7. </span>Equivalence of Species of Types <a class="slug" href="/008S.html">[008S]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>An <em>equivalence</em> of species is a pointwise equivalence of types. In symbols: For species <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>An <em>equivalence</em> of species is a pointwise equivalence of types. In symbols: For species <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -1000,7 +1046,7 @@
     </defs>
 </svg>
 </span> we define the type of equivalences as</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 205.9465222222223 12.8469" width="205.9465222222223pt" height="12.8469pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 205.9465222222223 12.8469" width="205.9465222222223pt" height="12.8469pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -1188,12 +1234,24 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon=""><details open><summary id="008R"><header><h1><span class="taxon"> 8. </span>Species of Types are extensional <a class="slug" href="/008R.html">[008R]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>The identity type of species is equivalent to the <a href="008S">type of equivalences</a> between them. This is immediate by <a href="008T">function extensionality</a></p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>The identity type of species is equivalent to the <a href="008S">type of equivalences</a> between them. This is immediate by <a href="008T">function extensionality</a></p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008U"><header><h1><span class="taxon">Definition 9. </span>Morphism of Species of Types <a class="slug" href="/008U.html">[008U]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -1517,9 +1575,15 @@
     </defs>
 </svg>
 </span>.</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon=""><details open><summary id="008V"><header><h1><span class="taxon"> 10. </span>Homotopy of Morphisms of Species of Types <a class="slug" href="/008V.html">[008V]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -1837,12 +1901,24 @@
     </defs>
 </svg>
 </span>.</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008W"><header><h1><span class="taxon">Definition 11. </span>Torsorial Homotopy of Morphisms of Species of Types <a class="slug" href="/008W.html">[008W]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>TODO</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>TODO</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008X"><header><h1><span class="taxon">Definition 12. </span>Cauchy Series of Species of Types <a class="slug" href="/008X.html">[008X]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -1946,7 +2022,7 @@
     </defs>
 </svg>
 </span> as the type</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 223.53234444444448 12.846899999999998" width="223.53234444444448pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 223.53234444444448 12.846899999999998" width="223.53234444444448pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -2161,22 +2237,28 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section>
-  <ul>
-    <li>
-      <p>TODO: Motivate this definition using the "classical" generating function</p>
-    </li>
-    <li>
-      <p>TODO: Equivalent Species of types have equivalent cauchy series</p>
-    </li>
-    <li>
-      <p>TODO: Cauchy series are equivalence invariant.</p>
-    </li>
-  </ul>
-  <p>–> should both follow from univalence easily?</p>
-  <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008Y"><header><h1><span class="taxon">Definition 13. </span>Cauchy Product of Species of Types <a class="slug" href="/008Y.html">[008Y]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <ul>
+      <li>
+        <p>TODO: Motivate this definition using the "classical" generating function</p>
+      </li>
+      <li>
+        <p>TODO: Equivalent Species of types have equivalent cauchy series</p>
+      </li>
+      <li>
+        <p>TODO: Cauchy series are equivalence invariant.</p>
+      </li>
+    </ul>
+    <p>–> should both follow from univalence easily?</p>
+    <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="008Y"><header><h1><span class="taxon">Definition 13. </span>Cauchy Product of Species of Types <a class="slug" href="/008Y.html">[008Y]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -2353,7 +2435,7 @@
     </defs>
 </svg>
 </span> as</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 199.22038888888898 12.846899999999998" width="199.22038888888898pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 199.22038888888898 12.846899999999998" width="199.22038888888898pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -2611,9 +2693,15 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Remark"><details open><summary id="00B0"><header><h1><span class="taxon">Remark 14. </span> <a class="slug" href="/00B0.html">[00B0]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>The <em>cauchy product</em> captures the idea of putting both an <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.547 7.513000000000001" width="8.547pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>The <em>cauchy product</em> captures the idea of putting both an <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.547 7.513000000000001" width="8.547pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -2698,9 +2786,15 @@
     </defs>
 </svg>
 </span>-structure on the other.</p>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="00B1"><header><h1><span class="taxon">Definition 15. </span>Cartesian exponent of species of types <a class="slug" href="/00B1.html">[00B1]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Given species of types <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Given species of types <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -2869,7 +2963,7 @@
     </defs>
 </svg>
 </span> as the pointwise exponent</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 175.1505555555556 10.955999999999998" width="175.1505555555556pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 175.1505555555556 10.955999999999998" width="175.1505555555556pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3026,9 +3120,15 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section><section class="block hide-metadata" data-taxon="Definition"><details open><summary id="00B2"><header><h1><span class="taxon">Definition 16. </span>Cartesian product species of types <a class="slug" href="/00B2.html">[00B2]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>The cartesian product of two species of types <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>The cartesian product of two species of types <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3177,7 +3277,7 @@
     </defs>
 </svg>
 </span> is their pointwise cartesian product</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 140.5958888888889 10.955999999999998" width="140.5958888888889pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 140.5958888888889 10.955999999999998" width="140.5958888888889pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3295,11 +3395,17 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section>
-  <p>TODO: The adjunction between cartesian products and exponents of species of types</p>
-  <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="00BC"><header><h1><span class="taxon">Definition 17. </span>Cauchy exponential species of types <a class="slug" href="/00BC.html">[00BC]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>For a species <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 60.04582222222223 7.513000000000001" width="60.04582222222223pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>TODO: The adjunction between cartesian products and exponents of species of types</p>
+    <section class="block hide-metadata" data-taxon="Definition"><details open><summary id="00BC"><header><h1><span class="taxon">Definition 17. </span>Cauchy exponential species of types <a class="slug" href="/00BC.html">[00BC]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>For a species <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 60.04582222222223 7.513000000000001" width="60.04582222222223pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3397,7 +3503,7 @@
     </defs>
 </svg>
 </span> as</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 271.17151111111104 12.9679" width="271.17151111111104pt" height="12.9679pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 271.17151111111104 12.9679" width="271.17151111111104pt" height="12.9679pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3738,12 +3844,18 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section>
-  <p>TODO: The Cauchy exponential in terms of composition</p>
-  <p>The proof of the below proposition is not the one given in agda-unimath.</p>
-  <section class="block hide-metadata" data-taxon="Proposition"><details open><summary id="00BD"><header><h1><span class="taxon">Proposition 18. </span> <a class="slug" href="/00BD.html">[00BD]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 60.04582222222223 7.513000000000001" width="60.04582222222223pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>TODO: The Cauchy exponential in terms of composition</p>
+    <p>The proof of the below proposition is not the one given in agda-unimath.</p>
+    <section class="block hide-metadata" data-taxon="Proposition"><details open><summary id="00BD"><header><h1><span class="taxon">Proposition 18. </span> <a class="slug" href="/00BD.html">[00BD]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 60.04582222222223 7.513000000000001" width="60.04582222222223pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3862,7 +3974,7 @@
     </defs>
 </svg>
 </span> be <span class="link local"><a href="/008N.html" title="Species of Types [008N]">species of types</a></span>. The <span class="link local"><a href="/00BC.html" title="Cauchy exponential species of types [00BC]">cauchy exponential</a></span> fullfills the following identity.</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 151.62888888888892 10.955999999999998" width="151.62888888888892pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 151.62888888888892 10.955999999999998" width="151.62888888888892pt" height="10.955999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -3995,7 +4107,7 @@
     </defs>
 </svg>
 </figure>
-  <p><strong>Proof</strong>. We give an equivalence by contructing maps <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p><strong>Proof</strong>. We give an equivalence by contructing maps <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4024,7 +4136,7 @@
     </defs>
 </svg>
 </span> that are mutual inverses.</p>
-  <p><strong>Forward map <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p><strong>Forward map <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4187,7 +4299,7 @@
     </defs>
 </svg>
 </span> with</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 356.17315555555535 15.884" width="356.17315555555535pt" height="15.884pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 356.17315555555535 15.884" width="356.17315555555535pt" height="15.884pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 10.692)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4526,7 +4638,7 @@
     </defs>
 </svg>
 </figure>
-  <p>we need write <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.669 7.513000000000001" width="9.669pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>we need write <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 9.669 7.513000000000001" width="9.669pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4541,7 +4653,7 @@
     </defs>
 </svg>
 </span> as a binary coproduct such that we can put an <em>exp</em>-structure on each summand.</p>
-  <p>We start by splitting <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.668 7.513000000000001" width="8.668pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>We start by splitting <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 8.668 7.513000000000001" width="8.668pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4600,7 +4712,7 @@
     </defs>
 </svg>
 </span> as follows. TODO: are these actually subtypes?</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 166.17712222222224 32.859199999999994" width="166.17712222222224pt" height="32.859199999999994pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 166.17712222222224 32.859199999999994" width="166.17712222222224pt" height="32.859199999999994pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0.3080000000000142 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -4968,8 +5080,8 @@
     </defs>
 </svg>
 </figure>
-  <p>Now we choose our summands as</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 189.59025555555556 12.9679" width="189.59025555555556pt" height="12.9679pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Now we choose our summands as</p>
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 189.59025555555556 12.9679" width="189.59025555555556pt" height="12.9679pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -5157,7 +5269,7 @@
     </defs>
 </svg>
 </figure>
-  <p>Since <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 130.6828111111111 9.5469" width="130.6828111111111pt" height="9.5469pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Since <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 130.6828111111111 9.5469" width="130.6828111111111pt" height="9.5469pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -5388,7 +5500,7 @@
     </defs>
 </svg>
 </span>.</p>
-  <p>Now we want to place an <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 33.41799999999999 7.513000000000001" width="33.41799999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Now we want to place an <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 33.41799999999999 7.513000000000001" width="33.41799999999999pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -5509,7 +5621,7 @@
     </defs>
 </svg>
 </span> repectively. For this we need to construct the remaining terms.</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 163.99753333333337 65.55999999999999" width="163.99753333333337pt" height="65.55999999999999pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 163.99753333333337 65.55999999999999" width="163.99753333333337pt" height="65.55999999999999pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(3.815349999999989 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -6094,8 +6206,8 @@
     </defs>
 </svg>
 </figure>
-  <p>Now</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 129.46731111111112 29.205" width="129.46731111111112pt" height="29.205pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>Now</p>
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 129.46731111111112 29.205" width="129.46731111111112pt" height="29.205pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0.819500000000001 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -6387,7 +6499,7 @@
     </defs>
 </svg>
 </figure>
-  <p>This completes our construction of <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>This completes our construction of <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -6402,7 +6514,7 @@
     </defs>
 </svg>
 </span>. Notice that</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 313.7416333333333 11.098999999999998" width="313.7416333333333pt" height="11.098999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 313.7416333333333 11.098999999999998" width="313.7416333333333pt" height="11.098999999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -6752,7 +6864,7 @@
     </defs>
 </svg>
 </figure>
-  <p><strong>Reverse map <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.293 7.513000000000001" width="7.293pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p><strong>Reverse map <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.293 7.513000000000001" width="7.293pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -7015,7 +7127,7 @@
     </defs>
 </svg>
 </span> with</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 332.58316666666656 57.005300000000005" width="332.58316666666656pt" height="57.005300000000005pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 332.58316666666656 57.005300000000005" width="332.58316666666656pt" height="57.005300000000005pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(99.3237055555555 8.2203)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -7696,8 +7808,8 @@
     </defs>
 </svg>
 </figure>
-  <p>, define</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 88.7024111111111 64.009" width="88.7024111111111pt" height="64.009pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>, define</p>
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 88.7024111111111 64.009" width="88.7024111111111pt" height="64.009pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(11.875905555555548 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -7990,8 +8102,8 @@
     </defs>
 </svg>
 </figure>
-  <p>then</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 281.6578111111112 18.7979" width="281.6578111111112pt" height="18.7979pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>then</p>
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 281.6578111111112 18.7979" width="281.6578111111112pt" height="18.7979pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 10.692)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -8311,7 +8423,7 @@
     </defs>
 </svg>
 </figure>
-  <p>giving <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 101.08352222222221 7.513000000000001" width="101.08352222222221pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>giving <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 101.08352222222221 7.513000000000001" width="101.08352222222221pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -8438,7 +8550,7 @@
     </defs>
 </svg>
 </span>. Define</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 144.81830000000002 47.31099999999999" width="144.81830000000002pt" height="47.31099999999999pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 144.81830000000002 47.31099999999999" width="144.81830000000002pt" height="47.31099999999999pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -8811,7 +8923,7 @@
     </defs>
 </svg>
 </figure>
-  <p>And <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 115.61000000000001 7.513000000000001" width="115.61000000000001pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>And <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 115.61000000000001 7.513000000000001" width="115.61000000000001pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -8942,7 +9054,7 @@
     </defs>
 </svg>
 </span>.</p>
-  <p>TODO: Make sure <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <p>TODO: Make sure <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 7.194 7.513000000000001" width="7.194pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -8971,14 +9083,21 @@
     </defs>
 </svg>
 </span> really compose to the identity both ways.</p>
+  </body>
 </details></section>
-  <p>—</p>
-  <ul>
-    <li>How important is it to track universes closely when working informally? Can we just say F(X) and G(X) is a species without worrying about the universes that index them?</li>
-  </ul>
+    <p>—</p>
+    <ul>
+      <li>How important is it to track universes closely when working informally? Can we just say F(X) and G(X) is a species without worrying about the universes that index them?</li>
+    </ul>
+  </body>
 </details></section><footer><section class="block"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Definition"><details ><summary id="008U"><header><h1><span class="taxon">Definition. </span>Morphism of Species of Types <a class="slug" href="/008U.html">[008U]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -9302,9 +9421,15 @@
     </defs>
 </svg>
 </span>.</p>
+  </body>
 </details></section><section class="block" data-taxon=""><details ><summary id="008V"><header><h1><span class="taxon"></span>Homotopy of Morphisms of Species of Types <a class="slug" href="/008V.html">[008V]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -9622,9 +9747,15 @@
     </defs>
 </svg>
 </span>.</p>
+  </body>
 </details></section><section class="block" data-taxon="Definition"><details ><summary id="008X"><header><h1><span class="taxon">Definition. </span>Cauchy Series of Species of Types <a class="slug" href="/008X.html">[008X]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -9728,7 +9859,7 @@
     </defs>
 </svg>
 </span> as the type</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 223.53234444444448 12.846899999999998" width="223.53234444444448pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 223.53234444444448 12.846899999999998" width="223.53234444444448pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -9943,9 +10074,15 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section><section class="block" data-taxon="Definition"><details ><summary id="008Y"><header><h1><span class="taxon">Definition. </span>Cauchy Product of Species of Types <a class="slug" href="/008Y.html">[008Y]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Let <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 61.189822222222226 7.513000000000001" width="61.189822222222226pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 7.513000000000001)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -10122,7 +10259,7 @@
     </defs>
 </svg>
 </span> as</p>
-  <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 199.22038888888898 12.846899999999998" width="199.22038888888898pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <figure role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 199.22038888888898 12.846899999999998" width="199.22038888888898pt" height="12.846899999999998pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
     <g>
         <g transform="translate(0 8.228)">
             <g class="typst-text" transform="scale(1, -1)">
@@ -10380,6 +10517,7 @@
     </defs>
 </svg>
 </figure>
+  </body>
 </details></section></details></section></footer></article>
 
 <nav id="toc"><div class="block"><h1>Table of Contents</h1><ul class="block"><li class=""><a class="bullet" href="/008L.html" title="Assuming enough Universes [008L]">■</a><span class="link local" onclick="window.location.href='#008L'"><span class="taxon"> 1. </span>Assuming enough Universes</span></li><li class=""><a class="bullet" href="/008Q.html" title="Univalence [008Q]">■</a><span class="link local" onclick="window.location.href='#008Q'"><span class="taxon">Axiom 2. </span>Univalence</span></li><li class=""><a class="bullet" href="/008T.html" title="Function Extensionality [008T]">■</a><span class="link local" onclick="window.location.href='#008T'"><span class="taxon"> 3. </span>Function Extensionality</span></li><li class=""><a class="bullet" href="/008N.html" title="Species of Types [008N]">■</a><span class="link local" onclick="window.location.href='#008N'"><span class="taxon">Definition 4. </span>Species of Types</span></li><li class=""><a class="bullet" href="/0081.html" title="Species [0081]">■</a><span class="link local" onclick="window.location.href='#0081'"><span class="taxon">Definition 5. </span>Species (Joyal)</span></li><li class=""><a class="bullet" href="/008P.html" title="Transport in Species of Types [008P]">■</a><span class="link local" onclick="window.location.href='#008P'"><span class="taxon"> 6. </span>Transport in Species of Types</span></li><li class=""><a class="bullet" href="/008S.html" title="Equivalence of Species of Types [008S]">■</a><span class="link local" onclick="window.location.href='#008S'"><span class="taxon"> 7. </span>Equivalence of Species of Types</span></li><li class=""><a class="bullet" href="/008R.html" title="Species of Types are extensional [008R]">■</a><span class="link local" onclick="window.location.href='#008R'"><span class="taxon"> 8. </span>Species of Types are extensional</span></li><li class=""><a class="bullet" href="/008U.html" title="Morphism of Species of Types [008U]">■</a><span class="link local" onclick="window.location.href='#008U'"><span class="taxon">Definition 9. </span>Morphism of Species of Types</span></li><li class=""><a class="bullet" href="/008V.html" title="Homotopy of Morphisms of Species of Types [008V]">■</a><span class="link local" onclick="window.location.href='#008V'"><span class="taxon"> 10. </span>Homotopy of Morphisms of Species of Types</span></li><li class=""><a class="bullet" href="/008W.html" title="Torsorial Homotopy of Morphisms of Species of Types [008W]">■</a><span class="link local" onclick="window.location.href='#008W'"><span class="taxon">Definition 11. </span>Torsorial Homotopy of Morphisms of Species of Types</span></li><li class=""><a class="bullet" href="/008X.html" title="Cauchy Series of Species of Types [008X]">■</a><span class="link local" onclick="window.location.href='#008X'"><span class="taxon">Definition 12. </span>Cauchy Series of Species of Types</span></li><li class=""><a class="bullet" href="/008Y.html" title="Cauchy Product of Species of Types [008Y]">■</a><span class="link local" onclick="window.location.href='#008Y'"><span class="taxon">Definition 13. </span>Cauchy Product of Species of Types</span></li><li class=""><a class="bullet" href="/00B0.html" title=" [00B0]">■</a><span class="link local" onclick="window.location.href='#00B0'"><span class="taxon">Remark 14. </span></span></li><li class=""><a class="bullet" href="/00B1.html" title="Cartesian exponent of species of types [00B1]">■</a><span class="link local" onclick="window.location.href='#00B1'"><span class="taxon">Definition 15. </span>Cartesian exponent of species of types</span></li><li class=""><a class="bullet" href="/00B2.html" title="Cartesian product species of types [00B2]">■</a><span class="link local" onclick="window.location.href='#00B2'"><span class="taxon">Definition 16. </span>Cartesian product species of types</span></li><li class=""><a class="bullet" href="/00BC.html" title="Cauchy exponential species of types [00BC]">■</a><span class="link local" onclick="window.location.href='#00BC'"><span class="taxon">Definition 17. </span>Cauchy exponential species of types</span></li><li class=""><a class="bullet" href="/00BD.html" title=" [00BD]">■</a><span class="link local" onclick="window.location.href='#00BD'"><span class="taxon">Proposition 18. </span></span></li></ul></div></nav></div></body></html>

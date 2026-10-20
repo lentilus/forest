@@ -56,16 +56,22 @@
     });
   });
 </script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/index.html'" title="Root">« Root</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="0004"><header><h1><span class="taxon"></span>Can spaced repetition help me rember my own proofs? <a class="slug" href="/0004.html">[0004]</a></h1><div class="metadata"><ul></ul></div></header></summary>
-  
-  <p>Implementation</p>
-  <ul>
-    <li>Entire zettel as flashcard</li>
-    <li>compile with typst to html? Or use kodama html output directly.</li>
-    <li>title as question, rest as back</li>
-  </ul>
-  <p>in my forest</p>
-  <pre>#import "/_lib/0.1.0.typ": *<br>#show: template<br><br>This is some theorem.<br><br>// ANKI::BACK<br>Proof. This proofs it.</pre>
-  <p>Then we can just scan for these anki cues and turn all trees, that have one into flashcards.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p>Implementation</p>
+    <ul>
+      <li>Entire zettel as flashcard</li>
+      <li>compile with typst to html? Or use kodama html output directly.</li>
+      <li>title as question, rest as back</li>
+    </ul>
+    <p>in my forest</p>
+    <pre>#import "/_lib/0.1.0.typ": *<br>#show: template<br><br>This is some theorem.<br><br>// ANKI::BACK<br>Proof. This proofs it.</pre>
+    <p>Then we can just scan for these anki cues and turn all trees, that have one into flashcards.</p>
+  </body>
 </details></section><footer></footer></article>
 
 </div></body></html>

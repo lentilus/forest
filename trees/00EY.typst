@@ -4,8 +4,13 @@
 #taxon[Definition]
 #title[Dirichlet Type of Species]
 
-Given a species $F$ define the _dirichlet type_ of $F$ by
+Given a species $F$ define the _$Gamma$-dirichlet type_ of $F$ by
 $
-  D_F (S) :-= sum (A: "FinSet"), F(A) xx (S -> B C_(|A|)),
+  D_F^Gamma (S) :-= sum_(A: "FinSet") sum_(y : F(A)) (S -> B Gamma(A,y)),
 $
 
+for some section $Gamma$
+$
+  Gamma : product_(A : "FinSet") F(A) -> sum_(G : "Group") (U G ~= A),
+$
+with $U G$ denoting the underlying type of $G$. In other words, $Gamma$ should equip each finite set $A$ with $F$-structure $y$ with a group structure. 

@@ -1,0 +1,150 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Formalization Plan]
+
+Show
+$
+  "Rectangle"(S) ~= sum_(R_1, R_2 : "Eq-Rel"(S)) "is-equiv" lambda s . (r_1 (s), r_2 (s)) ~= "Car-Dec"(S)
+$
+
+Let $T(S) :-= sum_(R_1, R_2 : "Eq-Rel"(S)) "is-equiv" underbrace(lambda s . (r_1 (s), r_2 (s)), -= : f)$.
+
+For $"Rectange"(S) ~= T(S)$:
+Use that
+$
+  product_(x,y : S) "is-contr"(sum_(z: S) R_1 (x,z) xx R_2 (y,z)) ~= "is-equiv" ( f )
+$
+
+with
+```agda
+-- forward direction
+is-equiv-is-contr-map : is-contr-map f -> is-equiv f -- is-contr-map is in module block
+
+-- back
+is-contr-map-is-equiv : is-equiv f → is-contr-map f
+```
+
+Use `is-effictive-quotient-map` to show the fiber of f at $([x]_R_1, [y]_R_1)$
+is
+$
+  sum_(z: S) R_1 (x,z) xx R_2 (y,z).
+$
+
+For $T(S) ~= "Cart-Dec"(S)$: 
+For forward direction:
+Given $(R_1, R_2, h)$, with $h : "is-equiv"(f)$, set
+$
+  A :-= S slash R_1,\
+  B :-= S slash R_2,\
+  e :-= f : S ~= A xx B\
+$
+
+and $p,q$ `is-surjective-quotient-map`.
+
+For backward direction:
+Given $(A,B,e,p,q)$, set
+$
+  R_1 (x,y) :-= (pi_1 (e(x)) = pi_1 (e (y)))
+  R_2 (x,y) :-= (pi_2 (e(x)) = pi_2 (e (y)))
+$
+
+use "isomorphism theorem"
+```agda
+is-set-quotient-is-surjective-and-effictive
+```
+Apply this to $pi_1 @ e$ and $pi_2 @ e$ to get
+$
+  A ~= S slash R_1\
+  B ~= S slash R_2
+$
+
+composing with $e$ gives and equivalence $S ~= S slash R_1 xx S slash R_2$ for the $"is-equiv"$ condition for $T(S)$
+
+Now check round trip
+$
+  T(S) -> "Cart-Dec"(S) -> T(S)
+$
+
+After roundtrip we get
+$
+  (S slash R_1, S slash R_2, e') .. "with" e'(s) = ([s]_R_1, [s]_R_2)
+$
+
+The isomorphismtheorem gives
+$
+  S slash R_1 ~= S slash "ker"(pi_1 @ e) ~=
+$
+
+to identity $"ker"(pi_1 @ e)$ with $R_1$ use `propositional-extensionality`
+$
+  "ker"( pi_1 @ e) <==> pi_1 (e (x)) = pi_1 (e(y)) <==> [x]_R_1 = [y_R_1] <==> R_1 (x,y)
+$
+
+then use`equiv-uniqueness-set-quotient` / `is-set-quotient-uniqueness` to idenity the quotients.
+Tuple equality with `univalence`
+
+The other round trip
+$
+  "Cart-Dec" -> T -> "Cart-Dec"
+$
+We get $(S slash R_1, S slash R_2, e')$ where $R_1 = "ker"(pi_1 @ e)$, $R_2 = "ker" (pi_2 @ e)$. with the isomorphism theorem we get
+$
+  alpha: A ~= S slash R_1,\
+  beta : B ~= S slash R_2,\
+  e' @ (alpha xx beta) = e
+$
+Then we get the identification with `univalance` and propositional-extensionality for the surjectivity proofs.
+
+
+
+Usefull things:
+```
+-- from foundation-core.contractible-maps
+is-contr-map-is-equiv : is-equiv f → is-contr-map f
+is-equiv-is-contr-map : is-contr-map f -> is-equiv f -- is-contr-map is in module block
+
+
+-- from foundation.effective-maps-equivalence-relations
+is-effective :
+  {l1 l2 l3 : Level} {A : UU l1} (R : equivalence-relation l2 A) {B : UU l3}
+  (f : A → B) → UU (l1 ⊔ l2 ⊔ l3)
+is-effective {A = A} R f =
+  (x y : A) → (f x ＝ f y) ≃ sim-equivalence-relation R x y
+
+-- from foundation.set-quotients
+module _
+  {l1 l2 : Level} {A : UU l1} (R : equivalence-relation l2 A)
+  where
+  abstract
+    is-effective-quotient-map : is-effective R (quotient-map R)
+
+-- from  foundation.set-quotients
+quotient-map : A → set-quotient
+quotient-map = set-quotient-equivalence-class ∘ class R
+
+is-surjective-quotient-map : is-surjective quotient-map
+is-surjective-quotient-map =
+  is-surjective-left-comp-equiv compute-set-quotient (is-surjective-class R)
+
+
+-- proposional extionality stuff is in
+-- foundation.propositional-extensionality
+
+-- univalence things are in
+-- foundation.univalence
+
+-- foundation.uniqueness-set-quotients
+equiv-uniqueness-set-quotient : type-Set B ≃ type-Set C
+equiv-uniqueness-set-quotient =
+  pr1 (center uniqueness-set-quotient)
+
+
+-- foundation.universal-property-set-quotients
+is-set-quotient-is-surjective-and-effective :
+  ( E :
+    is-surjective-and-effective R
+      ( map-reflecting-map-equivalence-relation R q)) →
+  is-set-quotient R B q
+```

@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[This Week's Finds in Mathematical Physics (Week 147)]
+
+https://math.ucr.edu/home/baez/week147.html

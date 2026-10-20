@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Remark]
+
+We require the projections to be surjective because otherwise the
+#local("00GH")[species of cartesian decompositions] would not be
+#local("0086")[tame], since the empty set can be written as $emptyset ~= A xx
+emptyset$ for any $A: "FinSet"$. This addition ensures that our definition agrees with
+the definition in the literature (TODO: place reference).
+

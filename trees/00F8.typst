@@ -9,3 +9,7 @@ We can categorify the generating functions very similarly:
 $
   G_F (X) :-= sum_(A: "FinSet") F(A) xx (A -> X)
 $
+
+Edit: Yes, this is exactly what they do in #local("00G5")[From Finite Sets to Feynman Diagrams].
+see #local("00G4")[Exponential Generating Type].
+

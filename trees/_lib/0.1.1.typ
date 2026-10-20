@@ -1,4 +1,5 @@
 #import "@preview/scribe:0.2.0": *
+#import "@preview/fletcher:0.5.8": diagram, edge
 #import "kodama.typ"
 
 #let tree-level = state("tree-level", 1)
@@ -58,20 +59,40 @@
 #let template(doc) = {
   show: scribe
 
-  context if target() == "html" {
-    show: kodama.template
-    show math.equation.where(block: false): it => {
+  show math.equation.where(block: false): it => {
+    if target() == "html" {
       html.elem("span", attrs: (role: "math"), html.frame(it))
+    } else {
+      it
     }
-    show math.equation.where(block: true): it => {
+  }
+
+  show math.equation.where(block: true): it => {
+    if target() == "html" {
       html.elem("figure", attrs: (role: "math"), html.frame(it))
+    } else {
+      it
     }
-    doc
-  } else if tree-level.get() == 1 {
-    // dont override these in nested trees
-    set heading(numbering: "1.")
-    set par(justify: true)
-    doc
+  }
+
+  // for styling, use `where` to assign classes for different types of figure
+  show figure: it => {
+    if target() == "html" { 
+      html.elem("figure", attrs: (class: "typst"), html.frame(it))
+    } else {
+      it
+    }
+  }
+
+  context if target() != "html" {
+    if tree-level.get() == 1 {
+      // dont override these in nested trees
+      set heading(numbering: "1.")
+      set par(justify: true)
+      doc
+    } else {
+      doc
+    }
   } else {
     doc
   }

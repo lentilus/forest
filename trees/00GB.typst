@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+In the context of groupoid cardinality, the literature calls spaces with
+finitely many connected components $pi_0$-finite spaces.

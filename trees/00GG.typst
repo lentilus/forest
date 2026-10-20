@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[TRANSITIVE SIMPLE SUBGROUPS OF WREATH PRODUCTS IN
+PRODUCT ACTION]
+
+```
+arXiv:math/0210057v2
+```

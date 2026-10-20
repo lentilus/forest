@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>General Decompositions vs non-degenerate decompositions</title><link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/typst.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  nav {
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  thead {
+    font-family: "Inria Sans", sans-serif;
+  }
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js"
+  integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script></head><body><header class="header"><nav class="nav"><div class="logo"><span onclick="window.location.href='/00DS.html'" title="Overview">« Overview</span></div></nav></header><div id="grid-wrapper"><article><section class="block" data-taxon=""><details open><summary id="00GV"><header><h1><span class="taxon"></span>General Decompositions vs non-degenerate decompositions <a class="slug" href="/00GV.html">[00GV]</a></h1><div class="metadata"><ul></ul></div></header></summary>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <p><strong>Pro general</strong></p>
+    <ul>
+      <li>its the simpler definition</li>
+      <li>mirros what happens with natural numbers: any natural number divides <span role="math"><svg style="overflow: visible;" class="typst-doc" viewBox="0 0 5.5 7.513000000000001" width="5.5pt" height="7.513000000000001pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g transform="translate(0 7.513000000000001)">
+            <g class="typst-text" transform="scale(1, -1)">
+                <use xlink:href="#g866FA05A59BFC6C171E464D89C330265" x="0" fill="#000000" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <defs id="glyph">
+        <symbol id="g866FA05A59BFC6C171E464D89C330265" overflow="visible">
+            <path d="M 2.739 -0.242 C 4.29 -0.242 5.06 1.012 5.06 3.52 C 5.06 5.203 4.708 6.325 4.015 6.875 C 3.6299999 7.172 3.201 7.3259997 2.75 7.3259997 C 1.199 7.3259997 0.429 6.061 0.429 3.52 C 0.429 1.496 0.968 -0.242 2.739 -0.242 Z M 3.971 5.764 C 4.048 5.379 4.081 4.675 4.081 3.652 C 4.081 2.6399999 4.037 1.892 3.96 1.408 C 3.817 0.528 3.41 0.088 2.739 0.088 C 2.486 0.088 2.233 0.187 2.002 0.374 C 1.705 0.627 1.529 1.144 1.452 1.936 C 1.419 2.211 1.408 2.783 1.408 3.652 C 1.408 4.609 1.441 5.2799997 1.496 5.643 C 1.595 6.248 1.793 6.633 2.101 6.798 C 2.343 6.93 2.552 6.996 2.739 6.996 C 3.454 6.996 3.85 6.413 3.971 5.764 Z "/>
+        </symbol>
+    </defs>
+</svg>
+</span></li>
+      <li>dirichlet convolution as pointwise cartesian product works even if F and G do not vanish on empty set</li>
+    </ul>
+    <p><strong>Pro non-degenerate</strong></p>
+    <ul>
+      <li>its equivalent to what people use in the literature</li>
+      <li>its a tame species</li>
+      <li>dirichlet product of tame species is always tame, no matter what happens on empty set</li>
+    </ul>
+    <p><strong>To be decided</strong></p>
+    <ul>
+      <li>What works better with dirichlet powers and the dirichlet exponential?</li>
+    </ul>
+  </body>
+</details></section><footer></footer></article>
+
+</div></body></html>

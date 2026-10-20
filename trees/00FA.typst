@@ -5,7 +5,7 @@
 #title[Dirichlet series of dirichlet product of species is dirchlet product of dirichlet series]
 
 $
-  D_(F *_D G) (S) (n) = (D_F (S) *_D D_G (S))(n)
+  hat(F *_D G)_S = hat(F)_S *_D hat(G)_S
 $
 
 i.e

@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Groups Groupactions and Action Types]
+
+#embed("00G0")[]
+
+#embed("00G2")[]
+
+#embed("00G1")[]
+

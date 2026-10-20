@@ -1,0 +1,37 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+#title[Convolution of dirichlet types]
+
+Given species $F$ and $G$ with dirichlet types $D_F^Gamma$ and $D_G^Delta$
+$
+  D_F^Gamma (S) xx D_G^Delta (S)  &~= (sum_(A : "FinSet") sum_(x: F(A)) (S -> B Gamma_(A,x))) xx (sum_(B : "FinSet") sum_(y: G(B)) (S -> B Delta_(B,y)))\
+  & ~= sum_(A,B : "FinSet") sum_(x: F(A)) sum_(y : G(B)) (S -> B (Gamma_(A,x) xx Delta_(B,y)))
+$
+
+We can regroup by cardinalities. Since $sum_(C : "FinSet") (A xx B ~= C)$ is contractible, we have
+$
+  D_F^Gamma (S) xx D_G^Delta (S) &~= sum_(C : "FinSet") sum_(A,B : "FinSet") sum_(x : F(A)) sum_(y : G(B)) (A xx B ~= S) xx (S -> B (Gamma_(A,x) xx Delta_(B,y)))\
+                                 &~= sum_(C, : "FinSet") sum_((A,B,e): "general-cart-dec"(C)) sum_(x : F(A)) sum_(y : G(B)) (S -> B (Gamma_(A,x) xx Delta_(B,y)))
+$
+
+Compare this to the $Tau$-dirichlet type of $F *_D G$
+$
+  D_(F *_D G)^Tau (S) &~= sum_(C : "FinSet") sum_(w : (F *_D G) (C)) (S -> B Tau_(C,w))\
+  & sum_(C : "FinSet") sum_((A,B,e):"cart-dec(C)") sum_(x : F(A)) sum_(y: G(B)) (S -> B Tau_(C, (A,B,e,x,y)))
+$
+
+In the case where the choice of torsors is compatible with the dirichlet product of species in the following sense
+$
+  Tau_(C,(A,B,e,x,y)) ~= Gamma_(A,x) xx Delta_(B,y)
+$
+and $F$ and $G$ vanish on the empty set, we have that
+$
+  D_(F *_D G)^Tau (S) ~= D_F^Gamma (S) xx D_G^Delta (S).
+$
+
+There is always a choice of $Tau$ that is compatible with the dirichlet product: Just define $Tau$ to be the rhs of the required equivalence.
+So maybe the pointwise cartesian product is a good notion of dirichlet convolution.
+
+This has similaity with the $H$-dirichlet series in agda unimath. The difference is that the $H$-dirichlet series does not allow us to depend on the $F$-structure on the finite $A$ set to choose our group.

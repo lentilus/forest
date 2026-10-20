@@ -6,6 +6,6 @@
 
 Given $X : "FinCommRing" -> "FinSet"$, define
 $
-  Z_X :-= sum_(R : "FinSemisimpleCommRing") (U(R)~= F) xx X(R),
+  Z_X (A) :-= sum_(R : "FinSemisimpleCommRing") (U(R)~= A) xx X(R),
 $
 where $U(R)$ is the underlying type of $R$. See also #local("00B8")[Hasse-Weil species in agda-unimath]

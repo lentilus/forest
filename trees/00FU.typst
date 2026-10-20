@@ -1,0 +1,44 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[]
+#title[HoTT Basics]
+
+Syntax
+Context,Judgements, terms,types, judgemental equality
+
+Dependence
+
+Formation, Introduction, Elimination, Computation Rule
+
+Product
+Coproduct
+
+Dependent versions:
+
+Pi
+Sigma
+
+Getting of the ground:
+ Natural Numbers
+ empty type, boolean type,
+
+Identity types
+
+Take a break and talk a little about mathematics practise, and working with typetheory informally.
+
+
+Function extensionality
+
+Contractible types
+
+Equivalences
+
+Universes
+
+Axiom of Univalence
+
+Truncations
+
+
+

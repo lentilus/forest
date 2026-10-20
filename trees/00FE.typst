@@ -1,7 +1,14 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[TODO]
-#title[Definition Dirichlet Power]
+#taxon[Definition]
+#title[Dirichlet Power of a Species]
 
-TODO
+Let $F$ be a species. We define the the dirichlet powers of $F$ recursively by
+
+$
+  F_D^0 :-= I, \
+  F_D^(n+1) :-= F *_D F_D^n,
+$
+
+where $I$ is the #local("00E3")[unit of the dirichlet product].

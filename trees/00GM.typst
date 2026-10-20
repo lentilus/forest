@@ -1,0 +1,119 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Equivalence of Rectangles and Cartesian Decompositions]
+
+The #local("00GL")[species of rectangles] is equal to the #local("00DQ")[species of non-degenerate cartesian decompositions].
+
+#proof[
+  We use #link("008T")[function extensionality extensionality], and show that
+  $
+    "Rectangle"(S) ~= "Cart-Dec"(S),
+  $
+ for any finite set $S$. We start by constructing a map
+$
+  F: "Rectangle"(S) -> "Cart-Dec"(S), .. (R_1, R_2, h) |-> (A,B,e,p,q)
+$
+by setting
+$
+  A :-= S slash R_1, ..  B :-= S slash R_2, .. f : S -> A xx B ,.. s |-> ([s]_R_1, [s]_R_2)
+$
+
+The quotient maps $S -> S slash R_1$ and $S -> S slash R_2$ are automatically
+surjective. (TODO)
+
+Let $x, y : S$. Notice that the fiber of $f$ over $([x]_R_1, [y]_R_2)$ is equivalent to
+$sum_(z:S) R_1 (x,z) xx R_2 (y,z)$
+which is contractible by $h$. Using the universal property of the set quotient
+we can conclude that all fibers of $f$ are contractible, hence $f$ is an
+equivalence. With $e :-= f^(-1)$ and $p,q$ surjectivity proofs we have that
+$(A,B,e,p,q)$ is a cartesian decomposition.
+
+To construct the inverse map
+$
+  G: "Cart-Dec"(S) -> "Rectangle"(S), .. (A,B,e,p,q) |-> (R_1, R_2, h),
+$
+define equivalence relations on $S$ by
+$
+  R_1 (x,y) :-= (pi_1(e^(-1)x) = pi_1(e^(-1) y) ),\
+  R_2 (x,y) :-= (pi_2(e^(-1)x) = pi_2(e^(-1) y) ).
+$
+
+To construct $h$, notice that fiber of $e^(-1)$ over $(pi_1(e^(-1)x), pi_2(e^(-1)y))$ is equivalent to $sum_(z: S) R_1 (x,z) xx R_2 (y,z)$, which is contractible since $e^(-1)$ is an equivalence.
+
+Now we show that $F$ and $G$ are mutual inverses, starting with
+$
+  G(F(R_1, R_2, h) =_"Rectangle"(S) (R_1, R_2, h).
+$
+
+Recall that $F(R_1, R_2, h)$ has components
+$
+  A -= S slash R_1, .. B -= S slash R_2, .. f : S -> A xx B, .. f(s) -= ([s]_R_1, [s]_R_2)
+$
+
+and $f$ has inverse $e :-= f^(-1) : A xx B ~= S$, so applying $G$ gives equivalence relations
+$
+  R_1 '(x,y) :-= (pi_1 (e^(-1)x) = pi_1(e^(-1) y))\
+  R_2 '(x,y) :-= (pi_2 (e^(-1)x) = pi_2(e^(-1) y)).
+$
+
+Since $e^(-1) = f$, we can compute the following logical equivalences.
+$
+  R_1 ' (x,z) <-> (pi_1 (f x) = pi_1 (f z)) <-> ([x]_R_1 = [z]_R_1) <-> R_1 (x,z)
+$
+
+By propositional extensionality we get the equality $R_1 ' = R_1$ and analogously $R_2 ' = R_2$
+
+The term $h'$ from $F(G(R_1, R_2, h))$ is a proof that the type $product_(z:S) R_1 ' (x,z) xx R_2 ' (y,z)$
+is contractible. After transporting along $R_1 ' = R_1$ and $R_2 ' = R_2$, this is a proof of the same proposition as $h$, so the two are equal. Hence
+$
+  F(G(R_1, R_2, h)) = (R_1, R_2, h).
+$
+
+Now we show that 
+$
+  F(G(A,B,e,p,q)) =_"Cart-Dec"(S) (A,B,e,p,q).
+$
+
+Recall that $G(A,B,e,p,q) = (R_1, R_2, h)$, with
+$
+  R_1 (x,y) -= (pi_1 ( e^(-1) x) = pi_1 (e^(-1) y)) \
+  R_2 (x,y) -= (pi_2 (e^(-1) x) = pi_2 (e^(-1) y)).
+$
+
+We will write $r_1 -= pi_1 @ e^(-1)$ and $r_2 -= pi_2 @ e^(-1)$.
+Applying $F$ gives
+$
+  A' -= A slash R_1,..
+  B' -= S slash R_2,..
+  f : S ~= A' xx B,..
+  f(s) -= ([s]_R_1, [s]_R_2)
+$
+
+together with $e' -= f^(-1) : A' xx B; ~= S$. We now construct equivalences $alpha : A ~= A'$ and $beta : B ~= B'$ such that $e' @ ( alpha xx beta) = e$.
+We show that $r_1$ is surjective. Given $a : A$, we can use that surjectivity of $pi_1 : A xx B -> A$ gives some $(a_0, b) : A xx B $ with $pi_1 (a_0, b) = a$, so $a_0 = a$. Then
+
+$
+  r_1 (e(a,b)) = (pi_1 @ e^(-1) @ e)(a,b) = pi(a,b) = a,
+$
+
+so $r_1$ is surjective. Applying the above Lemma to $r_1$ we get an equivalence $alpha : A ~= S slash R_1$ and $r_1 (s) = a$ implies $alpha(a) = [s]_R_1$
+By the same argument we get an equivalence $beta : B ~= S slash R_2$ with $r_2 (s) = b$ implies $beta (b) = [s]_R_2$
+
+Given $(a,b) : A xx B$, we have $r_1 (e(a,b)) = a, .. r_2 (e(a,b)) = b$ thus $alpha(a) = [e(a,b)]_R_1$  and $beta(b) = [e(a,b)]_R_2$, so
+$
+  f(e(a,b)) = ([e(a,b)]_R_1, [e(a,b)]_R_2) = (alpha(a), beta(b)).
+$
+
+Since $e'$ is the inverse of $f$, we have that $e'(alpha(a), beta(b)) = e(a,b) $, so
+$
+  e' @ (alpha xx beta) = e.
+$
+
+Since the surjectivity proofs $p,q$ are just propostions they agree with with $p'$, $q'$ after transporting along $alpha, beta, e' @ (alpha xx beta) = e$. Thus
+
+$
+  F(G(A,B,e,p,q)) =_"Cart-Dec"(S) (A,B,e,p,q).
+$
+]

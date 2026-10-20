@@ -1,0 +1,22 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[Title]
+
+Let $f : X -> Y$ be a surjection. We define
+$
+  K(x,y) :-= (f(x) = f(y)).
+$
+Then $f$ induces an equivalence
+$
+  X slash K ~= Y, .. [x] |-> f(x).
+$
+Furthermore the quorient map $q : X -> X/K$ is surjective and we have an equality of propositions
+$
+  (q(x) = q(y)) <-> K(x,y)
+$
+
+#proof[
+  TODO
+]
