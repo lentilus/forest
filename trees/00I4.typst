@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Index]
+#title[Univalent Combinatorics]
+
+TODO: move things from Species on finset and action types to this tree
+
+- finset
+- FinSet_n as classifying type of S_n
+- species

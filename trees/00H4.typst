@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Finite Group]
+
+A group $G$ is a _finite group_ if the set $U G$ is finite.

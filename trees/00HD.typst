@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[Burnsides Lemma]
+
+Let $G$ be a finite group and let $X : B G -> "Set"$ be a finite $G$-set.
+Then each $X^g$, the type $sum 
+_(g : U G) X^g$ and the set of orbits $X slash G$ are finite sets, and we have
+$
+  |sum_(g : U G) X^g | = | X slash G | * | U G |
+$

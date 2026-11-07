@@ -1,0 +1,60 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Identity Type of Surjective Cartesian Decompositions]
+
+Since $"is-surj"$ is a proposition, the identity type of non-degenerate cartesian decompostions is the same as the identity type of the inclusions into general cartesian decomposions.
+
+TODO
+
+Fix a finite set $S$. Let $(A,B,e,!),(A',B',e',!) : "cart-dec"(S)$.
+There is an equivalence
+$
+((A,B,e,!) = (A',B',e',!)) ~= "Eq-cart-dec"(S)((A,B,e), (A',B',e'))
+$
+where $(f xx g ) : (A xx B) ->  (A' xx B')$ is the induced map from the equivalences $f$ and $g$.
+
+#proof[
+  Define $C(A',B',e')$ to be the rhs of the equivalence we want to show.
+
+  We already know from #local("00DY")[Lemma 00DY], that $"Eq-cart-dec"(S)((A,B,e), (A',B',e'))$ is inhabited.
+
+  Furthermore $B$ is torsorial since
+  $
+    sum_((A',B',e') : "cart-dec"(S)) C(A',B',e') &-= sum_(A' ,B' : "FinSet") sum_(e': A' xx B' ~= S) sum_(f: A ~= A') sum_(g : B ~= B') e' @ (f xx g) ~ e\
+    "(reassociate)" .. &~= sum_(A' : "FinSet") sum_(f: A ~= A') sum_(B' : "FinSet") sum_(g : B ~= B') sum_(e': A' xx B' ~= S) e' @ (f xx g) ~ e\
+    "(univalence)" .. &~= sum_(A' : "FinSet") sum_(p: A = A') sum_(B' : "FinSet") sum_(q : B = B') sum_(e': A' xx B' ~= S) e' @ (tilde(p) xx tilde(q)) ~ e\
+    "(contract)" .. &~= sum_(B' : "FinSet") sum_(q : B = B') sum_(e': A xx B' ~= S) e' @ ("id"_A xx tilde(q)) ~ e\
+    "(contract)" .. &~= sum_(e': A xx B ~= S) e' @ ("id"_A xx "id"_B) ~ e\
+    &~= sum_(e': A xx B ~= S) e' ~ e\
+    "(function extensionality)" .. &~= sum_(e': A xx B ~= S) e' = e\
+    "(contract)" .. &~= bb(1).
+  $
+
+  Applying the #local("00EK")[Fundamental Theorem of Identity Types] completes the proof.
+]
+
+// An elemary proof
+
+// #proof[
+//   Denote by $C$ the type family $C(X,Y) :-= X xx_"FinSet" Y ~= S$.
+//   $
+//     ((A,B,e) =_"cart-dec"(S) (A',B',e')) &~= (sum (p: A ~= A', q : B ~= B'), "tr"_C ("pair"(p,q), e) = e')\
+//     &~=_J (sum (p: A ~= A', q : B ~= B'), e' @ (p xx q) =_C(A,B) e).
+//   $
+//
+//   In the second step, we make use of the $J$ rule:
+//
+//   For a path $r: (A,B) -> (A',B')$ denote by $overline(r)$ the induced path
+//   $overline(r) : A xx B -> A' xx B'$. then for $e : C(A,B)$ and $e' : C(A',B')$
+//   we get a term of type
+//   $
+//     ("tr"_C (r,e) = e') ~= (e' @ overline(r) = e),
+//   $
+//   by doing path induction on $r$: When $r -= "refl"_(A,B)$, we get
+//   $
+//     "tr"_C ("refl",e) -= e, .. overline("refl") = "id"_(A xx B).
+//   $
+//   So it suffices to provide a term of type $(e = e') ~= (e' @ id_(A xx B) = e)$, which is (up to unit-path) given by reversal of paths.
+// ]

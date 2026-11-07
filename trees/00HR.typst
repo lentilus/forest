@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[A nested embedding]
+
+This file has title "nested Embedding" and no taxon.

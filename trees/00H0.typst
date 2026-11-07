@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Type of Groups]
+
+The _type of groups_ is the unary sum (i.e a wrapped copy) of the #local("00GY")[type of pointed connected 1-types] $Uu^(=1)_(**)$.
+
+$
+  "Group" :-= "Copy"_(underline(Omega)) (Uu^(=1)_(**)),
+$
+
+It comes with an equivalences $underline(Omega) : Uu^(=1)_(**) -> "Group"$ and
+its inverse $B : "Group" -> Uu^(=1)_(**)$.
+A _group_ is term in the #link("00H0")[type of groups] $"Group"$.

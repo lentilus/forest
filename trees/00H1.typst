@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Shape of a Group]
+
+We will refer to the elements of the #link("00G2")[classifying type] $B G$ of a #local("00G0")[group] $G$, as the _shapes_ of $G$.
+
+We call the base point of $B G$ the _designated shape_ of $G$ and denote it with $"sh"_G$.
+

@@ -4,4 +4,13 @@
 #taxon[Lemma]
 #title[Groupoid Cardinality is multiplicative]
 
-TODO
+Let $A : "FinSet"$. Let $B : A -> "1-Type"$ be a family of $pi_0$- and $pi_1$-finite types. Then
+the space of sections is $pi_0$- and $pi_1$ finite and
+$
+  |product_(a : A) B(a)| = times.big.circle_(a : A) |B(a)|.
+$
+
+#proof[
+  TODO
+]
+

@@ -1,0 +1,15 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Reference]
+#title[agda-unimath library]
+
+
+```bibtex
+@software{agda-unimath,
+author = {Rijke, Egbert and Stenholm, Elisabeth and Prieto-Cubides, Jonathan and Bakke, Fredrik and {others}},
+license = {MIT},
+title = {{The agda-unimath library}},
+url = {https://github.com/UniMath/agda-unimath/}
+}
+```

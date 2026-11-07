@@ -1,7 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Index]
 #title[Euler Product of Species]
 
 #embed("00FE")[]

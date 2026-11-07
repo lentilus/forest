@@ -4,8 +4,20 @@
 #taxon[Lemma]
 #title[Groupoid Cardinality is additive]
 
-TODO
+Let $A : "FinSet"$. Let $B : A -> "1-Type"$ be a family of $pi_0$- and $pi_1$-finite types. Then
+the total space of $B$ is $pi_0$- and $pi_1$ finite and
+$
+  |sum_(a : A) B(a)| = plus.big_(a : A) |B(a)|.
+$
+#proof[
+  By #local("00HF")[HoTT Book, Corallary 7.3.10] $||sum_(a : A) B(a)||_0 ~= sum_(a : A) ||B(a)||_0$.
 
-$
-  |A + B| = |A| + |B|
-$
+  Let $(a,b) : sum_(a : A) B(a)$. Then $(a,b) = (a,b) ~= sum_(p : a = a) "tr"_B (p,b) = b$
+  since $A$ is a set $a = a$ is a proposition and the loop space simplifies to $((a,b) = (a,b)) ~= (b =_B b)$. Therefor $"Aut"((a,b)) ~= "Aut"_B (b)$. Putting everything together we have
+  $
+    |sum_(a : A) B(a)| &-= plus.big_(|(a,b)|_0 : ||sum_(a : A) B(a)||_0 ) 1/(|"Aut"((a,b))|)\
+    &~= plus.big_((a,|b|_0) : sum_(a : A) ||B(a)||_0 ) 1/(|"Aut"((a,b))|)\
+    &~= plus.big_(a : A) sum_(|b| : ||B(a)||_0) 1/(|"Aut"_B (b)|)\
+    &-= plus.big_(a : A) |B(a)|.
+  $
+]

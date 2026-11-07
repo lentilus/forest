@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+- on finiteness conditions of groupoid cardinality
+- connection to homotopy cardinality / euler characteristic (week 147)
+- our 1-truncated case should agree with higher homotopy cardinality

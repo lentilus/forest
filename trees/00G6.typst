@@ -4,8 +4,8 @@
 #taxon[Remark]
 // #title[Title]
 
-In cases where $G_(A,y)$ only depends on the cardinality of $A$, the dirichlet type simplifies to
+In cases where only depends on the cardinality of $A$, i.e $Gamma$ is of the form $Gamma(A,y) ~= G(|A|)$, for some $G : product_(n : NN)  sum_(H : "Group") |U G| = n$, the dirichlet type simplifies to
 $
-  D_F (S) ~= sum_(A: "FinSet") F(A) xx (S -> B G_|A|),
+  D(F, Gamma, S) ~= sum_(A: "FinSet") F(A) xx (S -> B G(|A|)),
 $
 

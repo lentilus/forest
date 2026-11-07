@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+- why space of sections is harder then total space
+- #local("00HY")[Lemma 00HY] will be the basis for proving the analogous formula for the space of section.

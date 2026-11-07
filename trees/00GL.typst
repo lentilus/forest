@@ -2,10 +2,9 @@
 #show: template
 
 #taxon[Definition]
-#title[Rectangle]
+#title[Type of Rectangles]
 
-The authors in #local("00GF")[arXiv:math/0503436v2] define a square on a finite set $S$ to be a pair of equivalence relations $(R_1, R_2)$ such that every equivalence class of $R_1$ intersect every equivalance class of $R_2$ in exactly one element.
-
+The authors in #local("00GF")[arXiv:math/0503436v2] define a rectangle on a finite set $S$ to be a pair of equivalence relations $(R_1, R_2)$ such that every equivalence class of $R_1$ intersect every equivalance class of $R_2$ in exactly one element. We realize this definition as
 $
   "Rectangle"(S) :-= sum_(R_1,R_2 : "Eq-Rel"(S)) product_(x,y : S) "is-contr"(sum_(z:S) R_1 (x,z) xx R_2 (y,z) )
 $

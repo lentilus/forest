@@ -6,11 +6,11 @@
 
 Given a species $F$ define the _$Gamma$-dirichlet type_ of $F$ by
 $
-  D_F^Gamma (S) :-= sum_(A: "FinSet") sum_(y : F(A)) (S -> B Gamma(A,y)),
+  D(F, Gamma, S) :-= sum_(A: "FinSet") sum_(y : F(A)) (S -> B Gamma(A,y)),
 $
 
-for some section $Gamma$
+for some section 
 $
-  Gamma : product_(A : "FinSet") F(A) -> sum_(G : "Group") (U G ~= A),
+  Gamma : product_(A : "FinSet") (F(A) -> sum_(G : "Group") (U G ~= A)),
 $
 with $U G$ denoting the underlying type of $G$. In other words, $Gamma$ should equip each finite set $A$ with $F$-structure $y$ with a group structure. 

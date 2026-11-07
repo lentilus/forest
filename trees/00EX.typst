@@ -2,6 +2,17 @@
 #show: template
 
 #taxon[Observation]
-#title[Groupoid Cardinality is compatible with set cardinality]
+#title[Groupoid Cardinality agrees with set cardinality]
 
-In the case of sets the groupoid cardinality agrees with set-cardinality, because sets (by definition) have trivial automorphism groups.
+Let $X : "1-Type"$. If $X$ is a finite set, then its groupoid cardinality is well-defined and agrees with the usual cardinality of finite sets.
+
+#proof[
+  Since $X$ is a set it is equivalent to its set truncation. Since $X$ is finite $X$ is automatically $pi_0$-finite.
+  Since $X$ is a set its #local("00H6")[automorphism group] is trivial everywhere. Therefor
+  $
+    |X|_"groupoid" -= plus.big_(c : ||X||_0) 1/(|"Aut"_X (c)|) = plus.big_(c : ||X||_0) 1 = plus.big_(x : X) 1= |X|.
+  $
+]
+
+This justifies using the same notation for both groupoid and set cardinality.
+

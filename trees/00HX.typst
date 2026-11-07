@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Corollary]
+// #title[Title]
+
+Let $A$ and $B$ be $pi_0$- and $pi_1$-finite 1-types. Then $A + B$ is $pi_0$- and $pi_1$-finite and $|A + B| + |A| + |B|$.
+
+#proof[
+  Consider the type family $C : bb(2) -> Uu, C(0) :-= A, C(1) :-= C$. Then apply 
+  #local("00EU")[Lemma 00EU] to the type $sum_(b : bb(2)) C(b) -= A + B$.
+]

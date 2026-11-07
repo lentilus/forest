@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+Dirichlet types categorify the concept of dirichlet series. Baez explains in his blog in week xxxx what we should do in the special case where the species at hand is the #local("00EC")[zeta species] $Z_X$. We extend this idea to any species $F$, where an $F$-structure $y$ on a finite set $A$ carries a group-structure $Gamma (A, y)$ in a natural way. This motivates the definition of a $Gamma$-dirichlet type.
+Taking #local("007P")[groupoid cardinalities] of connected components of the dirichlet type recovers the dirichlet series of a species as defined in #local("00DU")[Dirichlet Species and Arithmetic Zeta Functions]. 
+We will later see that the #local("00DP")[Dirichlet Product of Species] behaves nicely with dirichlet types, allowing us to categorify the concept of dirichlet convolutions.

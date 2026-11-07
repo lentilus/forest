@@ -1,0 +1,5 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Symmetric Group acts transitively on cartesian decompostion with fixed shape]

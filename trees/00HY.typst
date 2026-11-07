@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+// #title[Title]
+
+Let $A$ and $B$ be $pi_0$- and $pi_1$-finite 1-types. Then $A xx B$ is a $pi_0$- and $pi_1$-finite 1-type and
+$
+  |A xx B| = |A| xx |B|
+$
+
+#proof[
+  TODO
+]

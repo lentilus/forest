@@ -2,10 +2,11 @@
 #show: template
 
 #taxon[Definition]
-#title[general cartesian decomposion]
+#title[Type of Cartesian Decompositions]
 
-We define a _cartesian decomposition_ of a finite set $S$ to be a term of the type
+Let $S$ be a finite set. The type of _cartesian decompositions_ on $S$ is defined as
 $
-  "general-cart-dec" (S) :-= sum_(A,B : "FinSet")(A xx_"FinSet" B  ~= S).
+  "cart-dec"(S) :-= sum_(A,B : "FinSet")(A xx_"FinSet" B  ~= S).
 $
 Where $xx_"FinSet"$ is the #local("00DZ")[cartesian product in FinSet].
+In #local("00I2")[agda unimath] this type is called `binary-product-Decomposition`.

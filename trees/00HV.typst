@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+// #title[$pi_n$-finite]
+
+- We call 1-types with finite set truncation $pi_0$-finite.
+- We call 1-types that have have a finite #link("00H6")[automorphism group] at every point $pi_1$-finite.
+
+- TODO: homotopy-finite

@@ -4,58 +4,40 @@
 #taxon[Lemma]
 #title[Class Formula]
 
-Let $X : B G -> "1-Type"$ be a finite group $G$, with base point $"sh"_G : B G$
-acting on the 1-type $X("sh"_G)$. Then
+Let $G$ be a finite #local("00DL")[group] with an action $X : B G -> "1-Type"$,
+then the groupoid cardinality of the action type computes to
 $
-  |sum_(s: B G) X(s)|  = (|X("sh"_G)|)/(|G|).
+  |X_(h G)| = (|X("sh"_G)|)/(|U G|).
 $
 
-
-#proof[ To save keystrokes we use the abbreviation $T :-= sum_(z:B G) X(z) $.
-
-  To compute the cardinality of $T$, we begin by showing that its connected
-  components are the orbits of $G$'s action on the set truncation of $"sh"_G$.
-
-  The action on $X("sh"_G)$ induces an action on $pi_0(X("sh"_G))$ as follows.
-  Using the universal property of the set truncation it is enough to define our
-  action for elements in $pi_0(X("sh"_G))$ of the form $|x|_0$ for some $x :
-  X("sh"_G)$.
+#proof[
+  We begin by characterizing the connected components of $X_(h G)$.
+  Define the $G$-set $overline(X) : B G -> "Set"$ by $overline(X)(u) :-= ||X(u)||_0$.
+  By the #link("00HF")[HoTT Book, Theorem 7.3.9], we have that
+  $||X_(h G)||_0 ~= ||overline(X)_(h G)||_0$.
+  Since $overline(X)$ acts on a set, by #link("00D6")[the Symmetry Book, Lemma 5.4.4]
+  $|| overline(X)_(h G)||_0 ~= overline(X) slash G$
+  So the connceted components of $X_(h G)$ are precisely the orbits of the action $overline(X)$.
   $
-    g * |x|_0 :-= |"tr"_X (l_g, x)|_0.
+    ||X_(h G)||_0 ~= overline(X) slash G 
   $
 
-  We now define an equivalence reation on $pi_0(X("sh"_G))$ that identifies two
-  elements whenever they lie in the same orbit.
-  $
-    a ~ b :-= || sum_(g : G) g*a=b ||_(-1)
-  $
 
-  The quotient $pi_0(X("sh"_G)) slash G$ has the following univeral property:
-  TODO
-
-// #figure(diagram($
-//   T edge(f, ->) edge("d", |\_|_0, ->) & S \
-//   pi_0(T) edge("ur", tilde(f), "-->")
-// $))
-//
-//  TODO: Universal property of the set quotient
-// #figure(diagram($
-//   pi_0(X(**)) edge(g, ->) edge("d", q, ->) & S' \
-//   pi_0(X(**)) slash G edge("ur", tilde(g), "-->")
-// $))
-
-  TODO: Conclude with UP of set quotient and UP of set truncation that
+  We now go on to identify the automorphisms of $X_(h G)$. Observe that
   $
-    pi_0(T) ~= pi_0(X("sh"_G)) slash G
-  $
-
-  We now move on to classify the automorphisms of the connected components.
-  Consider a point in $T$ of the form $("sh"_G, x)$, then 
-  $
-    (("sh"_G,x) = ("sh"_G,x)) &~= sum_(p : "sh"_G = "sh"_G) "tr"_X (p,x)=x\
-    & ~= sum_(g : U G) g*x = x
+    U "Aut"_X_(h G) ("sh"_G, x) -=& ( "sh"_G, x) =_X_(h G) ("sh"_G, x)\
+    ~=& sum_(g : U G) (g * x = x)\
+    ~=& sum_(g : U G) (g * x = x) xx ||g* x = x||_(-1)\
+    ~=& sum_((g,!) : sum_(g : U G) ||g * x = x||_(-1) ) (g * x = x) \
   $
 ]
+TODO: therefor
+$
+  |U "Aut"_X_(h G)("sh"_G, x)| = | sum_(g : U G) ||g * x = x||_(-1)| * | U "Aut"_X("sh"_G) (x)|
+$
+
+We now apply the orbit stabilizer thorem to 
+TODO
 
 See also
 - https://ncatlab.org/nlab/show/class+equation

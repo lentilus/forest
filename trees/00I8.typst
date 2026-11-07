@@ -1,0 +1,26 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Observation]
+#title[Rectangles and cartesian decompositions disagree on empty type]
+
+The type of rectangles and the type of cartesiand decompositions disagree on the empty type.
+
+#proof[
+  By #local("00GO")[Lemma 00GO], the type of rectangles on any finite set $S$ is a set.
+  By #local("00I6")[Remark 00I6], the type of cartesian decompositions of the empty set is not a set, so the two types are not the same.
+
+  A little more formally since we don't do proofs of falsehood very often: Let
+  $p : "is-0-type"(A)$ and $q : not "is-0-type"(B)$, i.e $q : "is-0-type"(B) ->
+  emptyset$. Now we claim that we can construct a term of type $not  (A ~= B)$
+  This amount to constructing a map
+  $
+    (A ~= B) -> emptyset 
+  $
+  Assume a term $f : (A ~= B)$ then univalence gives us a path $tilde(f) : A =B$, now we use transport
+  $
+    "tr"_"is-0-type" (tilde(f), p) : "is-0-type"(B)
+  $
+  By applying $q$ to the transported term we get a term of type $emptyset$.
+
+]

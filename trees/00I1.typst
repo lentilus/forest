@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Groupoid Cardinality of Sigma-Types]
+
+Let $A : "1-Type"$ be homotopy finite, let $B : A -> "1-Type"$ be a family of homotopy finite types. Then the total space of $B$ is 1-truncated, homotopy finite and
+$
+  |sum_(a : A) B(a)| = plus.big_(|a| : ||A||_0) (|B(a)|)/(|"Aut"_A (a)|).
+$
+
+#proof[
+  TODO: Using the #local("00FY")[Class Formula].
+]

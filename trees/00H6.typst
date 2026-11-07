@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Automorphism Group]
+
+Let $A$ be a $1$-type and $a : A$ be a point in $A$. We call the group
+$
+  "Aut"_A a :-= underline(Omega) (A_((a)), (a, |"refl"_a|)
+$
+the _automorphsim group_ of $a$.

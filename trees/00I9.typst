@@ -1,0 +1,13 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Lemma]
+#title[Number of cartesian decompositions of fixed shape]
+
+$
+  |"surj-cart-dec"_(k,l) (S)| = (n!)/(k!l!) -= mat(delim: "{", n ; k).
+$
+
+#proof[
+  use that S_n acts transitively on cartesian decompositions with stabilizer $S_k xx S_l$
+]

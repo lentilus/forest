@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Type of Pointed Connected 1-Types]
+
+The type of _pointed, connected 1-types_ is the type
+$
+  Uu^(=1)_** :-= sum_(A : Uu) (A xx "is-conn"(A) xx "is-1-type"(A)).
+$
+
+See #local("00D6")[symmetry book, Definition 4.2.5].

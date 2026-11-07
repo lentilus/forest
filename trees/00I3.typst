@@ -1,0 +1,12 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+A cartesian decomposition on a finite set $S$ with cardinality $s$ categorifies the idea of a factoring $s$ as a product of two numbers.
+
+
+There are competing implementations of this idea that disagree on what to do with the empty type
+- general cartesian decomposition
+- non-degenerate = rectangles

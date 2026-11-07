@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+- Introduced by Baez and Dolan.
+- coincides with set cardinality for discrete groupoids
+- Serves the purpos of decategorifying
+- groupoidification / categorifying rational numbers with homotopy finite groupoids

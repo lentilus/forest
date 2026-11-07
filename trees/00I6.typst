@@ -1,0 +1,24 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Remark]
+// #title[Title]
+
+The #local("00GQ")[Type of General Cartesian Decompositions] of the empty type is not a set.
+
+#proof[
+  Let $S -= emptyset$. Let $A$ be a type with more than one element, say $A -= "Bool"$. Let $e$ be the unique equivalence $e : A xx emptyset ~= emptyset$. 
+  Then $(emptyset,A,e)$ is a point in  "cart-dec"(S). By #local("00DY")[Lemma 00DY] its loop space is characterized as. 
+  $
+    "Eq-cart-dec"(S)((emptyset, A,e),(emptyset,A,e)) -= sum_(f : 0 ~= 0) sum_(g : A ~= A) e @ (f xx g) ~ e
+  $
+Notice that type of homotopies $e @ (f xx g) ~ e$ is contractible, since the domain of the functions involved is $emptyset$. So is the type $(0 ~= 0)$.
+Therefor
+$
+  ((emptyset, A,e)=(emptyset,A,e)) ~= (A ~= A)
+$
+Since we chose $A$ to be $"Bool"$, the right hand side is not contractible, so 
+$"cart-dec"(emptyset)$ is not a set.
+]
+
+

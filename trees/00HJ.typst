@@ -1,0 +1,17 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+In univalent mathematics there is an interesting way to think about groups.
+Every #local("00GY")[pointed connected 1-type] carries a group structure in
+natural way: The composition of paths in the loop space is associative and
+every path is reversible. In fact every group arises as the loop space of some
+pointed connected 1-type. We will use results from the #local("00D6")[Symmetry
+Book] that explores this idea in great detail.
+
+We give all the definitions necessary to state the #local("00HG")[Orbit
+Stabilizer Theorem], which will help us prove the #local("00FY")[Class
+Formula], an important tool for computing the #local("00ER")[groupoid
+cardinality] of 1-types, which is key for decategorifying a lot of our constructions.

@@ -1,9 +1,17 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Notation]
+#taxon[Lemma]
+// #title[Notation]
+Let $X$ be a $pi_1$-finite 1-type, let $x:X$ be a point and let $"Aut"_X (x)$ be its finite #link("00H6")[automorphism group]. Then the cardinality of $"Aut"_X (x)$depends only on the #local("00H5")[connected component] $|x|_0$.
 
-Given a 1-type $X$, denote by $|"Aut"_X (-)| : X -> NN$ the set cardinality of the set of automorphisms.
-The universal property of the set truncation gives a unique map from $||X||_0$ to $NN$, that is compatible with the Automorphism-Cardinality.
-By abuse of notation we also denote this map by $|"Aut"_X (-)| : ||X||_0 -> NN$.
+#proof[
+  _Taking the cardinality_ of a finite set amounts to evaluating a map $|\_|: "FinSet" -> NN$. Since the natural numbers are a set, we may use the universal property of the set truncation to obtain a unique map $f$, such that the following diagram commutes.
+ #figure(diagram($
+	X edge("rr", |"Aut"_X (\_)|,->) edge("d", |\_|_0, ->) &  & NN \
+	||X||_0 edge("urr", f,  "-->")
+$))
+This completes the proof.
+For a connected component $c : ||X||_0$ we write write $|"Aut"_X (c)| :-= f(c)$
+]
+

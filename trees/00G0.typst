@@ -1,5 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[Definition]
+#taxon[Terminology]
 #title[Group]
+
+A _group_ is term in the #link("00H0")[type of groups] $"Group"$.

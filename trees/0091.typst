@@ -4,6 +4,4 @@
 // #taxon[Taxon]
 // #title[Title]
 
-// #let link = str => "foo"
-
-#link("hello")[schmello]
+// #link("hello")[schmello]

@@ -1,8 +1,9 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Index]
 #title[Species on FinSet and action types]
+#embed("00HK")[]
 
 #embed("00DA")[]
 #embed("00DB")[]

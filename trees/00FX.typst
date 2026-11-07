@@ -1,12 +1,28 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-#title[Groups Groupactions and Action Types]
+#taxon[Index]
+#title[Univalent Group Theory]
 
-#embed("00G0")[]
-
+#embed("00HJ")[]
+#embed("00GY")[]
+#embed("00H0")[]
 #embed("00G2")[]
-
+#embed("00H1")[]
+#embed("00H2")[]
+#embed("00H3")[]
+#embed("00H4")[]
+#embed("00H5")[]
+#embed("00H6")[]
+#embed("00H7")[]
+#embed("00H8")[]
+#embed("00H9")[]
 #embed("00G1")[]
 
+#embed("00HC")[]
+// #embed("00HD")[]
+
+orbit stabilizer
+#embed("00HG")[]
+#embed("00HI")[]
+#embed("00HH")[]

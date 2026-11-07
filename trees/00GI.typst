@@ -1,21 +1,38 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Index]
 #title[Cartesian Decompositions]
+#embed("00I3")[]
 
 #embed("00E0")[]
+
+// cartesian decomposition
 #embed("00GQ")[]
-#embed("00DQ")[]
-#embed("00GN")[]
-#embed("00GR")[]
 #embed("00DY")[]
-#embed("00GS")[]
+#embed("00I6")[]
+
+// species of rectangles
+#embed("00GL")[]
+#embed("00GO")[] //TODO
+#embed("00IC")[] //TODO
+#embed("00I8")[]
+#embed("00GR")[]
+
+// surjective cartesian decomposition
+#embed("00DQ")[]
+#embed("00I7")[]
+
 // #embed("00EL")[]
 // #embed("00GJ")[]
-#embed("00GL")[]
-#embed("00GO")[]
 #embed("00GP")[]
 #embed("00GM")[]
 #embed("00GX")[]
+
+#embed("00IA")[]
+#embed("00I9")[]
+
+
+// #embed("00GN")[]
+// #embed("00GS")[]
 #embed("00GV")[]

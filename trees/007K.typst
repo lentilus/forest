@@ -4,19 +4,23 @@
 // #taxon[]
 #title[Univalent Species]
 
+#context if target() != "html" {outline()}
+
 #embed("00B9", open: false)[Literature]
-#embed("00BB", open: false)[]
+// #embed("00BB", open: false)[]
 #embed("00DS", open: true)[]
-#embed("00D9")[]
+#embed("00IB")[]
 #embed("00FX")[]
+#embed("00I4")[]
+#embed("00D9")[]
 #embed("00EN")[]
-#embed("00G3")[]
-#embed("00EA")[]
 #embed("00GI")[]
-#embed("00DV")[]
 #embed("00E5")[]
+#embed("00DV")[]
 #embed("00DO")[]
 #embed("00FD")[]
+#embed("00EA")[]
+#embed("00HB")[]
 
 
 Whenever I tell people about HoTT there are reocurring points of confusion. The
@@ -28,4 +32,3 @@ less confusing.
 #embed("00D4")[]
 #embed("00D2")[]
 #embed("00D5")[]
-

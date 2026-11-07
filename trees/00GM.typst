@@ -2,7 +2,7 @@
 #show: template
 
 #taxon[Theorem]
-#title[Equivalence of Rectangles and Cartesian Decompositions]
+#title[Equivalence of Rectangles and Surjective Cartesian Decompositions]
 
 The #local("00GL")[species of rectangles] is equal to the #local("00DQ")[species of non-degenerate cartesian decompositions].
 

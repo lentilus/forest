@@ -1,13 +1,16 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Motivation]
 #title[Dirichlet Series of the zeta species]
 
-A $Z_X$-structure on $A$ is given by a tuple $(R,e,x)$, with $R : "FinSemisimpleCommRing"$, $e : U(R) ~= A$ and $x : X(R)$.
+In his blog at week300, Baez suggests a way to categorify the dirichlet series associated to a zeta species $Z_X$.
 
-Notice $R$ already contains a group $G_R$ with the correct cardinality. Baez thus suggests in week300, that we use the following dirichlet type for $Z_X$.
+Recall that a $Z_X$-structure on a finite set $A$ is given by a tuple $(R,e,x)$, with $R : "FinSemisimpleCommRing"$, $e : U(R) ~= A$ and $x : X(R)$.
 
+Notice that $R$ already contains a group $G_R$ with the correct cardinality. Baez thus suggests, that we categorify the factor $n^(-s)$, by considering an $s$-tuple of $G_R$-torsors. For a finite set $S$ he defines the groupoid
 $
-  D_(Z_X) (S) :-= sum_(A: "FinSet") sum_((R,e,x) : Z_X (A)) (S -> B G_R),
+ sum_(A: "FinSet") sum_((R,e,x) : Z_X (A)) (S -> B G_R),
 $
+where the $n$-th component has groupoid cardinality $|Z_X (A)| * n^(- |S|)$ this is exactly the $n$-th summand of the dirichlet series of $Z_X$, as definied in #local("00DU")[Dirichlet Species and Arithmetic Zeta Functions].
+We now want to generalize this idea to other species $F$ where an $F$-structure on a finite set $A$ gives a group on $A$.

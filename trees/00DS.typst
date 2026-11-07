@@ -1,12 +1,12 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Index]
 #title[Overview]
 This note attempts to state a HoTTification of the key results from the paper
 #local("00DU")[Dirichlet Species and Arithmetic Zeta Functions]. Some things I say here may
-simply be wrong because I have not proved most of what I am claiming here. This
-serves more as a roadmap than as a collection of results.
+simply be wrong because I have not proved a lot of what I am claiming here. 
+I hope that this tree will help with writing an introduction.
 
 #embed("00DT")[]
 

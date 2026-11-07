@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Theorem]
+#title[Orbit Stabilizer]
+
+$(tilde(G)_x)_(h G_x) ~= (G *_X x)$
+
+#proof[
+  See #link("00D6")[Symmetry Book, Construction 5.4.26].
+]

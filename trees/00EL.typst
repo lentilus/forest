@@ -1,20 +1,6 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[Lemma]
-#title[Identity type of cartesian decomposition]
+// #taxon[]
+// #title[]
 
-Given a finite set $S$, we characterize the identity type of its cartesian decompositions as
-
-$
-&((A,B,e,p,q) =_"cart-dec"(S) (A',B',e',p',q'))\ 
-~= &sum_(p: A ~= A', q : B ~= B') e' @ (p xx q) = e.
-$
-
-Here $(p xx q ) : (A xx B) ->  (A' xx B')$ denotes the induced map from the paths $p$ and $q$.
-
-#proof[
-  We make use of the #local("00EK")[Fundamental Theorem of Identity Types].
-
-  TODO
-]

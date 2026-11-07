@@ -1,5 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Terminology]
 #title[classifying Type of a group]
+
+Given a #local("00G0")[group] $G$, we call $B G$ its _classifying type_.

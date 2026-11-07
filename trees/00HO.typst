@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+// #taxon[Taxon]
+#title[First Embedding]
+
+
+This file has title "First Embedding" and no taxon.
+

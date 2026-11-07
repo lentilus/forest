@@ -1,0 +1,8 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Idea]
+// #title[Title]
+
+A #local("00DT")[species] is a function from the #local("00DD")[type of finite sets] $"FinSet"$ to the type of sets $"Set"$. Using the #local("008Q")[axiom of univalence] we show that $"FinSet"$ splits into connected components, indexed by the natural numbers such that the $n$-th connected component is precisely the classifying type of the symmetric group in $n$ letters $Sigma_n$.
+In that spirit any species $F$ is given by a family of group actions $F_n : Sigma_n -> "Set"$, allowing us to think about species using #local("00FX")[Univalent Group Theory]

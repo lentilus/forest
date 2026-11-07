@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Connected Components of 1-Types]
+
+For a 1-type $A$ and a point $a : A$, define the _connected component_ of $a$ as the type
+$
+  A_((a)) :-= sum_(x : A) || a = x ||.
+$
+The first projection map $A_(a) -> A$ is an injection.

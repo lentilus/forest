@@ -1,0 +1,14 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Testfile]
+#title[Testing new lib]
+
+This file has title "Testing new lib" and taxon "Testfile"
+
+#embed("00HO")[]
+
+#embed("00HP")[]
+
+
+

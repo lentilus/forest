@@ -1,0 +1,9 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Terminology]
+#title[Symmetries in a Group]
+
+We refer to the elements of $Omega B G$ as the _symmetries in_ in $G$. We denote the the type of symmetries in $G$ with $U G :-= Omega B G$.
+Thus the symmetries in $G$ are the #local("00H2")[symmetries] of the #local("00H1")[designated shape] $"sh"_G$ of $G$.
+

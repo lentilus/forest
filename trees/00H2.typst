@@ -1,0 +1,10 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[Symmetries of a pointed Type]
+
+Given a pointed type $X -= (A,a)$, we define $Omega X :-= (a =_A a)$. We call
+points in $Omega X$ the symmetries of $a : A$.
+Notice that the type $Omega X$ is pointed at $"refl"_a$.
+See #link("00D6")[Symmetry Book, Definition 4.2.10]
