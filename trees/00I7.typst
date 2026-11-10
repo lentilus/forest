@@ -4,11 +4,7 @@
 #taxon[Lemma]
 #title[Identity Type of Surjective Cartesian Decompositions]
 
-Since $"is-surj"$ is a proposition, the identity type of non-degenerate cartesian decompostions is the same as the identity type of the inclusions into general cartesian decomposions.
-
-TODO
-
-Fix a finite set $S$. Let $(A,B,e,!),(A',B',e',!) : "cart-dec"(S)$.
+Fix a finite set $S$. Let $(A,B,e,!),(A',B',e',!) : "surj-cart-dec"(S)$.
 There is an equivalence
 $
 ((A,B,e,!) = (A',B',e',!)) ~= "Eq-cart-dec"(S)((A,B,e), (A',B',e'))
@@ -20,19 +16,7 @@ where $(f xx g ) : (A xx B) ->  (A' xx B')$ is the induced map from the equivale
 
   We already know from #local("00DY")[Lemma 00DY], that $"Eq-cart-dec"(S)((A,B,e), (A',B',e'))$ is inhabited.
 
-  Furthermore $B$ is torsorial since
-  $
-    sum_((A',B',e') : "cart-dec"(S)) C(A',B',e') &-= sum_(A' ,B' : "FinSet") sum_(e': A' xx B' ~= S) sum_(f: A ~= A') sum_(g : B ~= B') e' @ (f xx g) ~ e\
-    "(reassociate)" .. &~= sum_(A' : "FinSet") sum_(f: A ~= A') sum_(B' : "FinSet") sum_(g : B ~= B') sum_(e': A' xx B' ~= S) e' @ (f xx g) ~ e\
-    "(univalence)" .. &~= sum_(A' : "FinSet") sum_(p: A = A') sum_(B' : "FinSet") sum_(q : B = B') sum_(e': A' xx B' ~= S) e' @ (tilde(p) xx tilde(q)) ~ e\
-    "(contract)" .. &~= sum_(B' : "FinSet") sum_(q : B = B') sum_(e': A xx B' ~= S) e' @ ("id"_A xx tilde(q)) ~ e\
-    "(contract)" .. &~= sum_(e': A xx B ~= S) e' @ ("id"_A xx "id"_B) ~ e\
-    &~= sum_(e': A xx B ~= S) e' ~ e\
-    "(function extensionality)" .. &~= sum_(e': A xx B ~= S) e' = e\
-    "(contract)" .. &~= bb(1).
-  $
-
-  Applying the #local("00EK")[Fundamental Theorem of Identity Types] completes the proof.
+  #local("00ID")[TODO]
 ]
 
 // An elemary proof

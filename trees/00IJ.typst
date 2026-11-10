@@ -1,0 +1,7 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[higher surjective cartesian decomposition]
+
+#local("00ID")[TODO]

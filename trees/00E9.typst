@@ -8,5 +8,5 @@ $
   ((F *_D G) *_D H) = (F *_D (G *_D H))
 $
 #proof[
-  TODO
+  #local("00ID")[TODO]
 ]

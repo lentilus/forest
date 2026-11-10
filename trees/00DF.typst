@@ -12,5 +12,5 @@ $
 In other words $"FinSet"_n ~= B S_n$
 
 #proof[
-  TODO.
+  #local("00ID")[TODO]
 ]

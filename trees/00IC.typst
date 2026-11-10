@@ -1,5 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
-// #title[Title]
+#taxon[Remark]
+#title[Type of rectangles is a set]
+
+

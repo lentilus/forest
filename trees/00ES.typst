@@ -15,4 +15,4 @@ Let $I$ be a finite set. Let $r : I -> QQ$ be a family of rational numbers.
 To not confuse sums of rational numbers with Sigma-types, we denote the sum of all $r(i)$ with
 $plus.big_(i : I) r(i)$.
 
-TODO: Make very clear what for what properties we need witnesses and find a construction we can borrow.
+#local("00ID")[TODO] : Make very clear what for what properties we need witnesses and find a construction we can borrow.

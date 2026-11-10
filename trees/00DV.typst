@@ -4,19 +4,20 @@
 #taxon[Index]
 #title[Dirichlet Product of Species]
 
-#embed("00DZ")[]
-#embed("00E0")[]
-#embed("00DQ")[]
-#embed("00DY")[]
-// #embed("00EL")[]
+// #embed("00DZ")[]
+// #embed("00E0")[]
+// #embed("00DQ")[]
+// #embed("00DY")[]
+#embed("00EL")[]
 #embed("00DP")[]
-#embed("00E4")[]
+// #embed("00E4")[]
 #embed("00EJ")[]
 #embed("00E3")[]
 #embed("00E8")[]
 #embed("00E9")[]
 #embed("00EI")[]
 #embed("00GT")[]
+
 #embed("00FC")[]
-#embed("00FA")[]
+// #embed("00FA")[] // Dirichlet series of dirichlet product is dirichlet product of dirichlet series
 

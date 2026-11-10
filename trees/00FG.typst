@@ -1,5 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[TODO]
-#title[Definition Dirichlet exponential]
+#taxon[Definition]
+#title[Dirichlet exponential]
+
+#local("00ID")[TODO]

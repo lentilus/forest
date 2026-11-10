@@ -1,8 +1,9 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[TODO]
+#taxon[Observation]
 #title[The dirichlet product gives a symmetric monoidal structure on Species]
 
-TODO: Look into the definition of _symmetric monoidal_, figure out what else there is to show here (i.e coherence stuff).
+
+#local("00ID")[TODO] : Look into the definition of _symmetric monoidal_, figure out what else there is to show here (i.e coherence stuff).
 Conclude.

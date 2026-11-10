@@ -10,10 +10,10 @@ Let $(T,U,e,a,b)$ and $(T',U',e',a',b')$ be terms in the #local("00DP")[dirichle
 *_D G)(S)$ of #local("00DT")[species] $F$ and $G$.
 Then there is an equivalence
 $
-  ((T,U,e,a,b) =_((F *_D G)(S)) (T',U',e',a',b'))\
-  ~= sum (r : T ~= T'), sum (s : U ~= U'), sum (h : e' @ (r xx s) = e)
+  ((d,a,b) =_((F *_D G)(S)) (d',a',b'))\
+  ~= sum_((f,g,alpha): "Eq-cart-dec"(S)(d, d')) ("tr"_F (tilde(f),a) = a') xx ("tr"_G (tilde(g),b) = b')
 $
 
 #proof[
-  See folder.
+  See folder. #local("00ID")[TODO]
 ]

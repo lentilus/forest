@@ -10,14 +10,15 @@
 #embed("00HE")[]
 #embed("00G6")[]
 #embed("00F6")[]
-#embed("00F0")[]
-#embed("00F4")[]
-#embed("00F5")[]
+
+// #embed("00F0")[]
+// #embed("00F4")[]
+// #embed("00F5")[]
 #embed("00F2")[]
 #embed("00F3")[]
 #embed("00F1")[]
-#embed("00F9")[]
-#embed("00FB")[]
+// #embed("00F9")[]
+// #embed("00FB")[]
 
 
 #embed("00F8")[]

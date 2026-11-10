@@ -1,9 +1,13 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[TODO]
-// #title[Title]
+#taxon[Lemma]
+#title[Dirichlet Type is compatible with dirichlet exponential]
 
 $
   "Dir"(D_("exp"_D (F))(S)) = "exp"("Dir"(D_F (S)))
 $
+
+#proof[
+  #local("00ID")[TODO]
+]

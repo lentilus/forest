@@ -1,7 +1,11 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-// #taxon[Taxon]
+#taxon[Lemma]
 #title[S_n acts on dirichlet power]
 
-TODO
+The symmetric group acts on dirichlet powers by permuting factors.
+
+#proof[
+  #local("00ID")[TODO]
+]

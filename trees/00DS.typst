@@ -8,6 +8,8 @@ This note attempts to state a HoTTification of the key results from the paper
 simply be wrong because I have not proved a lot of what I am claiming here. 
 I hope that this tree will help with writing an introduction.
 
+- #local("00ID")[]
+
 #embed("00DT")[]
 
 // #embed("00EB")[]
@@ -19,7 +21,6 @@ I hope that this tree will help with writing an introduction.
 #embed("00GV")[]
 #embed("00DP")[]
 #embed("00GT")[]
-#embed("00FA")[]
 #embed("00FE")[]
 #embed("00FG")[]
 #embed("00FI")[]
@@ -30,7 +31,6 @@ I hope that this tree will help with writing an introduction.
 // #embed("00ED")[]
 // #embed("00EE")[]
 
-#embed("00FP")[]
 #embed("00FQ")[]
 #embed("00FR")[]
 #embed("00FS")[]

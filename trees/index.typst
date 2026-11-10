@@ -22,7 +22,7 @@ Below is a non-exhaustive list of entry points to various topics.
 - #local("006L")[Forcing]
 - #local("006K")[Surreal Numbers]
 - #local("006V")[Algebra]
-- #local("007K")[Species]
+- #local("007K")[Univalent Species]
 - #local("0088")[Analysis on Manifolds]
 - #local("00AH")[Morphisms of Schemes]
 

@@ -31,13 +31,13 @@ $
     ~=& sum_((g,!) : sum_(g : U G) ||g * x = x||_(-1) ) (g * x = x) \
   $
 ]
-TODO: therefor
+#local("00ID")[TODO] : therefor
 $
   |U "Aut"_X_(h G)("sh"_G, x)| = | sum_(g : U G) ||g * x = x||_(-1)| * | U "Aut"_X("sh"_G) (x)|
 $
 
 We now apply the orbit stabilizer thorem to 
-TODO
+#local("00ID")[TODO]
 
 See also
 - https://ncatlab.org/nlab/show/class+equation

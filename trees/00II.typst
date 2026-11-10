@@ -1,0 +1,11 @@
+#import "/_lib/0.1.1.typ": *
+#show: template
+
+#taxon[Definition]
+#title[higher Rectangles]
+
+$
+  "n-Rectangle"(S) :-= ...
+$
+
+#local("00ID")[TODO]

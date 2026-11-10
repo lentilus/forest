@@ -1,9 +1,7 @@
 #import "/_lib/0.1.1.typ": *
 #show: template
 
-#taxon[TODO]
-// #title[Title]
+#taxon[Lemma]
+#title[Euler Product is compatible with dirichlet series]
 
-$
-  "Dir"(D("euler-prod"(A)))(n) = product_(p : p^k||n) "Dir"(D(A(p)))
-$
+#local("00ID")[TODO]

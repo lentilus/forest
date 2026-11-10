@@ -4,6 +4,8 @@
 #taxon[Definition]
 #title[Euler Product of Species]
 
+#local("00ID")[TODO]
+
 For $A(p)$ type family of species indexed by $p : PP$ with $A(p)$ a p-local dirichlet species.
 
 $

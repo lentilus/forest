@@ -9,7 +9,7 @@ $
   sum_(A : "FinSet") F(A) xx (A-> X)
 $
 
-TODO : it is isomorphic to
+#local("00ID")[TODO] : it is isomorphic to
 $
   sum_(n : NN) (F([n]) xx X^n) slash.double S_n
 $

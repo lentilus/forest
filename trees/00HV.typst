@@ -7,4 +7,4 @@
 - We call 1-types with finite set truncation $pi_0$-finite.
 - We call 1-types that have have a finite #link("00H6")[automorphism group] at every point $pi_1$-finite.
 
-- TODO: homotopy-finite
+#local("00ID")[TODO] : Just use the term homotopy-finite

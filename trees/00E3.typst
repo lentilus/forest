@@ -9,7 +9,7 @@ $
   I(S) :-= (S ~= bb(1)_"FinSet")
 $
 
-Note that $(S ~= bb(1)_"FinSet")$ is a proposition (TODO: explain) so in particular a set.
+Note that $(S ~= bb(1)_"FinSet")$ is a proposition so in particular a set.
 
 Note also that this fits the definition of $I$ in the #local("00DU")[paper] quite well.
 
@@ -109,5 +109,5 @@ and showing it has contractible fibers.
   $
   
   It only reamains to construct $h$.
-  (TODO: copy from Notebook II)
+  #local("00ID")[TODO] : copy from Notebook II
 ]
